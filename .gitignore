@@ -1,0 +1,7 @@
+# VS Code
+.vscode/
+
+# C Source Files
+sources/CFRU/
+sources/DPE/
+parse_json
