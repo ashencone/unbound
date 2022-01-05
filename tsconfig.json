@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "baseUrl": "./",
+        "outDir": "scripts",
+        "disableSizeLimit": true,
+    },
+
+    "include": ["sources/*.ts"]
+}

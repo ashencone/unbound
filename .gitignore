@@ -5,3 +5,7 @@
 sources/CFRU/
 sources/DPE/
 parse_json
+
+# Node
+node_modules/
+package-lock.json

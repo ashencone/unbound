@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;700&family=Staatliches&display=swap");
+
+:root {
+  --white: #fffffc;
+  --grey: #dee2e6;
+  --dark: #495057;
+}
+
+body {
+  background: linear-gradient(45deg, #ed1e79, #662d8c);
+  background-attachment: fixed;
+}
+
+header {
+  margin: 2rem 0;
+}
+
+.title {
+  height: 3rem;
+
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  line-height: 3rem;
+}
+
+main {
+  min-height: calc(100vh - 7rem);
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+
+  background: var(--white);
+}
+
+.search {
+  display: flex;
+}
+
+.search__type {
+  position: relative;
+  flex: 1 0 150px;
+}
+
+.search__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0.5rem 0 0 0;
+  outline: none;
+}
+
+.search__button--closed {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.search__options {
+  position: absolute;
+
+  width: 100%;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  overflow: hidden;
+}
+
+.search__options--hidden {
+  visibility: hidden;
+}
+
+.search__option {
+  height: 2.5rem;
+  width: 100%;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.search__option--pokemon {
+  background: hsl(110, 100%, 87%);
+  color: hsl(110, 100%, 37%);
+}
+
+.search__option--items {
+  background: hsl(185, 100%, 80%);
+  color: hsl(185, 100%, 30%);
+}
+
+.search__option--moves {
+  background: hsl(0, 100%, 84%);
+  color: hsl(0, 100%, 34%);
+}
+
+.search__option--abilities {
+  background: hsl(300, 100%, 89%);
+  color: hsl(300, 100%, 39%);
+}
+
+.search__option--hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+.search__box {
+  display: flex;
+  flex: 4 0 150px;
+}
+
+.search__text {
+  flex: 1 1 100px;
+
+  height: 2.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  border: none;
+  outline: none;
+
+  background: var(--grey);
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.search__icon {
+  flex: 0 0 3rem;
+
+  border-radius: 0 0.5rem 0.5rem 0;
+
+  background: var(--grey);
+
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+}

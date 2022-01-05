@@ -5,6 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unbound Pokedex</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+
+    <script defer src="https://unpkg.com/akar-icons-fonts"></script>
+    <script defer src="scripts/app.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1 class="title">Unbound Pokedex</h1>
+    </header>
+    <main>
+      <section class="search">
+        <div class="search__type" data-value="0" data-hidden="0">
+          <button class="search__button search__option">Placeholder</button>
+          <ul class="search__options">
+            <li class="search__option search__option--pokemon">
+              <i class="ai-leaf"></i>Pokemon
+            </li>
+            <li class="search__option search__option--items">
+              <i class="ai-air"></i>Items
+            </li>
+            <li class="search__option search__option--moves">
+              <i class="ai-fire"></i>Moves
+            </li>
+            <li class="search__option search__option--abilities">
+              <i class="ai-moon"></i>Abilities
+            </li>
+          </ul>
+        </div>
+        <div class="search__box">
+          <input type="text" class="search__text" />
+          <span class="search__icon"><i class="ai-search"></i></span>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
