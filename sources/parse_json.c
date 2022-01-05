@@ -318,6 +318,49 @@ int main(int argc, char **argv)
     fprintf(json, "]\n"); // Array closing
     fclose(json);
 
+    //
+    // Create search index
+    //
+    char search_index[2048][32];
+    int search_index_len = 0;
+    char name_index[32];
+    int found_pokemon[NUM_SPECIES];
+    int found_pokemon_length = 0;
+
+    json = fopen("search.json", "w");
+    if (json == NULL) exit(3);
+
+    fprintf(json, "{\n\t\"pokemon\": {\n");
+
+    for (i = 0; i < NUM_SPECIES; i++) {
+        snprintf(name_index, 32, string_pokemon[i]);
+        for (j = 0; j < search_index_len; j++) {
+            if (!strncmp(name_index, search_index[j], 32)) {    // Check if pokemon already added
+                name_index[0] = '\0';
+                break;
+            }
+        }
+        if (name_index[0]) {
+            snprintf(search_index[search_index_len++], 32, name_index);   // Add to added list
+
+            for (j = 0, found_pokemon_length = 0; j < NUM_SPECIES; j++) {
+                if (!strncmp(name_index, string_pokemon[j], 32)) {
+                    found_pokemon[found_pokemon_length++] = j;  // Found every index with the pokemon
+                }
+            }
+            snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", i ? ",\n":"", name_index);
+            for (j = 0; j < found_pokemon_length; j++) {
+                snprintf(buffer_local, 1024, "%s%i", j ? ", ":"", found_pokemon[j]);
+                strncat(buffer_main, buffer_local, 1024);
+            }
+            strncat(buffer_main, "]", 2);
+            fprintf(json, buffer_main);
+        }
+    }
+
+    fprintf(json, "\n\t}\n}\n");
+
+    fclose(json);
     return 0;
 }
 
