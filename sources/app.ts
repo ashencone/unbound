@@ -291,7 +291,7 @@ let searchText = document.querySelector(".search__text")! as HTMLInputElement;
 let searchIndex: SearchIndex;
 let foundIndex: number[];
 let pokemonData: Pokemon[];
-let pokemonCards: (HTMLElement | 0)[] = Array.apply(null, Array(2048)) as 0[];
+let pokemonCards: (HTMLElement | 0)[];
 let main: HTMLElement = document.querySelector("main")!;
 let frag: DocumentFragment = document.createDocumentFragment();
 
@@ -308,45 +308,43 @@ searchText.addEventListener("input", async (e) => {
       }
     }
     foundIndex.sort((a, b) => a - b);
+
     if (!pokemonData) {
       const res = await fetch("sources/unbound.json");
       pokemonData = await res.json();
     }
-    pokemonCards.forEach((elem, id, arr) => {
-      if (foundIndex.includes(id)) {
-        if (!elem) {
-          makeCard(pokemonData[id], frag);
-          main.appendChild(frag);
-          let card = main.lastElementChild! as HTMLElement;
-          arr[id] = card;
-          card
-            .querySelector(".pokemon__moves-header")!
-            .addEventListener("click", () => {
-              let movesAll = card.querySelector(
-                ".pokemon__moves-all"
-              )! as HTMLElement;
-              let movesIcon = card.querySelector(
-                ".pokemon__moves-icon"
-              )! as HTMLElement;
-              if (!movesAll.style.maxHeight) {
-                movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
-                movesIcon.classList.add("pokemon__moves-icon--flip");
-              } else {
-                movesAll.style.maxHeight = "";
-                movesIcon.classList.remove("pokemon__moves-icon--flip");
-              }
-            });
-        } else {
-          main.appendChild(elem);
-        }
-      } else if (elem) {
-        elem.remove();
-      }
-    });
-  } else {
+    if (!pokemonCards) {
+      pokemonCards = Array.apply(null, Array(pokemonData.length)) as 0[];
+    }
     pokemonCards.forEach((elem) => {
-      if (elem) {
-        elem.remove();
+      if (elem) elem.remove();
+    });
+
+    foundIndex.forEach((id) => {
+      if (!pokemonCards[id]) {
+        makeCard(pokemonData[id], frag);
+        main.appendChild(frag);
+        let card = main.lastElementChild! as HTMLElement;
+        pokemonCards[id] = card;
+        card
+          .querySelector(".pokemon__moves-header")!
+          .addEventListener("click", () => {
+            let movesAll = card.querySelector(
+              ".pokemon__moves-all"
+            )! as HTMLElement;
+            let movesIcon = card.querySelector(
+              ".pokemon__moves-icon"
+            )! as HTMLElement;
+            if (!movesAll.style.maxHeight) {
+              movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
+              movesIcon.classList.add("pokemon__moves-icon--flip");
+            } else {
+              movesAll.style.maxHeight = "";
+              movesIcon.classList.remove("pokemon__moves-icon--flip");
+            }
+          });
+      } else {
+        main.appendChild(pokemonCards[id] as HTMLElement);
       }
     });
   }
