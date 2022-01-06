@@ -203,6 +203,12 @@ let pokemonData;
 let pokemonCards;
 let main = document.querySelector("main");
 let frag = document.createDocumentFragment();
+(async () => {
+    const search = await fetch("sources/search.json");
+    searchIndex = await search.json();
+    const data = await fetch("sources/unbound.json");
+    pokemonData = await data.json();
+})();
 searchText.addEventListener("input", async (e) => {
     if (searchText.value.length >= 3) {
         if (!searchIndex) {

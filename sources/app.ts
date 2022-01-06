@@ -295,6 +295,14 @@ let pokemonCards: (HTMLElement | 0)[];
 let main: HTMLElement = document.querySelector("main")!;
 let frag: DocumentFragment = document.createDocumentFragment();
 
+// Try to preload the data
+(async () => {
+  const search = await fetch("sources/search.json");
+  searchIndex = await search.json();
+  const data = await fetch("sources/unbound.json");
+  pokemonData = await data.json();
+})();
+
 searchText.addEventListener("input", async (e) => {
   if (searchText.value.length >= 3) {
     if (!searchIndex) {
