@@ -239,7 +239,7 @@ int main(int argc, char **argv)
     if (json == NULL) exit(3);
 
     fprintf(json, "[\n"); // Array opening
-    for (i = 1; i < NUM_SPECIES; i++) {
+    for (i = 0; i < NUM_SPECIES; i++) {
         buffer_main[0] = '\0';  // Empty main buffer
         snprintf(buffer_main, 4096, "\t{"); // Object opening
 
