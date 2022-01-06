@@ -345,6 +345,13 @@ main {
 
 .pokemon__moves-icon {
   font-size: 1.25rem;
+
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.pokemon__moves-icon--flip {
+  transform: rotate(180deg);
 }
 
 .pokemon__moves-all {

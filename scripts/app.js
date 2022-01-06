@@ -1,13 +1,4 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 let searchType = document.querySelector(".search__type");
 let searchButton = searchType.querySelector(".search__button");
 let searchOptions = searchType.querySelector(".search__options");
@@ -58,9 +49,6 @@ window.addEventListener("click", (e) => {
     if (getPath(e).indexOf(searchType) === -1 && !searchHidden)
         searchToggle();
 });
-let main = document.querySelector("main");
-let frag = document.createDocumentFragment();
-let pokemonAdded = 0;
 let statsName = ["HP", "Atk", "Def", "SpA", "SpD", "Spe"];
 let statsLongName = [
     "HP",
@@ -208,29 +196,66 @@ function makeCard(pokemon, fragment) {
         });
     }
 }
-let json = [];
-const addPokemon = setInterval(() => __awaiter(void 0, void 0, void 0, function* () {
-    if (!json.length) {
-        let res = yield fetch("sources/unbound.json");
-        json = yield res.json();
-    }
-    if (json.length === pokemonAdded) {
-        clearInterval(addPokemon);
-    }
-    else {
-        makeCard(json[pokemonAdded++], frag);
-        main.appendChild(frag);
-        let it = main.lastElementChild;
-        if (it.style.display != "none") {
-            it.querySelector(".pokemon__moves-header").addEventListener("click", () => {
-                let moves = it.querySelector(".pokemon__moves-all");
-                if (moves.style.maxHeight) {
-                    moves.removeAttribute("style");
+let searchText = document.querySelector(".search__text");
+let searchIndex;
+let foundIndex;
+let pokemonData;
+let pokemonCards = Array.apply(null, Array(2048));
+let main = document.querySelector("main");
+let frag = document.createDocumentFragment();
+searchText.addEventListener("input", async (e) => {
+    if (searchText.value.length >= 3) {
+        if (!searchIndex) {
+            const res = await fetch("sources/search.json");
+            searchIndex = await res.json();
+        }
+        foundIndex = [];
+        for (let name in searchIndex.pokemon) {
+            if (name.match(new RegExp(`${searchText.value}`, "i"))) {
+                foundIndex.push(...searchIndex.pokemon[name]);
+            }
+        }
+        foundIndex.sort((a, b) => a - b);
+        if (!pokemonData) {
+            const res = await fetch("sources/unbound.json");
+            pokemonData = await res.json();
+        }
+        pokemonCards.forEach((elem, id, arr) => {
+            if (foundIndex.includes(id)) {
+                if (!elem) {
+                    makeCard(pokemonData[id], frag);
+                    main.appendChild(frag);
+                    let card = main.lastElementChild;
+                    arr[id] = card;
+                    card
+                        .querySelector(".pokemon__moves-header")
+                        .addEventListener("click", () => {
+                        let movesAll = card.querySelector(".pokemon__moves-all");
+                        let movesIcon = card.querySelector(".pokemon__moves-icon");
+                        if (!movesAll.style.maxHeight) {
+                            movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
+                            movesIcon.classList.add("pokemon__moves-icon--flip");
+                        }
+                        else {
+                            movesAll.style.maxHeight = "";
+                            movesIcon.classList.remove("pokemon__moves-icon--flip");
+                        }
+                    });
                 }
                 else {
-                    moves.style.maxHeight = `${moves.scrollHeight}px`;
+                    main.appendChild(elem);
                 }
-            });
-        }
+            }
+            else if (elem) {
+                elem.remove();
+            }
+        });
     }
-}), 2);
+    else {
+        pokemonCards.forEach((elem) => {
+            if (elem) {
+                elem.remove();
+            }
+        });
+    }
+});
