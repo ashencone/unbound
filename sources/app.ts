@@ -289,7 +289,8 @@ interface SearchIndex {
 }
 let searchText = document.querySelector(".search__text")! as HTMLInputElement;
 let searchIndex: SearchIndex;
-let foundIndex: number[];
+let foundIndex: number[] = [];
+let foundIndexOld: number[] = [];
 let pokemonData: Pokemon[];
 let pokemonCards: (HTMLElement | 0)[];
 let main: HTMLElement = document.querySelector("main")!;
@@ -324,11 +325,14 @@ searchText.addEventListener("input", async (e) => {
     if (!pokemonCards) {
       pokemonCards = Array.apply(null, Array(pokemonData.length)) as 0[];
     }
-    pokemonCards.forEach((elem) => {
-      if (elem) elem.remove();
-    });
 
-    foundIndex.forEach((id) => {
+    foundIndexOld
+      .filter((n) => !foundIndex.includes(n))
+      .forEach((id) => {
+        if (pokemonCards[id]) (<HTMLElement>pokemonCards[id]).remove();
+      });
+
+    foundIndex.forEach((id, i) => {
       if (!pokemonCards[id]) {
         makeCard(pokemonData[id], frag);
         main.appendChild(frag);
@@ -352,12 +356,14 @@ searchText.addEventListener("input", async (e) => {
             }
           });
       } else {
-        main.appendChild(pokemonCards[id] as HTMLElement);
+        main.appendChild(<HTMLElement>pokemonCards[id]);
       }
     });
   } else if (pokemonCards) {
-    pokemonCards.forEach((elem) => {
-      if (elem) elem.remove();
+    foundIndexOld.forEach((id) => {
+      if (pokemonCards[id]) (<HTMLElement>pokemonCards[id]).remove();
     });
+    foundIndex = [];
   }
+  foundIndexOld = foundIndex;
 });
