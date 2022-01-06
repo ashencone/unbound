@@ -259,7 +259,7 @@ searchText.addEventListener("input", async (e) => {
             }
         });
     }
-    else {
+    else if (pokemonCards) {
         pokemonCards.forEach((elem) => {
             if (elem)
                 elem.remove();
