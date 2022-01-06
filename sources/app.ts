@@ -347,5 +347,9 @@ searchText.addEventListener("input", async (e) => {
         main.appendChild(pokemonCards[id] as HTMLElement);
       }
     });
+  } else {
+    pokemonCards.forEach((elem) => {
+      if (elem) elem.remove();
+    });
   }
 });

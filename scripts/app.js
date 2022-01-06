@@ -253,4 +253,10 @@ searchText.addEventListener("input", async (e) => {
             }
         });
     }
+    else {
+        pokemonCards.forEach((elem) => {
+            if (elem)
+                elem.remove();
+        });
+    }
 });
