@@ -100,7 +100,7 @@ function makeCard(pokemon, fragment) {
         let spanStatBar = document.createElement("span");
         divStats.appendChild(spanStatBar).className = "pokemon__stat-bar";
         spanStatBar.className += ` pokemon__stat-bar--${Math.floor((clamp(stat, 10, 110) - 10) / 20)}`;
-        spanStatBar.style.width = `${clamp(stat, 35, 120) - 20}%`;
+        spanStatBar.style.width = `${clamp(stat, 25, 120) - 20}%`;
     });
     let divInfo = document.createElement("div");
     divData.appendChild(divInfo).className = "pokemon__info";

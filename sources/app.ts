@@ -159,7 +159,7 @@ function makeCard(pokemon: Pokemon, fragment: DocumentFragment) {
     spanStatBar.className += ` pokemon__stat-bar--${Math.floor(
       (clamp(stat, 10, 110) - 10) / 20
     )}`;
-    spanStatBar.style.width = `${clamp(stat, 35, 120) - 20}%`;
+    spanStatBar.style.width = `${clamp(stat, 25, 120) - 20}%`;
   });
 
   let divInfo = document.createElement("div");
