@@ -322,3 +322,60 @@ searchOptions.addEventListener("click", (e: Event) => {
 window.addEventListener("click", (e: Event) => {
   if (getPath(e).indexOf(searchType) === -1 && !searchHidden) searchToggle();
 });
+
+//
+// Search
+//
+let searchText: HTMLInputElement = document.querySelector(".search__text")!;
+let foundIndex: number[] = [];
+let foundIndexOld: number[] = [];
+let fragment = document.createDocumentFragment();
+let main: HTMLElement = document.querySelector("main")!;
+let movesAll: HTMLElement;
+let movesIcon: HTMLElement;
+
+searchText.addEventListener("input", () => {
+  foundIndexOld = foundIndex;
+  foundIndex = [];
+
+  if (searchText.value.length >= 3) {
+    Object.entries(searchIndex.pokemon).forEach(([name, index]) => {
+      if (name.match(new RegExp(searchText.value, "i"))) {
+        foundIndex.push(...index);
+      }
+    });
+    foundIndex.sort((a, b) => a - b);
+
+    if (foundIndex.length > foundIndexOld.length) {
+      foundIndex.forEach((id) => {
+        fragment.appendChild(pokemonCards[id]);
+        pokemonCards[id]
+          .querySelector(".pokemon__moves-header")!
+          .addEventListener("click", () => {
+            movesAll = pokemonCards[id].querySelector(".pokemon__moves-all")!;
+            movesIcon = pokemonCards[id].querySelector(".pokemon__moves-icon")!;
+            if (movesAll.dataset.visible != "1") {
+              movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
+              movesIcon.style.transform = "rotate(180deg)";
+              movesAll.dataset.visible = "1";
+            } else {
+              movesAll.style.maxHeight = "";
+              movesIcon.style.transform = "";
+              movesAll.dataset.visible = "0";
+            }
+          });
+      });
+      main.appendChild(fragment);
+    } else {
+      foundIndexOld
+        .filter((n) => !foundIndex.includes(n))
+        .forEach((id) => {
+          pokemonCards[id].remove();
+        });
+    }
+  } else {
+    foundIndexOld.forEach((id) => {
+      pokemonCards[id].remove();
+    });
+  }
+});
