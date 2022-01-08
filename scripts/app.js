@@ -62,12 +62,12 @@ let strNull = "-------";
 function clamp(num, min, max) {
     return Math.max(Math.min(num, max), min);
 }
-function makeCard(pokemon, fragment) {
+function makeCard(pokemon) {
     let section = document.createElement("section");
-    fragment.appendChild(section).className = "pokemon";
+    section.className = "pokemon";
     if (!pokemon.name) {
         section.style.display = "none";
-        return;
+        return section;
     }
     let divTitle = document.createElement("div");
     section.appendChild(divTitle).className = "pokemon__title";
@@ -195,6 +195,7 @@ function makeCard(pokemon, fragment) {
             spanMove.innerHTML = move;
         });
     }
+    return section;
 }
 let searchText = document.querySelector(".search__text");
 let searchIndex;
@@ -238,10 +239,9 @@ searchText.addEventListener("input", async (e) => {
         });
         foundIndex.forEach((id, i) => {
             if (!pokemonCards[id]) {
-                makeCard(pokemonData[id], frag);
-                main.appendChild(frag);
-                let card = main.lastElementChild;
+                let card = makeCard(pokemonData[id]);
                 pokemonCards[id] = card;
+                frag.appendChild(card);
                 card
                     .querySelector(".pokemon__moves-header")
                     .addEventListener("click", () => {
@@ -258,9 +258,10 @@ searchText.addEventListener("input", async (e) => {
                 });
             }
             else {
-                main.appendChild(pokemonCards[id]);
+                frag.appendChild(pokemonCards[id]);
             }
         });
+        main.appendChild(frag);
     }
     else if (pokemonCards) {
         foundIndexOld.forEach((id) => {
