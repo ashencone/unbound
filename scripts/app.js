@@ -237,31 +237,33 @@ searchText.addEventListener("input", async (e) => {
             if (pokemonCards[id])
                 pokemonCards[id].remove();
         });
-        foundIndex.forEach((id, i) => {
-            if (!pokemonCards[id]) {
-                let card = makeCard(pokemonData[id]);
-                pokemonCards[id] = card;
-                frag.appendChild(card);
-                card
-                    .querySelector(".pokemon__moves-header")
-                    .addEventListener("click", () => {
-                    let movesAll = card.querySelector(".pokemon__moves-all");
-                    let movesIcon = card.querySelector(".pokemon__moves-icon");
-                    if (!movesAll.style.maxHeight) {
-                        movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
-                        movesIcon.classList.add("pokemon__moves-icon--flip");
-                    }
-                    else {
-                        movesAll.style.maxHeight = "";
-                        movesIcon.classList.remove("pokemon__moves-icon--flip");
-                    }
-                });
-            }
-            else {
-                frag.appendChild(pokemonCards[id]);
-            }
-        });
-        main.appendChild(frag);
+        if (foundIndex.length > foundIndexOld.length) {
+            foundIndex.forEach((id) => {
+                if (!pokemonCards[id]) {
+                    let card = makeCard(pokemonData[id]);
+                    pokemonCards[id] = card;
+                    frag.appendChild(card);
+                    card
+                        .querySelector(".pokemon__moves-header")
+                        .addEventListener("click", () => {
+                        let movesAll = card.querySelector(".pokemon__moves-all");
+                        let movesIcon = card.querySelector(".pokemon__moves-icon");
+                        if (!movesAll.style.maxHeight) {
+                            movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
+                            movesIcon.classList.add("pokemon__moves-icon--flip");
+                        }
+                        else {
+                            movesAll.style.maxHeight = "";
+                            movesIcon.classList.remove("pokemon__moves-icon--flip");
+                        }
+                    });
+                }
+                else {
+                    frag.appendChild(pokemonCards[id]);
+                }
+            });
+            main.appendChild(frag);
+        }
     }
     else if (pokemonCards) {
         foundIndexOld.forEach((id) => {
