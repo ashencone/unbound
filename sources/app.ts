@@ -1,77 +1,4 @@
 //
-// Search Dropdown
-//
-let searchType: HTMLElement = document.querySelector(".search__type")!;
-let searchButton: HTMLElement = searchType.querySelector(".search__button")!;
-let searchOptions: HTMLElement = searchType.querySelector(".search__options")!;
-let firstOption: HTMLElement = searchOptions.querySelector(".search__option")!;
-let searchHidden: boolean = false;
-
-function getPath(e: Event) {
-  let r: HTMLElement[] = [];
-  let t: HTMLElement | null = e.target as HTMLElement;
-  while (t) {
-    r.push(t);
-    t = t.parentElement;
-  }
-  return r;
-}
-
-function searchToggle() {
-  searchOptions.classList.toggle("search__options--hidden");
-  searchButton.classList.toggle("search__button--closed");
-  searchHidden = !searchHidden;
-  searchType.dataset.hidden = (+searchHidden).toString();
-}
-
-// Init styles
-searchButton.innerHTML = firstOption.innerHTML;
-searchButton.classList.add(
-  firstOption.className.match("search__option--[a-z]+")![0]
-);
-searchType.dataset.value = "0";
-firstOption.classList.add("search__option--hidden");
-searchToggle();
-
-// Toggle when clicked on button
-searchType.addEventListener("click", (e: Event) => {
-  if (getPath(e).indexOf(searchButton) !== -1) {
-    searchToggle();
-  }
-});
-
-// Select options
-searchOptions.addEventListener("click", (e: Event) => {
-  getPath(e).forEach((target: HTMLElement) => {
-    if (target.matches(".search__option")) {
-      let lastOption: HTMLElement = searchOptions.children[
-        +searchType.dataset.value!
-      ] as HTMLElement;
-
-      lastOption.classList.remove("search__option--hidden");
-      searchButton.classList.remove(
-        lastOption.className.match("search__option--[a-z]+")![0]
-      );
-
-      searchButton.innerHTML = target.innerHTML;
-      searchButton.classList.add(
-        target.className.match("search__option--[a-z]+")![0]
-      );
-      target.classList.add("search__option--hidden");
-      searchType.dataset.value = [...searchOptions.children]
-        .indexOf(target)!
-        .toString();
-    }
-    searchToggle();
-  });
-});
-
-// Hide if clicked outside
-window.addEventListener("click", (e: Event) => {
-  if (getPath(e).indexOf(searchType) === -1 && !searchHidden) searchToggle();
-});
-
-//
 // Create DOM Elements
 //
 type Stats = [number, number, number, number, number, number];
@@ -283,90 +210,115 @@ function makeCard(pokemon: Pokemon): HTMLElement {
 }
 
 //
-// Search function
+// Preload Content
 //
+let loading: HTMLElement = document.querySelector(".loading")!;
+let loadingBar: HTMLElement = loading.querySelector(".loading__bar-fill")!;
+let loadingBarLength: number = 0;
+let search: HTMLElement = document.querySelector(".search")!;
+
 interface SearchIndex {
   pokemon: { [name: string]: number[] };
 }
-let searchText = document.querySelector(".search__text")! as HTMLInputElement;
 let searchIndex: SearchIndex;
-let foundIndex: number[] = [];
-let foundIndexOld: number[] = [];
-let pokemonData: Pokemon[];
-let pokemonCards: (HTMLElement | 0)[];
-let main: HTMLElement = document.querySelector("main")!;
-let frag: DocumentFragment = document.createDocumentFragment();
+let pokemonData: Pokemon[] = [];
+let pokemonCards: HTMLElement[] = [];
 
-// Try to preload the data
 (async () => {
-  const search = await fetch("sources/search.json");
-  searchIndex = await search.json();
   const data = await fetch("sources/unbound.json");
   pokemonData = await data.json();
+  requestAnimationFrame(() => {
+    loadingBar.style.transform = `scale(${(loadingBarLength += 5)}%, 100%)`;
+  });
+  setTimeout(function createCards() {
+    pokemonCards.push(makeCard(pokemonData[pokemonCards.length]));
+    requestAnimationFrame(() => {
+      loadingBar.style.transform = `scale(${(loadingBarLength +=
+        90 / pokemonData.length)}%, 100%)`;
+    });
+    if (pokemonCards.length != pokemonData.length) {
+      setTimeout(createCards, 0);
+    } else {
+      loading.classList.add("loading--hidden");
+      search.classList.remove("search--hidden");
+    }
+  }, 0);
+  const index = await fetch("sources/search.json");
+  searchIndex = await index.json();
+  requestAnimationFrame(() => {
+    loadingBar.style.transform = `scale(${(loadingBarLength += 5)}%, 100%)`;
+  });
 })();
 
-searchText.addEventListener("input", async (e) => {
-  if (searchText.value.length >= 3) {
-    if (!searchIndex) {
-      const res = await fetch("sources/search.json");
-      searchIndex = await res.json();
-    }
-    foundIndex = [];
-    for (let name in searchIndex.pokemon) {
-      if (name.match(new RegExp(`${searchText.value}`, "i"))) {
-        foundIndex.push(...searchIndex.pokemon[name]);
-      }
-    }
-    foundIndex.sort((a, b) => a - b);
+//
+// Search Dropdown
+//
+let searchType: HTMLElement = document.querySelector(".search__type")!;
+let searchButton: HTMLElement = searchType.querySelector(".search__button")!;
+let searchOptions: HTMLElement = searchType.querySelector(".search__options")!;
+let firstOption: HTMLElement = searchOptions.querySelector(".search__option")!;
+let searchHidden: boolean = false;
 
-    if (!pokemonData) {
-      const res = await fetch("sources/unbound.json");
-      pokemonData = await res.json();
-    }
-    if (!pokemonCards) {
-      pokemonCards = Array.apply(null, Array(pokemonData.length)) as 0[];
-    }
-
-    foundIndexOld
-      .filter((n) => !foundIndex.includes(n))
-      .forEach((id) => {
-        if (pokemonCards[id]) (<HTMLElement>pokemonCards[id]).remove();
-      });
-
-    if (foundIndex.length > foundIndexOld.length) {
-      foundIndex.forEach((id) => {
-        if (!pokemonCards[id]) {
-          let card = makeCard(pokemonData[id]);
-          pokemonCards[id] = card;
-          frag.appendChild(card);
-          card
-            .querySelector(".pokemon__moves-header")!
-            .addEventListener("click", () => {
-              let movesAll = card.querySelector(
-                ".pokemon__moves-all"
-              )! as HTMLElement;
-              let movesIcon = card.querySelector(
-                ".pokemon__moves-icon"
-              )! as HTMLElement;
-              if (!movesAll.style.maxHeight) {
-                movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
-                movesIcon.classList.add("pokemon__moves-icon--flip");
-              } else {
-                movesAll.style.maxHeight = "";
-                movesIcon.classList.remove("pokemon__moves-icon--flip");
-              }
-            });
-        } else {
-          frag.appendChild(<HTMLElement>pokemonCards[id]);
-        }
-      });
-      main.appendChild(frag);
-    }
-  } else if (pokemonCards) {
-    foundIndexOld.forEach((id) => {
-      if (pokemonCards[id]) (<HTMLElement>pokemonCards[id]).remove();
-    });
-    foundIndex = [];
+function getPath(e: Event) {
+  let r: HTMLElement[] = [];
+  let t: HTMLElement | null = e.target as HTMLElement;
+  while (t) {
+    r.push(t);
+    t = t.parentElement;
   }
-  foundIndexOld = foundIndex;
+  return r;
+}
+
+function searchToggle() {
+  searchOptions.classList.toggle("search__options--hidden");
+  searchButton.classList.toggle("search__button--closed");
+  searchHidden = !searchHidden;
+  searchType.dataset.hidden = (+searchHidden).toString();
+}
+
+// Init styles
+searchButton.innerHTML = firstOption.innerHTML;
+searchButton.classList.add(
+  firstOption.className.match("search__option--[a-z]+")![0]
+);
+searchType.dataset.value = "0";
+firstOption.classList.add("search__option--hidden");
+searchToggle();
+
+// Toggle when clicked on button
+searchType.addEventListener("click", (e: Event) => {
+  if (getPath(e).indexOf(searchButton) !== -1) {
+    searchToggle();
+  }
+});
+
+// Select options
+searchOptions.addEventListener("click", (e: Event) => {
+  getPath(e).forEach((target: HTMLElement) => {
+    if (target.matches(".search__option")) {
+      let lastOption: HTMLElement = searchOptions.children[
+        +searchType.dataset.value!
+      ] as HTMLElement;
+
+      lastOption.classList.remove("search__option--hidden");
+      searchButton.classList.remove(
+        lastOption.className.match("search__option--[a-z]+")![0]
+      );
+
+      searchButton.innerHTML = target.innerHTML;
+      searchButton.classList.add(
+        target.className.match("search__option--[a-z]+")![0]
+      );
+      target.classList.add("search__option--hidden");
+      searchType.dataset.value = [...searchOptions.children]
+        .indexOf(target)!
+        .toString();
+    }
+    searchToggle();
+  });
+});
+
+// Hide if clicked outside
+window.addEventListener("click", (e: Event) => {
+  if (getPath(e).indexOf(searchType) === -1 && !searchHidden) searchToggle();
 });

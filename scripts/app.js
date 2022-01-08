@@ -1,54 +1,4 @@
 "use strict";
-let searchType = document.querySelector(".search__type");
-let searchButton = searchType.querySelector(".search__button");
-let searchOptions = searchType.querySelector(".search__options");
-let firstOption = searchOptions.querySelector(".search__option");
-let searchHidden = false;
-function getPath(e) {
-    let r = [];
-    let t = e.target;
-    while (t) {
-        r.push(t);
-        t = t.parentElement;
-    }
-    return r;
-}
-function searchToggle() {
-    searchOptions.classList.toggle("search__options--hidden");
-    searchButton.classList.toggle("search__button--closed");
-    searchHidden = !searchHidden;
-    searchType.dataset.hidden = (+searchHidden).toString();
-}
-searchButton.innerHTML = firstOption.innerHTML;
-searchButton.classList.add(firstOption.className.match("search__option--[a-z]+")[0]);
-searchType.dataset.value = "0";
-firstOption.classList.add("search__option--hidden");
-searchToggle();
-searchType.addEventListener("click", (e) => {
-    if (getPath(e).indexOf(searchButton) !== -1) {
-        searchToggle();
-    }
-});
-searchOptions.addEventListener("click", (e) => {
-    getPath(e).forEach((target) => {
-        if (target.matches(".search__option")) {
-            let lastOption = searchOptions.children[+searchType.dataset.value];
-            lastOption.classList.remove("search__option--hidden");
-            searchButton.classList.remove(lastOption.className.match("search__option--[a-z]+")[0]);
-            searchButton.innerHTML = target.innerHTML;
-            searchButton.classList.add(target.className.match("search__option--[a-z]+")[0]);
-            target.classList.add("search__option--hidden");
-            searchType.dataset.value = [...searchOptions.children]
-                .indexOf(target)
-                .toString();
-        }
-        searchToggle();
-    });
-});
-window.addEventListener("click", (e) => {
-    if (getPath(e).indexOf(searchType) === -1 && !searchHidden)
-        searchToggle();
-});
 let statsName = ["HP", "Atk", "Def", "SpA", "SpD", "Spe"];
 let statsLongName = [
     "HP",
@@ -197,80 +147,86 @@ function makeCard(pokemon) {
     }
     return section;
 }
-let searchText = document.querySelector(".search__text");
+let loading = document.querySelector(".loading");
+let loadingBar = loading.querySelector(".loading__bar-fill");
+let loadingBarLength = 0;
+let search = document.querySelector(".search");
 let searchIndex;
-let foundIndex = [];
-let foundIndexOld = [];
-let pokemonData;
-let pokemonCards;
-let main = document.querySelector("main");
-let frag = document.createDocumentFragment();
+let pokemonData = [];
+let pokemonCards = [];
 (async () => {
-    const search = await fetch("sources/search.json");
-    searchIndex = await search.json();
     const data = await fetch("sources/unbound.json");
     pokemonData = await data.json();
+    requestAnimationFrame(() => {
+        loadingBar.style.transform = `scale(${(loadingBarLength += 5)}%, 100%)`;
+    });
+    setTimeout(function createCards() {
+        pokemonCards.push(makeCard(pokemonData[pokemonCards.length]));
+        requestAnimationFrame(() => {
+            loadingBar.style.transform = `scale(${(loadingBarLength +=
+                90 / pokemonData.length)}%, 100%)`;
+        });
+        if (pokemonCards.length != pokemonData.length) {
+            setTimeout(createCards, 0);
+        }
+        else {
+            loading.classList.add("loading--hidden");
+            search.classList.remove("search--hidden");
+        }
+    }, 0);
+    const index = await fetch("sources/search.json");
+    searchIndex = await index.json();
+    requestAnimationFrame(() => {
+        loadingBar.style.transform = `scale(${(loadingBarLength += 5)}%, 100%)`;
+    });
 })();
-searchText.addEventListener("input", async (e) => {
-    if (searchText.value.length >= 3) {
-        if (!searchIndex) {
-            const res = await fetch("sources/search.json");
-            searchIndex = await res.json();
-        }
-        foundIndex = [];
-        for (let name in searchIndex.pokemon) {
-            if (name.match(new RegExp(`${searchText.value}`, "i"))) {
-                foundIndex.push(...searchIndex.pokemon[name]);
-            }
-        }
-        foundIndex.sort((a, b) => a - b);
-        if (!pokemonData) {
-            const res = await fetch("sources/unbound.json");
-            pokemonData = await res.json();
-        }
-        if (!pokemonCards) {
-            pokemonCards = Array.apply(null, Array(pokemonData.length));
-        }
-        foundIndexOld
-            .filter((n) => !foundIndex.includes(n))
-            .forEach((id) => {
-            if (pokemonCards[id])
-                pokemonCards[id].remove();
-        });
-        if (foundIndex.length > foundIndexOld.length) {
-            foundIndex.forEach((id) => {
-                if (!pokemonCards[id]) {
-                    let card = makeCard(pokemonData[id]);
-                    pokemonCards[id] = card;
-                    frag.appendChild(card);
-                    card
-                        .querySelector(".pokemon__moves-header")
-                        .addEventListener("click", () => {
-                        let movesAll = card.querySelector(".pokemon__moves-all");
-                        let movesIcon = card.querySelector(".pokemon__moves-icon");
-                        if (!movesAll.style.maxHeight) {
-                            movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
-                            movesIcon.classList.add("pokemon__moves-icon--flip");
-                        }
-                        else {
-                            movesAll.style.maxHeight = "";
-                            movesIcon.classList.remove("pokemon__moves-icon--flip");
-                        }
-                    });
-                }
-                else {
-                    frag.appendChild(pokemonCards[id]);
-                }
-            });
-            main.appendChild(frag);
-        }
+let searchType = document.querySelector(".search__type");
+let searchButton = searchType.querySelector(".search__button");
+let searchOptions = searchType.querySelector(".search__options");
+let firstOption = searchOptions.querySelector(".search__option");
+let searchHidden = false;
+function getPath(e) {
+    let r = [];
+    let t = e.target;
+    while (t) {
+        r.push(t);
+        t = t.parentElement;
     }
-    else if (pokemonCards) {
-        foundIndexOld.forEach((id) => {
-            if (pokemonCards[id])
-                pokemonCards[id].remove();
-        });
-        foundIndex = [];
+    return r;
+}
+function searchToggle() {
+    searchOptions.classList.toggle("search__options--hidden");
+    searchButton.classList.toggle("search__button--closed");
+    searchHidden = !searchHidden;
+    searchType.dataset.hidden = (+searchHidden).toString();
+}
+searchButton.innerHTML = firstOption.innerHTML;
+searchButton.classList.add(firstOption.className.match("search__option--[a-z]+")[0]);
+searchType.dataset.value = "0";
+firstOption.classList.add("search__option--hidden");
+searchToggle();
+searchType.addEventListener("click", (e) => {
+    if (getPath(e).indexOf(searchButton) !== -1) {
+        searchToggle();
     }
-    foundIndexOld = foundIndex;
+});
+searchOptions.addEventListener("click", (e) => {
+    getPath(e).forEach((target) => {
+        if (target.matches(".search__option")) {
+            let lastOption = searchOptions.children[+searchType.dataset.value];
+            lastOption.classList.remove("search__option--hidden");
+            searchButton.classList.remove(lastOption.className.match("search__option--[a-z]+")[0]);
+            searchButton.innerHTML = target.innerHTML;
+            searchButton.classList.add(target.className.match("search__option--[a-z]+")[0]);
+            target.classList.add("search__option--hidden");
+            searchType.dataset.value = [...searchOptions.children]
+                .indexOf(target)
+                .toString();
+        }
+        searchToggle();
+    });
+});
+window.addEventListener("click", (e) => {
+    if (getPath(e).indexOf(searchType) === -1 && !searchHidden)
+        searchToggle();
 });

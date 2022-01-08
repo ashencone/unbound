@@ -33,8 +33,67 @@ main {
   background: var(--white);
 }
 
+.loading {
+  position: relative;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+}
+
+.loading__bar-blank {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  background: var(--grey);
+
+  z-index: 1;
+}
+
+.loading__bar-fill {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  background: hsl(185, 100%, 80%);
+
+  transform: scale(0%, 100%);
+  transform-origin: left;
+  transition: transform 200ms ease;
+
+  z-index: 2;
+}
+
+.loading__text {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(185, 100%, 30%);
+  text-align: center;
+  line-height: 2.5rem;
+
+  z-index: 3;
+}
+
+.loading--hidden {
+  display: none;
+}
+
 .search {
   display: flex;
+}
+
+.search--hidden {
+  display: none;
 }
 
 .search__type {
