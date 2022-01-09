@@ -69,97 +69,143 @@ function makeCard(pokemon: Pokemon): HTMLElement {
   }
 
   // Data
-  let divStats = document.createElement("div");
-  divData.appendChild(divStats).className = "pokemon__stats";
+  let tableStats = document.createElement("table");
+  divData.appendChild(tableStats).className = "pokemon__stats";
 
   pokemon.baseStats.forEach((stat, id) => {
-    let spanStatName = document.createElement("span");
-    divStats.appendChild(spanStatName).className = "pokemon__stat-name";
-    spanStatName.textContent = statsName[id];
+    let trStat = document.createElement("tr");
+    tableStats.appendChild(trStat);
 
-    let spanStatValue = document.createElement("span");
-    divStats.appendChild(spanStatValue).className = "pokemon__stat-value";
-    spanStatValue.textContent = stat.toString();
+    let tdStatName = document.createElement("td");
+    trStat.appendChild(tdStatName).className = "pokemon__stat-name";
+    tdStatName.textContent = statsName[id];
+
+    let tdStatValue = document.createElement("td");
+    trStat.appendChild(tdStatValue).className = "pokemon__stat-value";
+    tdStatValue.textContent = stat.toString();
+
+    let tdStatBar = document.createElement("td");
+    trStat.appendChild(tdStatBar);
 
     let spanStatBar = document.createElement("span");
-    divStats.appendChild(spanStatBar).className = "pokemon__stat-bar";
-    spanStatBar.className += ` pokemon__stat-bar--${Math.floor(
+    tdStatBar.appendChild(spanStatBar);
+    spanStatBar.className = `pokemon__stat-bar pokemon__stat-bar--${Math.floor(
       (clamp(stat, 10, 110) - 10) / 20
     )}`;
     spanStatBar.style.width = `${clamp(stat, 25, 120) - 20}%`;
   });
 
-  let divInfo = document.createElement("div");
-  divData.appendChild(divInfo).className = "pokemon__info";
+  let tableInfo = document.createElement("table");
+  divData.appendChild(tableInfo).className = "pokemon__info";
 
-  let spanAbilityName = document.createElement("span");
-  divInfo.appendChild(spanAbilityName).className = "pokemon__info-prop";
-  spanAbilityName.textContent = "Ability";
+  let trAbility1 = document.createElement("tr");
+  tableInfo.appendChild(trAbility1);
 
-  let spanAbility1 = document.createElement("span");
-  divInfo.appendChild(spanAbility1).className = "pokemon__info-value";
-  spanAbility1.textContent = pokemon.ability[0];
+  let tdAbilityName = document.createElement("td");
+  trAbility1.appendChild(tdAbilityName).className = "pokemon__info-prop";
+  tdAbilityName.textContent = "Ability";
 
-  if (
-    pokemon.ability[1] != strNull &&
-    pokemon.ability[1] != pokemon.ability[0]
-  ) {
-    let spanAbility2 = document.createElement("span");
-    divInfo.appendChild(spanAbility2).className = "pokemon__info-value";
-    spanAbility2.textContent = pokemon.ability[1];
+  let tdAbility1 = document.createElement("td");
+  trAbility1.appendChild(tdAbility1).className = "pokemon__info-value";
+  tdAbility1.textContent = pokemon.ability[0];
+
+  if (pokemon.ability[1] != strNull) {
+    let trAbility2 = document.createElement("tr");
+    tableInfo.appendChild(trAbility2);
+
+    tdAbilityName.rowSpan = 2;
+
+    let tdAbility2 = document.createElement("td");
+    trAbility2.appendChild(tdAbility2).className = "pokemon__info-value";
+    tdAbility2.textContent = pokemon.ability[1];
   }
 
   if (pokemon.hiddenAbility != strNull) {
-    let spanHAbilityName = document.createElement("span");
-    divInfo.appendChild(spanHAbilityName).className = "pokemon__info-prop";
-    spanHAbilityName.textContent = "Hidden Ability";
+    let trHAbility = document.createElement("tr");
+    tableInfo.appendChild(trHAbility);
 
-    let spanHAbilityValue = document.createElement("span");
-    divInfo.appendChild(spanHAbilityValue).className = "pokemon__info-value";
-    spanHAbilityValue.textContent = pokemon.hiddenAbility;
+    let tdHAbilityName = document.createElement("td");
+    trHAbility.appendChild(tdHAbilityName).className = "pokemon__info-prop";
+    tdHAbilityName.textContent = "Hidden Ability";
+
+    let tdHAbilityValue = document.createElement("td");
+    trHAbility.appendChild(tdHAbilityValue).className = "pokemon__info-value";
+    tdHAbilityValue.textContent = pokemon.hiddenAbility;
   }
 
   if (pokemon.item[0] != strNull || pokemon.item[1] != strNull) {
-    let spanHItemName = document.createElement("span");
-    divInfo.appendChild(spanHItemName).className = "pokemon__info-prop";
-    spanHItemName.textContent = "Held Item";
+    let trItems1 = document.createElement("tr");
+    tableInfo.appendChild(trItems1);
+
+    let tdHItemName = document.createElement("td");
+    trItems1.appendChild(tdHItemName).className = "pokemon__info-prop";
+    tdHItemName.textContent = "Held Item";
 
     if (pokemon.item[0] != strNull) {
-      let spanItem1 = document.createElement("span");
-      divInfo.appendChild(spanItem1).className = "pokemon__info-value";
-      spanItem1.textContent = pokemon.item[0];
+      let tdItem1 = document.createElement("td");
+      trItems1.appendChild(tdItem1).className = "pokemon__info-value";
+      tdItem1.textContent = pokemon.item[0];
     }
 
     if (pokemon.item[1] != strNull) {
-      let spanItem2 = document.createElement("span");
-      divInfo.appendChild(spanItem2).className = "pokemon__info-value";
-      spanItem2.textContent = pokemon.item[1];
+      let tdItem2 = document.createElement("td");
+      tdItem2.className = "pokemon__info-value";
+      tdItem2.textContent = pokemon.item[1];
+      if (pokemon.item[0] == strNull) {
+        trItems1.appendChild(tdItem2);
+      } else {
+        let trItems2 = document.createElement("tr");
+        tableInfo.appendChild(trItems2);
+
+        tdHItemName.rowSpan = 2;
+
+        trItems2.appendChild(tdItem2);
+      }
     }
   }
 
-  let spanEGroupName = document.createElement("span");
-  divInfo.appendChild(spanEGroupName).className = "pokemon__info-prop";
-  spanEGroupName.textContent = "Egg Group";
+  let trEGroup1 = document.createElement("tr");
+  tableInfo.appendChild(trEGroup1);
 
-  let spanGroup1 = document.createElement("span");
-  divInfo.appendChild(spanGroup1).className = "pokemon__info-value";
-  spanGroup1.textContent = pokemon.eggGroup[0];
+  let tdEGroupName = document.createElement("td");
+  trEGroup1.appendChild(tdEGroupName).className = "pokemon__info-prop";
+  tdEGroupName.textContent = "Egg Group";
+
+  let tdGroup1 = document.createElement("td");
+  trEGroup1.appendChild(tdGroup1).className = "pokemon__info-value";
+  tdGroup1.textContent = pokemon.eggGroup[0];
 
   if (pokemon.eggGroup[1] != pokemon.eggGroup[0]) {
-    let spanGroup2 = document.createElement("span");
-    divInfo.appendChild(spanGroup2).className = "pokemon__info-value";
-    spanGroup2.textContent = pokemon.eggGroup[1];
+    let trEGroup2 = document.createElement("tr");
+    tableInfo.appendChild(trEGroup2);
+
+    tdEGroupName.rowSpan = 2;
+
+    let tdGroup2 = document.createElement("td");
+    trEGroup2.appendChild(tdGroup2).className = "pokemon__info-value";
+    tdGroup2.textContent = pokemon.eggGroup[1];
   }
 
-  let spanEVYieldName = document.createElement("span");
-  divInfo.appendChild(spanEVYieldName).className = "pokemon__info-prop";
-  spanEVYieldName.textContent = "EV Yield";
+  let trEvYield = document.createElement("tr");
+  tableInfo.appendChild(trEvYield);
+
+  let tdEVYieldName = document.createElement("td");
+  trEvYield.appendChild(tdEVYieldName).className = "pokemon__info-prop";
+  tdEVYieldName.textContent = "EV Yield";
+
+  let evYieldRowspan = 0;
 
   pokemon.evYield.forEach((ev, id) => {
     if (ev) {
-      let spanEV = document.createElement("span");
-      divInfo.appendChild(spanEV).className = "pokemon__info-value";
-      spanEV.textContent = `${ev} ${statsLongName[id]}`;
+      if (++evYieldRowspan > 1) {
+        trEvYield = document.createElement("tr");
+        tableInfo.appendChild(trEvYield);
+        tdEVYieldName.rowSpan = evYieldRowspan;
+      }
+
+      let tdEvGain = document.createElement("td");
+      trEvYield.appendChild(tdEvGain).className = "pokemon__info-value";
+      tdEvGain.textContent = `${ev} ${statsLongName[id]}`;
     }
   });
 
@@ -176,35 +222,50 @@ function makeCard(pokemon: Pokemon): HTMLElement {
     "ai-chevron-down pokemon__moves-icon";
 
   let divMovesAll = document.createElement("div");
-  divMoves.appendChild(divMovesAll).className = "pokemon__moves-all";
+  divMoves.appendChild(divMovesAll).className = "pokemon__moves-data";
 
-  if (pokemon.levelUpMoves.length) {
-    let h4LevelMovesName = document.createElement("h4");
-    divMovesAll.appendChild(h4LevelMovesName).className =
-      "pokemon__lv-moves-header";
-    h4LevelMovesName.textContent = "Level-up Moves";
+  let tableMovesTable = document.createElement("table");
+  divMovesAll.appendChild(tableMovesTable).className = "pokemon__moves-table";
 
-    pokemon.levelUpMoves.forEach(([lv, move]) => {
-      let spanLevel = document.createElement("span");
-      divMovesAll.appendChild(spanLevel).className = "pokemon__lv-move-lv";
-      spanLevel.textContent = lv.toString();
-      let spanMove = document.createElement("span");
-      divMovesAll.appendChild(spanMove).className = "pokemon__lv-move-name";
-      spanMove.textContent = move;
-    });
-  }
+  let trMovesHeader = document.createElement("tr");
+  tableMovesTable.appendChild(trMovesHeader);
 
-  if (pokemon.eggMoves.length) {
-    let h4EggMovesName = document.createElement("h4");
-    divMovesAll.appendChild(h4EggMovesName).className =
-      "pokemon__egg-moves-header";
-    h4EggMovesName.textContent = "Egg Moves";
+  let thLevelUpMoves = document.createElement("th");
+  trMovesHeader.appendChild(thLevelUpMoves).className =
+    "pokemon__moves-title-level";
+  thLevelUpMoves.colSpan = 2;
+  thLevelUpMoves.textContent = "Level-up Moves";
 
-    pokemon.eggMoves.forEach((move) => {
-      let spanMove = document.createElement("span");
-      divMovesAll.appendChild(spanMove).className = "pokemon__egg-move-name";
-      spanMove.textContent = move;
-    });
+  let thEggMoves = document.createElement("th");
+  trMovesHeader.appendChild(thEggMoves).className = "pokemon__moves-title-egg";
+  thEggMoves.textContent = "Egg Moves";
+
+  let maxMoves = Math.max(pokemon.levelUpMoves.length, pokemon.eggMoves.length);
+
+  for (let id = 0; id < maxMoves; id++) {
+    let trMove = document.createElement("tr");
+    tableMovesTable.appendChild(trMove);
+
+    if (pokemon.levelUpMoves[id]) {
+      let tdMoveLevel = document.createElement("td");
+      trMove.appendChild(tdMoveLevel).className = "pokemon__move-level";
+      tdMoveLevel.textContent = pokemon.levelUpMoves[id][0].toString();
+
+      let tdMoveName = document.createElement("td");
+      trMove.appendChild(tdMoveName).className = "pokemon__move-level-name";
+      tdMoveName.textContent = pokemon.levelUpMoves[id][1];
+    } else {
+      trMove.appendChild(document.createElement("td"));
+      trMove.appendChild(document.createElement("td"));
+    }
+
+    if (pokemon.eggMoves[id]) {
+      let tdMoveEggName = document.createElement("td");
+      trMove.appendChild(tdMoveEggName).className = "pokemon__move-egg-name";
+      tdMoveEggName.textContent = pokemon.eggMoves[id];
+    } else {
+      trMove.appendChild(document.createElement("td"));
+    }
   }
   return section;
 }
@@ -331,7 +392,7 @@ let foundIndex: number[] = [];
 let foundIndexOld: number[] = [];
 let fragment = document.createDocumentFragment();
 let main: HTMLElement = document.querySelector("main")!;
-let movesAll: HTMLElement;
+let movesData: HTMLElement;
 let movesIcon: HTMLElement;
 
 searchText.addEventListener("input", () => {
@@ -352,16 +413,16 @@ searchText.addEventListener("input", () => {
         pokemonCards[id]
           .querySelector(".pokemon__moves-header")!
           .addEventListener("click", () => {
-            movesAll = pokemonCards[id].querySelector(".pokemon__moves-all")!;
+            movesData = pokemonCards[id].querySelector(".pokemon__moves-data")!;
             movesIcon = pokemonCards[id].querySelector(".pokemon__moves-icon")!;
-            if (movesAll.dataset.visible != "1") {
-              movesAll.style.maxHeight = `${movesAll.scrollHeight}px`;
+            if (movesData.dataset.visible != "1") {
+              movesData.style.maxHeight = `${movesData.scrollHeight}px`;
               movesIcon.style.transform = "rotate(180deg)";
-              movesAll.dataset.visible = "1";
+              movesData.dataset.visible = "1";
             } else {
-              movesAll.style.maxHeight = "";
+              movesData.style.maxHeight = "";
               movesIcon.style.transform = "";
-              movesAll.dataset.visible = "0";
+              movesData.dataset.visible = "0";
             }
           });
       });
