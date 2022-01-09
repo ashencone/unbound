@@ -345,7 +345,9 @@ int main(int argc, char **argv)
 
             for (j = 0, found_pokemon_length = 0; j < NUM_SPECIES; j++) {
                 if (!strncmp(name_index, string_pokemon[j], 32)) {
-                    found_pokemon[found_pokemon_length++] = j;  // Found every index with the pokemon
+                    if (gBaseStats[j].baseHP) { // Check whether pokemon has data before adding
+                        found_pokemon[found_pokemon_length++] = j;  // Found every index with the pokemon
+                    }
                 }
             }
             snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", i ? ",\n":"", name_index);
