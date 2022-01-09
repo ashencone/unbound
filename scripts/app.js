@@ -283,6 +283,7 @@ window.addEventListener("click", (e) => {
 let searchText = document.querySelector(".search__text");
 let foundIndex = [];
 let foundIndexOld = [];
+let eventAttached = Array(2048);
 let fragment = document.createDocumentFragment();
 let main = document.querySelector("main");
 let movesData;
@@ -300,23 +301,26 @@ searchText.addEventListener("input", () => {
         if (foundIndex.length > foundIndexOld.length) {
             foundIndex.forEach((id) => {
                 fragment.appendChild(pokemonCards[id]);
-                (pokemonCards[id].querySelector(".pokemon__img")).src = `images/${id}.png`;
-                pokemonCards[id]
-                    .querySelector(".pokemon__moves-header")
-                    .addEventListener("click", () => {
-                    movesData = pokemonCards[id].querySelector(".pokemon__moves-data");
-                    movesIcon = pokemonCards[id].querySelector(".pokemon__moves-icon");
-                    if (movesData.dataset.visible != "1") {
-                        movesData.style.maxHeight = `${movesData.scrollHeight}px`;
-                        movesIcon.style.transform = "rotate(180deg)";
-                        movesData.dataset.visible = "1";
-                    }
-                    else {
-                        movesData.style.maxHeight = "";
-                        movesIcon.style.transform = "";
-                        movesData.dataset.visible = "0";
-                    }
-                });
+                if (!eventAttached[id]) {
+                    (pokemonCards[id].querySelector(".pokemon__img")).src = `images/${id}.png`;
+                    pokemonCards[id]
+                        .querySelector(".pokemon__moves-header")
+                        .addEventListener("click", () => {
+                        movesData = pokemonCards[id].querySelector(".pokemon__moves-data");
+                        movesIcon = pokemonCards[id].querySelector(".pokemon__moves-icon");
+                        if (movesData.dataset.visible != "1") {
+                            movesData.style.maxHeight = `${movesData.scrollHeight}px`;
+                            movesIcon.style.transform = "rotate(180deg)";
+                            movesData.dataset.visible = "1";
+                        }
+                        else {
+                            movesData.style.maxHeight = "";
+                            movesIcon.style.transform = "";
+                            movesData.dataset.visible = "0";
+                        }
+                    });
+                    eventAttached[id] = true;
+                }
             });
             main.appendChild(fragment);
         }
