@@ -16,6 +16,9 @@ dpe: sources/DPE
 cfru: sources/CFRU
 	(cd sources/CFRU/ && git clean -fd && git fetch origin master && git reset --hard origin/master)
 
+images: sources/DPE
+	(cd sources && python3 parse_sprite.py)
+
 sources/DPE:
 	git clone -b Unbound --single-branch https://github.com/Skeli789/Dynamic-Pokemon-Expansion.git sources/DPE/
 

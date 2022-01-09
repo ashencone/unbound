@@ -52,21 +52,27 @@ function makeCard(pokemon: Pokemon): HTMLElement {
   section.appendChild(divMoves).className = "pokemon__moves";
 
   // Title
+  let divTitleData = document.createElement("div");
+  divTitle.appendChild(divTitleData).className = "pokemon__title-data";
+
   let spanTitle = document.createElement("span");
-  divTitle.appendChild(spanTitle).className = "pokemon__name";
+  divTitleData.appendChild(spanTitle).className = "pokemon__name";
   spanTitle.textContent = pokemon.name;
 
   let spanType1 = document.createElement("span");
-  divTitle.appendChild(spanType1).className = "pokemon__type";
+  divTitleData.appendChild(spanType1).className = "pokemon__type";
   spanType1.className += ` pokemon__type--${pokemon.type[0].toLowerCase()}`;
   spanType1.textContent = pokemon.type[0];
 
   if (pokemon.type[0] != pokemon.type[1]) {
     let spanType2 = document.createElement("span");
-    divTitle.appendChild(spanType2).className = "pokemon__type";
+    divTitleData.appendChild(spanType2).className = "pokemon__type";
     spanType2.className += ` pokemon__type--${pokemon.type[1].toLowerCase()}`;
     spanType2.textContent = pokemon.type[1];
   }
+
+  let imgPokemon = document.createElement("img");
+  divTitle.appendChild(imgPokemon).className = "pokemon__img";
 
   // Data
   let tableStats = document.createElement("table");
@@ -410,6 +416,11 @@ searchText.addEventListener("input", () => {
     if (foundIndex.length > foundIndexOld.length) {
       foundIndex.forEach((id) => {
         fragment.appendChild(pokemonCards[id]);
+
+        (<HTMLImageElement>(
+          pokemonCards[id].querySelector(".pokemon__img")!
+        )).src = `images/${id}.png`;
+
         pokemonCards[id]
           .querySelector(".pokemon__moves-header")!
           .addEventListener("click", () => {
