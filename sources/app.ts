@@ -52,27 +52,28 @@ function makeCard(pokemon: Pokemon): HTMLElement {
   section.appendChild(divMoves).className = "pokemon__moves";
 
   // Title
-  let divTitleData = document.createElement("div");
-  divTitle.appendChild(divTitleData).className = "pokemon__title-data";
+  let imgPokemon = document.createElement("img");
+  divTitle.appendChild(imgPokemon).className = "pokemon__img";
 
   let spanTitle = document.createElement("span");
-  divTitleData.appendChild(spanTitle).className = "pokemon__name";
+  divTitle.appendChild(spanTitle).className = "pokemon__name";
   spanTitle.textContent = pokemon.name;
 
+  if (pokemon.type[0] == pokemon.type[1]) {
+    divTitle.appendChild(document.createElement("span"));
+  }
+
   let spanType1 = document.createElement("span");
-  divTitleData.appendChild(spanType1).className = "pokemon__type";
+  divTitle.appendChild(spanType1).className = "pokemon__type";
   spanType1.className += ` pokemon__type--${pokemon.type[0].toLowerCase()}`;
   spanType1.textContent = pokemon.type[0];
 
   if (pokemon.type[0] != pokemon.type[1]) {
     let spanType2 = document.createElement("span");
-    divTitleData.appendChild(spanType2).className = "pokemon__type";
+    divTitle.appendChild(spanType2).className = "pokemon__type";
     spanType2.className += ` pokemon__type--${pokemon.type[1].toLowerCase()}`;
     spanType2.textContent = pokemon.type[1];
   }
-
-  let imgPokemon = document.createElement("img");
-  divTitle.appendChild(imgPokemon).className = "pokemon__img";
 
   // Data
   let tableStats = document.createElement("table");
@@ -401,6 +402,7 @@ let fragment = document.createDocumentFragment();
 let main: HTMLElement = document.querySelector("main")!;
 let movesData: HTMLElement;
 let movesIcon: HTMLElement;
+let mediaDesktop: MediaQueryList = window.matchMedia("(min-width: 576px)");
 
 searchText.addEventListener("input", () => {
   foundIndexOld = foundIndex;
@@ -423,26 +425,31 @@ searchText.addEventListener("input", () => {
             pokemonCards[id].querySelector(".pokemon__img")!
           )).src = `images/${id}.png`;
 
-          pokemonCards[id]
-            .querySelector(".pokemon__moves-header")!
-            .addEventListener("click", () => {
-              movesData = pokemonCards[id].querySelector(
-                ".pokemon__moves-data"
-              )!;
-              movesIcon = pokemonCards[id].querySelector(
-                ".pokemon__moves-icon"
-              )!;
-              if (movesData.dataset.visible != "1") {
-                movesData.style.maxHeight = `${movesData.scrollHeight}px`;
-                movesIcon.style.transform = "rotate(180deg)";
-                movesData.dataset.visible = "1";
-              } else {
-                movesData.style.maxHeight = "";
-                movesIcon.style.transform = "";
-                movesData.dataset.visible = "0";
-              }
-            });
-
+          if (mediaDesktop.matches) {
+            (<HTMLElement>(
+              pokemonCards[id].querySelector(".pokemon__moves-header")!
+            )).style.display = "none";
+          } else {
+            pokemonCards[id]
+              .querySelector(".pokemon__moves-header")!
+              .addEventListener("click", () => {
+                movesData = pokemonCards[id].querySelector(
+                  ".pokemon__moves-data"
+                )!;
+                movesIcon = pokemonCards[id].querySelector(
+                  ".pokemon__moves-icon"
+                )!;
+                if (movesData.dataset.visible != "1") {
+                  movesData.style.maxHeight = `${movesData.scrollHeight}px`;
+                  movesIcon.style.transform = "rotate(180deg)";
+                  movesData.dataset.visible = "1";
+                } else {
+                  movesData.style.maxHeight = "";
+                  movesIcon.style.transform = "";
+                  movesData.dataset.visible = "0";
+                }
+              });
+          }
           eventAttached[id] = true;
         }
       });
