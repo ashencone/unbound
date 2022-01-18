@@ -251,6 +251,7 @@ int main(int argc, char **argv)
             continue;
         } else {
             strncat(buffer_main, "\n", 2);  // Only append newline if mon has HP
+            if (!string_item[stats.item1][0] || !string_item[stats.item2][0]) exit(i);
         }
 
         snprintf(buffer_local, 1024,
@@ -358,6 +359,21 @@ int main(int argc, char **argv)
             strncat(buffer_main, "]", 2);
             fprintf(json, buffer_main);
         }
+    }
+
+    fprintf(json, "\n\t},\n\t\"items\": {\n");
+
+    for (i = 1, search_index_len = 0; i < ITEMS_COUNT; i++) {
+        if (!string_item[i][0]) continue;
+        snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", search_index_len++ ? ",\n":"", string_item[i]);
+        for (j = 0, found_pokemon_length = 0; j < NUM_SPECIES; j++) {
+            if (gBaseStats[j].item1 == i || gBaseStats[j].item2 == i) {
+                snprintf(buffer_local, 1024, "%s%i", found_pokemon_length++ ? ", ": "", j);
+                strncat(buffer_main, buffer_local, 1024);
+            }
+        }
+        strncat(buffer_main, "]", 2);
+        fprintf(json, buffer_main);
     }
 
     fprintf(json, "\n\t}\n}\n");
