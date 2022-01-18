@@ -1844,11 +1844,11 @@
 			[17, "Stun Spore"],
 			[18, "Sleep Powder"],
 			[20, "Giga Drain"],
-			[24, "Lucky Chant"],
+			[24, "Venoshock"],
 			[28, "Toxic"],
-			[32, "Moonblast"],
-			[36, "Gras Terrain"],
-			[40, "Moonlight"],
+			[32, "Moonlight"],
+			[36, "Moonblast"],
+			[40, "Gras Terrain"],
 			[44, "Petal Dance"]
 		],
 		"eggMoves": [
@@ -1862,8 +1862,8 @@
 			"Secret Power",
 			"Nature Power",
 			"After You",
-			"Strength Sap",
-			"Leech Seed"
+			"Leech Seed",
+			"Lucky Chant"
 		]
 	},
 	{
@@ -1885,13 +1885,14 @@
 			[17, "Stun Spore"],
 			[18, "Sleep Powder"],
 			[20, "Giga Drain"],
-			[26, "Lucky Chant"],
+			[26, "Venoshock"],
 			[32, "Toxic"],
 			[38, "Moonblast"],
-			[44, "Apple Acid"],
-			[48, "Gras Terrain"],
-			[54, "Moonlight"],
-			[62, "Petal Dance"]
+			[44, "Moonlight"],
+			[48, "Apple Acid"],
+			[58, "Gras Terrain"],
+			[68, "Petal Dance"],
+			[78, "Strength Sap"]
 		],
 		"eggMoves": [
 			"Razor Leaf",
@@ -1904,8 +1905,8 @@
 			"Secret Power",
 			"Nature Power",
 			"After You",
-			"Strength Sap",
-			"Leech Seed"
+			"Leech Seed",
+			"Lucky Chant"
 		]
 	},
 	{
@@ -1929,10 +1930,11 @@
 			[1, "Stun Spore"],
 			[1, "Sleep Powder"],
 			[1, "Giga Drain"],
-			[1, "Lucky Chant"],
+			[1, "Venoshock"],
 			[1, "Apple Acid"],
 			[1, "Gras Terrain"],
 			[1, "Petal Dance"],
+			[1, "Strength Sap"],
 			[1, "Petal Storm"],
 			[1, "Toxic"],
 			[1, "Moonblast"],
@@ -1949,8 +1951,8 @@
 			"Secret Power",
 			"Nature Power",
 			"After You",
-			"Strength Sap",
-			"Leech Seed"
+			"Leech Seed",
+			"Lucky Chant"
 		]
 	},
 	{
@@ -4247,7 +4249,8 @@
 			"Power Split",
 			"Psyc Terrain",
 			"Teleport",
-			"Mind Reader"
+			"Mind Reader",
+			"Wish"
 		]
 	},
 	{
@@ -4295,7 +4298,8 @@
 			"Power Split",
 			"Psyc Terrain",
 			"Teleport",
-			"Mind Reader"
+			"Mind Reader",
+			"Wish"
 		]
 	},
 	{
@@ -7878,7 +7882,8 @@
 			[39, "Quiver Dance"],
 			[49, "Petal Storm"],
 			[59, "Petal Dance"],
-			[69, "Leaf Storm"]
+			[69, "Leaf Storm"],
+			[79, "Strength Sap"]
 		],
 		"eggMoves": [
 			"Razor Leaf",
@@ -7891,8 +7896,8 @@
 			"Secret Power",
 			"Nature Power",
 			"After You",
-			"Strength Sap",
-			"Leech Seed"
+			"Leech Seed",
+			"Lucky Chant"
 		]
 	},
 	{
@@ -12820,7 +12825,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 2", "Water 2"],
 		"ability": ["Oblivious", "Anticipation"],
-		"hiddenAbility": "Water Bubble",
+		"hiddenAbility": "Adaptability",
 		"levelUpMoves": [
 			[1, "Mud-Slap"],
 			[1, "Water Gun"],
@@ -12858,7 +12863,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 2", "Water 2"],
 		"ability": ["Oblivious", "Anticipation"],
-		"hiddenAbility": "Water Bubble",
+		"hiddenAbility": "Adaptability",
 		"levelUpMoves": [
 			[0, "Thrash"],
 			[1, "Belch"],
@@ -20717,6 +20722,7 @@
 		"hiddenAbility": "Perish Body",
 		"levelUpMoves": [
 			[0, "Hex"],
+			[1, "Destiny Bond"],
 			[1, "Bite"],
 			[1, "Protect"],
 			[1, "Headbutt"],
@@ -20873,6 +20879,7 @@
 		"hiddenAbility": "Telepathy",
 		"levelUpMoves": [
 			[1, "Scary Face"],
+			[1, "Heal Block"],
 			[1, "Metal Claw"],
 			[8, "DragonBreath"],
 			[16, "AncientPower"],
@@ -20900,6 +20907,7 @@
 		"hiddenAbility": "Telepathy",
 		"levelUpMoves": [
 			[1, "Scary Face"],
+			[1, "Heal Block"],
 			[1, "Water Pulse"],
 			[8, "DragonBreath"],
 			[16, "AncientPower"],
@@ -20987,6 +20995,7 @@
 		"ability": ["Pressure", "-------"],
 		"hiddenAbility": "Telepathy",
 		"levelUpMoves": [
+			[1, "Heal Block"],
 			[1, "Shadow Sneak"],
 			[1, "Ominous Wind"],
 			[1, "Defog"],
@@ -25603,7 +25612,7 @@
 			[48, "Flash Cannon"],
 			[53, "Lock-On"],
 			[59, "Zap Cannon"],
-			[65, "Steel Roller"]
+			[65, "Steel Beam"]
 		],
 		"eggMoves": []
 	},
@@ -27841,6 +27850,7 @@
 		"ability": ["Levitate", "-------"],
 		"hiddenAbility": "-------",
 		"levelUpMoves": [
+			[1, "Heal Block"],
 			[1, "Shadow Sneak"],
 			[1, "Ominous Wind"],
 			[1, "Defog"],
@@ -29855,7 +29865,8 @@
 			"Captivate",
 			"Camouflage",
 			"Teary Look",
-			"Solar Beam"
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -29889,7 +29900,8 @@
 			"Captivate",
 			"Camouflage",
 			"Teary Look",
-			"Solar Beam"
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -29926,7 +29938,8 @@
 			"Captivate",
 			"Camouflage",
 			"Teary Look",
-			"Solar Beam"
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -31711,7 +31724,6 @@
 		"levelUpMoves": [
 			[1, "Space Hole"],
 			[1, "Trick"],
-			[1, "Destiny Bond"],
 			[1, "Confusion"],
 			[5, "Astonish"],
 			[10, "Magic Coat"],
@@ -31725,8 +31737,9 @@
 			[50, "Wonder Room"],
 			[50, "Trick Room"],
 			[55, "Shadow Ball"],
-			[70, "Nasty Plot"],
-			[75, "Psychic"],
+			[70, "Psychic"],
+			[75, "Nasty Plot"],
+			[80, "Destiny Bond"],
 			[85, "Space Hole"]
 		],
 		"eggMoves": []
@@ -31743,7 +31756,6 @@
 		"levelUpMoves": [
 			[1, "Space Fury"],
 			[1, "Trick"],
-			[1, "Destiny Bond"],
 			[1, "Confusion"],
 			[5, "Astonish"],
 			[10, "Magic Coat"],
@@ -31757,8 +31769,9 @@
 			[50, "Wonder Room"],
 			[50, "Trick Room"],
 			[55, "Dark Pulse"],
-			[70, "Nasty Plot"],
-			[75, "Psychic"],
+			[70, "Psychic"],
+			[75, "Nasty Plot"],
+			[80, "Destiny Bond"],
 			[85, "Space Fury"]
 		],
 		"eggMoves": []
@@ -38344,7 +38357,7 @@
 		"hiddenAbility": "Slush Rush",
 		"levelUpMoves": [
 			[0, "Icicle Spear"],
-			[1, "Icicle Spear"],
+			[1, "Icicle Crash"],
 			[1, "Metal Burst"],
 			[1, "Scratch"],
 			[1, "Mist"],
