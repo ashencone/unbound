@@ -122,6 +122,7 @@ main {
   border-radius: 0 0 0.5rem 0.5rem;
 
   overflow: hidden;
+  z-index: 2;
 }
 
 .search__options--hidden {

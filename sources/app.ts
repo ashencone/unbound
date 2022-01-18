@@ -286,7 +286,9 @@ let loadingBarLength: number = 0;
 let search: HTMLElement = document.querySelector(".search")!;
 
 interface SearchIndex {
+  [index: string]: { [name: string]: number[] };
   pokemon: { [name: string]: number[] };
+  items: { [name: string]: number[] };
 }
 let searchIndex: SearchIndex;
 let pokemonData: Pokemon[] = [];
@@ -403,17 +405,20 @@ let main: HTMLElement = document.querySelector("main")!;
 let movesData: HTMLElement;
 let movesIcon: HTMLElement;
 let mediaDesktop: MediaQueryList = window.matchMedia("(min-width: 576px)");
+let valueMap: string[] = ["pokemon", "items", "pokemon", "pokemon"];
 
 searchText.addEventListener("input", () => {
   foundIndexOld = foundIndex;
   foundIndex = [];
 
   if (searchText.value.length >= 3) {
-    Object.entries(searchIndex.pokemon).forEach(([name, index]) => {
-      if (name.match(new RegExp(searchText.value, "i"))) {
-        foundIndex.push(...index);
+    Object.entries(searchIndex[valueMap[+searchType.dataset.value!]]).forEach(
+      ([name, index]) => {
+        if (name.match(new RegExp(searchText.value, "i"))) {
+          foundIndex.push(...index);
+        }
       }
-    });
+    );
     foundIndex.sort((a, b) => a - b);
 
     if (foundIndex.length > foundIndexOld.length) {

@@ -287,11 +287,12 @@ let main = document.querySelector("main");
 let movesData;
 let movesIcon;
 let mediaDesktop = window.matchMedia("(min-width: 576px)");
+let valueMap = ["pokemon", "items", "pokemon", "pokemon"];
 searchText.addEventListener("input", () => {
     foundIndexOld = foundIndex;
     foundIndex = [];
     if (searchText.value.length >= 3) {
-        Object.entries(searchIndex.pokemon).forEach(([name, index]) => {
+        Object.entries(searchIndex[valueMap[+searchType.dataset.value]]).forEach(([name, index]) => {
             if (name.match(new RegExp(searchText.value, "i"))) {
                 foundIndex.push(...index);
             }
