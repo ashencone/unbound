@@ -536,6 +536,8 @@ main {
 }
 
 .pokemon__moves-title-level {
+  padding: 0.5rem 0;
+
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-align: left;
@@ -597,11 +599,11 @@ main {
   }
 
   .pokemon__moves-title-level {
-    vertical-align: top;
+    padding: 0 0 0.5rem 0;
   }
 
   .pokemon__moves-title-egg {
-    padding: 0 0 0.75rem 0;
+    padding: 0 0 0.5rem 0;
   }
 }
 
