@@ -25,23 +25,16 @@ function makeCard(pokemon) {
     section.appendChild(divData).className = "pokemon__data";
     let divMoves = document.createElement("div");
     section.appendChild(divMoves).className = "pokemon__moves";
-    let imgPokemon = document.createElement("img");
-    divTitle.appendChild(imgPokemon).className = "pokemon__img";
     let spanTitle = document.createElement("span");
     divTitle.appendChild(spanTitle).className = "pokemon__name";
     spanTitle.textContent = pokemon.name;
-    if (pokemon.type[0] == pokemon.type[1]) {
-        divTitle.appendChild(document.createElement("span"));
-    }
-    let spanType1 = document.createElement("span");
-    divTitle.appendChild(spanType1).className = "pokemon__type";
-    spanType1.className += ` pokemon__type--${pokemon.type[0].toLowerCase()}`;
-    spanType1.textContent = pokemon.type[0];
+    let imgPokemon = document.createElement("img");
+    divTitle.appendChild(imgPokemon).className = "pokemon__img";
+    let divType1 = document.createElement("div");
+    divTitle.appendChild(divType1).className = `pokemon__type pokemon__type--${pokemon.type[0].toLowerCase()}`;
     if (pokemon.type[0] != pokemon.type[1]) {
-        let spanType2 = document.createElement("span");
-        divTitle.appendChild(spanType2).className = "pokemon__type";
-        spanType2.className += ` pokemon__type--${pokemon.type[1].toLowerCase()}`;
-        spanType2.textContent = pokemon.type[1];
+        let divType2 = document.createElement("div");
+        divTitle.appendChild(divType2).className = `pokemon__type pokemon__type--${pokemon.type[1].toLowerCase()}`;
     }
     let tableStats = document.createElement("table");
     divData.appendChild(tableStats).className = "pokemon__stats";

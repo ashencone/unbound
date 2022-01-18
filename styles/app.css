@@ -4,6 +4,8 @@
   --white: #fffffc;
   --grey: #dee2e6;
   --dark: #495057;
+
+  image-rendering: auto;
 }
 
 body {
@@ -208,7 +210,7 @@ main {
 
 .pokemon__title {
   display: grid;
-  grid-template-columns: auto min-content min-content;
+  grid-template-columns: max-content max-content auto max-content;
   gap: 0.25rem;
 
   height: fit-content;
@@ -218,103 +220,203 @@ main {
   text-align: center;
 }
 
+.pokemon__name {
+  grid-column: span 3;
+  justify-self: start;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
 .pokemon__img {
   grid-row: span 2;
 
-  height: 64px;
   width: 64px;
-  margin: 0.25rem 0 0 0;
-}
-
-.pokemon__name {
-  grid-column: span 2;
-  justify-self: end;
-
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+  margin: auto 0;
 }
 
 .pokemon__type {
-  justify-self: end;
+  position: relative;
 
-  height: 2rem;
-  width: fit-content;
-  padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: #fff;
+  height: 2rem;
+  width: 4rem;
+}
+
+.pokemon__type::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  filter: brightness(100);
 }
 
 .pokemon__type--normal {
-  background: #a8a878;
+  background: #9099a1;
 }
 
-.pokemon__type--fire {
-  background: #f08030;
+.pokemon__type--normal::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/normal.png);
 }
 
 .pokemon__type--fighting {
-  background: #c03028;
+  background: #ce4069;
 }
 
-.pokemon__type--water {
-  background: #6890f0;
+.pokemon__type--fighting::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/fighting.png);
 }
 
 .pokemon__type--flying {
-  background: #a890f0;
+  background: #8fa8dd;
 }
 
-.pokemon__type--grass {
-  background: #78c850;
+.pokemon__type--flying::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/flying.png);
 }
 
 .pokemon__type--poison {
-  background: #a040a0;
+  background: #ab6ac8;
 }
 
-.pokemon__type--electric {
-  background: #f8d030;
+.pokemon__type--poison::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/poison.png);
 }
 
 .pokemon__type--ground {
-  background: #e0c068;
+  background: #d97746;
 }
 
-.pokemon__type--psychic {
-  background: #f85888;
+.pokemon__type--ground::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/ground.png);
 }
 
 .pokemon__type--rock {
-  background: #b8a038;
+  background: #c7b78b;
 }
 
-.pokemon__type--ice {
-  background: #98d8d8;
+.pokemon__type--rock::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/rock.png);
 }
 
 .pokemon__type--bug {
-  background: #a8b820;
+  background: #90c12c;
 }
 
-.pokemon__type--dragon {
-  background: #7038f8;
+.pokemon__type--bug::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/bug.png);
 }
 
 .pokemon__type--ghost {
-  background: #705898;
+  background: #5269ac;
+}
+
+.pokemon__type--ghost::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/ghost.png);
+}
+
+.pokemon__type--steel {
+  background: #5a8ea1;
+}
+
+.pokemon__type--steel::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/steel.png);
+}
+
+.pokemon__type--fire {
+  background: #ff9c54;
+}
+
+.pokemon__type--fire::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/fire.png);
+}
+
+.pokemon__type--water {
+  background: #4d90d5;
+}
+
+.pokemon__type--water::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/water.png);
+}
+
+.pokemon__type--grass {
+  background: #63bb5b;
+}
+
+.pokemon__type--grass::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/grass.png);
+}
+
+.pokemon__type--electric {
+  background: #f3d23b;
+}
+
+.pokemon__type--electric::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/electric.png);
+}
+
+.pokemon__type--psychic {
+  background: #f97176;
+}
+
+.pokemon__type--psychic::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/psychic.png);
+}
+
+.pokemon__type--ice {
+  background: #74cec0;
+}
+
+.pokemon__type--ice::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/ice.png);
+}
+
+.pokemon__type--dragon {
+  background: #0a6dc4;
+}
+
+.pokemon__type--dragon::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/dragon.png);
 }
 
 .pokemon__type--dark {
-  background: #705848;
+  background: #5a5366;
+}
+
+.pokemon__type--dark::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/dark.png);
 }
 
 .pokemon__type--fairy {
-  background: #ee99ac;
+  background: #ec8fe6;
+}
+
+.pokemon__type--fairy::before {
+  background: no-repeat center/50%
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/type-logos/gen8/fairy.png);
 }
 
 .pokemon__data {
