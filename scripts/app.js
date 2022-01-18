@@ -32,9 +32,11 @@ function makeCard(pokemon) {
     divTitle.appendChild(imgPokemon).className = "pokemon__img";
     let divType1 = document.createElement("div");
     divTitle.appendChild(divType1).className = `pokemon__type pokemon__type--${pokemon.type[0].toLowerCase()}`;
+    divType1.title = `${pokemon.type[0]}`;
     if (pokemon.type[0] != pokemon.type[1]) {
         let divType2 = document.createElement("div");
         divTitle.appendChild(divType2).className = `pokemon__type pokemon__type--${pokemon.type[1].toLowerCase()}`;
+        divType2.title = `${pokemon.type[1]}`;
     }
     let tableStats = document.createElement("table");
     divData.appendChild(tableStats).className = "pokemon__stats";
