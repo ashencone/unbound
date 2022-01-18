@@ -171,7 +171,9 @@ function makeCard(pokemon) {
         if (pokemon.levelUpMoves[id]) {
             let tdMoveLevel = document.createElement("td");
             trMove.appendChild(tdMoveLevel).className = "pokemon__move-level";
-            tdMoveLevel.textContent = pokemon.levelUpMoves[id][0].toString();
+            tdMoveLevel.textContent = pokemon.levelUpMoves[id][0]
+                ? pokemon.levelUpMoves[id][0].toString()
+                : "EVO";
             let tdMoveName = document.createElement("td");
             trMove.appendChild(tdMoveName).className = "pokemon__move-level-name";
             tdMoveName.textContent = pokemon.levelUpMoves[id][1];
