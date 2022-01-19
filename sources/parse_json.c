@@ -262,7 +262,8 @@ int main(int argc, char **argv)
             "\t\t\"item\": [\"%s\", \"%s\"],\n"
             "\t\t\"eggGroup\": [\"%s\", \"%s\"],\n"
             "\t\t\"ability\": [\"%s\", \"%s\"],\n"
-            "\t\t\"hiddenAbility\": \"%s\",\n",
+            "\t\t\"hiddenAbility\": \"%s\",\n"
+            "\t\t\"evolutionType\": %i,\n",
 
             string_pokemon[i],
             stats.baseHP, stats.baseAttack, stats.baseDefense, stats.baseSpAttack, stats.baseSpDefense, stats.baseSpeed,
@@ -271,7 +272,8 @@ int main(int argc, char **argv)
             string_item[stats.item1], string_item[stats.item2],
             string_egg[stats.eggGroup1], string_egg[stats.eggGroup2],
             string_ability[stats.ability1], string_ability[stats.ability2],
-            string_ability[stats.hiddenAbility]
+            string_ability[stats.hiddenAbility],
+            (i >= SPECIES_VENUSAUR_MEGA && i <= SPECIES_PALKIA_PRIMAL) ? 1 : (i >= SPECIES_VENUSAUR_GIGA && i <= SPECIES_URSHIFU_RAPID_GIGA) ? 2 : 0
         );
         strncat(buffer_main, buffer_local, 1024);
 

@@ -13,6 +13,7 @@ interface Pokemon {
   eggGroup: Pair;
   ability: Pair;
   hiddenAbility: string;
+  evolutionType: 0 | 1 | 2;
   levelUpMoves: [number, string][];
   eggMoves: string[];
 }
@@ -53,7 +54,9 @@ function makeCard(pokemon: Pokemon): HTMLElement {
 
   // Title
   let spanTitle = document.createElement("span");
-  divTitle.appendChild(spanTitle).className = "pokemon__name";
+  divTitle.appendChild(spanTitle).className = `pokemon__name${
+    pokemon.evolutionType === 1 ? " pokemon__name--mega" : ""
+  }${pokemon.evolutionType === 2 ? " pokemon__name--giga" : ""}`;
   spanTitle.textContent = pokemon.name;
 
   let imgPokemon = document.createElement("img");

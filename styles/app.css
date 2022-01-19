@@ -225,12 +225,36 @@ main {
 }
 
 .pokemon__name {
+  position: relative;
+
   grid-column: span 3;
   justify-self: start;
 
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.75rem;
+}
+
+.pokemon__name--mega::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2.25rem;
+  width: 2rem;
+  background: no-repeat center
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/special-attribute/mega-evolution-sigil-hires.png);
+}
+
+.pokemon__name--giga::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2.25rem;
+  width: 2rem;
+  background: no-repeat center
+    url(https://raw.githubusercontent.com/msikma/pokesprite/master/misc/special-attribute/gigantamax-icon.png);
 }
 
 .pokemon__img {

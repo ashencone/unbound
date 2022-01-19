@@ -26,7 +26,7 @@ function makeCard(pokemon) {
     let divMoves = document.createElement("div");
     section.appendChild(divMoves).className = "pokemon__moves";
     let spanTitle = document.createElement("span");
-    divTitle.appendChild(spanTitle).className = "pokemon__name";
+    divTitle.appendChild(spanTitle).className = `pokemon__name${pokemon.evolutionType === 1 ? " pokemon__name--mega" : ""}${pokemon.evolutionType === 2 ? " pokemon__name--giga" : ""}`;
     spanTitle.textContent = pokemon.name;
     let imgPokemon = document.createElement("img");
     divTitle.appendChild(imgPokemon).className = "pokemon__img";
