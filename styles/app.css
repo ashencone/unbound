@@ -595,6 +595,10 @@ main {
     grid-row: span 2;
   }
 
+  .pokemon__moves-header {
+    display: none;
+  }
+
   .pokemon__moves-data {
     max-height: none;
   }
