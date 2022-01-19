@@ -109,6 +109,8 @@ main {
   border: none;
   border-radius: 0.5rem 0 0 0;
   outline: none;
+
+  cursor: pointer;
 }
 
 .search__button--closed {
@@ -121,6 +123,7 @@ main {
   width: 100%;
   border-radius: 0 0 0.5rem 0.5rem;
 
+  cursor: pointer;
   overflow: hidden;
   z-index: 2;
 }
@@ -506,6 +509,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .pokemon__moves-title {
