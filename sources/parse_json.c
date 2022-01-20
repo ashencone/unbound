@@ -36,6 +36,15 @@ int main(int argc, char **argv)
     load_strings(f_pokemon, string_pokemon, &string_pokemon_len, NUM_SPECIES);
     fclose(f_pokemon);
 
+    // Pokemon name fixes
+    snprintf(string_pokemon[0x1D], 32, "Nidoran");
+    snprintf(string_pokemon[0x20], 32, "Nidoran");
+    snprintf(string_pokemon[0x309], 32, "Flabébé");
+    snprintf(string_pokemon[0x348], 32, "Flabébé");
+    snprintf(string_pokemon[0x349], 32, "Flabébé");
+    snprintf(string_pokemon[0x34A], 32, "Flabébé");
+    snprintf(string_pokemon[0x34B], 32, "Flabébé");
+
     // Ability names
     char string_ability[ABILITY_PASTELVEIL + 1][32];
     int string_ability_len = 0;
@@ -410,8 +419,6 @@ void load_strings(FILE *file, char list[][32], int *len, int counter)
     while (fgets(buffer, 128, file) != NULL) {
         if (add_next) {
             buffer[strcspn(buffer, "\n")] = '\0';
-            if (!strncmp(buffer, "Flab\\eb\\e", 32)) snprintf(buffer, 32, "Flabébé");   // Flabébé fix
-            if (!strncmp(buffer, "Nidoran", 7)) snprintf(buffer, 32, "Nidoran");    // Nidoran gender tag removal
             snprintf(list[(*len)++], 32, buffer);
             if (*len == counter) break;
             add_next = FALSE;
