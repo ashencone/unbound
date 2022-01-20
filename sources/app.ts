@@ -477,15 +477,15 @@ searchText.addEventListener("input", () => {
 });
 
 searchStrings.addEventListener("mousedown", (e) => {
-  e.stopImmediatePropagation();
   searchText.value = (<HTMLElement>e.target).textContent!;
   searchStrings.replaceChildren();
   updateSearch();
 });
 
-searchText.addEventListener("change", () => {
-  if (searchStrings.childElementCount) {
-    searchText.value = searchStrings.firstElementChild!.textContent!;
+searchText.addEventListener("keyup", (e) => {
+  if (e.key != "Enter") return;
+  if (searchStrings.firstElementChild) {
+    searchText.value = searchStrings.firstElementChild.textContent!;
     searchStrings.replaceChildren();
   }
   updateSearch();
