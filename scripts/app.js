@@ -270,6 +270,7 @@ searchOptions.addEventListener("click", (e) => {
             searchType.dataset.value = [...searchOptions.children]
                 .indexOf(target)
                 .toString();
+            searchText.value = "";
         }
         searchToggle();
     });
@@ -279,61 +280,77 @@ window.addEventListener("click", (e) => {
         searchToggle();
 });
 let searchText = document.querySelector(".search__text");
-let foundIndex = [];
-let foundIndexOld = [];
-let eventAttached = Array(2048);
-let fragment = document.createDocumentFragment();
-let main = document.querySelector("main");
-let movesData;
-let movesIcon;
+let searchIcon = document.querySelector(".search__icon");
+let searchStrings = document.querySelector(".search__strings");
+let pokemons = document.querySelector(".pokemons");
+let documentFragment = document.createDocumentFragment();
+let bufferElement;
+let regexStr;
 let valueMap = ["pokemon", "items", "moves", "abilities"];
-searchText.addEventListener("input", () => {
-    foundIndexOld = foundIndex;
-    foundIndex = [];
-    if (searchText.value.length >= 3) {
-        Object.entries(searchIndex[valueMap[+searchType.dataset.value]]).forEach(([name, index]) => {
-            if (name.match(new RegExp(searchText.value, "i"))) {
-                foundIndex.push(...index);
-            }
-        });
-        foundIndex.sort((a, b) => a - b);
-        if (foundIndex.length > foundIndexOld.length) {
-            foundIndex.forEach((id) => {
-                fragment.appendChild(pokemonCards[id]);
-                if (!eventAttached[id]) {
-                    (pokemonCards[id].querySelector(".pokemon__img")).src = `images/${id}.png`;
-                    pokemonCards[id]
-                        .querySelector(".pokemon__moves-header")
-                        .addEventListener("click", () => {
-                        movesData = pokemonCards[id].querySelector(".pokemon__moves-data");
-                        movesIcon = pokemonCards[id].querySelector(".pokemon__moves-icon");
-                        if (movesData.dataset.visible != "1") {
-                            movesData.style.maxHeight = `${movesData.scrollHeight}px`;
-                            movesIcon.style.transform = "rotate(180deg)";
-                            movesData.dataset.visible = "1";
-                        }
-                        else {
-                            movesData.style.maxHeight = "";
-                            movesIcon.style.transform = "";
-                            movesData.dataset.visible = "0";
-                        }
-                    });
-                    eventAttached[id] = true;
+function updateSearch() {
+    const query = searchText.value;
+    if (!query) {
+        pokemons.replaceChildren();
+        return;
+    }
+    searchIndex[valueMap[+searchType.dataset.value]][query].forEach((id) => {
+        documentFragment.appendChild((bufferElement = pokemonCards[id]));
+        (bufferElement.querySelector(".pokemon__img")).src = `images/${id}.png`;
+        if (!bufferElement.dataset.event) {
+            const header = bufferElement.querySelector(".pokemon__moves-header");
+            const movesData = bufferElement.querySelector(".pokemon__moves-data");
+            const movesIcon = bufferElement.querySelector(".pokemon__moves-icon");
+            header.addEventListener("click", () => {
+                if (!header.dataset.visible) {
+                    movesData.style.maxHeight = `${movesData.scrollHeight}px`;
+                    movesIcon.style.transform = "rotate(180deg)";
+                    header.dataset.visible = "1";
+                }
+                else {
+                    movesData.style.maxHeight = "";
+                    movesIcon.style.transform = "";
+                    header.dataset.visible = "";
                 }
             });
-            main.appendChild(fragment);
+            bufferElement.dataset.event = "1";
+        }
+    });
+    pokemons.replaceChildren(documentFragment);
+}
+searchText.addEventListener("input", () => {
+    if (searchText.value.length) {
+        regexStr = new RegExp(searchText.value, "i");
+        Object.keys(searchIndex[valueMap[+searchType.dataset.value]]).forEach((name) => {
+            if (name.match(regexStr)) {
+                (bufferElement = document.createElement("li")).className =
+                    "search__string";
+                documentFragment.appendChild(bufferElement);
+                bufferElement.textContent = name;
+            }
+        });
+        searchStrings.replaceChildren(documentFragment);
+        if (searchStrings.firstElementChild) {
+            searchIcon.style.borderRadius = "0 0.5rem 0 0";
         }
         else {
-            foundIndexOld
-                .filter((n) => !foundIndex.includes(n))
-                .forEach((id) => {
-                pokemonCards[id].remove();
-            });
+            searchIcon.style.borderRadius = "";
         }
     }
     else {
-        foundIndexOld.forEach((id) => {
-            pokemonCards[id].remove();
-        });
+        searchStrings.replaceChildren();
+        searchIcon.style.borderRadius = "";
     }
+});
+searchStrings.addEventListener("mousedown", (e) => {
+    e.stopImmediatePropagation();
+    searchText.value = e.target.textContent;
+    searchStrings.replaceChildren();
+    updateSearch();
+});
+searchText.addEventListener("change", () => {
+    if (searchStrings.childElementCount) {
+        searchText.value = searchStrings.firstElementChild.textContent;
+        searchStrings.replaceChildren();
+    }
+    updateSearch();
 });
