@@ -405,6 +405,7 @@ int main(int argc, char **argv)
     for (i = 1; i < NON_Z_MOVE_COUNT; i++) {
         snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i != 1) ? ",\n":"", string_move[i]);
         for (j = 1, found_moves = 0; j < NUM_SPECIES; j++) {
+            if (!gBaseStats[j].baseHP) continue;    // Skip pokemon that do not have base stats
             lv_moves = gLevelUpLearnsets[j];    // Search through level up moves
             found_already = FALSE;
             while (lv_moves->move) {
