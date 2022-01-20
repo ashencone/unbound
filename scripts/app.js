@@ -286,7 +286,7 @@ let fragment = document.createDocumentFragment();
 let main = document.querySelector("main");
 let movesData;
 let movesIcon;
-let valueMap = ["pokemon", "items", "pokemon", "pokemon"];
+let valueMap = ["pokemon", "items", "moves", "abilities"];
 searchText.addEventListener("input", () => {
     foundIndexOld = foundIndex;
     foundIndex = [];
