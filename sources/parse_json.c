@@ -55,6 +55,13 @@ int main(int argc, char **argv)
     if (f_move == NULL) exit(1);
     load_strings(f_move, string_move, &string_move_len, NON_Z_MOVE_COUNT);
     fclose(f_move);
+    
+    // Fix outdated attack names
+    snprintf(string_move[0x2E2], 32, "Eerie Spell");
+    snprintf(string_move[0x2E3], 32, "Thunder Cage");
+    snprintf(string_move[0x2E4], 32, "Dragon Energy");
+    snprintf(string_move[0x2E5], 32, "Astral Barrage");
+    snprintf(string_move[0x2E6], 32, "Glacial Lance");
 
     // Item names [Hardcoded]
     char string_item[ITEMS_COUNT][32] = {

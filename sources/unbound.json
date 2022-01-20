@@ -7929,7 +7929,7 @@
 			[37, "Cotton Guard"],
 			[40, "Signal Beam"],
 			[44, "Light Screen"],
-			[47, "DragonEnergy"]
+			[47, "Thunder Cage"]
 		],
 		"eggMoves": [
 			"Body Slam",
@@ -7971,7 +7971,7 @@
 			[43, "Cotton Guard"],
 			[47, "Signal Beam"],
 			[52, "Light Screen"],
-			[57, "DragonEnergy"]
+			[57, "Thunder Cage"]
 		],
 		"eggMoves": [
 			"Body Slam",
@@ -8019,7 +8019,7 @@
 			[47, "Cotton Guard"],
 			[52, "Signal Beam"],
 			[58, "Light Screen"],
-			[63, "DragonEnergy"]
+			[63, "Thunder Cage"]
 		],
 		"eggMoves": [
 			"Body Slam",
@@ -14273,7 +14273,7 @@
 			[17, "Embargo"],
 			[21, "Rock Slide"],
 			[25, "Cosmic Power"],
-			[29, "Thunder Cage"],
+			[29, "Eerie Spell"],
 			[33, "Heal Block"],
 			[37, "Stone Edge"],
 			[41, "Psychic"],
@@ -14306,7 +14306,7 @@
 			[17, "Embargo"],
 			[21, "Rock Slide"],
 			[25, "Cosmic Power"],
-			[29, "Thunder Cage"],
+			[29, "Eerie Spell"],
 			[33, "Heal Block"],
 			[37, "Stone Edge"],
 			[41, "Psychic"],
@@ -14424,7 +14424,7 @@
 			[44, "Power Gem"],
 			[49, "Rest"],
 			[49, "Snore"],
-			[54, "Thunder Cage"]
+			[54, "Eerie Spell"]
 		],
 		"eggMoves": [
 			"Future Sight",
@@ -18860,7 +18860,7 @@
 			[47, "Baton Pass"],
 			[51, "Amnesia"],
 			[55, "Explosion"],
-			[59, "Z-Move 2"]
+			[59, "Astral Barrage"]
 		],
 		"eggMoves": [
 			"Memento",
@@ -26291,7 +26291,7 @@
 			[58, "Gastro Acid"],
 			[62, "Zap Cannon"],
 			[66, "Thrash"],
-			[70, "DragonEnergy"]
+			[70, "Thunder Cage"]
 		],
 		"eggMoves": []
 	},
@@ -26321,7 +26321,7 @@
 			[1, "Gastro Acid"],
 			[1, "Zap Cannon"],
 			[1, "Thrash"],
-			[1, "DragonEnergy"],
+			[1, "Thunder Cage"],
 			[1, "Ion Deluge"],
 			[1, "Crush Claw"],
 			[1, "Discharge"],
@@ -34413,7 +34413,7 @@
 			[47, "Cotton Guard"],
 			[52, "Signal Beam"],
 			[58, "Light Screen"],
-			[63, "DragonEnergy"]
+			[63, "Thunder Cage"]
 		],
 		"eggMoves": []
 	},
@@ -38432,7 +38432,7 @@
 			[48, "Fly"],
 			[53, "Hyper Voice"],
 			[58, "Outrage"],
-			[63, "Z-Move 1"]
+			[63, "Dragon Energy"]
 		],
 		"eggMoves": [
 			"Hurricane",
@@ -45003,7 +45003,7 @@
 			[18, "Shock Wave"],
 			[24, "Thunder Wave"],
 			[30, "Extremespeed"],
-			[36, "DragonEnergy"],
+			[36, "Thunder Cage"],
 			[42, "Thunderbolt"],
 			[48, "Magnet Rise"],
 			[54, "Thrash"],
@@ -45037,7 +45037,7 @@
 			[48, "Dragon Dance"],
 			[54, "Thrash"],
 			[60, "Laser Focus"],
-			[66, "Z-Move 1"],
+			[66, "Dragon Energy"],
 			[72, "Hyper Beam"],
 			[78, "Explosion"]
 		],
@@ -45705,7 +45705,7 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Z-Move 3"],
+			[1, "Glacial Lance"],
 			[1, "Tackle"],
 			[1, "Tail Whip"],
 			[1, "Double Kick"],
@@ -45749,7 +45749,7 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Z-Move 2"],
+			[1, "Astral Barrage"],
 			[1, "Tackle"],
 			[1, "Tail Whip"],
 			[1, "Double Kick"],
@@ -46252,7 +46252,7 @@
 		"hiddenAbility": "Regenerator",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Thunder Cage"],
+			[0, "Eerie Spell"],
 			[1, "Power Gem"],
 			[1, "Nasty Plot"],
 			[1, "Swagger"],
