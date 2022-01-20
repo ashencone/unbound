@@ -400,6 +400,7 @@ window.addEventListener("click", (e: Event) => {
 //
 // Search
 //
+let searchBox: HTMLElement = document.querySelector(".search__box")!;
 let searchText: HTMLInputElement = document.querySelector(".search__text")!;
 let searchIcon: HTMLElement = document.querySelector(".search__icon")!;
 let searchStrings: HTMLElement = document.querySelector(".search__strings")!;
@@ -489,4 +490,10 @@ searchText.addEventListener("keyup", (e) => {
     searchStrings.replaceChildren();
   }
   updateSearch();
+});
+
+window.addEventListener("click", (e) => {
+  if (getPath(e).indexOf(searchBox) == -1) {
+    searchStrings.replaceChildren();
+  }
 });

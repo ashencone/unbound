@@ -279,6 +279,7 @@ window.addEventListener("click", (e) => {
     if (getPath(e).indexOf(searchType) === -1 && !searchHidden)
         searchToggle();
 });
+let searchBox = document.querySelector(".search__box");
 let searchText = document.querySelector(".search__text");
 let searchIcon = document.querySelector(".search__icon");
 let searchStrings = document.querySelector(".search__strings");
@@ -354,4 +355,9 @@ searchText.addEventListener("keyup", (e) => {
         searchStrings.replaceChildren();
     }
     updateSearch();
+});
+window.addEventListener("click", (e) => {
+    if (getPath(e).indexOf(searchBox) == -1) {
+        searchStrings.replaceChildren();
+    }
 });
