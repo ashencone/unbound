@@ -343,6 +343,8 @@ searchText.addEventListener("input", () => {
     }
 });
 searchStrings.addEventListener("mousedown", (e) => {
+    if (e.target.className != "search__string")
+        return;
     searchText.value = e.target.textContent;
     searchStrings.replaceChildren();
     updateSearch();

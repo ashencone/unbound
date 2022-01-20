@@ -478,6 +478,7 @@ searchText.addEventListener("input", () => {
 });
 
 searchStrings.addEventListener("mousedown", (e) => {
+  if ((<HTMLElement>e.target).className != "search__string") return;
   searchText.value = (<HTMLElement>e.target).textContent!;
   searchStrings.replaceChildren();
   updateSearch();
