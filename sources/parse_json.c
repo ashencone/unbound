@@ -242,7 +242,7 @@ int main(int argc, char **argv)
     //
     // Create the JSON
     //
-    int i, j;
+    int i, j, k;
     FILE *json;
     char buffer_main[4096];
     char buffer_local[1024];
@@ -340,39 +340,45 @@ int main(int argc, char **argv)
     //
     // Create search index
     //
-    char search_index[2048][32];
-    int search_index_len = 0;
-    char name_index[32];
-    int found_pokemon[NUM_SPECIES];
-    int found_pokemon_length = 0;
+    char name_search_index[2048][32];
+    int name_search_index_len;
+    char current_name[32];
+    int found_names;
+
+    int items_added;
+    int found_items;
+
+    int found_moves;
+    int found_already;
+
+    int found_abilities;
 
     json = fopen("search.json", "w");
     if (json == NULL) exit(3);
 
     fprintf(json, "{\n\t\"pokemon\": {\n");
 
-    for (i = 0; i < NUM_SPECIES; i++) {
-        snprintf(name_index, 32, string_pokemon[i]);
-        for (j = 0; j < search_index_len; j++) {
-            if (!strncmp(name_index, search_index[j], 32)) {    // Check if pokemon already added
-                name_index[0] = '\0';
+    for (i = 1, name_search_index_len = 0; i < NUM_SPECIES; i++) {
+        snprintf(current_name, 32, string_pokemon[i]);
+        if (!strncmp(current_name, "?", 1)) continue;   // Skip pokemons with no name
+
+        for (j = 0; j < name_search_index_len; j++) {
+            if (!strncmp(current_name, name_search_index[j], 32)) {    // Check if pokemon already added
+                current_name[0] = '\0';
                 break;
             }
         }
-        if (name_index[0]) {
-            snprintf(search_index[search_index_len++], 32, name_index);   // Add to added list
+        if (current_name[0]) {
+            snprintf(name_search_index[name_search_index_len++], 32, current_name);   // Add to added list
 
-            for (j = 0, found_pokemon_length = 0; j < NUM_SPECIES; j++) {
-                if (!strncmp(name_index, string_pokemon[j], 32)) {
+            snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i != 1) ? ",\n":"", current_name);
+            for (j = 0, found_names = 0; j < NUM_SPECIES; j++) {
+                if (!strncmp(current_name, string_pokemon[j], 32)) {
                     if (gBaseStats[j].baseHP) { // Check whether pokemon has data before adding
-                        found_pokemon[found_pokemon_length++] = j;  // Found every index with the pokemon
+                        snprintf(buffer_local, 1024, "%s%i", found_names++ ? ", ":"", j);
+                        strncat(buffer_main, buffer_local, 1024);
                     }
                 }
-            }
-            snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", i ? ",\n":"", name_index);
-            for (j = 0; j < found_pokemon_length; j++) {
-                snprintf(buffer_local, 1024, "%s%i", j ? ", ":"", found_pokemon[j]);
-                strncat(buffer_main, buffer_local, 1024);
             }
             strncat(buffer_main, "]", 2);
             fprintf(json, buffer_main);
@@ -381,12 +387,12 @@ int main(int argc, char **argv)
 
     fprintf(json, "\n\t},\n\t\"items\": {\n");
 
-    for (i = 1, search_index_len = 0; i < ITEMS_COUNT; i++) {
+    for (i = 1, items_added = 0; i < ITEMS_COUNT; i++) {
         if (!string_item[i][0]) continue;
-        snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", search_index_len++ ? ",\n":"", string_item[i]);
-        for (j = 0, found_pokemon_length = 0; j < NUM_SPECIES; j++) {
+        snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", items_added++ ? ",\n":"", string_item[i]);
+        for (j = 0, found_items = 0; j < NUM_SPECIES; j++) {
             if (gBaseStats[j].item1 == i || gBaseStats[j].item2 == i) {
-                snprintf(buffer_local, 1024, "%s%i", found_pokemon_length++ ? ", ": "", j);
+                snprintf(buffer_local, 1024, "%s%i", found_items++ ? ", ": "", j);
                 strncat(buffer_main, buffer_local, 1024);
             }
         }
@@ -394,6 +400,52 @@ int main(int argc, char **argv)
         fprintf(json, buffer_main);
     }
 
+    fprintf(json, "\n\t},\n\t\"moves\": {\n");
+
+    for (i = 1; i < NON_Z_MOVE_COUNT; i++) {
+        snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i != 1) ? ",\n":"", string_move[i]);
+        for (j = 1, found_moves = 0; j < NUM_SPECIES; j++) {
+            lv_moves = gLevelUpLearnsets[j];    // Search through level up moves
+            found_already = FALSE;
+            while (lv_moves->move) {
+                if (lv_moves->move == i) {
+                    snprintf(buffer_local, 1024, "%s%i", found_moves++ ? ", ":"", j);
+                    strncat(buffer_main, buffer_local, 1024);
+                    found_already = TRUE;
+                    break;
+                }
+                lv_moves++;
+            }
+            if (found_already) continue;    // Skip egg moves if already found
+
+            k = GetEggSpecies(j);   // Search through egg moves
+            egg_moves_count = GetEggMoves(&k, egg_moves);
+            for (k = 0; k < egg_moves_count; k++) {
+                if (egg_moves[k] == i) {
+                    snprintf(buffer_local, 1024, "%s%i", found_moves++ ? ", ":"", j);
+                    strncat(buffer_main, buffer_local, 1024);
+                    break; 
+                }
+            }
+        }
+        strncat(buffer_main, "]", 2);
+        fprintf(json, buffer_main);
+    }
+
+    fprintf(json, "\n\t},\n\t\"abilities\": {\n");
+
+    for (i = 1; i < (ABILITY_PASTELVEIL + 1); i++) {
+        snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i != 1) ? ",\n":"", string_ability[i]);
+        for (j = 1, found_abilities = 0; j < NUM_SPECIES; j++) {
+            if (gBaseStats[j].ability1 == i || gBaseStats[j].ability2 == i || gBaseStats[j].hiddenAbility == i) {
+                snprintf(buffer_local, 1024, "%s%i", found_abilities++ ? ", ":"", j);
+                strncat(buffer_main, buffer_local, 1024);
+            }
+        }
+        strncat(buffer_main, "]", 2);
+        fprintf(json, buffer_main);
+    }
+    
     fprintf(json, "\n\t}\n}\n");
 
     fclose(json);
