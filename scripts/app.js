@@ -288,6 +288,16 @@ let documentFragment = document.createDocumentFragment();
 let bufferElement;
 let regexStr;
 let valueMap = ["pokemon", "items", "moves", "abilities"];
+function updateSearchStrings(element = undefined) {
+    if (element && element.firstChild) {
+        searchStrings.replaceChildren(element);
+        searchIcon.style.borderRadius = "0 0.5rem 0 0";
+    }
+    else {
+        searchStrings.replaceChildren();
+        searchIcon.style.borderRadius = "";
+    }
+}
 function updateSearch() {
     const query = searchText.value;
     if (!query) {
@@ -329,16 +339,10 @@ searchText.addEventListener("input", () => {
                 bufferElement.textContent = name;
             }
         });
-        searchStrings.replaceChildren(documentFragment);
-        if (searchStrings.firstElementChild) {
-            searchIcon.style.borderRadius = "0 0.5rem 0 0";
-        }
-        else {
-            searchIcon.style.borderRadius = "";
-        }
+        updateSearchStrings(documentFragment);
     }
     else {
-        searchStrings.replaceChildren();
+        updateSearchStrings();
         searchIcon.style.borderRadius = "";
     }
 });
@@ -346,7 +350,7 @@ searchStrings.addEventListener("mousedown", (e) => {
     if (e.target.className != "search__string")
         return;
     searchText.value = e.target.textContent;
-    searchStrings.replaceChildren();
+    updateSearchStrings();
     updateSearch();
 });
 searchText.addEventListener("keyup", (e) => {
@@ -354,12 +358,12 @@ searchText.addEventListener("keyup", (e) => {
         return;
     if (searchStrings.firstElementChild) {
         searchText.value = searchStrings.firstElementChild.textContent;
-        searchStrings.replaceChildren();
+        updateSearchStrings();
     }
     updateSearch();
 });
 window.addEventListener("click", (e) => {
     if (getPath(e).indexOf(searchBox) == -1) {
-        searchStrings.replaceChildren();
+        updateSearchStrings();
     }
 });
