@@ -1149,7 +1149,7 @@
 		]
 	},
 	{
-		"name": "Nidoran[B6]",
+		"name": "Nidoran",
 		"baseStats": [55, 47, 52, 40, 40, 41],
 		"type": ["Poison", "Poison"],
 		"evYield": [1, 0, 0, 0, 0, 0],
@@ -1292,7 +1292,7 @@
 		]
 	},
 	{
-		"name": "Nidoran[B5]",
+		"name": "Nidoran",
 		"baseStats": [46, 57, 40, 40, 40, 50],
 		"type": ["Poison", "Poison"],
 		"evYield": [0, 1, 0, 0, 0, 0],

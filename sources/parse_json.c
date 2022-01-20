@@ -404,6 +404,7 @@ void load_strings(FILE *file, char list[][32], int *len, int counter)
         if (add_next) {
             buffer[strcspn(buffer, "\n")] = '\0';
             if (!strncmp(buffer, "Flab\\eb\\e", 32)) snprintf(buffer, 32, "Flabébé");   // Flabébé fix
+            if (!strncmp(buffer, "Nidoran", 7)) snprintf(buffer, 32, "Nidoran");    // Nidoran gender tag removal
             snprintf(list[(*len)++], 32, buffer);
             if (*len == counter) break;
             add_next = FALSE;
