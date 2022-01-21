@@ -19,6 +19,7 @@
 #define TRUE 1
 
 void load_strings(FILE *file, char list[][32], int *len, int counter);
+void get_abilities(int id, char out[][32], char names[][32]);
 
 int main(int argc, char **argv)
 {
@@ -54,6 +55,17 @@ int main(int argc, char **argv)
     if (f_ability == NULL) exit(1);
     load_strings(f_ability, string_ability, &string_ability_len, ABILITY_PASTELVEIL + 1);
     fclose(f_ability);
+
+    // Outdated ability fixes
+    snprintf(string_ability[0x48], 32, "Transistor");
+    snprintf(string_ability[0x49], 32, "Dragon's Maw");
+    snprintf(string_ability[0x64], 32, "Unseen Fist");
+    snprintf(string_ability[0x7B], 32, "Grim Neigh");
+    snprintf(string_ability[0x99], 32, "As One");
+    snprintf(string_ability[0x9A], 32, "As One");
+    snprintf(string_ability[0xAF], 32, "Full Metal Body");
+    snprintf(string_ability[0xDB], 32, "Quick Draw");
+    snprintf(string_ability[0xEB], 32, "Curious Medicine");
 
     // Move names
     char string_move[NON_Z_MOVE_COUNT][32];
@@ -248,6 +260,7 @@ int main(int argc, char **argv)
     char buffer_local[1024];
     struct BaseStats stats;
     struct LevelUpMove *lv_moves;
+    char fixed_abilities[3][32];
     u16 egg_moves[64];
     int egg_moves_count;
 
@@ -269,6 +282,7 @@ int main(int argc, char **argv)
             strncat(buffer_main, "\n", 2);  // Only append newline if mon has HP
             if (!string_item[stats.item1][0] || !string_item[stats.item2][0]) exit(i);
         }
+        get_abilities(i, fixed_abilities, string_ability);
 
         snprintf(buffer_local, 1024,
             "\t\t\"name\": \"%s\",\n"
@@ -287,8 +301,8 @@ int main(int argc, char **argv)
             stats.evYield_HP, stats.evYield_Attack, stats.evYield_Defense, stats.evYield_SpAttack, stats.evYield_SpDefense, stats.evYield_Speed,
             string_item[stats.item1], string_item[stats.item2],
             string_egg[stats.eggGroup1], string_egg[stats.eggGroup2],
-            string_ability[stats.ability1], string_ability[stats.ability2],
-            string_ability[stats.hiddenAbility],
+            fixed_abilities[0], fixed_abilities[1],
+            fixed_abilities[2],
             (i >= SPECIES_VENUSAUR_MEGA && i <= SPECIES_PALKIA_PRIMAL) ? 1 : (i >= SPECIES_VENUSAUR_GIGA && i <= SPECIES_URSHIFU_RAPID_GIGA) ? 2 : 0
         );
         strncat(buffer_main, buffer_local, 1024);
@@ -340,7 +354,7 @@ int main(int argc, char **argv)
     //
     // Create search index
     //
-    char name_search_index[2048][32];
+    char name_search_index[NUM_SPECIES][32];
     int name_search_index_len;
     char current_name[32];
     int found_names;
@@ -351,6 +365,10 @@ int main(int argc, char **argv)
     int found_moves;
     int found_already;
 
+    char ability_search_index[NUM_SPECIES][32];
+    int ability_search_index_len;
+    char current_ability[32];
+    char loop_fixed_abilities[3][32];
     int found_abilities;
 
     json = fopen("search.json", "w");
@@ -435,16 +453,36 @@ int main(int argc, char **argv)
 
     fprintf(json, "\n\t},\n\t\"abilities\": {\n");
 
-    for (i = 1; i < (ABILITY_PASTELVEIL + 1); i++) {
-        snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i != 1) ? ",\n":"", string_ability[i]);
-        for (j = 1, found_abilities = 0; j < NUM_SPECIES; j++) {
-            if (gBaseStats[j].ability1 == i || gBaseStats[j].ability2 == i || gBaseStats[j].hiddenAbility == i) {
-                snprintf(buffer_local, 1024, "%s%i", found_abilities++ ? ", ":"", j);
-                strncat(buffer_main, buffer_local, 1024);
+    for (i = 1; i < NUM_SPECIES; i++) {
+        get_abilities(i, fixed_abilities, string_ability);
+        for (j = 0; j < 3; j++) {
+            snprintf(current_ability, 32, fixed_abilities[j]);
+            if (!strncmp(current_ability, "-", 1)) continue;
+
+            for (k = 0; k < ability_search_index_len; k++) {
+                if (!strncmp(current_ability, ability_search_index[k], 32)) {
+                    current_ability[0] = '\0';
+                    break;
+                }
             }
+            if (!current_ability[0]) continue;
+            snprintf(ability_search_index[ability_search_index_len++], 32, current_ability);
+
+            snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i == 1 && j == 0) ? "":",\n", current_ability);
+            for (k = 1, found_abilities = 0; k < NUM_SPECIES; k++) {
+                get_abilities(k, loop_fixed_abilities, string_ability);
+                if (
+                    !strncmp(loop_fixed_abilities[0], current_ability, 32) ||
+                    !strncmp(loop_fixed_abilities[1], current_ability, 32) ||
+                    !strncmp(loop_fixed_abilities[2], current_ability, 32)
+                ) {
+                    snprintf(buffer_local, 1024, "%s%i", found_abilities++ ? ", ":"", k);
+                    strncat(buffer_main, buffer_local, 1024);
+                } 
+            }
+            strncat(buffer_main, "]", 2);
+            fprintf(json, buffer_main);
         }
-        strncat(buffer_main, "]", 2);
-        fprintf(json, buffer_main);
     }
     
     fprintf(json, "\n\t}\n}\n");
@@ -483,4 +521,228 @@ void load_strings(FILE *file, char list[][32], int *len, int counter)
 
     if (*len != counter) exit(2);
     regfree(&regx);
+}
+
+// Workaround for some pokemon having custom abilites
+void get_abilities(int id, char out[][32], char names[][32])
+{
+    char ability1[32] , ability2[32], hidden_ability[32];
+    ability1[0] = ability2[0] = hidden_ability[0] = '\0';
+
+    switch (id) {
+        case SPECIES_NIDOQUEEN:
+            snprintf(ability2, 32, "Queenly Majesty");
+            break;
+
+        case SPECIES_MEOWTH:
+        case SPECIES_PERSIAN:
+            snprintf(hidden_ability, 32, "Nine Lives");
+            break;
+
+        case SPECIES_MANKEY:
+        case SPECIES_PRIMEAPE:
+            snprintf(ability1, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_DELIBIRD:
+            snprintf(ability1, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_VIGOROTH:
+            snprintf(ability1, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_LILLIPUP:
+            snprintf(ability1, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_MACHOKE:
+        case SPECIES_MACHAMP:
+            snprintf(hidden_ability, 32, "Focus Belt");
+            break;
+
+        case SPECIES_PONYTA:
+        case SPECIES_RAPIDASH:
+            snprintf(hidden_ability, 32, "Fiery Neigh");
+            break;
+
+        case SPECIES_ELEKID:
+        case SPECIES_ELECTABUZZ:
+        case SPECIES_ELECTIVIRE:
+        case SPECIES_MAGBY:
+        case SPECIES_MAGMAR:
+            snprintf(hidden_ability, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_TYROGUE:
+            snprintf(hidden_ability, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_MAREEP:
+        case SPECIES_FLAAFFY:
+        case SPECIES_AMPHAROS:
+            snprintf(hidden_ability, 32, "Tangling Wool");
+            break;
+
+        case SPECIES_GIRAFARIG:
+            snprintf(hidden_ability, 32, "Brain Bond");
+            break;
+
+        case SPECIES_DUSTOX:
+            snprintf(hidden_ability, 32, "Dusty Scales");
+            break;
+
+        case SPECIES_BALTOY:
+        case SPECIES_CLAYDOL:
+            snprintf(hidden_ability, 32, "Multieye");
+            break;
+
+        case SPECIES_TORKOAL:
+            snprintf(ability1, 32, "White Smoke");
+            break;
+
+        case SPECIES_CAMERUPT:
+            snprintf(ability2, 32, "Solid Rock");
+            break;
+
+        case SPECIES_RHYPERIOR:
+            snprintf(ability2, 32, "Solid Rock");
+            break;
+
+        case SPECIES_MEDITITE:
+        case SPECIES_MEDICHAM:
+        case SPECIES_MEDICHAM_MEGA:
+            snprintf(ability1, 32, "Pure Power");
+            break;
+
+        case SPECIES_SWABLU:
+        case SPECIES_ALTARIA:
+            snprintf(hidden_ability, 32, "Cotton Cloud");
+            break;
+
+        case SPECIES_WHISMUR:
+        case SPECIES_LOUDRED:
+        case SPECIES_EXPLOUD:
+            snprintf(ability2, 32, "Bellow");
+            break;
+
+        case SPECIES_RAYQUAZA:
+            snprintf(ability1, 32, "Air Lock");
+            break;
+
+        case SPECIES_SHIELDON:
+        case SPECIES_BASTIODON:
+            snprintf(hidden_ability, 32, "Face Shield");
+            break;
+
+        case SPECIES_MOTHIM:
+            snprintf(hidden_ability, 32, "Subterfuge");
+            break;
+        
+        case SPECIES_VESPIQUEN:
+            snprintf(ability2, 32, "Queenly Majesty");
+            snprintf(hidden_ability, 32, "Honey Armor");
+            break;
+
+        case SPECIES_PIDOVE:
+        case SPECIES_TRANQUILL:
+        case SPECIES_UNFEZANT:
+            snprintf(hidden_ability, 32, "Proud");
+            break;
+
+        case SPECIES_BLITZLE:
+        case SPECIES_ZEBSTRIKA:
+            snprintf(ability1, 32, "Shocking Neigh");
+            break;
+
+        case SPECIES_TIRTOUGA:
+        case SPECIES_CARRACOSTA:
+            snprintf(ability1, 32, "Solid Rock");
+            break;
+
+        case SPECIES_FERROSEED:
+        case SPECIES_FERROTHORN:
+            snprintf(ability1, 32, "Iron Barbs");
+            break;
+
+        case SPECIES_RESHIRAM:
+        case SPECIES_KYUREM_WHITE:
+            snprintf(ability1, 32, "Turboblaze");
+            break;
+
+        case SPECIES_ZEKROM:
+        case SPECIES_KYUREM_BLACK:
+            snprintf(ability1, 32, "Teravolt");
+            break;
+
+        case SPECIES_PYROAR:
+        case SPECIES_PYROAR_FEMALE:
+            snprintf(ability1, 32, "Royal Roar");
+            break;
+
+        case SPECIES_CRABOMINABLE:
+            snprintf(hidden_ability, 32, "Crabby Tactics");
+            break;
+
+        case SPECIES_ROCKRUFF:
+        case SPECIES_LYCANROC_N:
+            snprintf(ability2, 32, "Vital Spirit");
+            break;
+
+        case SPECIES_TSAREENA:
+            snprintf(ability2, 32, "Queenly Majesty");
+            break;
+
+        case SPECIES_WIMPOD:
+            snprintf(ability1, 32, "Wimp Out");
+            break;
+
+        case SPECIES_TOGEDEMARU:
+            snprintf(ability1, 32, "Iron Barbs");
+            break;
+
+        case SPECIES_DIGLETT_A:
+        case SPECIES_DUGTRIO_A:
+            snprintf(ability2, 32, "Tangling Hair");
+            break;
+
+        case SPECIES_GRIMER_A:
+        case SPECIES_MUK_A:
+            snprintf(hidden_ability, 32, "Alchemic Power");
+            break;
+
+        case SPECIES_SCORBUNNY:
+        case SPECIES_RABOOT:
+        case SPECIES_CINDERACE:
+        case SPECIES_CINDERACE_GIGA:
+            snprintf(hidden_ability, 32, "Libero");
+            break;
+
+        case SPECIES_ARROKUDA:
+        case SPECIES_BARRASKEWDA:
+            snprintf(hidden_ability, 32, "Propellor Tail");
+            break;
+
+        case SPECIES_SIZZLIPEDE:
+        case SPECIES_CENTISKORCH:
+        case SPECIES_CENTISKORCH_GIGA:
+            snprintf(ability2, 32, "White Smoke");
+            break;
+
+        case SPECIES_STONJOURNER:
+            snprintf(hidden_ability, 32, "Solid Rock");
+            break;
+
+        case SPECIES_GLASTRIER:
+            snprintf(ability1, 32, "Chilling Neigh");
+            break;
+
+        case SPECIES_MR_MIME_G:
+            snprintf(ability2, 32, "Vital Spirit");
+            break;
+    }
+
+    snprintf(out[0], 32, ability1[0] ? ability1:names[(gBaseStats[id].ability1)]);
+    snprintf(out[1], 32, ability2[0] ? ability2:names[(gBaseStats[id].ability2)]);
+    snprintf(out[2], 32, hidden_ability[0] ? hidden_ability:names[(gBaseStats[id].hiddenAbility)]);
 }

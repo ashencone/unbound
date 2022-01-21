@@ -1245,7 +1245,7 @@
 		"evYield": [3, 0, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Poison Point", "Dazzling"],
+		"ability": ["Poison Point", "Queenly Majesty"],
 		"hiddenAbility": "Sheer Force",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -2278,7 +2278,7 @@
 		"item": ["-------", "Quick Claw"],
 		"eggGroup": ["Field", "Field"],
 		"ability": ["Pickup", "Technician"],
-		"hiddenAbility": "Sturdy",
+		"hiddenAbility": "Nine Lives",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Fake Out"],
@@ -2322,7 +2322,7 @@
 		"item": ["-------", "Quick Claw"],
 		"eggGroup": ["Field", "Field"],
 		"ability": ["Limber", "Technician"],
-		"hiddenAbility": "Sturdy",
+		"hiddenAbility": "Nine Lives",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Power Gem"],
@@ -2471,7 +2471,7 @@
 		"evYield": [0, 1, 0, 0, 0, 0],
 		"item": ["-------", "Payapa Berry"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Insomnia", "Anger Point"],
+		"ability": ["Vital Spirit", "Anger Point"],
 		"hiddenAbility": "Defiant",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -2521,7 +2521,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "Payapa Berry"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Insomnia", "Anger Point"],
+		"ability": ["Vital Spirit", "Anger Point"],
 		"hiddenAbility": "Defiant",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -2980,7 +2980,7 @@
 		"item": ["-------", "Focus Band"],
 		"eggGroup": ["Human-Like", "Human-Like"],
 		"ability": ["Guts", "No Guard"],
-		"hiddenAbility": "Sturdy",
+		"hiddenAbility": "Focus Belt",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Low Kick"],
@@ -3028,7 +3028,7 @@
 		"item": ["-------", "Focus Band"],
 		"eggGroup": ["Human-Like", "Human-Like"],
 		"ability": ["Guts", "No Guard"],
-		"hiddenAbility": "Sturdy",
+		"hiddenAbility": "Focus Belt",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Wide Guard"],
@@ -3463,7 +3463,7 @@
 		"item": ["-------", "Shuca Berry"],
 		"eggGroup": ["Field", "Field"],
 		"ability": ["Flame Body", "Flash Fire"],
-		"hiddenAbility": "Moxie",
+		"hiddenAbility": "Fiery Neigh",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Tackle"],
@@ -3503,7 +3503,7 @@
 		"item": ["-------", "Shuca Berry"],
 		"eggGroup": ["Field", "Field"],
 		"ability": ["Flame Body", "Flash Fire"],
-		"hiddenAbility": "Moxie",
+		"hiddenAbility": "Fiery Neigh",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Smart Strike"],
@@ -4797,7 +4797,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Human-Like", "Human-Like"],
 		"ability": ["Inner Focus", "Iron Fist"],
-		"hiddenAbility": "Solid Rock",
+		"hiddenAbility": "Unseen Fist",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Comet Punch"],
@@ -5619,7 +5619,7 @@
 		"item": ["-------", "Electrizer"],
 		"eggGroup": ["Human-Like", "Human-Like"],
 		"ability": ["Static", "-------"],
-		"hiddenAbility": "Insomnia",
+		"hiddenAbility": "Vital Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Quick Attack"],
@@ -5662,7 +5662,7 @@
 		"item": ["-------", "Magmarizer"],
 		"eggGroup": ["Human-Like", "Human-Like"],
 		"ability": ["Flame Body", "-------"],
-		"hiddenAbility": "Insomnia",
+		"hiddenAbility": "Vital Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Smog"],
@@ -7912,7 +7912,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Field"],
 		"ability": ["Static", "-------"],
-		"hiddenAbility": "Cotton Down",
+		"hiddenAbility": "Tangling Wool",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Tackle"],
@@ -7952,7 +7952,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Field"],
 		"ability": ["Static", "-------"],
-		"hiddenAbility": "Cotton Down",
+		"hiddenAbility": "Tangling Wool",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Charge Beam"],
@@ -7994,7 +7994,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Field"],
 		"ability": ["Static", "-------"],
-		"hiddenAbility": "Cotton Down",
+		"hiddenAbility": "Tangling Wool",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "ThunderPunch"],
@@ -8979,7 +8979,7 @@
 		"item": ["-------", "Persim Berry"],
 		"eggGroup": ["Field", "Field"],
 		"ability": ["Inner Focus", "Sap Sipper"],
-		"hiddenAbility": "Parental Bond",
+		"hiddenAbility": "Brain Bond",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Power Swap"],
@@ -9994,7 +9994,7 @@
 		"evYield": [0, 0, 0, 0, 0, 1],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 1", "Field"],
-		"ability": ["Insomnia", "Hustle"],
+		"ability": ["Vital Spirit", "Hustle"],
 		"hiddenAbility": "Prankster",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -10454,7 +10454,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["Guts", "Steadfast"],
-		"hiddenAbility": "Insomnia",
+		"hiddenAbility": "Vital Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Tackle"],
@@ -10569,7 +10569,7 @@
 		"item": ["-------", "Electrizer"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["Static", "-------"],
-		"hiddenAbility": "Insomnia",
+		"hiddenAbility": "Vital Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Quick Attack"],
@@ -10611,7 +10611,7 @@
 		"item": ["-------", "Magmarizer"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["Flame Body", "-------"],
-		"hiddenAbility": "Insomnia",
+		"hiddenAbility": "Vital Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Smog"],
@@ -11856,7 +11856,7 @@
 		"item": ["-------", "Shed Shell"],
 		"eggGroup": ["Bug", "Bug"],
 		"ability": ["Shield Dust", "-------"],
-		"hiddenAbility": "Ice Scales",
+		"hiddenAbility": "Dusty Scales",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Gust"],
@@ -12923,7 +12923,7 @@
 		"item": ["-------", "Light Clay"],
 		"eggGroup": ["Mineral", "Mineral"],
 		"ability": ["Levitate", "-------"],
-		"hiddenAbility": "Multiscale",
+		"hiddenAbility": "Multieye",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Harden"],
@@ -12956,7 +12956,7 @@
 		"item": ["-------", "Light Clay"],
 		"eggGroup": ["Mineral", "Mineral"],
 		"ability": ["Levitate", "-------"],
-		"hiddenAbility": "Multiscale",
+		"hiddenAbility": "Multieye",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Hyper Beam"],
@@ -13030,7 +13030,7 @@
 		"evYield": [0, 0, 2, 0, 0, 0],
 		"item": ["-------", "Charcoal"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Clear Body", "Drought"],
+		"ability": ["White Smoke", "Drought"],
 		"hiddenAbility": "Shell Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -13879,7 +13879,7 @@
 		"evYield": [0, 1, 0, 1, 0, 0],
 		"item": ["Rawst Berry", "Rawst Berry"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Magma Armor", "Filter"],
+		"ability": ["Magma Armor", "Solid Rock"],
 		"hiddenAbility": "Anger Point",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -14580,7 +14580,7 @@
 		"evYield": [0, 0, 0, 0, 0, 1],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Human-Like", "Human-Like"],
-		"ability": ["Huge Power", "-------"],
+		"ability": ["Pure Power", "-------"],
 		"hiddenAbility": "Telepathy",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -14626,7 +14626,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Human-Like", "Human-Like"],
-		"ability": ["Huge Power", "-------"],
+		"ability": ["Pure Power", "-------"],
 		"hiddenAbility": "Telepathy",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -14678,7 +14678,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Flying", "Dragon"],
 		"ability": ["Natural Cure", "Cloud Nine"],
-		"hiddenAbility": "Cotton Down",
+		"hiddenAbility": "Cotton Cloud",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Peck"],
@@ -14721,7 +14721,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Flying", "Dragon"],
 		"ability": ["Natural Cure", "Cloud Nine"],
-		"hiddenAbility": "Cotton Down",
+		"hiddenAbility": "Cotton Cloud",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Dragon Pulse"],
@@ -14965,7 +14965,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Insomnia", "-------"],
+		"ability": ["Vital Spirit", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -15187,7 +15187,7 @@
 		"evYield": [1, 0, 0, 0, 0, 0],
 		"item": ["-------", "Chesto Berry"],
 		"eggGroup": ["Monster", "Field"],
-		"ability": ["Soundproof", "Punk Rock"],
+		"ability": ["Soundproof", "Bellow"],
 		"hiddenAbility": "Rattled",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -15227,7 +15227,7 @@
 		"evYield": [2, 0, 0, 0, 0, 0],
 		"item": ["-------", "Chesto Berry"],
 		"eggGroup": ["Monster", "Field"],
-		"ability": ["Soundproof", "Punk Rock"],
+		"ability": ["Soundproof", "Bellow"],
 		"hiddenAbility": "Scrappy",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -15269,7 +15269,7 @@
 		"evYield": [3, 0, 0, 0, 0, 0],
 		"item": ["-------", "Chesto Berry"],
 		"eggGroup": ["Monster", "Field"],
-		"ability": ["Soundproof", "Punk Rock"],
+		"ability": ["Soundproof", "Bellow"],
 		"hiddenAbility": "Scrappy",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -16619,7 +16619,7 @@
 		"evYield": [0, 2, 0, 1, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Cloud Nine", "-------"],
+		"ability": ["Air Lock", "-------"],
 		"hiddenAbility": "Shed Skin",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -18208,7 +18208,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Monster"],
 		"ability": ["Sturdy", "Soundproof"],
-		"hiddenAbility": "Valiant Shield",
+		"hiddenAbility": "Face Shield",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Tackle"],
@@ -18248,7 +18248,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Monster"],
 		"ability": ["Sturdy", "Soundproof"],
-		"hiddenAbility": "Valiant Shield",
+		"hiddenAbility": "Face Shield",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Block"],
@@ -18345,7 +18345,7 @@
 		"item": ["-------", "Silver Powder"],
 		"eggGroup": ["Bug", "Bug"],
 		"ability": ["Adaptability", "Compound Eyes"],
-		"hiddenAbility": "Protean",
+		"hiddenAbility": "Subterfuge",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Gust"],
@@ -18394,8 +18394,8 @@
 		"evYield": [0, 0, 1, 0, 1, 0],
 		"item": ["-------", "Poison Barb"],
 		"eggGroup": ["Bug", "Bug"],
-		"ability": ["Pressure", "Dazzling"],
-		"hiddenAbility": "Valiant Shield",
+		"ability": ["Pressure", "Queenly Majesty"],
+		"hiddenAbility": "Honey Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Slash"],
@@ -20516,7 +20516,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Field"],
-		"ability": ["Lightning Rod", "Filter"],
+		"ability": ["Lightning Rod", "Solid Rock"],
 		"hiddenAbility": "Reckless",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -20614,7 +20614,7 @@
 		"item": ["-------", "Electrizer"],
 		"eggGroup": ["Human-Like", "Human-Like"],
 		"ability": ["Motor Drive", "-------"],
-		"hiddenAbility": "Insomnia",
+		"hiddenAbility": "Vital Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Elec Terrain"],
@@ -22213,7 +22213,7 @@
 		"evYield": [0, 1, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Insomnia", "Pickup"],
+		"ability": ["Vital Spirit", "Pickup"],
 		"hiddenAbility": "Run Away",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -22786,7 +22786,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Flying", "Flying"],
 		"ability": ["Rivalry", "Super Luck"],
-		"hiddenAbility": "Moxie",
+		"hiddenAbility": "Proud",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Gust"],
@@ -22826,7 +22826,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Flying", "Flying"],
 		"ability": ["Rivalry", "Super Luck"],
-		"hiddenAbility": "Moxie",
+		"hiddenAbility": "Proud",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Gust"],
@@ -22866,7 +22866,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Flying", "Flying"],
 		"ability": ["Rivalry", "Super Luck"],
-		"hiddenAbility": "Moxie",
+		"hiddenAbility": "Proud",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Gust"],
@@ -22905,7 +22905,7 @@
 		"evYield": [0, 0, 0, 0, 0, 1],
 		"item": ["Cheri Berry", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Moxie", "Motor Drive"],
+		"ability": ["Shocking Neigh", "Motor Drive"],
 		"hiddenAbility": "Sap Sipper",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -22945,7 +22945,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["Cheri Berry", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Moxie", "Motor Drive"],
+		"ability": ["Shocking Neigh", "Motor Drive"],
 		"hiddenAbility": "Sap Sipper",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -24681,7 +24681,7 @@
 		"evYield": [0, 0, 1, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 1", "Water 3"],
-		"ability": ["Filter", "Sturdy"],
+		"ability": ["Solid Rock", "Sturdy"],
 		"hiddenAbility": "Swift Swim",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -24725,7 +24725,7 @@
 		"evYield": [0, 0, 2, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 1", "Water 3"],
-		"ability": ["Filter", "Sturdy"],
+		"ability": ["Solid Rock", "Sturdy"],
 		"hiddenAbility": "Swift Swim",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -26072,7 +26072,7 @@
 		"evYield": [0, 0, 1, 0, 0, 0],
 		"item": ["-------", "Sticky Barb"],
 		"eggGroup": ["Grass", "Mineral"],
-		"ability": ["Rough Skin", "-------"],
+		"ability": ["Iron Barbs", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -26113,7 +26113,7 @@
 		"evYield": [0, 0, 2, 0, 0, 0],
 		"item": ["-------", "Sticky Barb"],
 		"eggGroup": ["Grass", "Mineral"],
-		"ability": ["Rough Skin", "-------"],
+		"ability": ["Iron Barbs", "-------"],
 		"hiddenAbility": "Anticipation",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -27867,7 +27867,7 @@
 		"evYield": [0, 0, 0, 3, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Mold Breaker", "-------"],
+		"ability": ["Turboblaze", "-------"],
 		"hiddenAbility": "Flash Fire",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -27898,7 +27898,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Mold Breaker", "-------"],
+		"ability": ["Teravolt", "-------"],
 		"hiddenAbility": "Lightning Rod",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -29698,7 +29698,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Mold Breaker", "-------"],
+		"ability": ["Teravolt", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -29729,7 +29729,7 @@
 		"evYield": [0, 0, 0, 3, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Mold Breaker", "-------"],
+		"ability": ["Turboblaze", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -30553,7 +30553,7 @@
 		"evYield": [0, 0, 0, 2, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Iron Barbs", "Unnerve"],
+		"ability": ["Royal Roar", "Unnerve"],
 		"hiddenAbility": "Adaptability",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -32620,7 +32620,7 @@
 		"evYield": [0, 0, 0, 2, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Iron Barbs", "Unnerve"],
+		"ability": ["Royal Roar", "Unnerve"],
 		"hiddenAbility": "Adaptability",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -34851,7 +34851,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Human-Like", "Human-Like"],
-		"ability": ["Huge Power", "-------"],
+		"ability": ["Pure Power", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 1,
 		"levelUpMoves": [
@@ -36944,7 +36944,7 @@
 		"item": ["-------", "Cheri Berry"],
 		"eggGroup": ["Water 3", "Water 3"],
 		"ability": ["Hyper Cutter", "Iron Fist"],
-		"hiddenAbility": "Gorilla Tactics",
+		"hiddenAbility": "Crabby Tactics",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Ice Punch"],
@@ -37088,7 +37088,7 @@
 		"evYield": [0, 1, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Keen Eye", "Insomnia"],
+		"ability": ["Keen Eye", "Vital Spirit"],
 		"hiddenAbility": "Steadfast",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -37802,7 +37802,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["Grassy Seed", "-------"],
 		"eggGroup": ["Grass", "Grass"],
-		"ability": ["Leaf Guard", "Dazzling"],
+		"ability": ["Leaf Guard", "Queenly Majesty"],
 		"hiddenAbility": "Sweet Veil",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -37959,7 +37959,7 @@
 		"evYield": [0, 0, 0, 0, 0, 1],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Bug", "Water 3"],
-		"ability": ["Emergency Exit", "-------"],
+		"ability": ["Wimp Out", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -38308,7 +38308,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "Electric Seed"],
 		"eggGroup": ["Field", "Fairy"],
-		"ability": ["Rough Skin", "Lightning Rod"],
+		"ability": ["Iron Barbs", "Lightning Rod"],
 		"hiddenAbility": "Sturdy",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -38758,7 +38758,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Tangling Hair", "-------"],
+		"ability": ["Full Metal Body", "-------"],
 		"hiddenAbility": "Battle Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -39495,7 +39495,7 @@
 		"evYield": [0, 0, 0, 0, 0, 1],
 		"item": ["-------", "Soft Sand"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Sand Force", "Gooey"],
+		"ability": ["Sand Force", "Tangling Hair"],
 		"hiddenAbility": "Steely Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -39537,7 +39537,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "Soft Sand"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Sand Force", "Gooey"],
+		"ability": ["Sand Force", "Tangling Hair"],
 		"hiddenAbility": "Steely Spirit",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -39811,7 +39811,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Amorphous", "Amorphous"],
 		"ability": ["Poison Touch", "Gluttony"],
-		"hiddenAbility": "Receiver",
+		"hiddenAbility": "Alchemic Power",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Pound"],
@@ -39855,7 +39855,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Amorphous", "Amorphous"],
 		"ability": ["Poison Touch", "Gluttony"],
-		"hiddenAbility": "Receiver",
+		"hiddenAbility": "Alchemic Power",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Venom Drench"],
@@ -40286,7 +40286,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Field"],
-		"ability": ["Tough Claws", "Insomnia"],
+		"ability": ["Tough Claws", "Vital Spirit"],
 		"hiddenAbility": "No Guard",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -42397,7 +42397,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Human-Like"],
 		"ability": ["Blaze", "-------"],
-		"hiddenAbility": "Protean",
+		"hiddenAbility": "Libero",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Growl"],
@@ -42427,7 +42427,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Human-Like"],
 		"ability": ["Blaze", "-------"],
-		"hiddenAbility": "Protean",
+		"hiddenAbility": "Libero",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Growl"],
@@ -42457,7 +42457,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Human-Like"],
 		"ability": ["Blaze", "-------"],
-		"hiddenAbility": "Protean",
+		"hiddenAbility": "Libero",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Blaze Kick"],
@@ -43442,7 +43442,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 2", "Water 2"],
 		"ability": ["Swift Swim", "-------"],
-		"hiddenAbility": "Stalwart",
+		"hiddenAbility": "Propellor Tail",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Aqua Jet"],
@@ -43471,7 +43471,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Water 2", "Water 2"],
 		"ability": ["Swift Swim", "-------"],
-		"hiddenAbility": "Stalwart",
+		"hiddenAbility": "Propellor Tail",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Throat Chop"],
@@ -43568,7 +43568,7 @@
 		"evYield": [0, 1, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Bug", "Bug"],
-		"ability": ["Flash Fire", "Clear Body"],
+		"ability": ["Flash Fire", "White Smoke"],
 		"hiddenAbility": "Flame Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -43600,7 +43600,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Bug", "Bug"],
-		"ability": ["Flash Fire", "Clear Body"],
+		"ability": ["Flash Fire", "White Smoke"],
 		"hiddenAbility": "Flame Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -44364,7 +44364,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Mineral", "Mineral"],
 		"ability": ["Power Spot", "-------"],
-		"hiddenAbility": "Filter",
+		"hiddenAbility": "Solid Rock",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Block"],
@@ -44930,7 +44930,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Solid Rock", "-------"],
+		"ability": ["Unseen Fist", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -44992,7 +44992,7 @@
 		"evYield": [0, 0, 0, 0, 0, 3],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Vital Spirit", "-------"],
+		"ability": ["Transistor", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45021,7 +45021,7 @@
 		"evYield": [3, 0, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["White Smoke", "-------"],
+		"ability": ["Dragon's Maw", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45050,7 +45050,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Moxie", "-------"],
+		"ability": ["Chilling Neigh", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45078,7 +45078,7 @@
 		"evYield": [0, 0, 0, 3, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Iron Barbs", "-------"],
+		"ability": ["Grim Neigh", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45639,7 +45639,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Solid Rock", "-------"],
+		"ability": ["Unseen Fist", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45701,7 +45701,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Teravolt", "-------"],
+		"ability": ["As One", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45745,7 +45745,7 @@
 		"evYield": [0, 0, 0, 3, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Turboblaze", "-------"],
+		"ability": ["As One", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -45931,7 +45931,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Water 1"],
-		"ability": ["Queenly Majesty", "Own Tempo"],
+		"ability": ["Quick Draw", "Own Tempo"],
 		"hiddenAbility": "Regenerator",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -46105,7 +46105,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Human-Like", "Human-Like"],
-		"ability": ["Screen Cleaner", "Insomnia"],
+		"ability": ["Screen Cleaner", "Vital Spirit"],
 		"hiddenAbility": "Ice Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -46248,7 +46248,7 @@
 		"evYield": [0, 0, 0, 0, 2, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Monster", "Water 1"],
-		"ability": ["Alchemic Power", "Own Tempo"],
+		"ability": ["Curious Medicine", "Own Tempo"],
 		"hiddenAbility": "Regenerator",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -47117,7 +47117,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Field", "Human-Like"],
 		"ability": ["Blaze", "-------"],
-		"hiddenAbility": "Protean",
+		"hiddenAbility": "Libero",
 		"evolutionType": 2,
 		"levelUpMoves": [
 			[0, "Blaze Kick"],
@@ -47460,7 +47460,7 @@
 		"evYield": [0, 2, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Bug", "Bug"],
-		"ability": ["Flash Fire", "Clear Body"],
+		"ability": ["Flash Fire", "White Smoke"],
 		"hiddenAbility": "Flame Body",
 		"evolutionType": 2,
 		"levelUpMoves": [
@@ -47633,7 +47633,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Solid Rock", "-------"],
+		"ability": ["Unseen Fist", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 2,
 		"levelUpMoves": [
@@ -47664,7 +47664,7 @@
 		"evYield": [0, 3, 0, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
-		"ability": ["Solid Rock", "-------"],
+		"ability": ["Unseen Fist", "-------"],
 		"hiddenAbility": "-------",
 		"evolutionType": 2,
 		"levelUpMoves": [
