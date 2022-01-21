@@ -309,11 +309,10 @@ let pokemonCards: HTMLElement[] = [];
     requestAnimationFrame(() => {
       loadingBar.style.transform = `scale(${(loadingBarLength +=
         90 / pokemonData.length)}%, 100%)`;
-      loadingText.textContent = `${pokemonCards.length
-        .toString()
-        .padStart(pokemonData.length.toString().length, "0")}/${
-        pokemonData.length
-      }`;
+      loadingText.textContent = `${(
+        (pokemonCards.length / pokemonData.length) *
+        100
+      ).toFixed(1)}%`;
     });
     if (pokemonCards.length < pokemonData.length) {
       setTimeout(createCards, 0);
