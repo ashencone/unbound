@@ -197,6 +197,7 @@ function makeCard(pokemon) {
 }
 let loading = document.querySelector(".loading");
 let loadingBar = loading.querySelector(".loading__bar-fill");
+let loadingText = loading.querySelector(".loading__text");
 let loadingBarLength = 0;
 let search = document.querySelector(".search");
 let searchIndex;
@@ -213,8 +214,11 @@ let pokemonCards = [];
         requestAnimationFrame(() => {
             loadingBar.style.transform = `scale(${(loadingBarLength +=
                 90 / pokemonData.length)}%, 100%)`;
+            loadingText.textContent = `${pokemonCards.length
+                .toString()
+                .padStart(pokemonData.length.toString().length, "0")}/${pokemonData.length}`;
         });
-        if (pokemonCards.length != pokemonData.length) {
+        if (pokemonCards.length < pokemonData.length) {
             setTimeout(createCards, 0);
         }
         else {

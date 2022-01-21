@@ -285,6 +285,7 @@ function makeCard(pokemon: Pokemon): HTMLElement {
 //
 let loading: HTMLElement = document.querySelector(".loading")!;
 let loadingBar: HTMLElement = loading.querySelector(".loading__bar-fill")!;
+let loadingText: HTMLElement = loading.querySelector(".loading__text")!;
 let loadingBarLength: number = 0;
 let search: HTMLElement = document.querySelector(".search")!;
 
@@ -308,8 +309,13 @@ let pokemonCards: HTMLElement[] = [];
     requestAnimationFrame(() => {
       loadingBar.style.transform = `scale(${(loadingBarLength +=
         90 / pokemonData.length)}%, 100%)`;
+      loadingText.textContent = `${pokemonCards.length
+        .toString()
+        .padStart(pokemonData.length.toString().length, "0")}/${
+        pokemonData.length
+      }`;
     });
-    if (pokemonCards.length != pokemonData.length) {
+    if (pokemonCards.length < pokemonData.length) {
       setTimeout(createCards, 0);
     } else {
       loading.classList.add("loading--hidden");
