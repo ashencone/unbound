@@ -288,6 +288,7 @@ let loadingBar: HTMLElement = loading.querySelector(".loading__bar-fill")!;
 let loadingText: HTMLElement = loading.querySelector(".loading__text")!;
 let loadingBarLength: number = 0;
 let search: HTMLElement = document.querySelector(".search")!;
+let credits: HTMLElement = document.querySelector(".credits")!;
 
 interface SearchIndex {
   [index: string]: { [name: string]: number[] };
@@ -319,6 +320,7 @@ let pokemonCards: HTMLElement[] = [];
     } else {
       loading.classList.add("loading--hidden");
       search.classList.remove("search--hidden");
+      credits.style.display = "none";
     }
   }, 0);
   const index = await fetch("sources/search.json");

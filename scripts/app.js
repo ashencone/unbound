@@ -200,6 +200,7 @@ let loadingBar = loading.querySelector(".loading__bar-fill");
 let loadingText = loading.querySelector(".loading__text");
 let loadingBarLength = 0;
 let search = document.querySelector(".search");
+let credits = document.querySelector(".credits");
 let searchIndex;
 let pokemonData = [];
 let pokemonCards = [];
@@ -223,6 +224,7 @@ let pokemonCards = [];
         else {
             loading.classList.add("loading--hidden");
             search.classList.remove("search--hidden");
+            credits.style.display = "none";
         }
     }, 0);
     const index = await fetch("sources/search.json");

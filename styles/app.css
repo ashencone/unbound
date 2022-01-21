@@ -245,6 +245,40 @@ main {
   color: var(--white);
 }
 
+.credits {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 0.125rem solid var(--dark);
+  border-radius: 0.75rem;
+
+  background: var(--grey);
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+.credits__list {
+  list-style: inside;
+}
+
+.credits__elem {
+  padding: 0.125rem 0;
+}
+
+.credits__heart {
+  color: #e63946;
+}
+
+.credits__unbound {
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
+
+  background: var(--dark);
+
+  font-weight: 600;
+  color: var(--white);
+}
+
 .pokemon {
   width: 100%;
   margin: 1.5rem 0;
@@ -698,5 +732,10 @@ main {
   .loading {
     width: 75%;
     margin: 0 auto;
+  }
+
+  .credits {
+    width: 75%;
+    margin: 1.5rem auto;
   }
 }
