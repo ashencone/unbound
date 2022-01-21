@@ -285,6 +285,8 @@ let searchIcon = document.querySelector(".search__icon");
 let searchStrings = document.querySelector(".search__strings");
 let pokemons = document.querySelector(".pokemons");
 let documentFragment = document.createDocumentFragment();
+let searchResults = [];
+let searchResultsVisible = 0;
 let bufferElement;
 let regexStr;
 let valueMap = ["pokemon", "items", "moves", "abilities"];
@@ -301,13 +303,28 @@ function updateSearchStrings(element = undefined) {
 function updateSearch() {
     const query = searchText.value;
     if (!query) {
+        searchResults = [];
+    }
+    else {
+        searchResults =
+            searchIndex[valueMap[+searchType.dataset.value]][query] || [];
+    }
+    searchResultsVisible = 0;
+    loadCards();
+}
+function loadCards() {
+    if (!searchResults.length) {
         pokemons.replaceChildren();
         return;
     }
-    searchIndex[valueMap[+searchType.dataset.value]][query].forEach((id) => {
-        documentFragment.appendChild((bufferElement = pokemonCards[id]));
-        (bufferElement.querySelector(".pokemon__img")).src = `images/${id}.png`;
+    if (searchResultsVisible == searchResults.length)
+        return;
+    const visibleBefore = searchResultsVisible;
+    let id = 0;
+    for (; searchResultsVisible < Math.min(visibleBefore + 5, searchResults.length); searchResultsVisible++) {
+        documentFragment.appendChild((bufferElement = pokemonCards[(id = searchResults[searchResultsVisible])]));
         if (!bufferElement.dataset.event) {
+            (bufferElement.querySelector(".pokemon__img")).src = `images/${id}.png`;
             const header = bufferElement.querySelector(".pokemon__moves-header");
             const movesData = bufferElement.querySelector(".pokemon__moves-data");
             const movesIcon = bufferElement.querySelector(".pokemon__moves-icon");
@@ -325,8 +342,13 @@ function updateSearch() {
             });
             bufferElement.dataset.event = "1";
         }
-    });
-    pokemons.replaceChildren(documentFragment);
+    }
+    if (visibleBefore) {
+        pokemons.appendChild(documentFragment);
+    }
+    else {
+        pokemons.replaceChildren(documentFragment);
+    }
 }
 searchText.addEventListener("input", () => {
     if (searchText.value.length) {
@@ -367,3 +389,9 @@ window.addEventListener("click", (e) => {
         updateSearchStrings();
     }
 });
+window.addEventListener("scroll", () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    if (scrollTop + clientHeight > scrollHeight - 0.5 * clientHeight) {
+        loadCards();
+    }
+}, { passive: true });

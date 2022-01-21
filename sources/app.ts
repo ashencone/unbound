@@ -406,6 +406,8 @@ let searchIcon: HTMLElement = document.querySelector(".search__icon")!;
 let searchStrings: HTMLElement = document.querySelector(".search__strings")!;
 let pokemons: HTMLDivElement = document.querySelector(".pokemons")!;
 let documentFragment: DocumentFragment = document.createDocumentFragment();
+let searchResults: number[] = [];
+let searchResultsVisible: number = 0;
 let bufferElement: HTMLElement;
 let regexStr: RegExp;
 let valueMap: string[] = ["pokemon", "items", "moves", "abilities"];
@@ -425,17 +427,36 @@ function updateSearchStrings(
 function updateSearch() {
   const query = searchText.value;
   if (!query) {
+    searchResults = [];
+  } else {
+    searchResults =
+      searchIndex[valueMap[+searchType.dataset.value!]][query] || [];
+  }
+  searchResultsVisible = 0;
+  loadCards();
+}
+
+function loadCards() {
+  if (!searchResults.length) {
     pokemons.replaceChildren();
     return;
   }
-  searchIndex[valueMap[+searchType.dataset.value!]][query].forEach((id) => {
-    documentFragment.appendChild((bufferElement = pokemonCards[id]));
+  if (searchResultsVisible == searchResults.length) return;
 
-    (<HTMLImageElement>(
-      bufferElement.querySelector(".pokemon__img")
-    )).src = `images/${id}.png`;
-
+  const visibleBefore: number = searchResultsVisible;
+  let id = 0;
+  for (
+    ;
+    searchResultsVisible < Math.min(visibleBefore + 5, searchResults.length);
+    searchResultsVisible++
+  ) {
+    documentFragment.appendChild(
+      (bufferElement = pokemonCards[(id = searchResults[searchResultsVisible])])
+    );
     if (!bufferElement.dataset.event) {
+      (<HTMLImageElement>(
+        bufferElement.querySelector(".pokemon__img")
+      )).src = `images/${id}.png`;
       const header: HTMLElement = bufferElement.querySelector(
         ".pokemon__moves-header"
       )!;
@@ -445,7 +466,6 @@ function updateSearch() {
       const movesIcon: HTMLElement = bufferElement.querySelector(
         ".pokemon__moves-icon"
       )!;
-
       header.addEventListener("click", () => {
         if (!header.dataset.visible) {
           movesData.style.maxHeight = `${movesData.scrollHeight}px`;
@@ -457,11 +477,14 @@ function updateSearch() {
           header.dataset.visible = "";
         }
       });
-
       bufferElement.dataset.event = "1";
     }
-  });
-  pokemons.replaceChildren(documentFragment);
+  }
+  if (visibleBefore) {
+    pokemons.appendChild(documentFragment);
+  } else {
+    pokemons.replaceChildren(documentFragment);
+  }
 }
 
 searchText.addEventListener("input", () => {
@@ -505,3 +528,14 @@ window.addEventListener("click", (e) => {
     updateSearchStrings();
   }
 });
+
+window.addEventListener(
+  "scroll",
+  () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    if (scrollTop + clientHeight > scrollHeight - 0.5 * clientHeight) {
+      loadCards();
+    }
+  },
+  { passive: true }
+);
