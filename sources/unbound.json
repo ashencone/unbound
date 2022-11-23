@@ -554,7 +554,6 @@
 			[1, "Bug Bite"],
 			[1, "String Shot"],
 			[1, "Poison Sting"],
-			[1, "Fury Attack"],
 			[9, "Twineedle"],
 			[11, "Fury Attack"],
 			[14, "Rage"],
@@ -776,7 +775,7 @@
 		"item": ["-------", "Sharp Beak"],
 		"eggGroup": ["Flying", "Flying"],
 		"ability": ["Keen Eye", "Sniper"],
-		"hiddenAbility": "Super Luck",
+		"hiddenAbility": "Merciless",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Peck"],
@@ -789,9 +788,10 @@
 			[22, "Assurance"],
 			[24, "Agility"],
 			[27, "Take Down"],
-			[30, "Focus Energy"],
-			[34, "Roost"],
-			[37, "Drill Peck"]
+			[30, "Drill Peck"],
+			[33, "Focus Energy"],
+			[37, "Roost"],
+			[40, "Double-Edge"]
 		],
 		"eggMoves": [
 			"Feint Attack",
@@ -815,10 +815,10 @@
 		"item": ["-------", "Sharp Beak"],
 		"eggGroup": ["Flying", "Flying"],
 		"ability": ["Keen Eye", "Sniper"],
-		"hiddenAbility": "Super Luck",
+		"hiddenAbility": "Merciless",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Pluck"],
+			[0, "Pluck"],
 			[1, "Peck"],
 			[1, "Growl"],
 			[1, "Leer"],
@@ -826,14 +826,16 @@
 			[11, "Fury Attack"],
 			[15, "Aerial Ace"],
 			[18, "Mirror Move"],
+			[19, "Pluck"],
 			[23, "Assurance"],
-			[26, "Agility"],
+			[27, "Agility"],
 			[30, "Take Down"],
-			[34, "Focus Energy"],
-			[38, "Roost"],
-			[42, "Drill Peck"],
+			[34, "Drill Peck"],
+			[38, "Focus Energy"],
+			[42, "Roost"],
 			[46, "Drill Run"],
-			[50, "Beak Blast"]
+			[50, "Beak Blast"],
+			[54, "Double-Edge"]
 		],
 		"eggMoves": [
 			"Feint Attack",
@@ -1027,12 +1029,12 @@
 			[1, "Spark"],
 			[1, "Discharge"],
 			[1, "Thunderbolt"],
-			[1, "Wild Charge"],
-			[1, "Thunder"],
 			[1, "ThunderPunch"],
 			[1, "Agility"],
 			[1, "Slam"],
-			[1, "Light Screen"]
+			[1, "Light Screen"],
+			[44, "Wild Charge"],
+			[48, "Thunder"]
 		],
 		"eggMoves": [
 			"Reversal",
@@ -1250,28 +1252,25 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Chip Away"],
-			[1, "Superpower"],
 			[1, "Body Slam"],
-			[1, "ShellSideArm"],
 			[1, "Growl"],
 			[1, "Poison Sting"],
 			[1, "Scratch"],
 			[1, "Tail Whip"],
 			[1, "Fury Swipes"],
 			[1, "Toxic Spikes"],
-			[1, "Double Kick"],
-			[1, "Poison Fang"],
 			[1, "Bite"],
 			[1, "Helping Hand"],
-			[1, "Captivate"],
 			[1, "Toxic"],
 			[1, "Flatter"],
 			[1, "Crunch"],
-			[1, "Earth Power"],
-			[1, "Chip Away"],
-			[1, "Double Kick"],
 			[1, "Poison Fang"],
-			[1, "Captivate"]
+			[1, "Double Kick"],
+			[1, "Chip Away"],
+			[1, "Captivate"],
+			[48, "ShellSideArm"],
+			[52, "Superpower"],
+			[57, "Earth Power"]
 		],
 		"eggMoves": [
 			"Supersonic",
@@ -1391,28 +1390,25 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Chip Away"],
-			[1, "Megahorn"],
 			[1, "Thrash"],
 			[1, "Leer"],
 			[1, "Poison Sting"],
 			[1, "Peck"],
-			[1, "Focus Energy"],
 			[1, "Fury Attack"],
 			[1, "Toxic Spikes"],
-			[1, "Double Kick"],
-			[1, "Poison Tail"],
 			[1, "Horn Attack"],
 			[1, "Helping Hand"],
 			[1, "Captivate"],
 			[1, "Toxic"],
 			[1, "Flatter"],
-			[1, "Poison Jab"],
-			[1, "Earth Power"],
 			[1, "Horn Drill"],
 			[1, "Chip Away"],
-			[1, "Double Kick"],
 			[1, "Poison Tail"],
-			[1, "Focus Energy"]
+			[1, "Double Kick"],
+			[1, "Focus Energy"],
+			[48, "Megahorn"],
+			[52, "Poison Jab"],
+			[57, "Earth Power"]
 		],
 		"eggMoves": [
 			"Counter",
@@ -1506,7 +1502,6 @@
 			[1, "Sweet Kiss"],
 			[1, "Charm"],
 			[1, "Magical Leaf"],
-			[1, "Disarm Cry"],
 			[1, "Pound"],
 			[1, "Growl"],
 			[1, "Encore"],
@@ -1520,14 +1515,15 @@
 			[1, "Stored Power"],
 			[1, "Metronome"],
 			[1, "Lucky Chant"],
-			[1, "Body Slam"],
 			[1, "Gravity"],
 			[1, "Healing Wish"],
 			[1, "After You"],
+			[1, "Disarm Cry"],
+			[1, "Body Slam"],
 			[1, "Follow Me"],
 			[1, "Moonlight"],
-			[1, "Moonblast"],
-			[1, "Meteor Mash"]
+			[43, "Moonblast"],
+			[49, "Meteor Mash"]
 		],
 		"eggMoves": [
 			"Present",
@@ -1620,11 +1616,11 @@
 			[1, "Fire Spin"],
 			[1, "Inferno"],
 			[1, "Grudge"],
-			[1, "Fire Blast"],
+			[1, "Safeguard"],
 			[1, "Quick Attack"],
 			[1, "Confuse Ray"],
 			[1, "Flamethrower"],
-			[1, "Safeguard"]
+			[58, "Fire Blast"]
 		],
 		"eggMoves": [
 			"Feint Attack",
@@ -1708,56 +1704,31 @@
 		"hiddenAbility": "Huge Power",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Fleur Cannon"],
-			[1, "Disable"],
-			[1, "Charm"],
-			[1, "Pound"],
-			[1, "Copycat"],
-			[1, "Defense Curl"],
-			[1, "Echoed Voice"],
-			[1, "Covet"],
-			[1, "Play Nice"],
-			[1, "Stockpile"],
-			[1, "Swallow"],
-			[1, "Spit Up"],
-			[1, "Double Slap"],
-			[1, "Rollout"],
-			[1, "Round"],
-			[1, "Wake-Up Slap"],
-			[1, "Rest"],
-			[1, "Mimic"],
-			[1, "Gyro Ball"],
-			[1, "Play Rough"],
-			[1, "Hyper Voice"],
-			[1, "Double-Edge"],
-			[1, "Play Rough"],
-			[1, "Sing"],
-			[1, "Defense Curl"],
-			[1, "Disable"],
-			[1, "Charm"],
-			[1, "Pound"],
-			[1, "Copycat"],
-			[1, "Defense Curl"],
-			[1, "Echoed Voice"],
-			[1, "Covet"],
-			[1, "Play Nice"],
-			[1, "Stockpile"],
-			[1, "Swallow"],
-			[1, "Spit Up"],
-			[1, "Double Slap"],
-			[1, "Rollout"],
-			[1, "Round"],
-			[1, "Wake-Up Slap"],
-			[1, "Rest"],
-			[1, "Mimic"],
-			[1, "Gyro Ball"],
-			[1, "Play Rough"],
-			[1, "Hyper Voice"],
-			[1, "Double-Edge"],
 			[1, "Sweet Kiss"],
-			[1, "Disarm Cry"],
+			[1, "Disable"],
+			[1, "Charm"],
 			[1, "Sing"],
-			[1, "Body Slam"]
+			[1, "Pound"],
+			[1, "Copycat"],
+			[1, "Defense Curl"],
+			[1, "Echoed Voice"],
+			[1, "Covet"],
+			[1, "Play Nice"],
+			[1, "Stockpile"],
+			[1, "Swallow"],
+			[1, "Spit Up"],
+			[1, "Double Slap"],
+			[1, "Rollout"],
+			[1, "Round"],
+			[1, "Rest"],
+			[1, "Mimic"],
+			[1, "Hyper Voice"],
+			[1, "Disarm Cry"],
+			[1, "Body Slam"],
+			[1, "Wake-Up Slap"],
+			[1, "Gyro Ball"],
+			[44, "Play Rough"],
+			[48, "Double-Edge"]
 		],
 		"eggMoves": [
 			"Perish Song",
@@ -1978,12 +1949,12 @@
 			[1, "Venoshock"],
 			[1, "Apple Acid"],
 			[1, "Gras Terrain"],
-			[1, "Petal Dance"],
 			[1, "Strength Sap"],
 			[1, "Petal Storm"],
 			[1, "Toxic"],
 			[1, "Moonblast"],
-			[1, "Moonlight"]
+			[1, "Moonlight"],
+			[68, "Petal Dance"]
 		],
 		"eggMoves": [
 			"Razor Leaf",
@@ -2407,7 +2378,8 @@
 			"Synchronoise",
 			"Simple Beam",
 			"Clear Smog",
-			"Mud Sport"
+			"Mud Sport",
+			"Tri Attack"
 		]
 	},
 	{
@@ -2428,8 +2400,6 @@
 			[1, "Scratch"],
 			[1, "Tail Whip"],
 			[1, "Water Gun"],
-			[4, "Tail Whip"],
-			[7, "Water Gun"],
 			[10, "Confusion"],
 			[13, "Fury Swipes"],
 			[16, "Water Pulse"],
@@ -2461,7 +2431,8 @@
 			"Synchronoise",
 			"Simple Beam",
 			"Clear Smog",
-			"Mud Sport"
+			"Mud Sport",
+			"Tri Attack"
 		]
 	},
 	{
@@ -2594,8 +2565,8 @@
 			[44, "Roar"],
 			[48, "Play Rough"],
 			[51, "Heat Wave"],
-			[54, "Outrage"],
-			[57, "Reversal"],
+			[54, "Reversal"],
+			[57, "Outrage"],
 			[60, "Flare Blitz"]
 		],
 		"eggMoves": [
@@ -2635,19 +2606,18 @@
 			[1, "Flame Wheel"],
 			[1, "Helping Hand"],
 			[1, "Agility"],
-			[1, "Flame Burst"],
 			[1, "Take Down"],
 			[1, "Flamethrower"],
 			[1, "Roar"],
-			[1, "Heat Wave"],
 			[1, "Play Rough"],
-			[1, "Outrage"],
+			[1, "Heat Wave"],
 			[1, "Reversal"],
-			[1, "Flare Blitz"],
-			[1, "Extremespeed"],
-			[1, "Fire Fang"],
 			[1, "Retaliate"],
-			[1, "Crunch"]
+			[1, "Fire Fang"],
+			[1, "Extremespeed"],
+			[1, "Crunch"],
+			[57, "Outrage"],
+			[60, "Flare Blitz"]
 		],
 		"eggMoves": [
 			"Body Slam",
@@ -2776,13 +2746,13 @@
 			[1, "Waterfall"],
 			[1, "Body Slam"],
 			[1, "Earth Power"],
-			[1, "Belly Drum"],
-			[1, "Double-Edge"],
 			[1, "Hydro Pump"],
-			[1, "Bubble Beam"],
-			[1, "Submission"],
 			[1, "Hypnosis"],
 			[1, "Mud Shot"],
+			[1, "Bubble Beam"],
+			[1, "Submission"],
+			[52, "Belly Drum"],
+			[56, "Double-Edge"],
 			[60, "SurgeStrikes"]
 		],
 		"eggMoves": [
@@ -2840,15 +2810,16 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Kinesis"],
-			[0, "Confusion"],
+			[0, "Psycho Cut"],
+			[1, "Hypnosis"],
 			[1, "Disable"],
 			[1, "Teleport"],
-			[5, "Psybeam"],
+			[5, "Confusion"],
 			[10, "Reflect"],
 			[15, "Kinesis"],
-			[15, "Confusion"],
+			[15, "Psycho Cut"],
 			[18, "Night Shade"],
-			[21, "Psycho Cut"],
+			[21, "Psybeam"],
 			[24, "Miracle Eye"],
 			[28, "Telekinesis"],
 			[32, "Psyshock"],
@@ -2887,16 +2858,15 @@
 		"hiddenAbility": "Magic Guard",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Kinesis"],
-			[1, "Confusion"],
+			[1, "Hypnosis"],
 			[1, "Disable"],
 			[1, "Teleport"],
-			[5, "Psybeam"],
+			[1, "Confusion"],
 			[10, "Reflect"],
 			[15, "Kinesis"],
-			[15, "Confusion"],
+			[15, "Psycho Cut"],
 			[18, "Night Shade"],
-			[21, "Psycho Cut"],
+			[21, "Psybeam"],
 			[24, "Miracle Eye"],
 			[28, "Telekinesis"],
 			[32, "Psyshock"],
@@ -2969,7 +2939,8 @@
 			"Heavy Slam",
 			"Tickle",
 			"Quick Guard",
-			"Vital Throw"
+			"Vital Throw",
+			"Mach Punch"
 		]
 	},
 	{
@@ -3017,7 +2988,8 @@
 			"Heavy Slam",
 			"Tickle",
 			"Quick Guard",
-			"Vital Throw"
+			"Vital Throw",
+			"Mach Punch"
 		]
 	},
 	{
@@ -3066,7 +3038,8 @@
 			"Heavy Slam",
 			"Tickle",
 			"Quick Guard",
-			"Vital Throw"
+			"Vital Throw",
+			"Mach Punch"
 		]
 	},
 	{
@@ -3176,7 +3149,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Leaf Tornado"],
-			[1, "Leaf Storm"],
 			[1, "Leaf Blade"],
 			[1, "Sucker Punch"],
 			[1, "Stockpile"],
@@ -3185,31 +3157,21 @@
 			[1, "Vine Whip"],
 			[1, "Growth"],
 			[1, "Wrap"],
-			[1, "Acid"],
 			[1, "PoisonPowder"],
 			[1, "Stun Spore"],
 			[1, "Razor Leaf"],
 			[1, "Sweet Scent"],
+			[1, "Acid Spray"],
 			[1, "Gastro Acid"],
 			[1, "Grav Apple"],
-			[1, "Poison Jab"],
 			[1, "Knock Off"],
-			[1, "Wring Out"],
-			[1, "Leaf Tornado"],
-			[1, "Acid Spray"],
-			[1, "Sleep Powder"],
-			[1, "Sweet Scent"],
-			[1, "Razor Leaf"],
-			[1, "Sweet Scent"],
-			[1, "Acid Spray"],
-			[1, "Gastro Acid"],
-			[1, "Knock Off"],
-			[1, "Poison Jab"],
-			[1, "Wring Out"],
-			[1, "Leaf Tornado"],
 			[1, "Acid"],
+			[1, "Leaf Tornado"],
+			[1, "Slam"],
 			[1, "Sleep Powder"],
-			[1, "Slam"]
+			[49, "Poison Jab"],
+			[54, "Leaf Storm"],
+			[59, "Wring Out"]
 		],
 		"eggMoves": [
 			"Encore",
@@ -3253,7 +3215,6 @@
 			[20, "Screech"],
 			[22, "Acid Spray"],
 			[24, "Bubble Beam"],
-			[26, "Barrier"],
 			[28, "Hex"],
 			[32, "Acid Armor"],
 			[34, "Brine"],
@@ -3274,7 +3235,8 @@
 			"Muddy Water",
 			"Bubble",
 			"Aqua Ring",
-			"Tickle"
+			"Tickle",
+			"Barrier"
 		]
 	},
 	{
@@ -3300,7 +3262,6 @@
 			[20, "Screech"],
 			[22, "Acid Spray"],
 			[24, "Bubble Beam"],
-			[26, "Barrier"],
 			[28, "Hex"],
 			[34, "Acid Armor"],
 			[37, "Brine"],
@@ -3321,7 +3282,8 @@
 			"Muddy Water",
 			"Bubble",
 			"Aqua Ring",
-			"Tickle"
+			"Tickle",
+			"Barrier"
 		]
 	},
 	{
@@ -3786,7 +3748,8 @@
 			"Natural Gift",
 			"Assurance",
 			"Uproar",
-			"Lunge"
+			"Lunge",
+			"Double-Edge"
 		]
 	},
 	{
@@ -3828,7 +3791,8 @@
 			"Natural Gift",
 			"Assurance",
 			"Uproar",
-			"Lunge"
+			"Lunge",
+			"Double-Edge"
 		]
 	},
 	{
@@ -4130,19 +4094,20 @@
 		"levelUpMoves": [
 			[1, "Lick"],
 			[1, "Smog"],
-			[1, "Confuse Ray"],
-			[4, "Hypnosis"],
-			[8, "Mean Look"],
-			[12, "Payback"],
-			[16, "Spite"],
+			[1, "Spite"],
+			[4, "Mean Look"],
+			[8, "Payback"],
+			[12, "Confuse Ray"],
+			[16, "Night Shade"],
 			[20, "Curse"],
 			[24, "Hex"],
-			[28, "Night Shade"],
-			[32, "Sucker Punch"],
+			[28, "Sucker Punch"],
+			[32, "Toxic"],
 			[36, "Dark Pulse"],
 			[40, "Shadow Ball"],
-			[44, "Destiny Bond"],
-			[48, "Dream Eater"]
+			[44, "Hypnosis"],
+			[48, "Destiny Bond"],
+			[52, "Dream Eater"]
 		],
 		"eggMoves": [
 			"Psywave",
@@ -4156,8 +4121,7 @@
 			"Disable",
 			"Scary Face",
 			"Clear Smog",
-			"Reflect Type",
-			"Toxic"
+			"Reflect Type"
 		]
 	},
 	{
@@ -4174,21 +4138,21 @@
 			[0, "Shadow Punch"],
 			[1, "Lick"],
 			[1, "Smog"],
-			[1, "Confuse Ray"],
-			[1, "Hypnosis"],
-			[1, "Mean Look"],
-			[12, "Payback"],
-			[16, "Spite"],
+			[1, "Spite"],
+			[4, "Mean Look"],
+			[8, "Payback"],
+			[12, "Confuse Ray"],
+			[16, "Night Shade"],
 			[20, "Curse"],
-			[24, "Hex"],
 			[24, "Shadow Punch"],
-			[30, "Night Shade"],
-			[36, "Sucker Punch"],
+			[24, "Hex"],
+			[30, "Sucker Punch"],
+			[36, "Toxic"],
 			[42, "Dark Pulse"],
 			[48, "Shadow Ball"],
-			[54, "Destiny Bond"],
-			[60, "Dream Eater"],
-			[64, "Nightmare"]
+			[54, "Hypnosis"],
+			[60, "Destiny Bond"],
+			[66, "Dream Eater"]
 		],
 		"eggMoves": [
 			"Psywave",
@@ -4202,8 +4166,7 @@
 			"Disable",
 			"Scary Face",
 			"Clear Smog",
-			"Reflect Type",
-			"Toxic"
+			"Reflect Type"
 		]
 	},
 	{
@@ -4217,26 +4180,26 @@
 		"hiddenAbility": "Cursed Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Shadow Punch"],
+			[0, "Reflect Type"],
+			[1, "Nightmare"],
 			[1, "Perish Song"],
-			[1, "Reflect Type"],
 			[1, "Lick"],
 			[1, "Smog"],
-			[1, "Confuse Ray"],
-			[1, "Hypnosis"],
-			[1, "Mean Look"],
-			[12, "Payback"],
-			[16, "Spite"],
+			[1, "Spite"],
+			[4, "Mean Look"],
+			[8, "Payback"],
+			[12, "Confuse Ray"],
+			[16, "Night Shade"],
 			[20, "Curse"],
-			[24, "Hex"],
 			[24, "Shadow Punch"],
-			[30, "Night Shade"],
-			[36, "Sucker Punch"],
+			[24, "Hex"],
+			[30, "Sucker Punch"],
+			[36, "Toxic"],
 			[42, "Dark Pulse"],
 			[48, "Shadow Ball"],
-			[54, "Destiny Bond"],
-			[60, "Dream Eater"],
-			[64, "Nightmare"]
+			[54, "Hypnosis"],
+			[60, "Destiny Bond"],
+			[66, "Dream Eater"]
 		],
 		"eggMoves": [
 			"Psywave",
@@ -4250,8 +4213,7 @@
 			"Disable",
 			"Scary Face",
 			"Clear Smog",
-			"Reflect Type",
-			"Toxic"
+			"Reflect Type"
 		]
 	},
 	{
@@ -4298,7 +4260,8 @@
 			"Wide Guard",
 			"Dragon Tail",
 			"Head Smash",
-			"Rage"
+			"Rage",
+			""
 		]
 	},
 	{
@@ -4533,9 +4496,9 @@
 			[1, "Magnet Flux"],
 			[1, "Charge"],
 			[1, "Tackle"],
-			[4, "EerieImpulse"],
-			[6, "Gyro Ball"],
-			[9, "Spark"],
+			[1, "EerieImpulse"],
+			[1, "Gyro Ball"],
+			[1, "Spark"],
 			[12, "Rollout"],
 			[15, "Screech"],
 			[18, "Sonic Boom"],
@@ -4615,7 +4578,6 @@
 			[1, "Seed Bomb"],
 			[1, "Psyshock"],
 			[1, "Wood Hammer"],
-			[1, "Leaf Storm"],
 			[1, "Barrage"],
 			[1, "Absorb"],
 			[1, "Hypnosis"],
@@ -4628,9 +4590,11 @@
 			[1, "Worry Seed"],
 			[1, "Solar Beam"],
 			[1, "Stomp"],
+			[1, "Mega Drain"],
 			[1, "Reflect"],
 			[1, "Leech Seed"],
-			[1, "Mega Drain"]
+			[49, "Psychic"],
+			[54, "Leaf Storm"]
 		],
 		"eggMoves": [
 			"Moonlight",
@@ -4883,7 +4847,8 @@
 			"Heal Bell",
 			"Wish",
 			"Chip Away",
-			"Me First"
+			"Me First",
+			"Ice Ball"
 		]
 	},
 	{
@@ -5173,7 +5138,9 @@
 			"Power Swap",
 			"Rage Powder",
 			"Wake-Up Slap",
-			"Morning Sun"
+			"Morning Sun",
+			"Acid Spray",
+			"Double Hit"
 		]
 	},
 	{
@@ -5457,11 +5424,11 @@
 			[1, "Psychic"],
 			[1, "Surf"],
 			[1, "Cosmic Power"],
-			[1, "Hydro Pump"],
-			[1, "Confuse Ray"],
 			[1, "Bubble Beam"],
+			[1, "Confuse Ray"],
 			[1, "Psybeam"],
-			[1, "Recover"]
+			[1, "Recover"],
+			[56, "Hydro Pump"]
 		],
 		"eggMoves": []
 	},
@@ -5534,21 +5501,17 @@
 		"hiddenAbility": "Steadfast",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Vacuum Wave"],
 			[1, "Quick Attack"],
 			[1, "Leer"],
-			[3, "Fury Cutter"],
-			[6, "False Swipe"],
-			[9, "Pursuit"],
-			[12, "Wing Attack"],
-			[15, "Feint"],
-			[18, "Double Team"],
-			[21, "Double Hit"],
-			[24, "Razor Wind"],
-			[27, "Slash"],
-			[30, "Focus Energy"],
-			[33, "Agility"],
-			[36, "Air Slash"],
+			[4, "Fury Cutter"],
+			[8, "False Swipe"],
+			[12, "Air Slash"],
+			[16, "Slash"],
+			[20, "Agility"],
+			[24, "Wing Attack"],
+			[28, "Double Hit"],
+			[32, "Focus Energy"],
+			[36, "Feint"],
 			[40, "X-Scissor"],
 			[44, "Night Slash"],
 			[48, "Laser Focus"],
@@ -5564,6 +5527,9 @@
 			"Defog",
 			"Steel Wing",
 			"Quick Guard",
+			"Pursuit",
+			"Razor Wind",
+			"Vacuum Wave",
 			"DualWingbeat"
 		]
 	},
@@ -5815,12 +5781,12 @@
 			[25, "Dragon Rage"],
 			[29, "Rain Dance"],
 			[32, "Crunch"],
-			[36, "Waterfall"],
-			[40, "Dragon Dance"],
-			[43, "Aqua Tail"],
-			[47, "Hydro Pump"],
-			[51, "Hurricane"],
-			[55, "Thrash"],
+			[36, "Hydro Pump"],
+			[40, "Waterfall"],
+			[43, "Dragon Dance"],
+			[47, "Hurricane"],
+			[51, "Thrash"],
+			[55, "Aqua Tail"],
 			[59, "Hyper Beam"]
 		],
 		"eggMoves": []
@@ -5931,7 +5897,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -5987,7 +5954,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -6043,7 +6011,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -6058,6 +6027,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Ember"],
+			[1, ""],
 			[1, "Covet"],
 			[1, "Swift"],
 			[1, "Copycat"],
@@ -6099,7 +6069,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -6283,9 +6254,10 @@
 		"hiddenAbility": "Weak Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Slash"],
+			[0, ""],
 			[1, "Night Slash"],
 			[1, "Feint"],
+			[1, "Protect"],
 			[1, "Absorb"],
 			[1, "Harden"],
 			[1, "Scratch"],
@@ -6295,8 +6267,8 @@
 			[25, "Mud Shot"],
 			[30, "AncientPower"],
 			[35, "Brine"],
-			[39, "Slash"],
-			[43, "Protect"],
+			[39, ""],
+			[43, "Slash"],
 			[49, "Leech Fang"],
 			[56, "Liquidation"],
 			[63, "Metal Sound"],
@@ -6329,7 +6301,6 @@
 		"hiddenAbility": "Unnerve",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Iron Head"],
 			[1, "Ice Fang"],
 			[1, "Fire Fang"],
 			[1, "Thunder Fang"],
@@ -6854,20 +6825,20 @@
 		"levelUpMoves": [
 			[1, "Tackle"],
 			[1, "Leer"],
-			[6, "Smokescreen"],
-			[10, "Ember"],
-			[13, "Quick Attack"],
-			[17, "Flame Charge"],
-			[21, "Defense Curl"],
+			[6, "Ember"],
+			[9, "Smokescreen"],
+			[12, "Quick Attack"],
+			[15, "Defense Curl"],
+			[18, "Flame Charge"],
+			[21, "Rollout"],
 			[24, "Flame Wheel"],
 			[28, "Swift"],
 			[32, "Lava Plume"],
-			[36, "Rollout"],
-			[40, "Flamethrower"],
-			[44, "Inferno"],
-			[48, "Double-Edge"],
-			[52, "Burn Up"],
-			[56, "Eruption"]
+			[37, "Flamethrower"],
+			[42, "Double-Edge"],
+			[48, "Inferno"],
+			[54, "Burn Up"],
+			[60, "Eruption"]
 		],
 		"eggMoves": [
 			"Fury Swipes",
@@ -6897,20 +6868,20 @@
 		"levelUpMoves": [
 			[1, "Tackle"],
 			[1, "Leer"],
+			[1, "Ember"],
 			[1, "Smokescreen"],
-			[10, "Ember"],
-			[13, "Quick Attack"],
+			[12, "Quick Attack"],
+			[15, "Defense Curl"],
 			[19, "Flame Charge"],
-			[24, "Defense Curl"],
-			[28, "Swift"],
-			[33, "Flame Wheel"],
-			[38, "Lava Plume"],
-			[43, "Rollout"],
-			[48, "Flamethrower"],
-			[53, "Inferno"],
-			[58, "Double-Edge"],
+			[23, "Rollout"],
+			[27, "Flame Wheel"],
+			[32, "Swift"],
+			[37, "Lava Plume"],
+			[43, "Flamethrower"],
+			[49, "Double-Edge"],
+			[56, "Inferno"],
 			[63, "Burn Up"],
-			[68, "Eruption"]
+			[70, "Eruption"]
 		],
 		"eggMoves": [
 			"Fury Swipes",
@@ -6941,20 +6912,20 @@
 			[1, "Gyro Ball"],
 			[1, "Tackle"],
 			[1, "Leer"],
+			[1, "Ember"],
 			[1, "Smokescreen"],
-			[10, "Ember"],
-			[13, "Quick Attack"],
+			[12, "Quick Attack"],
+			[15, "Defense Curl"],
 			[19, "Flame Charge"],
-			[24, "Defense Curl"],
-			[28, "Swift"],
-			[33, "Flame Wheel"],
+			[23, "Rollout"],
+			[27, "Flame Wheel"],
+			[32, "Swift"],
 			[40, "Lava Plume"],
-			[46, "Rollout"],
-			[52, "Flamethrower"],
-			[58, "Inferno"],
-			[64, "Double-Edge"],
+			[47, "Flamethrower"],
+			[54, "Double-Edge"],
+			[62, "Inferno"],
 			[70, "Burn Up"],
-			[76, "Eruption"]
+			[78, "Eruption"]
 		],
 		"eggMoves": [
 			"Fury Swipes",
@@ -7300,7 +7271,7 @@
 			[29, "Bug Buzz"],
 			[32, "Double-Edge"],
 			[36, "Acrobatics"],
-			[40, "Agility"],
+			[40, ""],
 			[43, "Baton Pass"]
 		],
 		"eggMoves": [
@@ -7315,7 +7286,8 @@
 			"Dizzy Punch",
 			"Tailwind",
 			"Endure",
-			"Counter"
+			"Counter",
+			"Agility"
 		]
 	},
 	{
@@ -7343,7 +7315,7 @@
 			[32, "Bug Buzz"],
 			[36, "Double-Edge"],
 			[41, "Acrobatics"],
-			[46, "Agility"],
+			[46, ""],
 			[51, "Baton Pass"],
 			[56, "Close Combat"]
 		],
@@ -7359,7 +7331,8 @@
 			"Dizzy Punch",
 			"Tailwind",
 			"Endure",
-			"Counter"
+			"Counter",
+			"Agility"
 		]
 	},
 	{
@@ -7564,9 +7537,6 @@
 			[0, "Stockpile"],
 			[0, "Swallow"],
 			[0, "Spit Up"],
-			[1, "Stockpile"],
-			[1, "Swallow"],
-			[1, "Spit Up"],
 			[1, "EerieImpulse"],
 			[1, "Spotlight"],
 			[1, "Water Gun"],
@@ -7618,7 +7588,8 @@
 			[8, "Sweet Kiss"],
 			[12, "Nuzzle"],
 			[16, "Nasty Plot"],
-			[20, "Charm"]
+			[20, "Charm"],
+			[24, "Spark"]
 		],
 		"eggMoves": [
 			"Reversal",
@@ -7739,13 +7710,14 @@
 			[20, "Yawn"],
 			[22, "Bestow"],
 			[24, "Metronome"],
-			[28, "After You"],
-			[32, "Double-Edge"],
+			[28, "Double-Edge"],
+			[32, "After You"],
 			[36, "Safeguard"],
 			[40, "Follow Me"],
-			[44, "Baton Pass"],
-			[48, "Last Resort"],
-			[52, "Wish"]
+			[44, "Moonblast"],
+			[48, "Baton Pass"],
+			[52, "Last Resort"],
+			[56, "Wish"]
 		],
 		"eggMoves": [
 			"Present",
@@ -7788,13 +7760,14 @@
 			[20, "Yawn"],
 			[22, "Bestow"],
 			[24, "Metronome"],
-			[28, "After You"],
-			[32, "Double-Edge"],
+			[28, "Double-Edge"],
+			[32, "After You"],
 			[36, "Safeguard"],
 			[40, "Follow Me"],
-			[44, "Baton Pass"],
-			[48, "Last Resort"],
-			[52, "Wish"]
+			[44, "Moonblast"],
+			[48, "Baton Pass"],
+			[52, "Last Resort"],
+			[56, "Wish"]
 		],
 		"eggMoves": [
 			"Present",
@@ -8046,19 +8019,16 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Petal Storm"],
-			[1, "Leaf Storm"],
 			[1, "Leaf Blade"],
 			[1, "Floral Heal"],
 			[1, "Fiery Dance"],
 			[1, "Lunar Dance"],
 			[1, "Magical Leaf"],
-			[1, "Quiver Dance"],
 			[1, "Absorb"],
 			[1, "Growth"],
 			[1, "Acid"],
 			[1, "Sweet Scent"],
 			[1, "Mega Drain"],
-			[1, "Sweet Scent"],
 			[1, "Stun Spore"],
 			[1, "Sunny Day"],
 			[39, "Quiver Dance"],
@@ -8093,29 +8063,27 @@
 		"hiddenAbility": "Sap Sipper",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Splash"],
-			[1, "Bubble"],
-			[1, "Tail Whip"],
-			[3, "Helping Hand"],
-			[1, "Splash"],
-			[1, "Bubble"],
-			[1, "Tail Whip"],
 			[1, "Rollout"],
 			[1, "Defense Curl"],
+			[1, "Bubble"],
+			[1, "Splash"],
+			[1, "Water Sport"],
+			[1, "Tail Whip"],
+			[1, "Water Gun"],
 			[1, "Tackle"],
-			[3, "Water Sport"],
-			[6, "Water Gun"],
-			[9, "Charm"],
+			[1, "Helping Hand"],
+			[6, "Charm"],
+			[9, "Bubble Beam"],
 			[12, "Slam"],
-			[14, "Bubble Beam"],
-			[16, "Bounce"],
-			[19, "Aqua Tail"],
-			[21, "Play Rough"],
+			[15, "Bounce"],
+			[19, "Drain Kiss"],
+			[21, "Hydro Pump"],
 			[24, "Aqua Ring"],
-			[27, "Rain Dance"],
-			[30, "Hydro Pump"],
-			[33, "Double-Edge"],
-			[36, "Superpower"]
+			[30, "Rain Dance"],
+			[33, "Play Rough"],
+			[36, "Aqua Tail"],
+			[39, "Double-Edge"],
+			[42, "Superpower"]
 		],
 		"eggMoves": [
 			"Encore",
@@ -8146,29 +8114,27 @@
 		"hiddenAbility": "Sap Sipper",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Splash"],
-			[1, "Bubble"],
-			[1, "Tail Whip"],
-			[1, "Helping Hand"],
-			[1, "Splash"],
-			[1, "Bubble"],
-			[1, "Tail Whip"],
 			[1, "Rollout"],
 			[1, "Defense Curl"],
-			[1, "Tackle"],
+			[1, "Bubble"],
+			[1, "Splash"],
 			[1, "Water Sport"],
+			[1, "Tail Whip"],
 			[1, "Water Gun"],
+			[1, "Tackle"],
+			[1, "Helping Hand"],
 			[1, "Charm"],
+			[1, "Bubble Beam"],
 			[12, "Slam"],
-			[14, "Bubble Beam"],
-			[16, "Bounce"],
-			[21, "Aqua Ring"],
-			[27, "Aqua Tail"],
-			[33, "Play Rough"],
-			[39, "Rain Dance"],
-			[45, "Hydro Pump"],
-			[51, "Double-Edge"],
-			[57, "Superpower"]
+			[15, "Bounce"],
+			[20, "Drain Kiss"],
+			[24, "Hydro Pump"],
+			[28, "Aqua Ring"],
+			[32, "Rain Dance"],
+			[36, "Play Rough"],
+			[40, "Aqua Tail"],
+			[44, "Double-Edge"],
+			[48, "Superpower"]
 		],
 		"eggMoves": [
 			"Encore",
@@ -8458,7 +8424,9 @@
 			"Revenge",
 			"Switcheroo",
 			"Quick Guard",
-			"Tail Slap"
+			"Tail Slap",
+			"Mud Bomb",
+			"Quick Attack"
 		]
 	},
 	{
@@ -8510,14 +8478,13 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Grass", "Grass"],
 		"ability": ["Chlorophyll", "Solar Power"],
-		"hiddenAbility": "Flower Veil",
+		"hiddenAbility": "Gale Wings",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Flower Guard"],
 			[1, "Endeavor"],
 			[1, "Seed Bomb"],
 			[1, "Synthesis"],
-			[1, "Seed Flare"],
 			[1, "Absorb"],
 			[1, "Pound"],
 			[1, "Growth"],
@@ -8535,7 +8502,8 @@
 			[37, "Double-Edge"],
 			[40, "Sunny Day"],
 			[43, "Solar Beam"],
-			[46, "Leaf Storm"]
+			[46, "Leaf Storm"],
+			[52, "Seed Flare"]
 		],
 		"eggMoves": [
 			"Encore",
@@ -8588,7 +8556,8 @@
 			"Feint Attack",
 			"Double-Edge",
 			"Secret Power",
-			"String Shot"
+			"String Shot",
+			"Gust"
 		]
 	},
 	{
@@ -8735,7 +8704,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -8751,6 +8721,7 @@
 		"levelUpMoves": [
 			[0, "Pursuit"],
 			[1, "Dark Pulse"],
+			[1, ""],
 			[1, "Covet"],
 			[1, "Swift"],
 			[1, "Bite"],
@@ -8793,7 +8764,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -8838,7 +8810,8 @@
 			"Roost",
 			"Flatter",
 			"Punishment",
-			"Air Cutter"
+			"Air Cutter",
+			"Night Slash"
 		]
 	},
 	{
@@ -8927,7 +8900,8 @@
 			"Nasty Plot",
 			"Skill Swap",
 			"Wonder Room",
-			"Me First"
+			"Me First",
+			"Hypnosis"
 		]
 	},
 	{
@@ -9200,7 +9174,8 @@
 			"Cross Poison",
 			"Power Trick",
 			"Rock Climb",
-			"Poison Tail"
+			"Poison Tail",
+			"Mud Bomb"
 		]
 	},
 	{
@@ -9254,7 +9229,8 @@
 			"Wide Guard",
 			"Dragon Tail",
 			"Head Smash",
-			"Rage"
+			"Rage",
+			""
 		]
 	},
 	{
@@ -9386,7 +9362,8 @@
 			"Aqua Jet",
 			"Water Pulse",
 			"Acid Spray",
-			"Anchor Shot"
+			"Anchor Shot",
+			""
 		]
 	},
 	{
@@ -9401,26 +9378,22 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Bullet Punch"],
-			[1, "Vacuum Wave"],
-			[1, "Wing Attack"],
-			[1, "Agility"],
 			[1, "Air Slash"],
+			[1, "Agility"],
+			[1, "Wing Attack"],
 			[1, "Quick Attack"],
 			[1, "Leer"],
 			[1, "Fury Cutter"],
 			[1, "False Swipe"],
-			[1, "Pursuit"],
 			[12, "Metal Claw"],
-			[15, "Feint"],
-			[18, "Double Team"],
-			[21, "Double Hit"],
-			[24, "Razor Wind"],
-			[27, "Slash"],
-			[30, "Focus Energy"],
-			[33, "Iron Defense"],
-			[36, "Iron Head"],
+			[16, "Slash"],
+			[20, "Iron Defense"],
+			[24, "Night Slash"],
+			[28, "Double Hit"],
+			[32, "Focus Energy"],
+			[36, "Feint"],
 			[40, "X-Scissor"],
-			[44, "Night Slash"],
+			[44, "Iron Head"],
 			[48, "Laser Focus"],
 			[52, "Swords Dance"]
 		],
@@ -9434,6 +9407,9 @@
 			"Defog",
 			"Steel Wing",
 			"Quick Guard",
+			"Pursuit",
+			"Razor Wind",
+			"Vacuum Wave",
 			"DualWingbeat"
 		]
 	},
@@ -9542,20 +9518,21 @@
 			[1, "Scratch"],
 			[1, "Leer"],
 			[6, "Taunt"],
-			[12, "Quick Attack"],
-			[16, "Metal Claw"],
-			[20, "Icy Wind"],
-			[24, "Fury Swipes"],
-			[28, "Beat Up"],
-			[33, "Hone Claws"],
-			[37, "Ice Shard"],
-			[42, "Feint Attack"],
-			[47, "Agility"],
-			[51, "Screech"],
-			[55, "Punishment"],
-			[60, "Snatch"],
-			[64, "Slash"],
-			[69, "Triple Axel"]
+			[10, "Quick Attack"],
+			[14, "Metal Claw"],
+			[18, "Icy Wind"],
+			[22, "Fury Swipes"],
+			[26, "Beat Up"],
+			[30, "Feint Attack"],
+			[34, "Ice Shard"],
+			[38, "Agility"],
+			[42, "Slash"],
+			[48, "Screech"],
+			[52, "Snatch"],
+			[56, "Punishment"],
+			[60, "Swagger"],
+			[64, "Hone Claws"],
+			[68, "Triple Axel"]
 		],
 		"eggMoves": [
 			"Counter",
@@ -9585,22 +9562,23 @@
 		"hiddenAbility": "Honey Gather",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Fling"],
 			[1, "Scratch"],
-			[1, "Doll Eyes"],
 			[1, "Lick"],
-			[1, "Fake Tears"],
-			[8, "Fury Swipes"],
-			[15, "Feint Attack"],
-			[19, "Covet"],
-			[23, "Sweet Scent"],
-			[26, "Play Nice"],
-			[29, "Slash"],
-			[33, "Charm"],
-			[36, "Rest"],
+			[1, "Doll Eyes"],
+			[4, "Fake Tears"],
+			[8, "Play Nice"],
+			[12, "Fury Swipes"],
+			[16, "Feint Attack"],
+			[20, "Sweet Scent"],
+			[24, "Covet"],
+			[28, "Charm"],
+			[32, "Slash"],
 			[36, "Snore"],
-			[40, "Thrash"],
-			[44, "Fling"]
+			[36, "Rest"],
+			[40, "Horsepower"],
+			[44, "Play Rough"],
+			[48, "Fling"],
+			[52, "Thrash"]
 		],
 		"eggMoves": [
 			"Crunch",
@@ -9615,8 +9593,7 @@
 			"Close Combat",
 			"Night Slash",
 			"Belly Drum",
-			"Chip Away",
-			"Play Rough"
+			"Chip Away"
 		]
 	},
 	{
@@ -9630,26 +9607,26 @@
 		"hiddenAbility": "Tough Claws",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Crush Grip"],
-			[1, "Fling"],
-			[1, "Doll Eyes"],
-			[1, "Charm"],
-			[1, "Scratch"],
-			[1, "Leer"],
-			[1, "Lick"],
 			[1, "Fake Tears"],
+			[1, "Charm"],
+			[1, "Fling"],
+			[1, "Scratch"],
+			[1, "Lick"],
+			[1, "Doll Eyes"],
+			[1, "Leer"],
+			[1, "Play Nice"],
 			[1, "Fury Swipes"],
-			[15, "Feint Attack"],
-			[19, "Covet"],
-			[23, "Sweet Scent"],
-			[26, "Play Nice"],
-			[29, "Slash"],
-			[35, "Scary Face"],
-			[41, "Snore"],
-			[41, "Rest"],
-			[47, "Thrash"],
-			[53, "Hammer Arm"],
-			[59, "Play Rough"]
+			[16, "Feint Attack"],
+			[20, "Sweet Scent"],
+			[24, "Covet"],
+			[28, "Scary Face"],
+			[34, "Slash"],
+			[40, "Snore"],
+			[40, "Rest"],
+			[46, "Horsepower"],
+			[52, "Play Rough"],
+			[58, "Hammer Arm"],
+			[64, "Thrash"]
 		],
 		"eggMoves": [
 			"Crunch",
@@ -9664,8 +9641,7 @@
 			"Close Combat",
 			"Night Slash",
 			"Belly Drum",
-			"Chip Away",
-			"Play Rough"
+			"Chip Away"
 		]
 	},
 	{
@@ -9693,8 +9669,8 @@
 			[33, "Lava Plume"],
 			[36, "Amnesia"],
 			[39, "Body Slam"],
-			[42, "Recover"],
-			[45, "Flamethrower"],
+			[42, "Flamethrower"],
+			[45, "Recover"],
 			[48, "Earth Power"],
 			[51, "Magma Storm"]
 		],
@@ -9719,11 +9695,12 @@
 		"evYield": [0, 0, 2, 0, 0, 0],
 		"item": ["-------", "-------"],
 		"eggGroup": ["Amorphous", "Amorphous"],
-		"ability": ["Magma Armor", "Flame Body"],
+		"ability": ["Storm Drain", "Flame Body"],
 		"hiddenAbility": "Weak Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Shell Smash"],
+			[0, "Power Gem"],
+			[1, "Amnesia"],
 			[1, "Yawn"],
 			[1, "Smog"],
 			[1, "Ember"],
@@ -9735,12 +9712,12 @@
 			[24, "Flame Burst"],
 			[27, "Scorch Sands"],
 			[30, "Rock Slide"],
-			[33, "Lava Plume"],
-			[36, "Amnesia"],
-			[37, "Shell Smash"],
+			[35, "Lava Plume"],
+			[37, "Power Gem"],
+			[39, "Shell Smash"],
 			[42, "Body Slam"],
-			[46, "Recover"],
-			[50, "Flamethrower"],
+			[46, "Flamethrower"],
+			[50, "Recover"],
 			[54, "Earth Power"],
 			[58, "Magma Storm"]
 		],
@@ -10111,7 +10088,8 @@
 			"Air Slash",
 			"Feint",
 			"Roost",
-			"Swift"
+			"Swift",
+			"Counter"
 		]
 	},
 	{
@@ -10312,7 +10290,6 @@
 			[1, "Charm"],
 			[1, "Natural Gift"],
 			[1, "Take Down"],
-			[1, "Endure"],
 			[1, "Last Resort"],
 			[1, "Double-Edge"],
 			[1, "Odor Sleuth"],
@@ -10395,19 +10372,19 @@
 			[1, "Tackle"],
 			[3, "Leer"],
 			[7, "Astonish"],
-			[10, "Hypnosis"],
+			[10, "Sand Attack"],
 			[13, "Stomp"],
-			[16, "Sand Attack"],
-			[21, "Take Down"],
+			[17, "Hypnosis"],
+			[20, "Double Kick"],
 			[24, "Confuse Ray"],
-			[27, "Calm Mind"],
+			[27, "Take Down"],
 			[32, "Zen Headbutt"],
-			[38, "Role Play"],
-			[43, "Imprison"],
-			[48, "Jump Kick"],
-			[54, "Megahorn"],
-			[60, "No Retreat"],
-			[65, "Thrash"]
+			[36, "Lunge"],
+			[42, "Role Play"],
+			[46, "Double-Edge"],
+			[51, "Jump Kick"],
+			[56, "Megahorn"],
+			[61, "No Retreat"]
 		],
 		"eggMoves": [
 			"Spite",
@@ -10415,11 +10392,13 @@
 			"Bite",
 			"Extrasensory",
 			"Me First",
-			"Double Kick",
 			"Mud Sport",
 			"Rage",
 			"Captivate",
-			"Lunge"
+			"Thrash",
+			"Imprison",
+			"Entrainment",
+			""
 		]
 	},
 	{
@@ -10708,6 +10687,7 @@
 		"hiddenAbility": "Healer",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, ""],
 			[1, "Pound"],
 			[1, "Copycat"],
 			[1, "Sweet Kiss"],
@@ -11237,7 +11217,6 @@
 		"levelUpMoves": [
 			[0, "Dual Chop"],
 			[1, "False Swipe"],
-			[1, "X-Scissor"],
 			[1, "Night Slash"],
 			[1, "Energy Ball"],
 			[1, "Pound"],
@@ -11805,7 +11784,7 @@
 		"item": ["-------", "Shed Shell"],
 		"eggGroup": ["Bug", "Bug"],
 		"ability": ["Swarm", "-------"],
-		"hiddenAbility": "Compound Eyes",
+		"hiddenAbility": "Serene Grace",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Gust"],
@@ -11988,12 +11967,12 @@
 			[1, "Uproar"],
 			[1, "Rain Dance"],
 			[1, "Zen Headbutt"],
-			[1, "Energy Ball"],
-			[1, "Hydro Pump"],
-			[1, "Mist"],
 			[1, "Mega Drain"],
 			[1, "Bubble Beam"],
-			[1, "Nature Power"]
+			[1, "Mist"],
+			[1, "Nature Power"],
+			[60, "Energy Ball"],
+			[66, "Hydro Pump"]
 		],
 		"eggMoves": [
 			"Synthesis",
@@ -12119,7 +12098,6 @@
 			[1, "Leaf Storm"],
 			[1, "Nasty Plot"],
 			[1, "Whirlwind"],
-			[1, "Razor Leaf"],
 			[1, "Absorb"],
 			[1, "Air Cutter"],
 			[1, "Astonish"],
@@ -12138,12 +12116,12 @@
 			[1, "Nature Power"],
 			[1, "Sunny Day"],
 			[1, "Extrasensory"],
-			[1, "Sucker Punch"],
-			[1, "Leaf Blade"],
+			[1, "Feint Attack"],
 			[1, "Leaf Tornado"],
 			[1, "Growth"],
-			[1, "Feint Attack"],
-			[1, "Razor Wind"]
+			[1, "Razor Wind"],
+			[50, "Sucker Punch"],
+			[57, "Leaf Blade"]
 		],
 		"eggMoves": [
 			"Leech Seed",
@@ -12211,9 +12189,6 @@
 			[0, "Double Team"],
 			[0, "Screech"],
 			[0, "Fury Cutter"],
-			[1, "Double Team"],
-			[1, "Screech"],
-			[1, "Fury Cutter"],
 			[1, "Baton Pass"],
 			[1, "Aerial Ace"],
 			[1, "Mud-Slap"],
@@ -12402,7 +12377,7 @@
 			[29, "Growth"],
 			[33, "Toxic"],
 			[36, "Seed Bomb"],
-			[40, "Spore"]
+			[41, "Spore"]
 		],
 		"eggMoves": [
 			"Fake Tears",
@@ -12433,7 +12408,6 @@
 			[1, "Giga Drain"],
 			[1, "Growth"],
 			[1, "Toxic"],
-			[1, "Spore"],
 			[1, "Absorb"],
 			[1, "Tackle"],
 			[1, "Stun Spore"],
@@ -12447,7 +12421,8 @@
 			[33, "Bullet Seed"],
 			[38, "Sky Uppercut"],
 			[44, "Seed Bomb"],
-			[50, "Mind Reader"],
+			[50, "Spore"],
+			[56, "Mind Reader"],
 			[56, "DynamicPunch"]
 		],
 		"eggMoves": [
@@ -12555,7 +12530,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Protect"],
-			[1, "Protect"],
 			[1, "Soak"],
 			[1, "Quick Attack"],
 			[1, "Air Cutter"],
@@ -12646,7 +12620,6 @@
 			[0, "Scary Face"],
 			[0, "Air Cutter"],
 			[1, "Ominous Wind"],
-			[1, "Quiver Dance"],
 			[1, "Bubble Beam"],
 			[1, "Agility"],
 			[1, "Mist"],
@@ -12665,9 +12638,9 @@
 			[26, "Stun Spore"],
 			[32, "Silver Wind"],
 			[38, "Air Slash"],
-			[42, "Whirlwind"],
+			[42, "Quiver Dance"],
 			[48, "Bug Buzz"],
-			[52, "Quiver Dance"],
+			[52, "Whirlwind"],
 			[56, "Hurricane"]
 		],
 		"eggMoves": [
@@ -12846,13 +12819,13 @@
 			[1, "Assist"],
 			[1, "Covet"],
 			[1, "Heal Bell"],
-			[1, "Double-Edge"],
 			[1, "Captivate"],
-			[1, "Play Rough"],
+			[1, "Double Slap"],
+			[1, "Attract"],
 			[1, "Fake Out"],
 			[1, "Sing"],
-			[1, "Attract"],
-			[1, "Double Slap"]
+			[40, "Double-Edge"],
+			[46, "Play Rough"]
 		],
 		"eggMoves": [
 			"Helping Hand",
@@ -13020,7 +12993,8 @@
 			"Double-Edge",
 			"Stealth Rock",
 			"Endure",
-			"Wide Guard"
+			"Wide Guard",
+			""
 		]
 	},
 	{
@@ -13707,8 +13681,6 @@
 			[1, "Focus Energy"],
 			[1, "Sand Attack"],
 			[1, "Arm Thrust"],
-			[4, "Sand Attack"],
-			[7, "Arm Thrust"],
 			[10, "Fake Out"],
 			[13, "Force Palm"],
 			[16, "Knock Off"],
@@ -14025,7 +13997,6 @@
 		"levelUpMoves": [
 			[0, "Ice Fang"],
 			[1, "Crunch"],
-			[1, "Ice Fang"],
 			[1, "Powder Snow"],
 			[1, "Rollout"],
 			[1, "Defense Curl"],
@@ -14201,7 +14172,8 @@
 			"Weather Ball",
 			"Avalanche",
 			"Hex",
-			"Switcheroo"
+			"Switcheroo",
+			"Double-Edge"
 		]
 	},
 	{
@@ -14245,7 +14217,8 @@
 			"Weather Ball",
 			"Avalanche",
 			"Hex",
-			"Switcheroo"
+			"Switcheroo",
+			"Double-Edge"
 		]
 	},
 	{
@@ -14327,13 +14300,12 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Splash"],
-			[1, "Bubble"],
 			[1, "Tail Whip"],
+			[1, "Bubble"],
 			[1, "Water Sport"],
 			[3, "Helping Hand"],
-			[6, "Water Gun"],
-			[8, "Charm"],
-			[10, "Bubble Beam"],
+			[6, "Charm"],
+			[9, "Bubble Beam"],
 			[12, "Slam"],
 			[15, "Bounce"]
 		],
@@ -14741,7 +14713,7 @@
 			[31, "Sing"],
 			[34, "Cotton Guard"],
 			[34, "Dragon Pulse"],
-			[38, "Natural Gift"],
+			[39, "Natural Gift"],
 			[43, "Refresh"],
 			[47, "Dragon Dance"],
 			[51, "Hyper Voice"],
@@ -14884,6 +14856,7 @@
 		"levelUpMoves": [
 			[0, "Poison Sting"],
 			[1, "Worry Seed"],
+			[1, "PoisonPowder"],
 			[1, "Absorb"],
 			[1, "Growth"],
 			[1, "Stun Spore"],
@@ -15573,7 +15546,7 @@
 		"item": ["-------", "Shed Shell"],
 		"eggGroup": ["Field", "Dragon"],
 		"ability": ["Shed Skin", "Infiltrator"],
-		"hiddenAbility": "Poison Touch",
+		"hiddenAbility": "Gale Wings",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Wrap"],
@@ -16212,10 +16185,10 @@
 		"hiddenAbility": "Telepathy",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Moonblast"],
 			[1, "Future Sight"],
 			[1, "Mist Terrain"],
 			[1, "Healing Wish"],
+			[1, "Charm"],
 			[1, "Growl"],
 			[1, "Disarm Cry"],
 			[1, "Double Team"],
@@ -16227,14 +16200,14 @@
 			[17, "Magical Leaf"],
 			[18, "Psybeam"],
 			[23, "Life Dew"],
-			[28, "Charm"],
-			[29, "Drain Kiss"],
+			[28, "Wish"],
+			[29, "Dazzle Gleam"],
 			[35, "Calm Mind"],
 			[39, "Stored Power"],
 			[42, "Imprison"],
 			[48, "Psychic"],
 			[53, "Heal Pulse"],
-			[56, "Dazzle Gleam"],
+			[56, "Moonblast"],
 			[63, "Dream Eater"]
 		],
 		"eggMoves": [
@@ -16347,7 +16320,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Fly"],
-			[1, "Fly"],
 			[1, "Dragon Tail"],
 			[1, "Fire Fang"],
 			[1, "Thunder Fang"],
@@ -17266,7 +17238,8 @@
 			"Wide Guard",
 			"Gras Terrain",
 			"Heavy Slam",
-			"Leafage"
+			"Leaf Blade",
+			"Sleep Powder"
 		]
 	},
 	{
@@ -17312,7 +17285,8 @@
 			"Wide Guard",
 			"Gras Terrain",
 			"Heavy Slam",
-			"Leafage"
+			"Leaf Blade",
+			"Sleep Powder"
 		]
 	},
 	{
@@ -17341,7 +17315,8 @@
 			[48, "Giga Drain"],
 			[54, "Crunch"],
 			[60, "Leaf Storm"],
-			[66, "Wood Hammer"]
+			[66, "Wood Hammer"],
+			[72, ""]
 		],
 		"eggMoves": [
 			"Worry Seed",
@@ -17361,7 +17336,8 @@
 			"Wide Guard",
 			"Gras Terrain",
 			"Heavy Slam",
-			"Leafage"
+			"Leaf Blade",
+			"Sleep Powder"
 		]
 	},
 	{
@@ -17485,8 +17461,8 @@
 			[26, "Feint"],
 			[29, "U-turn"],
 			[35, "Close Combat"],
-			[42, "Fire Punch"],
-			[52, "Acrobatics"],
+			[42, "Acrobatics"],
+			[52, ""],
 			[58, "Calm Mind"],
 			[68, "Flare Blitz"]
 		],
@@ -17559,6 +17535,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Metal Claw"],
+			[1, "Pound"],
 			[1, "Tackle"],
 			[1, "Growl"],
 			[1, "Bubble"],
@@ -17602,11 +17579,12 @@
 		"levelUpMoves": [
 			[0, "Mirror Shot"],
 			[1, "Aqua Jet"],
+			[1, "Whirlpool"],
 			[1, "Tackle"],
+			[1, "Pound"],
 			[1, "Growl"],
 			[1, "Bubble"],
-			[4, "Growl"],
-			[8, "Bubble"],
+			[1, "Water Sport"],
 			[11, "Swords Dance"],
 			[15, "Peck"],
 			[15, "Metal Claw"],
@@ -17615,7 +17593,7 @@
 			[28, "Fury Attack"],
 			[33, "Brine"],
 			[35, "Mirror Shot"],
-			[39, "Whirlpool"],
+			[39, ""],
 			[46, "Mist"],
 			[52, "Drill Peck"],
 			[59, "Hydro Pump"]
@@ -17798,6 +17776,7 @@
 			"Endure",
 			"Skull Bash",
 			"Mud Sport",
+			"Bite",
 			"No Retreat"
 		]
 	},
@@ -17845,6 +17824,7 @@
 			"Endure",
 			"Skull Bash",
 			"Mud Sport",
+			"Bite",
 			"No Retreat"
 		]
 	},
@@ -18052,7 +18032,8 @@
 			[1, "Growth"],
 			[1, "Stun Spore"],
 			[1, "Water Sport"],
-			[15, "Mega Drain"]
+			[10, "Mega Drain"],
+			[15, "PoisonPowder"]
 		],
 		"eggMoves": [
 			"Spikes",
@@ -18087,6 +18068,7 @@
 			[1, "Weather Ball"],
 			[1, "Poison Sting"],
 			[1, "Worry Seed"],
+			[1, "PoisonPowder"],
 			[1, "Absorb"],
 			[1, "Growth"],
 			[1, "Stun Spore"],
@@ -18099,11 +18081,11 @@
 			[1, "Petal Storm"],
 			[1, "Aromatherapy"],
 			[1, "Ingrain"],
-			[1, "Petal Dance"],
 			[1, "Mega Drain"],
 			[1, "Leech Seed"],
 			[1, "Synthesis"],
-			[1, "Toxic"]
+			[1, "Toxic"],
+			[60, "Petal Dance"]
 		],
 		"eggMoves": [
 			"Spikes",
@@ -18147,6 +18129,7 @@
 			[46, "Head Smash"]
 		],
 		"eggMoves": [
+			"Bite",
 			"Crunch",
 			"Thrash",
 			"Double-Edge",
@@ -18175,8 +18158,6 @@
 			[1, "Leer"],
 			[1, "Focus Energy"],
 			[1, "Pursuit"],
-			[6, "Focus Energy"],
-			[10, "Pursuit"],
 			[15, "Take Down"],
 			[19, "Scary Face"],
 			[24, "Assurance"],
@@ -18188,6 +18169,7 @@
 			[58, "Head Smash"]
 		],
 		"eggMoves": [
+			"Bite",
 			"Crunch",
 			"Thrash",
 			"Double-Edge",
@@ -18257,8 +18239,6 @@
 			[1, "Protect"],
 			[1, "Taunt"],
 			[1, "Metal Sound"],
-			[6, "Taunt"],
-			[10, "Metal Sound"],
 			[15, "Take Down"],
 			[19, "Iron Defense"],
 			[24, "Swagger"],
@@ -18320,8 +18300,6 @@
 			[1, "Tackle"],
 			[1, "Protect"],
 			[1, "Bug Bite"],
-			[10, "Protect"],
-			[15, "Bug Bite"],
 			[19, "Quiver Dance"],
 			[20, "Hidden Power"],
 			[23, "Confusion"],
@@ -18449,8 +18427,9 @@
 			[34, "Sweet Kiss"],
 			[37, "Hyper Fang"],
 			[41, "Discharge"],
-			[45, "Last Resort"],
-			[49, "Super Fang"]
+			[45, "Crunch"],
+			[49, "Last Resort"],
+			[53, "Super Fang"]
 		],
 		"eggMoves": [
 			"Covet",
@@ -18586,7 +18565,8 @@
 			[38, "Worry Seed"],
 			[41, "Dazzle Gleam"],
 			[45, "Take Down"],
-			[49, "Solar Beam"]
+			[49, "Petal Dance"],
+			[53, "Solar Beam"]
 		],
 		"eggMoves": [
 			"Razor Leaf",
@@ -18603,7 +18583,9 @@
 			"Defense Curl",
 			"Rollout",
 			"Flower Guard",
-			"Gras Terrain"
+			"Gras Terrain",
+			"Sleep Powder",
+			"Stun Spore"
 		]
 	},
 	{
@@ -18620,6 +18602,7 @@
 			[0, "Sunny Day"],
 			[1, "Flower Guard"],
 			[1, "Solar Blade"],
+			[1, "Take Down"],
 			[1, "Morning Sun"],
 			[1, "Tackle"],
 			[1, "Leafage"],
@@ -18634,7 +18617,7 @@
 			[38, "Giga Drain"],
 			[43, "Worry Seed"],
 			[47, "Dazzle Gleam"],
-			[52, "Take Down"],
+			[52, "Double-Edge"],
 			[57, "Petal Dance"],
 			[62, "Solar Beam"]
 		],
@@ -18653,7 +18636,9 @@
 			"Defense Curl",
 			"Rollout",
 			"Flower Guard",
-			"Gras Terrain"
+			"Gras Terrain",
+			"Sleep Powder",
+			"Stun Spore"
 		]
 	},
 	{
@@ -18769,7 +18754,8 @@
 			[32, "Double Hit"],
 			[36, "Fling"],
 			[39, "Nasty Plot"],
-			[43, "Last Resort"]
+			[43, "Last Resort"],
+			[46, "Double-Edge"]
 		],
 		"eggMoves": [
 			"Counter",
@@ -18784,7 +18770,9 @@
 			"Revenge",
 			"Switcheroo",
 			"Quick Guard",
-			"Tail Slap"
+			"Tail Slap",
+			"Mud Bomb",
+			"Quick Attack"
 		]
 	},
 	{
@@ -18841,6 +18829,7 @@
 		"levelUpMoves": [
 			[0, "PhantomForce"],
 			[1, "Strength Sap"],
+			[1, ""],
 			[1, "Constrict"],
 			[1, "Minimize"],
 			[1, "Astonish"],
@@ -18901,8 +18890,9 @@
 			[44, "Dizzy Punch"],
 			[48, "Flatter"],
 			[52, "Jump Kick"],
-			[46, "Bounce"],
-			[60, "Healing Wish"]
+			[56, "Bounce"],
+			[60, "Double-Edge"],
+			[64, "Healing Wish"]
 		],
 		"eggMoves": [
 			"Fake Tears",
@@ -18942,6 +18932,7 @@
 			[1, "Mirror Coat"],
 			[1, "Magic Coat"],
 			[1, "Rototiller"],
+			[1, "Mach Punch"],
 			[1, "Frustration"],
 			[1, "Foresight"],
 			[1, "Splash"],
@@ -18960,8 +18951,9 @@
 			[48, "Flatter"],
 			[52, "Jump Kick"],
 			[56, "Bounce"],
-			[60, "Healing Wish"],
-			[64, "Hi Jump Kick"]
+			[60, "Double-Edge"],
+			[64, "Healing Wish"],
+			[68, "Hi Jump Kick"]
 		],
 		"eggMoves": [
 			"Fake Tears",
@@ -19009,14 +19001,14 @@
 			[1, "Psybeam"],
 			[1, "Pain Split"],
 			[1, "Payback"],
-			[1, "Shadow Ball"],
 			[1, "Power Gem"],
 			[1, "Grudge"],
 			[1, "Perish Song"],
+			[1, "Hex"],
 			[1, "Mystic Fire"],
 			[1, "Lucky Chant"],
 			[1, "Confuse Ray"],
-			[1, "Hex"]
+			[41, "Shadow Ball"]
 		],
 		"eggMoves": [
 			"Screech",
@@ -19030,7 +19022,8 @@
 			"Nasty Plot",
 			"Skill Swap",
 			"Wonder Room",
-			"Me First"
+			"Me First",
+			"Hypnosis"
 		]
 	},
 	{
@@ -19081,7 +19074,8 @@
 			"Roost",
 			"Flatter",
 			"Punishment",
-			"Air Cutter"
+			"Air Cutter",
+			"Night Slash"
 		]
 	},
 	{
@@ -19110,7 +19104,7 @@
 			[40, "Sucker Punch"],
 			[44, "Attract"],
 			[48, "Shadow Claw"],
-			[52, "Hone Claws"],
+			[52, "Double-Edge"],
 			[56, "Play Rough"]
 		],
 		"eggMoves": [
@@ -19122,7 +19116,8 @@
 			"Assurance",
 			"Flail",
 			"Snatch",
-			"Metal Claw"
+			"Metal Claw",
+			"Night Slash"
 		]
 	},
 	{
@@ -19149,13 +19144,13 @@
 			[24, "Wake-Up Slap"],
 			[28, "Assist"],
 			[32, "Slash"],
-			[36, "Captivate"],
-			[37, "Swagger"],
+			[33, "Swagger"],
+			[38, "Captivate"],
 			[43, "Body Slam"],
 			[46, "Attract"],
 			[49, "Bad Tantrum"],
 			[55, "Shadow Claw"],
-			[60, "Hone Claws"],
+			[60, "Double-Edge"],
 			[64, "Play Rough"]
 		],
 		"eggMoves": [
@@ -19167,7 +19162,8 @@
 			"Assurance",
 			"Flail",
 			"Snatch",
-			"Metal Claw"
+			"Metal Claw",
+			"Night Slash"
 		]
 	},
 	{
@@ -19226,7 +19222,7 @@
 			[25, "Slash"],
 			[27, "Toxic"],
 			[30, "Sucker Punch"],
-			[33, "Memento"],
+			[33, ""],
 			[36, "Night Slash"],
 			[39, "Venom Drench"],
 			[42, "Sludge Bomb"],
@@ -19246,7 +19242,8 @@
 			"Iron Tail",
 			"Foul Play",
 			"Flame Burst",
-			"Play Rough"
+			"Play Rough",
+			"Memento"
 		]
 	},
 	{
@@ -19274,7 +19271,7 @@
 			[25, "Slash"],
 			[27, "Toxic"],
 			[30, "Sucker Punch"],
-			[33, "Memento"],
+			[33, ""],
 			[33, "Flamethrower"],
 			[38, "Night Slash"],
 			[43, "Venom Drench"],
@@ -19296,7 +19293,8 @@
 			"Iron Tail",
 			"Foul Play",
 			"Flame Burst",
-			"Play Rough"
+			"Play Rough",
+			"Memento"
 		]
 	},
 	{
@@ -19391,7 +19389,8 @@
 			[32, "Rock Slide"],
 			[36, "Low Kick"],
 			[40, "Counter"],
-			[44, "Double-Edge"]
+			[44, "Double-Edge"],
+			[48, "Head Smash"]
 		],
 		"eggMoves": [
 			"Selfdestruct",
@@ -19774,7 +19773,8 @@
 			[44, "Helping Hand"],
 			[48, "Copycat"],
 			[52, "Final Gambit"],
-			[56, "Reversal"]
+			[56, "Reversal"],
+			[60, "Close Combat"]
 		],
 		"eggMoves": [
 			"Cross Chop",
@@ -19790,6 +19790,7 @@
 			"Iron Defense",
 			"Blaze Kick",
 			"Bullet Punch",
+			"Mach Punch",
 			"Follow Me",
 			"Circle Throw",
 			"Meteor Mash",
@@ -19852,6 +19853,7 @@
 			"Iron Defense",
 			"Blaze Kick",
 			"Bullet Punch",
+			"Mach Punch",
 			"Follow Me",
 			"Circle Throw",
 			"Meteor Mash",
@@ -20315,7 +20317,8 @@
 			[34, "Ingrain"],
 			[41, "Wood Hammer"],
 			[48, "Blizzard"],
-			[55, "Sheer Cold"]
+			[55, "Icicle Crash"],
+			[62, "Sheer Cold"]
 		],
 		"eggMoves": [
 			"Leech Seed",
@@ -20356,7 +20359,8 @@
 			[39, "Ice Punch"],
 			[43, "Wood Hammer"],
 			[51, "Blizzard"],
-			[59, "Sheer Cold"]
+			[59, "Icicle Crash"],
+			[67, "Sheer Cold"]
 		],
 		"eggMoves": [
 			"Leech Seed",
@@ -20385,27 +20389,24 @@
 			[0, "Assurance"],
 			[1, "Revenge"],
 			[1, "Embargo"],
-			[1, "Beat Up"],
-			[1, "Feint Attack"],
-			[1, "Agility"],
-			[1, "Slash"],
 			[1, "Scratch"],
 			[1, "Leer"],
 			[1, "Taunt"],
 			[1, "Quick Attack"],
-			[16, "Metal Claw"],
-			[20, "Icy Wind"],
-			[24, "Fury Swipes"],
-			[28, "Fling"],
-			[33, "Hone Claws"],
-			[37, "Ice Shard"],
-			[42, "Dark Pulse"],
-			[47, "Nasty Plot"],
-			[51, "Screech"],
-			[55, "Punishment"],
-			[60, "Snatch"],
-			[64, "Night Slash"],
-			[69, "Triple Axel"]
+			[14, "Metal Claw"],
+			[18, "Icy Wind"],
+			[22, "Fury Swipes"],
+			[26, "Fling"],
+			[30, "Dark Pulse"],
+			[34, "Ice Shard"],
+			[38, "Nasty Plot"],
+			[42, "Night Slash"],
+			[48, "Screech"],
+			[52, "Snatch"],
+			[56, "Punishment"],
+			[60, "Swagger"],
+			[64, "Hone Claws"],
+			[68, "Triple Axel"]
 		],
 		"eggMoves": [
 			"Counter",
@@ -20506,7 +20507,8 @@
 			"Heal Bell",
 			"Wish",
 			"Chip Away",
-			"Me First"
+			"Me First",
+			"Ice Ball"
 		]
 	},
 	{
@@ -20603,7 +20605,9 @@
 			"Power Swap",
 			"Rage Powder",
 			"Wake-Up Slap",
-			"Morning Sun"
+			"Morning Sun",
+			"Acid Spray",
+			"Double Hit"
 		]
 	},
 	{
@@ -20738,7 +20742,8 @@
 			[1, "Fairy Wind"],
 			[1, "Extremespeed"],
 			[1, "Aura Sphere"],
-			[1, "Air Slash"]
+			[1, "Air Slash"],
+			[44, "Moonblast"]
 		],
 		"eggMoves": [
 			"Present",
@@ -20801,7 +20806,8 @@
 			"Feint Attack",
 			"Double-Edge",
 			"Secret Power",
-			"String Shot"
+			"String Shot",
+			"Gust"
 		]
 	},
 	{
@@ -20859,7 +20865,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -20916,7 +20923,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -20967,7 +20975,8 @@
 			"Cross Poison",
 			"Power Trick",
 			"Rock Climb",
-			"Poison Tail"
+			"Poison Tail",
+			"Mud Bomb"
 		]
 	},
 	{
@@ -20984,7 +20993,6 @@
 			[0, "Double Hit"],
 			[1, "Scary Face"],
 			[1, "AncientPower"],
-			[1, "Mist"],
 			[1, "Tackle"],
 			[1, "Odor Sleuth"],
 			[1, "Mud Sport"],
@@ -21074,12 +21082,9 @@
 			[1, "Leaf Blade"],
 			[1, "Growl"],
 			[1, "Disarm Cry"],
-			[1, "Double Team"],
-			[1, "Confusion"],
 			[1, "Hypnosis"],
 			[1, "Drain Kiss"],
 			[1, "Lucky Chant"],
-			[1, "Teleport"],
 			[1, "Magical Leaf"],
 			[1, "Psybeam"],
 			[1, "Life Dew"],
@@ -21088,7 +21093,6 @@
 			[1, "Stored Power"],
 			[1, "Imprison"],
 			[1, "Psychic"],
-			[1, "Heal Pulse"],
 			[1, "Dream Eater"],
 			[1, "Leer"],
 			[1, "Fury Cutter"],
@@ -21164,7 +21168,8 @@
 			"Double-Edge",
 			"Stealth Rock",
 			"Endure",
-			"Wide Guard"
+			"Wide Guard",
+			""
 		]
 	},
 	{
@@ -21183,6 +21188,7 @@
 			[1, "Ice Punch"],
 			[1, "ThunderPunch"],
 			[1, "Gravity"],
+			[1, ""],
 			[1, "Bind"],
 			[1, "Astonish"],
 			[1, "Leer"],
@@ -21227,7 +21233,8 @@
 		"hiddenAbility": "Perish Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Hex"],
+			[0, ""],
+			[1, "Hex"],
 			[1, "Destiny Bond"],
 			[1, "Bite"],
 			[1, "Protect"],
@@ -21262,7 +21269,8 @@
 			"Weather Ball",
 			"Avalanche",
 			"Hex",
-			"Switcheroo"
+			"Switcheroo",
+			"Double-Edge"
 		]
 	},
 	{
@@ -21304,6 +21312,8 @@
 		"hiddenAbility": "Comatose",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, "Hypnosis"],
+			[1, ""],
 			[1, "Natural Gift"],
 			[1, "Confusion"],
 			[1, "Rest"],
@@ -21313,11 +21323,12 @@
 			[28, "Imprison"],
 			[35, "Extrasensory"],
 			[42, "Amnesia"],
-			[49, "Psychic"],
-			[56, "Yawn"],
+			[49, "Yawn"],
+			[56, ""],
 			[63, "Future Sight"],
 			[70, "Flail"],
-			[77, "Memento"]
+			[77, "Psychic"],
+			[84, "Memento"]
 		],
 		"eggMoves": []
 	},
@@ -21342,11 +21353,12 @@
 			[28, "Imprison"],
 			[35, "Extrasensory"],
 			[42, "Charm"],
-			[49, "Psychic"],
-			[56, "Flatter"],
+			[49, "Flatter"],
+			[56, ""],
 			[63, "Future Sight"],
 			[70, "Copycat"],
-			[77, "Healing Wish"]
+			[77, "Psychic"],
+			[84, "Healing Wish"]
 		],
 		"eggMoves": []
 	},
@@ -21361,6 +21373,7 @@
 		"hiddenAbility": "Infiltrator",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, ""],
 			[1, "Natural Gift"],
 			[1, "Confusion"],
 			[1, "Rest"],
@@ -21370,11 +21383,12 @@
 			[28, "Imprison"],
 			[35, "Extrasensory"],
 			[42, "Nasty Plot"],
-			[49, "Psychic"],
-			[56, "Uproar"],
+			[49, "Uproar"],
+			[56, ""],
 			[63, "Future Sight"],
 			[70, "Last Resort"],
-			[77, "Explosion"]
+			[77, "Psychic"],
+			[84, "Explosion"]
 		],
 		"eggMoves": []
 	},
@@ -21480,6 +21494,7 @@
 			[1, "Ice Punch"],
 			[1, "ThunderPunch"],
 			[1, "Dizzy Punch"],
+			[1, ""],
 			[1, "Pound"],
 			[1, "Confuse Ray"],
 			[1, "Foresight"],
@@ -21540,6 +21555,7 @@
 		"hiddenAbility": "Magician",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, ""],
 			[1, "Confusion"],
 			[1, "Double Team"],
 			[6, "Mist"],
@@ -21570,16 +21586,18 @@
 		"levelUpMoves": [
 			[1, "Bubble"],
 			[1, "Water Sport"],
-			[9, "Charm"],
-			[13, "Life Dew"],
-			[16, "Supersonic"],
-			[24, "Bubble Beam"],
-			[31, "Acid Armor"],
-			[39, "Whirlpool"],
-			[46, "Water Pulse"],
-			[54, "Aqua Ring"],
-			[61, "Dive"],
-			[69, "Rain Dance"]
+			[7, "Charm"],
+			[12, "Supersonic"],
+			[17, "Water Pulse"],
+			[23, "Aqua Ring"],
+			[28, "Whirlpool"],
+			[34, "Acid Armor"],
+			[39, "Bubble Beam"],
+			[45, "Life Dew"],
+			[50, "Rain Dance"],
+			[55, ""],
+			[60, "Dive"],
+			[66, "Moonblast"]
 		],
 		"eggMoves": []
 	},
@@ -21594,20 +21612,22 @@
 		"hiddenAbility": "Soul-Heart",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Tail Glow"],
 			[1, "Bubble"],
 			[1, "Water Sport"],
-			[9, "Charm"],
-			[13, "Life Dew"],
-			[16, "Supersonic"],
-			[24, "Bubble Beam"],
-			[31, "Acid Armor"],
-			[39, "Whirlpool"],
-			[46, "Water Pulse"],
-			[54, "Aqua Ring"],
-			[61, "Dive"],
-			[69, "Rain Dance"],
-			[76, "Heart Swap"]
+			[7, "Charm"],
+			[12, "Supersonic"],
+			[17, "Water Pulse"],
+			[23, "Aqua Ring"],
+			[28, "Whirlpool"],
+			[34, "Acid Armor"],
+			[39, "Bubble Beam"],
+			[45, "Life Dew"],
+			[50, "Rain Dance"],
+			[55, ""],
+			[60, "Surf"],
+			[66, "Moonblast"],
+			[71, "Heart Swap"],
+			[76, "Tail Glow"]
 		],
 		"eggMoves": []
 	},
@@ -21624,18 +21644,18 @@
 		"levelUpMoves": [
 			[1, "Roar of Time"],
 			[1, "Spacial Rend"],
-			[1, "Sucker Punch"],
+			[1, "Quick Attack"],
 			[1, "Night Shade"],
 			[1, "Ominous Wind"],
 			[1, "Pursuit"],
 			[1, "Disable"],
-			[10, "Quick Attack"],
+			[10, "Shadow Sneak"],
 			[20, "Hypnosis"],
 			[30, "Feint Attack"],
-			[40, "Nightmare"],
-			[50, "Double Team"],
-			[60, "Dark Void"],
-			[70, "Haze"],
+			[40, "Haze"],
+			[50, "Nightmare"],
+			[60, "Sucker Punch"],
+			[70, "Dark Void"],
 			[80, "Dark Pulse"],
 			[90, "Dream Eater"],
 			[100, "Nasty Plot"]
@@ -21654,6 +21674,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Growth"],
+			[1, "Sleep Powder"],
 			[5, "Floral Heal"],
 			[10, "Magical Leaf"],
 			[19, "Leech Seed"],
@@ -22480,23 +22501,23 @@
 		"hiddenAbility": "Adaptability",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Seed Bomb"],
+			[0, "Grass Knot"],
 			[1, "Scratch"],
 			[1, "Play Nice"],
 			[1, "Lick"],
 			[1, "Vine Whip"],
 			[1, "Leech Seed"],
 			[1, "Bite"],
-			[1, "Grass Knot"],
 			[1, "Torment"],
 			[1, "Fling"],
 			[1, "Recycle"],
 			[1, "Natural Gift"],
 			[1, "Crunch"],
+			[1, "Grass Knot"],
 			[1, "Leer"],
 			[1, "Fury Swipes"],
 			[1, "Acrobatics"],
-			[1, "Seed Bomb"]
+			[34, "Seed Bomb"]
 		],
 		"eggMoves": [
 			"Covet",
@@ -22577,14 +22598,14 @@
 			[1, "Bite"],
 			[1, "Amnesia"],
 			[1, "Fling"],
-			[1, "Fire Blast"],
 			[1, "Recycle"],
 			[1, "Natural Gift"],
 			[1, "Crunch"],
+			[1, "Flame Burst"],
 			[1, "Leer"],
 			[1, "Fury Swipes"],
 			[1, "Acrobatics"],
-			[1, "Flame Burst"]
+			[34, "Fire Blast"]
 		],
 		"eggMoves": [
 			"Covet",
@@ -22655,23 +22676,23 @@
 		"hiddenAbility": "Adaptability",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Scald"],
+			[0, "Brine"],
 			[1, "Scratch"],
 			[1, "Play Nice"],
 			[1, "Lick"],
 			[1, "Water Gun"],
 			[1, "Water Sport"],
 			[1, "Bite"],
-			[1, "Brine"],
 			[1, "Taunt"],
 			[1, "Fling"],
 			[1, "Recycle"],
 			[1, "Natural Gift"],
 			[1, "Crunch"],
+			[1, "Brine"],
 			[1, "Leer"],
 			[1, "Fury Swipes"],
 			[1, "Acrobatics"],
-			[1, "Scald"]
+			[34, "Scald"]
 		],
 		"eggMoves": [
 			"Covet",
@@ -22753,7 +22774,6 @@
 			[1, "Zen Headbutt"],
 			[1, "Calm Mind"],
 			[1, "Yawn"],
-			[1, "Psychic"],
 			[1, "Telekinesis"],
 			[1, "Moonblast"],
 			[1, "Dream Eater"],
@@ -23118,10 +23138,11 @@
 			[26, "Assurance"],
 			[30, "Amnesia"],
 			[34, "Air Slash"],
-			[38, "Psychic"],
+			[38, ""],
 			[42, "Calm Mind"],
-			[46, "Future Sight"],
-			[50, "Simple Beam"]
+			[46, "Psychic"],
+			[50, "Simple Beam"],
+			[54, "Future Sight"]
 		],
 		"eggMoves": [
 			"Charm",
@@ -23160,10 +23181,11 @@
 			[26, "Assurance"],
 			[30, "Amnesia"],
 			[34, "Air Slash"],
-			[38, "Psychic"],
+			[38, ""],
 			[42, "Calm Mind"],
-			[46, "Future Sight"],
-			[50, "Simple Beam"]
+			[46, "Psychic"],
+			[50, "Simple Beam"],
+			[54, "Future Sight"]
 		],
 		"eggMoves": [
 			"Charm",
@@ -23923,7 +23945,7 @@
 		"hiddenAbility": "Cotton Down",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Hurricane"],
+			[0, "Moonblast"],
 			[1, "Memento"],
 			[1, "Mega Drain"],
 			[1, "Razor Leaf"],
@@ -23944,7 +23966,8 @@
 			[1, "Gust"],
 			[1, "Tailwind"],
 			[1, "Moonblast"],
-			[1, "Giga Drain"]
+			[1, "Giga Drain"],
+			[48, "Hurricane"]
 		],
 		"eggMoves": [
 			"Natural Gift",
@@ -23999,7 +24022,8 @@
 			"Sweet Scent",
 			"Bide",
 			"Healing Wish",
-			"Encore"
+			"Encore",
+			"Recover"
 		]
 	},
 	{
@@ -24014,6 +24038,10 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Petal Dance"],
+			[1, "Absorb"],
+			[1, "Growth"],
+			[1, "Helping Hand"],
+			[1, "Stun Spore"],
 			[1, "Mega Drain"],
 			[1, "Aromatherapy"],
 			[1, "Magical Leaf"],
@@ -24025,15 +24053,11 @@
 			[1, "Synthesis"],
 			[1, "Sunny Day"],
 			[1, "Entrainment"],
-			[1, "Leaf Storm"],
-			[1, "Absorb"],
-			[1, "Growth"],
-			[1, "Helping Hand"],
-			[1, "Stun Spore"],
 			[1, "Petal Dance"],
 			[1, "Petal Storm"],
 			[1, "Quiver Dance"],
-			[1, "Teeter Dance"]
+			[1, "Teeter Dance"],
+			[42, "Leaf Storm"]
 		],
 		"eggMoves": [
 			"Natural Gift",
@@ -24045,7 +24069,8 @@
 			"Sweet Scent",
 			"Bide",
 			"Healing Wish",
-			"Encore"
+			"Encore",
+			"Recover"
 		]
 	},
 	{
@@ -24055,7 +24080,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["-------", "Deep Sea Tooth"],
 		"eggGroup": ["Water 2", "Water 2"],
-		"ability": ["Mold Breaker", "Adaptability"],
+		"ability": ["Reckless", "Adaptability"],
 		"hiddenAbility": "Speed Boost",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -24088,7 +24113,8 @@
 			"Brine",
 			"Revenge",
 			"Endeavor",
-			"Uproar"
+			"Uproar",
+			""
 		]
 	},
 	{
@@ -24424,8 +24450,8 @@
 		"hiddenAbility": "Weak Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Shell Smash"],
-			[1, "Rock Blast"],
+			[1, "Fury Cutter"],
+			[1, "Sand Attack"],
 			[1, "Withdraw"],
 			[1, "Smack Down"],
 			[12, "Bug Bite"],
@@ -24466,15 +24492,14 @@
 		"hiddenAbility": "Intimidate",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Low Kick"],
 			[1, "Leer"],
 			[1, "Fake Out"],
 			[1, "Low Kick"],
 			[4, "Payback"],
 			[8, "Headbutt"],
 			[12, "Sand Attack"],
-			[15, "Facade"],
-			[19, "Power-Up Hit"],
+			[15, "Power-Up Hit"],
+			[19, "Facade"],
 			[23, "Protect"],
 			[26, "Scary Face"],
 			[29, "Brick Break"],
@@ -24514,15 +24539,14 @@
 		"hiddenAbility": "Intimidate",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Low Kick"],
 			[1, "Leer"],
 			[1, "Fake Out"],
 			[1, "Low Kick"],
-			[4, "Payback"],
-			[8, "Headbutt"],
+			[1, "Payback"],
+			[1, "Headbutt"],
 			[12, "Sand Attack"],
-			[15, "Facade"],
-			[19, "Power-Up Hit"],
+			[15, "Power-Up Hit"],
+			[19, "Facade"],
 			[23, "Protect"],
 			[26, "Scary Face"],
 			[29, "Brick Break"],
@@ -25087,12 +25111,12 @@
 			[1, "Slam"],
 			[1, "Tickle"],
 			[1, "Hyper Voice"],
-			[1, "Play Rough"],
 			[1, "Last Resort"],
 			[1, "Charm"],
 			[1, "Wake-Up Slap"],
 			[1, "Encore"],
-			[1, "Tail Slap"]
+			[1, "Tail Slap"],
+			[52, "Play Rough"]
 		],
 		"eggMoves": [
 			"Iron Tail",
@@ -25164,8 +25188,6 @@
 			[1, "Confusion"],
 			[1, "Tickle"],
 			[1, "Play Nice"],
-			[3, "Confusion"],
-			[7, "Tickle"],
 			[10, "Fake Tears"],
 			[14, "Double Slap"],
 			[16, "Psybeam"],
@@ -25208,8 +25230,6 @@
 			[1, "Confusion"],
 			[1, "Tickle"],
 			[1, "Play Nice"],
-			[3, "Confusion"],
-			[7, "Tickle"],
 			[10, "Fake Tears"],
 			[14, "Double Slap"],
 			[16, "Psybeam"],
@@ -25291,9 +25311,6 @@
 			[1, "Reflect"],
 			[1, "Rollout"],
 			[1, "Snatch"],
-			[3, "Reflect"],
-			[7, "Rollout"],
-			[10, "Snatch"],
 			[14, "Hidden Power"],
 			[16, "Light Screen"],
 			[19, "Charm"],
@@ -25334,9 +25351,6 @@
 			[1, "Reflect"],
 			[1, "Rollout"],
 			[1, "Snatch"],
-			[3, "Reflect"],
-			[7, "Rollout"],
-			[10, "Snatch"],
 			[14, "Hidden Power"],
 			[16, "Light Screen"],
 			[19, "Charm"],
@@ -25630,8 +25644,6 @@
 			[1, "Camouflage"],
 			[1, "Growl"],
 			[1, "Sand Attack"],
-			[4, "Growl"],
-			[7, "Sand Attack"],
 			[10, "Double Kick"],
 			[13, "Leech Seed"],
 			[16, "Feint Attack"],
@@ -25713,23 +25725,22 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Peck"],
-			[4, "Leer"],
+			[1, "Leer"],
+			[4, "Fury Cutter"],
 			[8, "Endure"],
-			[13, "Fury Cutter"],
+			[12, "False Swipe"],
 			[16, "Fury Attack"],
 			[20, "Headbutt"],
-			[25, "False Swipe"],
-			[28, "Bug Buzz"],
-			[32, "Slash"],
-			[37, "Take Down"],
-			[40, "Scary Face"],
-			[44, "X-Scissor"],
-			[49, "Flail"],
-			[52, "Swords Dance"],
-			[56, "Double-Edge"]
+			[24, "Scary Face"],
+			[28, "Flail"],
+			[32, "X-Scissor"],
+			[36, "Take Down"],
+			[40, "Swords Dance"],
+			[44, "Double-Edge"],
+			[48, "Megahorn"]
 		],
 		"eggMoves": [
-			"Megahorn",
+			"Bug Buzz",
 			"Pursuit",
 			"Counter",
 			"Horn Attack",
@@ -25738,6 +25749,8 @@
 			"Screech",
 			"Knock Off",
 			"Drill Run",
+			"Acid Spray",
+			"Slash",
 			"Night Slash"
 		]
 	},
@@ -25752,30 +25765,31 @@
 		"hiddenAbility": "Overcoat",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Double-Edge"],
+			[0, "Twineedle"],
 			[1, "Fell Stinger"],
+			[1, "Endure"],
+			[1, "Scary Face"],
+			[1, "Flail"],
+			[1, "Take Down"],
+			[1, "Double-Edge"],
 			[1, "Peck"],
 			[1, "Leer"],
+			[1, "Fury Cutter"],
 			[1, "Quick Guard"],
-			[1, "Twineedle"],
-			[4, "Leer"],
-			[8, "Quick Guard"],
-			[13, "Twineedle"],
+			[12, "False Swipe"],
 			[16, "Fury Attack"],
 			[20, "Headbutt"],
-			[25, "False Swipe"],
-			[28, "Bug Buzz"],
-			[32, "Slash"],
-			[37, "Iron Head"],
-			[40, "Iron Defense"],
-			[44, "X-Scissor"],
-			[49, "Reversal"],
-			[52, "Swords Dance"],
-			[56, "Giga Impact"],
-			[60, "Fell Stinger"]
+			[24, "Iron Defense"],
+			[30, "Reversal"],
+			[36, "X-Scissor"],
+			[42, "Metal Burst"],
+			[48, "Swords Dance"],
+			[54, "Iron Head"],
+			[60, "Giga Impact"],
+			[66, "Megahorn"]
 		],
 		"eggMoves": [
-			"Megahorn",
+			"Bug Buzz",
 			"Pursuit",
 			"Counter",
 			"Horn Attack",
@@ -25784,6 +25798,8 @@
 			"Screech",
 			"Knock Off",
 			"Drill Run",
+			"Acid Spray",
+			"Slash",
 			"Night Slash"
 		]
 	},
@@ -25874,20 +25890,23 @@
 		"hiddenAbility": "Water Bubble",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Bubble"],
 			[1, "Water Sport"],
-			[5, "Absorb"],
-			[9, "Night Shade"],
-			[13, "Bubble Beam"],
-			[17, "Recover"],
-			[22, "Water Pulse"],
-			[27, "Ominous Wind"],
-			[32, "Brine"],
-			[37, "Rain Dance"],
-			[43, "Hex"],
-			[49, "Hydro Pump"],
-			[55, "Wring Out"],
-			[61, "Water Spout"]
+			[1, "Absorb"],
+			[1, "Bubble"],
+			[4, "Poison Sting"],
+			[8, "Night Shade"],
+			[12, "Bubble Beam"],
+			[16, "Rain Dance"],
+			[20, "Ominous Wind"],
+			[24, "Brine"],
+			[28, "Recover"],
+			[32, "Hex"],
+			[36, "Whirlpool"],
+			[41, "Hydro Pump"],
+			[44, "Destiny Bond"],
+			[48, "Shadow Ball"],
+			[52, "Wring Out"],
+			[56, "Water Spout"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -25909,24 +25928,24 @@
 		"hiddenAbility": "Damp",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Water Spout"],
-			[1, "Wring Out"],
-			[1, "Bubble"],
+			[1, "Acid Armor"],
 			[1, "Water Sport"],
 			[1, "Absorb"],
+			[1, "Water Gun"],
+			[1, "Poison Sting"],
 			[1, "Night Shade"],
-			[5, "Absorb"],
-			[9, "Night Shade"],
-			[13, "Bubble Beam"],
-			[17, "Recover"],
-			[22, "Water Pulse"],
-			[27, "Ominous Wind"],
-			[32, "Brine"],
-			[37, "Rain Dance"],
-			[45, "Hex"],
-			[53, "Hydro Pump"],
-			[61, "Wring Out"],
-			[69, "Water Spout"]
+			[12, "Bubble Beam"],
+			[16, "Rain Dance"],
+			[20, "Ominous Wind"],
+			[24, "Brine"],
+			[28, "Recover"],
+			[32, "Hex"],
+			[36, "Whirlpool"],
+			[43, "Hydro Pump"],
+			[48, "Destiny Bond"],
+			[53, "Shadow Ball"],
+			[58, "Wring Out"],
+			[63, "Water Spout"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -26320,12 +26339,12 @@
 			[1, "Wild Charge"],
 			[1, "Gastro Acid"],
 			[1, "Zap Cannon"],
-			[1, "Thrash"],
-			[1, "Thunder Cage"],
-			[1, "Ion Deluge"],
 			[1, "Crush Claw"],
 			[1, "Discharge"],
-			[1, "Crunch"]
+			[1, "Ion Deluge"],
+			[1, "Crunch"],
+			[66, "Thrash"],
+			[70, "Thunder Cage"]
 		],
 		"eggMoves": []
 	},
@@ -26471,7 +26490,7 @@
 			[1, "Astonish"],
 			[1, "Smog"],
 			[1, "Minimize"],
-			[9, "Fire Spin"],
+			[1, "Fire Spin"],
 			[13, "Confuse Ray"],
 			[16, "Hex"],
 			[20, "Will-O-Wisp"],
@@ -26507,7 +26526,6 @@
 		"hiddenAbility": "Shadow Tag",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Ember"],
 			[1, "Astonish"],
 			[1, "Smog"],
 			[1, "Minimize"],
@@ -26518,22 +26536,12 @@
 			[1, "Inferno"],
 			[1, "Imprison"],
 			[1, "Pain Split"],
-			[1, "Smog"],
-			[1, "Ember"],
-			[1, "Minimize"],
-			[1, "Fire Spin"],
-			[1, "Night Shade"],
-			[1, "Curse"],
-			[1, "Shadow Ball"],
-			[1, "Inferno"],
-			[1, "Imprison"],
-			[1, "Pain Split"],
-			[1, "Overheat"],
 			[1, "Memento"],
+			[1, "Flame Burst"],
 			[1, "Confuse Ray"],
 			[1, "Hex"],
 			[1, "Will-O-Wisp"],
-			[1, "Flame Burst"]
+			[58, "Overheat"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -26855,8 +26863,6 @@
 			[1, "Guard Swap"],
 			[1, "Body Slam"],
 			[1, "Leech Life"],
-			[1, "Double Team"],
-			[1, "Acid Spray"],
 			[1, "Double Team"],
 			[1, "Acid Spray"],
 			[1, "Quick Attack"],
@@ -27298,10 +27304,11 @@
 		"levelUpMoves": [
 			[0, "Superpower"],
 			[1, "Sky Attack"],
+			[1, "Double-Edge"],
 			[1, "Peck"],
 			[1, "Leer"],
-			[6, "Hone Claws"],
-			[10, "Wing Attack"],
+			[1, "Hone Claws"],
+			[1, "Wing Attack"],
 			[15, "Fury Attack"],
 			[20, "Tailwind"],
 			[24, "Air Slash"],
@@ -27333,18 +27340,19 @@
 			[1, "Leer"],
 			[6, "Flatter"],
 			[10, "Pluck"],
-			[15, "Fury Attack"],
-			[20, "Tailwind"],
-			[24, "Punishment"],
-			[29, "Iron Defense"],
-			[33, "Air Slash"],
-			[38, "Knock Off"],
-			[43, "Whirlwind"],
-			[47, "Nasty Plot"],
-			[51, "Dark Pulse"],
-			[56, "Defog"],
-			[60, "Mirror Move"],
-			[64, "Brave Bird"]
+			[14, "Fury Attack"],
+			[18, "Tailwind"],
+			[21, "Punishment"],
+			[25, "Iron Defense"],
+			[28, "Air Slash"],
+			[32, "Knock Off"],
+			[36, "Whirlwind"],
+			[40, "Nasty Plot"],
+			[44, "Dark Pulse"],
+			[49, "Defog"],
+			[53, "Mirror Move"],
+			[57, "Foul Play"],
+			[62, "Brave Bird"]
 		],
 		"eggMoves": [
 			"Steel Wing",
@@ -27353,7 +27361,6 @@
 			"Scary Face",
 			"Knock Off",
 			"Fake Tears",
-			"Foul Play",
 			"Toxic",
 			"Feint Attack"
 		]
@@ -27372,21 +27379,22 @@
 			[0, "Bone Rush"],
 			[1, "Gust"],
 			[1, "Leer"],
-			[6, "Flatter"],
-			[10, "Pluck"],
-			[15, "Fury Attack"],
-			[20, "Tailwind"],
-			[24, "Punishment"],
-			[29, "Iron Defense"],
-			[33, "Air Slash"],
-			[38, "Knock Off"],
-			[43, "Whirlwind"],
-			[47, "Nasty Plot"],
+			[1, "Flatter"],
+			[1, "Pluck"],
+			[14, "Fury Attack"],
+			[18, "Tailwind"],
+			[21, "Punishment"],
+			[25, "Iron Defense"],
+			[28, "Air Slash"],
+			[32, "Knock Off"],
+			[36, "Whirlwind"],
+			[40, "Nasty Plot"],
+			[44, "Dark Pulse"],
+			[49, "Defog"],
 			[49, "Bone Rush"],
-			[53, "Dark Pulse"],
-			[58, "Defog"],
-			[63, "Mirror Move"],
-			[68, "Brave Bird"]
+			[55, "Mirror Move"],
+			[60, "Foul Play"],
+			[66, "Brave Bird"]
 		],
 		"eggMoves": [
 			"Steel Wing",
@@ -27395,7 +27403,6 @@
 			"Scary Face",
 			"Knock Off",
 			"Fake Tears",
-			"Foul Play",
 			"Toxic",
 			"Feint Attack"
 		]
@@ -27411,7 +27418,7 @@
 		"hiddenAbility": "Berserk",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Hone Claws"],
+			[1, "Lick"],
 			[1, "Tackle"],
 			[4, "Fire Spin"],
 			[8, "Odor Sleuth"],
@@ -27590,7 +27597,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Tri Attack"],
-			[1, "Double Hit"],
 			[1, "Tackle"],
 			[1, "DragonBreath"],
 			[1, "Focus Energy"],
@@ -27805,6 +27811,7 @@
 		"hiddenAbility": "Defiant",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, "Twister"],
 			[1, "Astonish"],
 			[1, "Revenge"],
 			[1, "Gust"],
@@ -27818,11 +27825,12 @@
 			[40, "Crunch"],
 			[45, "Extrasensory"],
 			[50, "Uproar"],
-			[55, "Dark Pulse"],
-			[60, "Hammer Arm"],
-			[65, "Rain Dance"],
-			[70, "Hurricane"],
-			[75, "Thrash"]
+			[55, ""],
+			[60, "Dark Pulse"],
+			[65, "Hammer Arm"],
+			[70, "Rain Dance"],
+			[75, "Hurricane"],
+			[80, "Thrash"]
 		],
 		"eggMoves": []
 	},
@@ -27839,6 +27847,7 @@
 		"levelUpMoves": [
 			[1, "Nasty Plot"],
 			[1, "Heal Block"],
+			[1, "Twister"],
 			[1, "Astonish"],
 			[1, "Revenge"],
 			[1, "ThunderShock"],
@@ -27852,11 +27861,12 @@
 			[40, "Crunch"],
 			[45, "Discharge"],
 			[50, "Uproar"],
-			[55, "Dark Pulse"],
-			[60, "Hammer Arm"],
-			[65, "Rain Dance"],
-			[70, "Thunder"],
-			[75, "Thrash"]
+			[55, ""],
+			[60, "Dark Pulse"],
+			[65, "Hammer Arm"],
+			[70, "Rain Dance"],
+			[75, "Thunder"],
+			[80, "Thrash"]
 		],
 		"eggMoves": []
 	},
@@ -27934,24 +27944,27 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Punishment"],
+			[1, "Twister"],
 			[1, "Mud Shot"],
 			[1, "Sand Tomb"],
 			[1, "Rock Throw"],
 			[1, "Leer"],
 			[10, "Block"],
+			[15, "Rock Tomb"],
 			[15, "Bulldoze"],
-			[20, "Rock Tomb"],
 			[25, "Swords Dance"],
 			[30, "Imprison"],
-			[35, "Rock Slide"],
-			[40, "Earth Power"],
+			[35, "Earth Power"],
+			[40, "Rock Slide"],
 			[45, "Extrasensory"],
 			[50, "Stone Edge"],
-			[55, "Hammer Arm"],
-			[60, "Sandstorm"],
-			[65, "Earthquake"],
-			[70, "Outrage"],
-			[75, "Fissure"]
+			[55, ""],
+			[60, "Crunch"],
+			[65, "Hammer Arm"],
+			[70, "Sandstorm"],
+			[75, "Earthquake"],
+			[80, "Outrage"],
+			[85, "Fissure"]
 		],
 		"eggMoves": []
 	},
@@ -28032,9 +28045,6 @@
 			[1, "Quick Attack"],
 			[1, "Confusion"],
 			[1, "Sing"],
-			[6, "Quick Attack"],
-			[11, "Confusion"],
-			[16, "Sing"],
 			[21, "Teeter Dance"],
 			[26, "Acrobatics"],
 			[31, "Psybeam"],
@@ -28095,7 +28105,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Flying", "Flying"],
 		"ability": ["Big Pecks", "Super Luck"],
-		"hiddenAbility": "Rivalry",
+		"hiddenAbility": "Moxie",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Gust"],
@@ -28128,20 +28138,23 @@
 		"hiddenAbility": "Damp",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Bubble"],
 			[1, "Water Sport"],
-			[5, "Absorb"],
-			[9, "Night Shade"],
-			[13, "Bubble Beam"],
-			[17, "Recover"],
-			[22, "Water Pulse"],
-			[27, "Ominous Wind"],
-			[32, "Brine"],
-			[37, "Rain Dance"],
-			[43, "Hex"],
-			[49, "Hydro Pump"],
-			[55, "Wring Out"],
-			[61, "Water Spout"]
+			[1, "Absorb"],
+			[1, "Bubble"],
+			[4, "Poison Sting"],
+			[8, "Night Shade"],
+			[12, "Bubble Beam"],
+			[16, "Rain Dance"],
+			[20, "Ominous Wind"],
+			[24, "Brine"],
+			[28, "Recover"],
+			[32, "Hex"],
+			[36, "Whirlpool"],
+			[41, "Hydro Pump"],
+			[44, "Destiny Bond"],
+			[48, "Shadow Ball"],
+			[52, "Wring Out"],
+			[56, "Water Spout"]
 		],
 		"eggMoves": []
 	},
@@ -28156,24 +28169,24 @@
 		"hiddenAbility": "Damp",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Water Spout"],
-			[1, "Wring Out"],
-			[1, "Bubble"],
+			[1, "Acid Armor"],
 			[1, "Water Sport"],
 			[1, "Absorb"],
+			[1, "Water Gun"],
+			[1, "Poison Sting"],
 			[1, "Night Shade"],
-			[5, "Absorb"],
-			[9, "Night Shade"],
-			[13, "Bubble Beam"],
-			[17, "Recover"],
-			[22, "Water Pulse"],
-			[27, "Ominous Wind"],
-			[32, "Brine"],
-			[37, "Rain Dance"],
-			[45, "Hex"],
-			[53, "Hydro Pump"],
-			[61, "Wring Out"],
-			[69, "Water Spout"]
+			[12, "Bubble Beam"],
+			[16, "Rain Dance"],
+			[20, "Ominous Wind"],
+			[24, "Brine"],
+			[28, "Recover"],
+			[32, "Hex"],
+			[36, "Whirlpool"],
+			[43, "Hydro Pump"],
+			[48, "Destiny Bond"],
+			[53, "Shadow Ball"],
+			[58, "Wring Out"],
+			[63, "Water Spout"]
 		],
 		"eggMoves": []
 	},
@@ -28252,8 +28265,6 @@
 			[1, "Tackle"],
 			[1, "Protect"],
 			[1, "Bug Bite"],
-			[10, "Protect"],
-			[15, "Bug Bite"],
 			[19, "Quiver Dance"],
 			[20, "Hidden Power"],
 			[23, "Confusion"],
@@ -28287,8 +28298,6 @@
 			[1, "Tackle"],
 			[1, "Protect"],
 			[1, "Bug Bite"],
-			[10, "Protect"],
-			[15, "Bug Bite"],
 			[19, "Quiver Dance"],
 			[20, "Hidden Power"],
 			[23, "Confusion"],
@@ -28574,6 +28583,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Growth"],
+			[1, "Sleep Powder"],
 			[5, "Floral Heal"],
 			[10, "Magical Leaf"],
 			[19, "Leech Seed"],
@@ -29092,7 +29102,7 @@
 		"evYield": [0, 0, 0, 0, 0, 2],
 		"item": ["-------", "Deep Sea Scale"],
 		"eggGroup": ["Water 2", "Water 2"],
-		"ability": ["Reckless", "Adaptability"],
+		"ability": ["Rock Head", "Adaptability"],
 		"hiddenAbility": "Speed Boost",
 		"evolutionType": 0,
 		"levelUpMoves": [
@@ -29125,7 +29135,8 @@
 			"Brine",
 			"Revenge",
 			"Endeavor",
-			"Uproar"
+			"Uproar",
+			""
 		]
 	},
 	{
@@ -29196,7 +29207,8 @@
 			"Sleep Talk",
 			"Baton Pass",
 			"Grasswhistle",
-			"Headbutt"
+			"Headbutt",
+			"Trop Kick"
 		]
 	},
 	{
@@ -29236,7 +29248,8 @@
 			"Sleep Talk",
 			"Baton Pass",
 			"Grasswhistle",
-			"Headbutt"
+			"Headbutt",
+			"Trop Kick"
 		]
 	},
 	{
@@ -29276,7 +29289,8 @@
 			"Sleep Talk",
 			"Baton Pass",
 			"Grasswhistle",
-			"Headbutt"
+			"Headbutt",
+			"Trop Kick"
 		]
 	},
 	{
@@ -29296,8 +29310,6 @@
 			[1, "Camouflage"],
 			[1, "Growl"],
 			[1, "Sand Attack"],
-			[4, "Growl"],
-			[7, "Sand Attack"],
 			[10, "Double Kick"],
 			[13, "Leech Seed"],
 			[16, "Feint Attack"],
@@ -29321,7 +29333,8 @@
 			"Sleep Talk",
 			"Baton Pass",
 			"Grasswhistle",
-			"Headbutt"
+			"Headbutt",
+			"Trop Kick"
 		]
 	},
 	{
@@ -29341,8 +29354,6 @@
 			[1, "Camouflage"],
 			[1, "Growl"],
 			[1, "Sand Attack"],
-			[4, "Growl"],
-			[7, "Sand Attack"],
 			[10, "Double Kick"],
 			[13, "Leech Seed"],
 			[16, "Feint Attack"],
@@ -29366,7 +29377,8 @@
 			"Sleep Talk",
 			"Baton Pass",
 			"Grasswhistle",
-			"Headbutt"
+			"Headbutt",
+			"Trop Kick"
 		]
 	},
 	{
@@ -29386,8 +29398,6 @@
 			[1, "Camouflage"],
 			[1, "Growl"],
 			[1, "Sand Attack"],
-			[4, "Growl"],
-			[7, "Sand Attack"],
 			[10, "Double Kick"],
 			[13, "Leech Seed"],
 			[16, "Feint Attack"],
@@ -29411,7 +29421,8 @@
 			"Sleep Talk",
 			"Baton Pass",
 			"Grasswhistle",
-			"Headbutt"
+			"Headbutt",
+			"Trop Kick"
 		]
 	},
 	{
@@ -29491,9 +29502,6 @@
 			[1, "Quick Attack"],
 			[1, "Confusion"],
 			[1, "Sing"],
-			[6, "Quick Attack"],
-			[11, "Confusion"],
-			[16, "Sing"],
 			[21, "Teeter Dance"],
 			[26, "Acrobatics"],
 			[31, "Psybeam"],
@@ -29671,6 +29679,7 @@
 			[0, "Sunny Day"],
 			[1, "Flower Guard"],
 			[1, "Solar Blade"],
+			[1, "Take Down"],
 			[1, "Morning Sun"],
 			[1, "Tackle"],
 			[1, "Leafage"],
@@ -29685,7 +29694,7 @@
 			[38, "Giga Drain"],
 			[43, "Worry Seed"],
 			[47, "Dazzle Gleam"],
-			[52, "Take Down"],
+			[52, "Double-Edge"],
 			[57, "Petal Dance"],
 			[62, "Solar Beam"]
 		],
@@ -29764,6 +29773,7 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, "Twister"],
 			[1, "Astonish"],
 			[1, "Revenge"],
 			[1, "Gust"],
@@ -29777,11 +29787,12 @@
 			[40, "Crunch"],
 			[45, "Extrasensory"],
 			[50, "Uproar"],
-			[55, "Dark Pulse"],
-			[60, "Hammer Arm"],
-			[65, "Rain Dance"],
-			[70, "Hurricane"],
-			[75, "Thrash"]
+			[55, ""],
+			[60, "Dark Pulse"],
+			[65, "Hammer Arm"],
+			[70, "Rain Dance"],
+			[75, "Hurricane"],
+			[80, "Thrash"]
 		],
 		"eggMoves": []
 	},
@@ -29798,6 +29809,7 @@
 		"levelUpMoves": [
 			[1, "Nasty Plot"],
 			[1, "Heal Block"],
+			[1, "Twister"],
 			[1, "Astonish"],
 			[1, "Revenge"],
 			[1, "ThunderShock"],
@@ -29811,11 +29823,12 @@
 			[40, "Crunch"],
 			[45, "Discharge"],
 			[50, "Uproar"],
-			[55, "Dark Pulse"],
-			[60, "Hammer Arm"],
-			[65, "Rain Dance"],
-			[70, "Thunder"],
-			[75, "Thrash"]
+			[55, ""],
+			[60, "Dark Pulse"],
+			[65, "Hammer Arm"],
+			[70, "Rain Dance"],
+			[75, "Thunder"],
+			[80, "Thrash"]
 		],
 		"eggMoves": []
 	},
@@ -29831,24 +29844,27 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Punishment"],
+			[1, "Twister"],
 			[1, "Mud Shot"],
 			[1, "Sand Tomb"],
 			[1, "Rock Throw"],
 			[1, "Leer"],
 			[10, "Block"],
+			[15, "Rock Tomb"],
 			[15, "Bulldoze"],
-			[20, "Rock Tomb"],
 			[25, "Swords Dance"],
 			[30, "Imprison"],
-			[35, "Rock Slide"],
-			[40, "Earth Power"],
+			[35, "Earth Power"],
+			[40, "Rock Slide"],
 			[45, "Extrasensory"],
 			[50, "Stone Edge"],
-			[55, "Hammer Arm"],
-			[60, "Sandstorm"],
-			[65, "Earthquake"],
-			[70, "Outrage"],
-			[75, "Fissure"]
+			[55, ""],
+			[60, "Crunch"],
+			[65, "Hammer Arm"],
+			[70, "Sandstorm"],
+			[75, "Earthquake"],
+			[80, "Outrage"],
+			[85, "Fissure"]
 		],
 		"eggMoves": []
 	},
@@ -29968,7 +29984,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Spiky Shield"],
-			[1, "Hammer Arm"],
 			[1, "Feint"],
 			[1, "Drum Beating"],
 			[1, "Belly Drum"],
@@ -30407,7 +30422,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "DualWingbeat"],
-			[1, "Flame Charge"],
 			[1, "Flare Blitz"],
 			[1, "Feint"],
 			[1, "Tackle"],
@@ -30487,7 +30501,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -30681,11 +30694,11 @@
 			[1, "Magical Leaf"],
 			[1, "Mist Terrain"],
 			[1, "Petal Dance"],
-			[1, "Moonblast"],
-			[1, "Petal Storm"],
 			[1, "Dazzle Gleam"],
+			[1, "Petal Storm"],
 			[1, "Aromatherapy"],
-			[1, "Wish"]
+			[1, "Wish"],
+			[57, "Moonblast"]
 		],
 		"eggMoves": [
 			"Copycat",
@@ -31034,7 +31047,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Kings Shield"],
-			[1, "Pursuit"],
 			[1, "Head Smash"],
 			[1, "Tackle"],
 			[1, "Fury Cutter"],
@@ -31044,11 +31056,14 @@
 			[1, "Metal Sound"],
 			[1, "Slash"],
 			[1, "Night Slash"],
+			[1, "Retaliate"],
+			[1, "Iron Defense"],
 			[1, "Power Trick"],
-			[1, "Kings Shield"],
-			[1, "Swords Dance"],
 			[1, "Aerial Ace"],
-			[1, "Sacred Sword"]
+			[1, "Iron Head"],
+			[1, "Swords Dance"],
+			[1, "Kings Shield"],
+			[56, "Sacred Sword"]
 		],
 		"eggMoves": [
 			"Destiny Bond",
@@ -31072,7 +31087,7 @@
 			[3, "Sweet Kiss"],
 			[6, "Echoed Voice"],
 			[8, "Odor Sleuth"],
-			[9, "Drain Kiss"],
+			[9, "Disarm Cry"],
 			[12, "Aromatherapy"],
 			[15, "Drain Kiss"],
 			[18, "Attract"],
@@ -31299,22 +31314,25 @@
 		"hiddenAbility": "Pickpocket",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, "Hone Claws"],
+			[1, "Sand Attack"],
+			[1, "Withdraw"],
 			[1, "Mud-Slap"],
 			[1, "Scratch"],
-			[1, "Sand Attack"],
-			[4, "Withdraw"],
-			[8, "Water Gun"],
-			[12, "Fury Cutter"],
+			[4, "Water Gun"],
+			[8, "Fury Cutter"],
+			[12, "AncientPower"],
 			[16, "Fury Swipes"],
-			[20, "AncientPower"],
 			[20, "Clamp"],
 			[24, "Rock Polish"],
-			[28, "Slash"],
-			[32, "Hone Claws"],
+			[28, "Rock Slide"],
+			[32, "Slash"],
 			[36, "Razor Shell"],
-			[40, "Shell Smash"],
-			[44, "Night Slash"],
-			[48, "Cross Chop"]
+			[40, "Night Slash"],
+			[44, "Stone Edge"],
+			[48, "Cross Chop"],
+			[52, "Liquidation"],
+			[56, "Shell Smash"]
 		],
 		"eggMoves": [
 			"Tickle",
@@ -31335,23 +31353,25 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Skull Bash"],
-			[1, "Mud-Slap"],
-			[1, "Scratch"],
+			[1, "Hone Claws"],
 			[1, "Sand Attack"],
 			[1, "Withdraw"],
-			[1, "Water Gun"],
-			[12, "Fury Cutter"],
+			[1, "Mud-Slap"],
+			[1, "Scratch"],
+			[4, "Water Gun"],
+			[8, "Fury Cutter"],
+			[12, "AncientPower"],
 			[16, "Fury Swipes"],
-			[20, "AncientPower"],
 			[20, "Clamp"],
 			[24, "Rock Polish"],
-			[28, "Slash"],
-			[32, "Hone Claws"],
+			[28, "Rock Slide"],
+			[32, "Slash"],
 			[36, "Razor Shell"],
-			[42, "Shell Smash"],
-			[46, "Night Slash"],
-			[50, "Cross Chop"],
-			[54, "Stone Edge"]
+			[42, "Night Slash"],
+			[47, "Stone Edge"],
+			[52, "Cross Chop"],
+			[57, "Liquidation"],
+			[62, "Shell Smash"]
 		],
 		"eggMoves": [
 			"Tickle",
@@ -31574,12 +31594,12 @@
 			[1, "Thunder Wave"],
 			[1, "Thunderbolt"],
 			[1, "Electrify"],
-			[1, "Hyper Voice"],
-			[1, "Thunder"],
-			[1, "Bulldoze"],
 			[1, "Razor Wind"],
+			[1, "Discharge"],
+			[1, "Bulldoze"],
 			[1, "Volt Switch"],
-			[1, "Discharge"]
+			[48, "Hyper Voice"],
+			[52, "Thunder"]
 		],
 		"eggMoves": [
 			"Agility",
@@ -31758,6 +31778,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Disarm Cry"],
+			[1, "Magical Leaf"],
 			[1, "Covet"],
 			[1, "Bite"],
 			[1, "Copycat"],
@@ -31798,7 +31819,8 @@
 			"Captivate",
 			"Double Kick",
 			"Mud-Slap",
-			"Celebrate"
+			"Celebrate",
+			"Mimic"
 		]
 	},
 	{
@@ -31859,20 +31881,20 @@
 			[1, "Nuzzle"],
 			[1, "Tail Whip"],
 			[5, "Tackle"],
-			[10, "Charge"],
-			[15, "ThunderShock"],
-			[20, "Charm"],
-			[23, "Thunder Wave"],
-			[25, "Para Charge"],
-			[30, "Volt Switch"],
-			[33, "Charge Beam"],
-			[35, "Rest"],
-			[35, "Snore"],
-			[42, "Discharge"],
-			[45, "Play Rough"],
-			[50, "Super Fang"],
-			[55, "Entrainment"],
-			[60, "Thunder"]
+			[9, "Charge"],
+			[12, "ThunderShock"],
+			[16, "Charm"],
+			[19, "Thunder Wave"],
+			[22, "Para Charge"],
+			[26, "Entrainment"],
+			[29, "Play Rough"],
+			[33, "Volt Switch"],
+			[37, "Snore"],
+			[37, "Rest"],
+			[40, "Dazzle Gleam"],
+			[44, "Discharge"],
+			[48, "Super Fang"],
+			[52, "Thunder"]
 		],
 		"eggMoves": [
 			"EerieImpulse",
@@ -31926,19 +31948,18 @@
 		"hiddenAbility": "Gooey",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[1, "Bide"],
 			[1, "Absorb"],
 			[1, "Tackle"],
 			[5, "Bubble"],
-			[10, "DragonBreath"],
-			[13, "Bide"],
+			[10, "Acid Spray"],
 			[15, "Protect"],
-			[20, "Flail"],
-			[25, "Water Pulse"],
-			[30, "Rain Dance"],
-			[35, "Dragon Pulse"],
-			[41, "Curse"],
-			[45, "Body Slam"],
-			[50, "Muddy Water"]
+			[19, "DragonBreath"],
+			[24, "Water Pulse"],
+			[29, "Rain Dance"],
+			[33, "Body Slam"],
+			[38, "Dragon Pulse"],
+			[43, "Muddy Water"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -31946,7 +31967,9 @@
 			"Poison Tail",
 			"Counter",
 			"Endure",
-			"Life Dew"
+			"Life Dew",
+			"Curse",
+			"Flail"
 		]
 	},
 	{
@@ -31960,24 +31983,18 @@
 		"hiddenAbility": "Gooey",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Acid Spray"],
+			[1, "Bide"],
 			[1, "Absorb"],
 			[1, "Tackle"],
 			[1, "Bubble"],
-			[1, "Absorb"],
-			[1, "Tackle"],
-			[5, "Bubble"],
-			[10, "DragonBreath"],
-			[13, "Bide"],
+			[10, "Acid Spray"],
 			[15, "Protect"],
-			[20, "Flail"],
-			[25, "Water Pulse"],
-			[30, "Rain Dance"],
-			[35, "Dragon Pulse"],
-			[39, "Acid Spray"],
-			[43, "Curse"],
-			[49, "Body Slam"],
-			[56, "Muddy Water"]
+			[19, "DragonBreath"],
+			[24, "Water Pulse"],
+			[29, "Rain Dance"],
+			[33, "Body Slam"],
+			[38, "Dragon Pulse"],
+			[45, "Muddy Water"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -31985,7 +32002,9 @@
 			"Poison Tail",
 			"Counter",
 			"Endure",
-			"Life Dew"
+			"Life Dew",
+			"Curse",
+			"Flail"
 		]
 	},
 	{
@@ -32003,23 +32022,21 @@
 			[1, "Poison Tail"],
 			[1, "Teary Look"],
 			[1, "Feint"],
+			[1, "Bide"],
 			[1, "Absorb"],
 			[1, "Tackle"],
 			[1, "Bubble"],
-			[1, "DragonBreath"],
-			[13, "Bide"],
+			[10, "Acid Spray"],
 			[15, "Protect"],
-			[20, "Flail"],
-			[25, "Water Pulse"],
-			[30, "Rain Dance"],
-			[35, "Dragon Pulse"],
-			[39, "Acid Spray"],
-			[43, "Curse"],
-			[49, "Body Slam"],
+			[19, "DragonBreath"],
+			[24, "Water Pulse"],
+			[29, "Rain Dance"],
+			[33, "Body Slam"],
+			[38, "Dragon Pulse"],
+			[45, "Muddy Water"],
 			[49, "Aqua Tail"],
-			[55, "Outrage"],
-			[58, "Muddy Water"],
-			[67, "Power Whip"]
+			[54, "Outrage"],
+			[61, "Power Whip"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -32027,7 +32044,9 @@
 			"Poison Tail",
 			"Counter",
 			"Endure",
-			"Life Dew"
+			"Life Dew",
+			"Curse",
+			"Flail"
 		]
 	},
 	{
@@ -32256,7 +32275,8 @@
 			"Mist",
 			"Barrier",
 			"Mirror Coat",
-			"Aurora Veil"
+			"Aurora Veil",
+			"Ice Shard"
 		]
 	},
 	{
@@ -32275,9 +32295,9 @@
 			[1, "Skull Bash"],
 			[1, "Rapid Spin"],
 			[1, "Harden"],
-			[3, "Tackle"],
-			[6, "Powder Snow"],
-			[9, "Sharpen"],
+			[1, "Tackle"],
+			[1, "Powder Snow"],
+			[1, "Sharpen"],
 			[12, "Icy Wind"],
 			[16, "Protect"],
 			[19, "Ice Fang"],
@@ -32288,16 +32308,18 @@
 			[36, "Body Slam"],
 			[41, "Crunch"],
 			[46, "Double-Edge"],
-			[51, "Curse"],
-			[55, "Avalanche"],
+			[51, "Avalanche"],
+			[56, "Curse"],
 			[60, "Iron Defense"],
-			[64, "Recover"]
+			[64, "Recover"],
+			[68, ""]
 		],
 		"eggMoves": [
 			"Mist",
 			"Barrier",
 			"Mirror Coat",
-			"Aurora Veil"
+			"Aurora Veil",
+			"Ice Shard"
 		]
 	},
 	{
@@ -32698,7 +32720,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Kings Shield"],
-			[1, "Pursuit"],
 			[1, "Head Smash"],
 			[1, "Tackle"],
 			[1, "Fury Cutter"],
@@ -32708,11 +32729,14 @@
 			[1, "Metal Sound"],
 			[1, "Slash"],
 			[1, "Night Slash"],
+			[1, "Retaliate"],
+			[1, "Iron Defense"],
 			[1, "Power Trick"],
-			[1, "Kings Shield"],
-			[1, "Swords Dance"],
 			[1, "Aerial Ace"],
-			[1, "Sacred Sword"]
+			[1, "Iron Head"],
+			[1, "Swords Dance"],
+			[1, "Kings Shield"],
+			[56, "Sacred Sword"]
 		],
 		"eggMoves": []
 	},
@@ -32950,7 +32974,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -32984,7 +33010,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33018,7 +33046,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33052,7 +33082,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33086,7 +33118,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33120,7 +33154,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33154,7 +33190,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33188,7 +33226,9 @@
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33245,17 +33285,19 @@
 			[1, "Magical Leaf"],
 			[1, "Mist Terrain"],
 			[1, "Petal Dance"],
-			[1, "Moonblast"],
-			[1, "Petal Storm"],
 			[1, "Dazzle Gleam"],
+			[1, "Petal Storm"],
 			[1, "Aromatherapy"],
-			[1, "Wish"]
+			[1, "Wish"],
+			[57, "Moonblast"]
 		],
 		"eggMoves": [
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33282,17 +33324,19 @@
 			[1, "Magical Leaf"],
 			[1, "Mist Terrain"],
 			[1, "Petal Dance"],
-			[1, "Moonblast"],
-			[1, "Petal Storm"],
 			[1, "Dazzle Gleam"],
+			[1, "Petal Storm"],
 			[1, "Aromatherapy"],
-			[1, "Wish"]
+			[1, "Wish"],
+			[57, "Moonblast"]
 		],
 		"eggMoves": [
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33319,17 +33363,19 @@
 			[1, "Magical Leaf"],
 			[1, "Mist Terrain"],
 			[1, "Petal Dance"],
-			[1, "Moonblast"],
-			[1, "Petal Storm"],
 			[1, "Dazzle Gleam"],
+			[1, "Petal Storm"],
 			[1, "Aromatherapy"],
-			[1, "Wish"]
+			[1, "Wish"],
+			[57, "Moonblast"]
 		],
 		"eggMoves": [
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33356,17 +33402,19 @@
 			[1, "Magical Leaf"],
 			[1, "Mist Terrain"],
 			[1, "Petal Dance"],
-			[1, "Moonblast"],
-			[1, "Petal Storm"],
 			[1, "Dazzle Gleam"],
+			[1, "Petal Storm"],
 			[1, "Aromatherapy"],
-			[1, "Wish"]
+			[1, "Wish"],
+			[57, "Moonblast"]
 		],
 		"eggMoves": [
 			"Copycat",
 			"Captivate",
 			"Camouflage",
-			"Teary Look"
+			"Teary Look",
+			"Solar Beam",
+			"Dazzle Gleam"
 		]
 	},
 	{
@@ -33854,7 +33902,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -34022,7 +34069,6 @@
 			[1, "Bug Bite"],
 			[1, "String Shot"],
 			[1, "Poison Sting"],
-			[1, "Fury Attack"],
 			[9, "Twineedle"],
 			[11, "Fury Attack"],
 			[14, "Rage"],
@@ -34083,16 +34129,15 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 1,
 		"levelUpMoves": [
-			[1, "Kinesis"],
-			[1, "Confusion"],
+			[1, "Hypnosis"],
 			[1, "Disable"],
 			[1, "Teleport"],
-			[5, "Psybeam"],
+			[1, "Confusion"],
 			[10, "Reflect"],
 			[15, "Kinesis"],
-			[15, "Confusion"],
+			[15, "Psycho Cut"],
 			[18, "Night Shade"],
-			[21, "Psycho Cut"],
+			[21, "Psybeam"],
 			[24, "Miracle Eye"],
 			[28, "Telekinesis"],
 			[32, "Psyshock"],
@@ -34148,26 +34193,26 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 1,
 		"levelUpMoves": [
-			[1, "Shadow Punch"],
+			[0, "Reflect Type"],
+			[1, "Nightmare"],
 			[1, "Perish Song"],
-			[1, "Reflect Type"],
 			[1, "Lick"],
 			[1, "Smog"],
-			[1, "Confuse Ray"],
-			[1, "Hypnosis"],
-			[1, "Mean Look"],
-			[12, "Payback"],
-			[16, "Spite"],
+			[1, "Spite"],
+			[4, "Mean Look"],
+			[8, "Payback"],
+			[12, "Confuse Ray"],
+			[16, "Night Shade"],
 			[20, "Curse"],
-			[24, "Hex"],
 			[24, "Shadow Punch"],
-			[30, "Night Shade"],
-			[36, "Sucker Punch"],
+			[24, "Hex"],
+			[30, "Sucker Punch"],
+			[36, "Toxic"],
 			[42, "Dark Pulse"],
 			[48, "Shadow Ball"],
-			[54, "Destiny Bond"],
-			[60, "Dream Eater"],
-			[64, "Nightmare"]
+			[54, "Hypnosis"],
+			[60, "Destiny Bond"],
+			[66, "Dream Eater"]
 		],
 		"eggMoves": []
 	},
@@ -34260,12 +34305,12 @@
 			[25, "Dragon Rage"],
 			[29, "Rain Dance"],
 			[32, "Crunch"],
-			[36, "Waterfall"],
-			[40, "Dragon Dance"],
-			[43, "Aqua Tail"],
-			[47, "Hydro Pump"],
-			[51, "Hurricane"],
-			[55, "Thrash"],
+			[36, "Hydro Pump"],
+			[40, "Waterfall"],
+			[43, "Dragon Dance"],
+			[47, "Hurricane"],
+			[51, "Thrash"],
+			[55, "Aqua Tail"],
 			[59, "Hyper Beam"]
 		],
 		"eggMoves": []
@@ -34281,7 +34326,6 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 1,
 		"levelUpMoves": [
-			[1, "Iron Head"],
 			[1, "Ice Fang"],
 			[1, "Fire Fang"],
 			[1, "Thunder Fang"],
@@ -34469,26 +34513,22 @@
 		"evolutionType": 1,
 		"levelUpMoves": [
 			[0, "Bullet Punch"],
-			[1, "Vacuum Wave"],
-			[1, "Wing Attack"],
-			[1, "Agility"],
 			[1, "Air Slash"],
+			[1, "Agility"],
+			[1, "Wing Attack"],
 			[1, "Quick Attack"],
 			[1, "Leer"],
 			[1, "Fury Cutter"],
 			[1, "False Swipe"],
-			[1, "Pursuit"],
 			[12, "Metal Claw"],
-			[15, "Feint"],
-			[18, "Double Team"],
-			[21, "Double Hit"],
-			[24, "Razor Wind"],
-			[27, "Slash"],
-			[30, "Focus Energy"],
-			[33, "Iron Defense"],
-			[36, "Iron Head"],
+			[16, "Slash"],
+			[20, "Iron Defense"],
+			[24, "Night Slash"],
+			[28, "Double Hit"],
+			[32, "Focus Energy"],
+			[36, "Feint"],
 			[40, "X-Scissor"],
-			[44, "Night Slash"],
+			[44, "Iron Head"],
 			[48, "Laser Focus"],
 			[52, "Swords Dance"]
 		],
@@ -34612,7 +34652,6 @@
 		"levelUpMoves": [
 			[0, "Dual Chop"],
 			[1, "False Swipe"],
-			[1, "X-Scissor"],
 			[1, "Night Slash"],
 			[1, "Energy Ball"],
 			[1, "Pound"],
@@ -34719,10 +34758,10 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 1,
 		"levelUpMoves": [
-			[1, "Moonblast"],
 			[1, "Future Sight"],
 			[1, "Mist Terrain"],
 			[1, "Healing Wish"],
+			[1, "Charm"],
 			[1, "Growl"],
 			[1, "Disarm Cry"],
 			[1, "Double Team"],
@@ -34734,14 +34773,14 @@
 			[17, "Magical Leaf"],
 			[18, "Psybeam"],
 			[23, "Life Dew"],
-			[28, "Charm"],
-			[29, "Drain Kiss"],
+			[28, "Wish"],
+			[29, "Dazzle Gleam"],
 			[35, "Calm Mind"],
 			[39, "Stored Power"],
 			[42, "Imprison"],
 			[48, "Psychic"],
 			[53, "Heal Pulse"],
-			[56, "Dazzle Gleam"],
+			[56, "Moonblast"],
 			[63, "Dream Eater"]
 		],
 		"eggMoves": []
@@ -35010,7 +35049,7 @@
 			[31, "Sing"],
 			[34, "Cotton Guard"],
 			[34, "Dragon Pulse"],
-			[38, "Natural Gift"],
+			[39, "Natural Gift"],
 			[43, "Refresh"],
 			[47, "Dragon Dance"],
 			[51, "Hyper Voice"],
@@ -35131,7 +35170,6 @@
 		"evolutionType": 1,
 		"levelUpMoves": [
 			[0, "Fly"],
-			[1, "Fly"],
 			[1, "Dragon Tail"],
 			[1, "Fire Fang"],
 			[1, "Thunder Fang"],
@@ -35358,6 +35396,7 @@
 			[1, "Mirror Coat"],
 			[1, "Magic Coat"],
 			[1, "Rototiller"],
+			[1, "Mach Punch"],
 			[1, "Frustration"],
 			[1, "Foresight"],
 			[1, "Splash"],
@@ -35376,8 +35415,9 @@
 			[48, "Flatter"],
 			[52, "Jump Kick"],
 			[56, "Bounce"],
-			[60, "Healing Wish"],
-			[64, "Hi Jump Kick"]
+			[60, "Double-Edge"],
+			[64, "Healing Wish"],
+			[68, "Hi Jump Kick"]
 		],
 		"eggMoves": []
 	},
@@ -35485,7 +35525,8 @@
 			[39, "Ice Punch"],
 			[43, "Wood Hammer"],
 			[51, "Blizzard"],
-			[59, "Sheer Cold"]
+			[59, "Icicle Crash"],
+			[67, "Sheer Cold"]
 		],
 		"eggMoves": []
 	},
@@ -35505,12 +35546,9 @@
 			[1, "Leaf Blade"],
 			[1, "Growl"],
 			[1, "Disarm Cry"],
-			[1, "Double Team"],
-			[1, "Confusion"],
 			[1, "Hypnosis"],
 			[1, "Drain Kiss"],
 			[1, "Lucky Chant"],
-			[1, "Teleport"],
 			[1, "Magical Leaf"],
 			[1, "Psybeam"],
 			[1, "Life Dew"],
@@ -35519,7 +35557,6 @@
 			[1, "Stored Power"],
 			[1, "Imprison"],
 			[1, "Psychic"],
-			[1, "Heal Pulse"],
 			[1, "Dream Eater"],
 			[1, "Leer"],
 			[1, "Fury Cutter"],
@@ -35608,8 +35645,64 @@
 		],
 		"eggMoves": []
 	},
-	{},
-	{},
+	{
+		"name": "Dialga",
+		"baseStats": [100, 100, 120, 150, 120, 90],
+		"type": ["Steel", "Dragon"],
+		"evYield": [0, 0, 0, 3, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Undiscovered", "Undiscovered"],
+		"ability": ["Pressure", "-------"],
+		"hiddenAbility": "Telepathy",
+		"evolutionType": 1,
+		"levelUpMoves": [
+			[1, "Scary Face"],
+			[1, "Heal Block"],
+			[1, "Metal Claw"],
+			[8, "DragonBreath"],
+			[16, "AncientPower"],
+			[24, "Slash"],
+			[32, "Flash Cannon"],
+			[40, "Dragon Claw"],
+			[48, "Aura Sphere"],
+			[56, "Power Gem"],
+			[64, "Metal Burst"],
+			[72, "Earth Power"],
+			[80, "Clang Scales"],
+			[88, "Iron Tail"],
+			[96, "Roar of Time"]
+		],
+		"eggMoves": []
+	},
+	{
+		"name": "Palkia",
+		"baseStats": [90, 100, 100, 150, 120, 120],
+		"type": ["Water", "Dragon"],
+		"evYield": [0, 0, 0, 3, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Undiscovered", "Undiscovered"],
+		"ability": ["Pressure", "-------"],
+		"hiddenAbility": "Telepathy",
+		"evolutionType": 1,
+		"levelUpMoves": [
+			[1, "Scary Face"],
+			[1, "Heal Block"],
+			[1, "Water Pulse"],
+			[8, "DragonBreath"],
+			[16, "AncientPower"],
+			[24, "Slash"],
+			[32, "Aqua Ring"],
+			[40, "Dragon Claw"],
+			[48, "Aura Sphere"],
+			[56, "Power Gem"],
+			[64, "Aqua Tail"],
+			[72, "Earth Power"],
+			[80, "Spacial Rend"],
+			[88, "Hydro Pump"],
+			[96, "Origin Pulse"]
+		],
+		"eggMoves": []
+	},
 	{
 		"name": "Vivillon",
 		"baseStats": [80, 52, 50, 90, 50, 89],
@@ -35624,7 +35717,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35660,7 +35752,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35696,7 +35787,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35732,7 +35822,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35768,7 +35857,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35804,7 +35892,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35840,7 +35927,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35876,7 +35962,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35912,7 +35997,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35948,7 +36032,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -35984,7 +36067,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36020,7 +36102,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36056,7 +36137,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36092,7 +36172,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36128,7 +36207,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36164,7 +36242,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36200,7 +36277,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36236,7 +36312,6 @@
 			[0, "Gust"],
 			[1, "Tackle"],
 			[1, "String Shot"],
-			[1, "Stun Spore"],
 			[1, "Bug Bite"],
 			[1, "Harden"],
 			[1, "Protect"],
@@ -36952,9 +37027,6 @@
 			[1, "Rock Smash"],
 			[1, "Leer"],
 			[1, "Pursuit"],
-			[5, "Rock Smash"],
-			[9, "Leer"],
-			[13, "Pursuit"],
 			[17, "Bubble Beam"],
 			[22, "Power-Up Hit"],
 			[23, "Ice Punch"],
@@ -38169,7 +38241,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -38556,7 +38628,6 @@
 		"hiddenAbility": "Overcoat",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Sky Uppercut"],
 			[1, "Belly Drum"],
 			[1, "Autotomize"],
 			[1, "Tackle"],
@@ -39270,11 +39341,11 @@
 			[1, "Discharge"],
 			[1, "Thunderbolt"],
 			[1, "Wild Charge"],
-			[1, "Thunder"],
+			[1, "Slam"],
 			[1, "Psychic"],
 			[1, "Agility"],
-			[1, "Slam"],
-			[1, "Light Screen"]
+			[1, "Light Screen"],
+			[48, "Thunder"]
 		],
 		"eggMoves": [
 			"Reversal",
@@ -39354,7 +39425,6 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Icicle Spear"],
-			[1, "Icicle Crash"],
 			[1, "Metal Burst"],
 			[1, "Scratch"],
 			[1, "Mist"],
@@ -39368,14 +39438,15 @@
 			[1, "Iron Defense"],
 			[1, "Slash"],
 			[1, "Iron Head"],
-			[1, "Swords Dance"],
-			[1, "Gyro Ball"],
-			[1, "Hail"],
 			[1, "Blizzard"],
+			[1, "Defense Curl"],
+			[1, "Metal Claw"],
 			[1, "Icicle Spear"],
 			[1, "Bide"],
-			[1, "Defense Curl"],
-			[1, "Metal Claw"]
+			[39, "Swords Dance"],
+			[42, "Gyro Ball"],
+			[45, "Hail"],
+			[48, "Icicle Crash"]
 		],
 		"eggMoves": [
 			"Flail",
@@ -39435,7 +39506,8 @@
 			"Tail Slap",
 			"Doll Eyes",
 			"Roar",
-			"Feint Attack"
+			"Feint Attack",
+			"Quick Attack"
 		]
 	},
 	{
@@ -39463,13 +39535,13 @@
 			[1, "Imprison"],
 			[1, "Ice Beam"],
 			[1, "Aurora Veil"],
-			[1, "Blizzard"],
 			[1, "Grudge"],
-			[1, "Sheer Cold"],
-			[1, "Dazzle Gleam"],
 			[1, "Ice Shard"],
+			[1, "Safeguard"],
 			[1, "Confuse Ray"],
-			[1, "Safeguard"]
+			[1, "Dazzle Gleam"],
+			[50, "Blizzard"],
+			[58, "Sheer Cold"]
 		],
 		"eggMoves": [
 			"Freeze-Dry",
@@ -39485,7 +39557,8 @@
 			"Tail Slap",
 			"Doll Eyes",
 			"Roar",
-			"Feint Attack"
+			"Feint Attack",
+			"Quick Attack"
 		]
 	},
 	{
@@ -39860,7 +39933,6 @@
 		"levelUpMoves": [
 			[0, "Venom Drench"],
 			[1, "Moonblast"],
-			[1, "Venom Drench"],
 			[1, "Pound"],
 			[1, "Poison Gas"],
 			[1, "Harden"],
@@ -39958,7 +40030,6 @@
 			[1, "Power Whip"],
 			[1, "Seed Bomb"],
 			[1, "Psyshock"],
-			[1, "Wood Hammer"],
 			[1, "Leaf Storm"],
 			[1, "Barrage"],
 			[1, "Absorb"],
@@ -39971,10 +40042,11 @@
 			[1, "Uproar"],
 			[1, "Worry Seed"],
 			[1, "Solar Beam"],
+			[1, "Mega Drain"],
 			[1, "Draco Hammer"],
 			[1, "Reflect"],
 			[1, "Leech Seed"],
-			[1, "Mega Drain"]
+			[54, "Wood Hammer"]
 		],
 		"eggMoves": [
 			"Moonlight",
@@ -40363,7 +40435,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40405,7 +40477,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40447,7 +40519,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40489,7 +40561,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40531,7 +40603,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40573,7 +40645,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40615,7 +40687,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40657,7 +40729,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40699,7 +40771,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40741,7 +40813,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40783,7 +40855,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40825,7 +40897,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40867,7 +40939,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40909,7 +40981,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40951,7 +41023,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -40993,7 +41065,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -41035,7 +41107,7 @@
 		"item": ["-------", "-------"],
 		"eggGroup": ["Undiscovered", "Undiscovered"],
 		"ability": ["RKS System", "-------"],
-		"hiddenAbility": "Sheer Force",
+		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Multi-Attack"],
@@ -42244,7 +42316,8 @@
 			[8, "Sweet Kiss"],
 			[12, "Nuzzle"],
 			[16, "Nasty Plot"],
-			[20, "Charm"]
+			[20, "Charm"],
+			[24, "Spark"]
 		],
 		"eggMoves": []
 	},
@@ -42327,12 +42400,12 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Double Hit"],
-			[1, "Double Hit"],
 			[1, "Growl"],
 			[1, "Scratch"],
 			[6, "Branch Poke"],
 			[8, "Taunt"],
 			[12, "Razor Leaf"],
+			[15, "Double Hit"],
 			[19, "Screech"],
 			[24, "Knock Off"],
 			[30, "Slam"],
@@ -42362,18 +42435,18 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Drum Beating"],
-			[1, "Drum Beating"],
-			[1, "Double Hit"],
 			[1, "Gras Terrain"],
 			[1, "Noble Roar"],
 			[1, "Growl"],
 			[1, "Scratch"],
-			[6, "Branch Poke"],
-			[8, "Taunt"],
+			[1, "Branch Poke"],
+			[1, "Taunt"],
 			[12, "Razor Leaf"],
+			[15, "Double Hit"],
 			[19, "Screech"],
 			[24, "Knock Off"],
 			[30, "Slam"],
+			[34, "Drum Beating"],
 			[38, "Uproar"],
 			[46, "Wood Hammer"],
 			[54, "Endeavor"],
@@ -42432,8 +42505,8 @@
 		"levelUpMoves": [
 			[1, "Growl"],
 			[1, "Tackle"],
-			[6, "Ember"],
-			[8, "Quick Attack"],
+			[1, "Ember"],
+			[1, "Quick Attack"],
 			[12, "Double Kick"],
 			[19, "Flame Charge"],
 			[24, "Agility"],
@@ -42464,8 +42537,8 @@
 			[1, "Feint"],
 			[1, "Growl"],
 			[1, "Tackle"],
-			[6, "Ember"],
-			[8, "Quick Attack"],
+			[1, "Ember"],
+			[1, "Quick Attack"],
 			[12, "Double Kick"],
 			[19, "Flame Charge"],
 			[24, "Agility"],
@@ -42530,8 +42603,8 @@
 		"levelUpMoves": [
 			[1, "Growl"],
 			[1, "Pound"],
-			[6, "Water Gun"],
-			[8, "Bind"],
+			[1, "Water Gun"],
+			[1, "Bind"],
 			[12, "Water Pulse"],
 			[19, "Teary Look"],
 			[24, "Sucker Punch"],
@@ -42565,8 +42638,8 @@
 			[1, "Acrobatics"],
 			[1, "Growl"],
 			[1, "Pound"],
-			[6, "Water Gun"],
-			[8, "Bind"],
+			[1, "Water Gun"],
+			[1, "Bind"],
 			[12, "Water Pulse"],
 			[19, "Teary Look"],
 			[24, "Sucker Punch"],
@@ -42631,10 +42704,11 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Covet"],
+			[1, "Belch"],
 			[1, "Tackle"],
 			[1, "Tail Whip"],
-			[5, "Bite"],
-			[10, "Stuff Cheeks"],
+			[1, "Bite"],
+			[1, "Stuff Cheeks"],
 			[15, "Stockpile"],
 			[15, "Swallow"],
 			[15, "Spit Up"],
@@ -42644,7 +42718,7 @@
 			[34, "Counter"],
 			[41, "Bullet Seed"],
 			[48, "Super Fang"],
-			[55, "Belch"]
+			[55, "Body Press"]
 		],
 		"eggMoves": [
 			"Rollout",
@@ -42699,8 +42773,8 @@
 		"levelUpMoves": [
 			[1, "Leer"],
 			[1, "Peck"],
-			[4, "Power Trip"],
-			[8, "Hone Claws"],
+			[1, "Power Trip"],
+			[1, "Hone Claws"],
 			[12, "Fury Attack"],
 			[16, "Pluck"],
 			[22, "Taunt"],
@@ -42735,8 +42809,8 @@
 			[1, "Metal Sound"],
 			[1, "Leer"],
 			[1, "Peck"],
-			[4, "Power Trip"],
-			[8, "Hone Claws"],
+			[1, "Power Trip"],
+			[1, "Hone Claws"],
 			[12, "Fury Attack"],
 			[16, "Pluck"],
 			[22, "Taunt"],
@@ -42813,6 +42887,7 @@
 		"hiddenAbility": "Telepathy",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[0, "Bug Buzz"],
 			[1, "Struggle Bug"],
 			[1, "Confusion"],
 			[1, "Reflect"],
@@ -42823,7 +42898,7 @@
 			[16, "Psybeam"],
 			[20, "Hypnosis"],
 			[24, "Skill Swap"],
-			[28, "Bug Buzz"],
+			[29, "Bug Buzz"],
 			[32, "Mirror Coat"],
 			[36, "Psychic"],
 			[40, "After You"],
@@ -42881,17 +42956,17 @@
 			[0, "Thief"],
 			[1, "Quick Attack"],
 			[1, "Tail Whip"],
-			[4, "Beat Up"],
-			[8, "Hone Claws"],
+			[1, "Beat Up"],
+			[1, "Hone Claws"],
 			[12, "Assurance"],
 			[16, "Tail Slap"],
 			[17, "Thief"],
 			[22, "Nasty Plot"],
-			[28, "Night Slash"],
-			[34, "Snarl"],
-			[40, "Sucker Punch"],
-			[46, "Foul Play"],
-			[52, "Parting Shot"]
+			[27, "Night Slash"],
+			[32, "Snarl"],
+			[37, "Sucker Punch"],
+			[42, "Foul Play"],
+			[47, "Parting Shot"]
 		],
 		"eggMoves": [
 			"Quick Guard",
@@ -42982,9 +43057,9 @@
 			[1, "Tackle"],
 			[4, "Defense Curl"],
 			[8, "Copycat"],
-			[12, "Guard Split"],
-			[16, "Double Kick"],
-			[21, "Headbutt"],
+			[12, "Double Kick"],
+			[16, "Headbutt"],
+			[21, "Guard Split"],
 			[25, "Take Down"],
 			[28, "Guard Swap"],
 			[32, "Reversal"],
@@ -43010,11 +43085,11 @@
 		"levelUpMoves": [
 			[1, "Growl"],
 			[1, "Tackle"],
-			[4, "Defense Curl"],
-			[8, "Copycat"],
-			[12, "Guard Split"],
-			[16, "Double Kick"],
-			[21, "Headbutt"],
+			[1, "Defense Curl"],
+			[1, "Copycat"],
+			[12, "Double Kick"],
+			[16, "Headbutt"],
+			[21, "Guard Split"],
 			[27, "Take Down"],
 			[32, "Guard Swap"],
 			[38, "Reversal"],
@@ -43067,14 +43142,16 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Rock Tomb"],
+			[0, "Razor Shell"],
+			[1, "Ice Fang"],
 			[1, "Crunch"],
-			[1, "Razor Shell"],
 			[1, "Rock Polish"],
 			[1, "Tackle"],
 			[1, "Water Gun"],
-			[7, "Bite"],
-			[14, "Protect"],
+			[1, "Bite"],
+			[1, "Protect"],
 			[21, "Headbutt"],
+			[21, "Razor Shell"],
 			[21, "Rock Tomb"],
 			[30, "Counter"],
 			[39, "Jaw Lock"],
@@ -43104,12 +43181,12 @@
 			[5, "Nuzzle"],
 			[10, "Bite"],
 			[15, "Roar"],
-			[20, "Spark"],
-			[26, "Charm"],
-			[30, "Crunch"],
-			[35, "Charge"],
-			[40, "Wild Charge"],
-			[45, "Play Rough"]
+			[19, "Spark"],
+			[24, "Charm"],
+			[28, "Crunch"],
+			[33, "Charge"],
+			[37, "Thunder Fang"],
+			[42, "Play Rough"]
 		],
 		"eggMoves": [
 			"Double-Edge",
@@ -43136,13 +43213,14 @@
 			[5, "Nuzzle"],
 			[10, "Bite"],
 			[15, "Roar"],
-			[20, "Spark"],
-			[28, "Charm"],
-			[34, "Crunch"],
-			[41, "Charge"],
-			[48, "Wild Charge"],
-			[55, "Play Rough"],
-			[62, "Elec Terrain"]
+			[19, "Spark"],
+			[24, "Charm"],
+			[30, "Crunch"],
+			[36, "Charge"],
+			[41, "Thunder Fang"],
+			[47, "Play Rough"],
+			[53, "Elec Terrain"],
+			[60, "Bolt Strike"]
 		],
 		"eggMoves": [
 			"Double-Edge",
@@ -43194,11 +43272,11 @@
 			[0, "Flame Charge"],
 			[1, "Smokescreen"],
 			[1, "Tackle"],
-			[5, "Rapid Spin"],
-			[10, "Smack Down"],
+			[1, "Rapid Spin"],
+			[1, "Smack Down"],
 			[15, "Rock Polish"],
 			[17, "Flame Charge"],
-			[20, "AncientPower"],
+			[21, "AncientPower"],
 			[27, "Incinerate"],
 			[35, "Stealth Rock"],
 			[41, "Heat Crash"],
@@ -43225,11 +43303,11 @@
 			[0, "Tar Shot"],
 			[1, "Smokescreen"],
 			[1, "Tackle"],
-			[5, "Rapid Spin"],
-			[10, "Smack Down"],
+			[1, "Rapid Spin"],
+			[1, "Smack Down"],
 			[15, "Rock Polish"],
 			[17, "Flame Charge"],
-			[20, "AncientPower"],
+			[21, "AncientPower"],
 			[27, "Incinerate"],
 			[33, "Tar Shot"],
 			[37, "Stealth Rock"],
@@ -43349,16 +43427,16 @@
 		"levelUpMoves": [
 			[1, "Sand Attack"],
 			[1, "Wrap"],
-			[5, "Minimize"],
-			[10, "Brutal Swing"],
-			[15, "Bulldoze"],
+			[5, "Sandstorm"],
+			[10, "Sand Tomb"],
+			[15, "Brutal Swing"],
 			[20, "Headbutt"],
-			[25, "Glare"],
-			[30, "Dig"],
-			[35, "Sandstorm"],
-			[40, "Slam"],
-			[45, "Coil"],
-			[50, "Sand Tomb"]
+			[25, "Bulldoze"],
+			[30, "Glare"],
+			[35, "Slam"],
+			[40, "Coil"],
+			[45, "Dig"],
+			[50, "Minimize"]
 		],
 		"eggMoves": [
 			"Dragon Rush",
@@ -43382,16 +43460,17 @@
 			[1, "Skull Bash"],
 			[1, "Sand Attack"],
 			[1, "Wrap"],
-			[5, "Minimize"],
-			[10, "Brutal Swing"],
-			[15, "Bulldoze"],
+			[1, "Sandstorm"],
+			[1, "Sand Tomb"],
+			[15, "Brutal Swing"],
 			[20, "Headbutt"],
-			[25, "Glare"],
-			[30, "Dig"],
-			[35, "Sandstorm"],
-			[42, "Slam"],
-			[49, "Coil"],
-			[51, "Sand Tomb"]
+			[25, "Bulldoze"],
+			[30, "Glare"],
+			[35, "Slam"],
+			[42, "Coil"],
+			[48, "Dig"],
+			[54, "Minimize"],
+			[60, "Earthquake"]
 		],
 		"eggMoves": [
 			"Dragon Rush",
@@ -43445,16 +43524,16 @@
 		"hiddenAbility": "Propellor Tail",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Aqua Jet"],
 			[1, "Peck"],
+			[1, "Aqua Jet"],
 			[6, "Fury Attack"],
 			[12, "Bite"],
 			[18, "Agility"],
-			[24, "Dive"],
-			[30, "Laser Focus"],
-			[36, "Crunch"],
-			[42, "Liquidation"],
-			[48, "Double-Edge"]
+			[25, "Surf"],
+			[32, "Laser Focus"],
+			[39, "Crunch"],
+			[46, "Double-Edge"],
+			[53, "Liquidation"]
 		],
 		"eggMoves": [
 			"Thrash",
@@ -43475,16 +43554,16 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Throat Chop"],
-			[1, "Aqua Jet"],
 			[1, "Peck"],
-			[6, "Fury Attack"],
-			[12, "Bite"],
+			[1, "Aqua Jet"],
+			[1, "Fury Attack"],
+			[1, "Bite"],
 			[18, "Agility"],
-			[24, "Dive"],
-			[32, "Laser Focus"],
-			[40, "Crunch"],
-			[48, "Liquidation"],
-			[56, "Double-Edge"]
+			[25, "Surf"],
+			[34, "Laser Focus"],
+			[42, "Crunch"],
+			[50, "Double-Edge"],
+			[58, "Liquidation"]
 		],
 		"eggMoves": [
 			"Thrash",
@@ -43535,11 +43614,11 @@
 			[1, "Growl"],
 			[1, "Teary Look"],
 			[1, "Nuzzle"],
-			[1, "Acid Spray"],
 			[1, "EerieImpulse"],
-			[1, "Leer"],
 			[1, "Noble Roar"],
 			[1, "ThunderShock"],
+			[1, "Leer"],
+			[1, "Acid Spray"],
 			[4, "Charge"],
 			[8, "Shock Wave"],
 			[12, "Scary Face"],
@@ -43553,7 +43632,8 @@
 			[40, "Poison Jab"],
 			[44, "Overdrive"],
 			[48, "Boomburst"],
-			[52, "Shift Gear"]
+			[52, "Shift Gear"],
+			[56, "Sludge Bomb"]
 		],
 		"eggMoves": [
 			"Endeavor",
@@ -43575,22 +43655,23 @@
 			[1, "Ember"],
 			[1, "Smokescreen"],
 			[5, "Wrap"],
-			[10, "Bite"],
-			[15, "Flame Wheel"],
-			[20, "Bug Bite"],
-			[25, "Coil"],
+			[10, "Bug Bite"],
+			[15, "Fire Spin"],
+			[20, "Bite"],
+			[25, "Flame Wheel"],
 			[30, "Slam"],
-			[35, "Fire Spin"],
-			[40, "Crunch"],
+			[35, "Crunch"],
+			[40, "Lunge"],
 			[45, "Fire Lash"],
-			[50, "Lunge"],
-			[55, "Burn Up"]
+			[50, "Coil"],
+			[55, ""]
 		],
 		"eggMoves": [
 			"Knock Off",
 			"Struggle Bug",
 			"Rollout",
-			"Defense Curl"
+			"Defense Curl",
+			"Burn Up"
 		]
 	},
 	{
@@ -43607,23 +43688,24 @@
 			[1, "Inferno"],
 			[1, "Ember"],
 			[1, "Smokescreen"],
-			[5, "Wrap"],
-			[10, "Bite"],
-			[15, "Flame Wheel"],
-			[20, "Bug Bite"],
-			[25, "Coil"],
+			[1, "Wrap"],
+			[1, "Bug Bite"],
+			[15, "Fire Spin"],
+			[20, "Bite"],
+			[25, "Flame Wheel"],
 			[32, "Slam"],
-			[39, "Fire Spin"],
-			[46, "Crunch"],
-			[53, "Fire Lash"],
-			[60, "Lunge"],
-			[67, "Burn Up"]
+			[38, "Crunch"],
+			[44, "Lunge"],
+			[50, "Fire Lash"],
+			[56, "Coil"],
+			[62, ""]
 		],
 		"eggMoves": [
 			"Knock Off",
 			"Struggle Bug",
 			"Rollout",
-			"Defense Curl"
+			"Defense Curl",
+			"Burn Up"
 		]
 	},
 	{
@@ -43642,10 +43724,10 @@
 			[5, "Feint"],
 			[10, "Bind"],
 			[15, "Detect"],
-			[20, "Brick Break"],
-			[25, "Bulk Up"],
-			[30, "Submission"],
-			[35, "Taunt"],
+			[19, "Brick Break"],
+			[24, "Bulk Up"],
+			[28, "Submission"],
+			[32, "Taunt"],
 			[40, "Reversal"],
 			[45, "Superpower"]
 		],
@@ -43655,7 +43737,8 @@
 			"Sucker Punch",
 			"Circle Throw",
 			"Seismic Toss",
-			"Power-Up Hit"
+			"Power-Up Hit",
+			"Aqua Jet"
 		]
 	},
 	{
@@ -43673,14 +43756,14 @@
 			[1, "Octazooka"],
 			[1, "Leer"],
 			[1, "Rock Smash"],
-			[5, "Feint"],
-			[10, "Bind"],
+			[1, "Feint"],
+			[1, "Bind"],
 			[15, "Detect"],
-			[20, "Brick Break"],
-			[25, "Bulk Up"],
-			[30, "Submission"],
-			[34, "Octolock"],
-			[35, "Taunt"],
+			[19, "Brick Break"],
+			[24, "Bulk Up"],
+			[28, "Submission"],
+			[31, "Octolock"],
+			[32, "Taunt"],
 			[40, "Reversal"],
 			[45, "Superpower"],
 			[50, "Topsy-Turvy"]
@@ -43691,7 +43774,8 @@
 			"Sucker Punch",
 			"Circle Throw",
 			"Seismic Toss",
-			"Power-Up Hit"
+			"Power-Up Hit",
+			"Aqua Jet"
 		]
 	},
 	{
@@ -43731,12 +43815,11 @@
 		"hiddenAbility": "Cursed Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Teatime"],
 			[1, "Strength Sap"],
 			[1, "Astonish"],
 			[1, "Withdraw"],
-			[6, "Aroma Mist"],
-			[12, "Mega Drain"],
+			[1, "Aroma Mist"],
+			[1, "Mega Drain"],
 			[18, "Protect"],
 			[24, "Sucker Punch"],
 			[30, "Aromatherapy"],
@@ -43793,13 +43876,12 @@
 			[0, "Brutal Swing"],
 			[1, "Confusion"],
 			[1, "Play Nice"],
-			[5, "Life Dew"],
-			[10, "Disarm Cry"],
+			[1, "Life Dew"],
+			[1, "Disarm Cry"],
 			[15, "Aromatherapy"],
 			[20, "Psybeam"],
 			[25, "Heal Pulse"],
 			[30, "Dazzle Gleam"],
-			[31, "Brutal Swing"],
 			[37, "Calm Mind"],
 			[44, "Psychic"],
 			[51, "Healing Wish"]
@@ -43823,20 +43905,18 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Psycho Cut"],
+			[1, "Magic Powder"],
 			[1, "Confusion"],
 			[1, "Play Nice"],
-			[5, "Life Dew"],
-			[10, "Disarm Cry"],
+			[1, "Life Dew"],
+			[1, "Disarm Cry"],
 			[15, "Aromatherapy"],
 			[20, "Psybeam"],
 			[25, "Heal Pulse"],
 			[30, "Dazzle Gleam"],
-			[31, "Brutal Swing"],
 			[37, "Calm Mind"],
-			[41, "Psycho Cut"],
 			[46, "Psychic"],
-			[55, "Healing Wish"],
-			[64, "Magic Powder"]
+			[55, "Healing Wish"]
 		],
 		"eggMoves": [
 			"Aroma Mist",
@@ -43886,8 +43966,8 @@
 			[0, "False Yield"],
 			[1, "Confide"],
 			[1, "Fake Out"],
-			[4, "Bite"],
-			[8, "Flatter"],
+			[1, "Bite"],
+			[1, "Flatter"],
 			[12, "Fake Tears"],
 			[16, "Assurance"],
 			[20, "Swagger"],
@@ -43917,8 +43997,8 @@
 			[1, "Power-Up Hit"],
 			[1, "Confide"],
 			[1, "Fake Out"],
-			[4, "Bite"],
-			[8, "Flatter"],
+			[1, "Bite"],
+			[1, "Flatter"],
 			[12, "Fake Tears"],
 			[16, "Assurance"],
 			[20, "Swagger"],
@@ -43946,27 +44026,29 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Obstruct"],
-			[1, "Night Slash"],
-			[1, "Cross Chop"],
 			[1, "Submission"],
 			[1, "Doll Eyes"],
 			[1, "Pin Missile"],
 			[1, "Switcheroo"],
-			[1, "Leer"],
 			[1, "Tackle"],
-			[3, "Sand Attack"],
-			[6, "Lick"],
-			[9, "Snarl"],
-			[12, "Headbutt"],
-			[15, "Hone Claws"],
-			[18, "Fury Swipes"],
-			[23, "Rest"],
-			[28, "Take Down"],
+			[1, "Leer"],
+			[1, "Sand Attack"],
+			[1, "Lick"],
+			[1, "Snarl"],
+			[12, "Odor Sleuth"],
+			[15, "Mud Sport"],
+			[18, "Headbutt"],
+			[19, "Night Slash"],
+			[23, "Hone Claws"],
+			[27, "Fury Swipes"],
+			[32, "Rest"],
 			[34, "Obstruct"],
-			[35, "Scary Face"],
-			[42, "Counter"],
-			[49, "Taunt"],
-			[56, "Double-Edge"]
+			[38, "Take Down"],
+			[44, "Scary Face"],
+			[50, "Counter"],
+			[56, "Taunt"],
+			[62, "Double-Edge"],
+			[68, "Cross Chop"]
 		],
 		"eggMoves": [
 			"Parting Shot",
@@ -43988,20 +44070,22 @@
 			[0, "Iron Head"],
 			[1, "Metal Burst"],
 			[1, "Iron Defense"],
+			[1, "Metal Sound"],
 			[1, "Fake Out"],
 			[1, "Growl"],
-			[4, "Hone Claws"],
-			[8, "Scratch"],
+			[1, "Hone Claws"],
+			[1, "Scratch"],
 			[12, "Pay Day"],
 			[16, "Metal Claw"],
-			[20, "Taunt"],
-			[24, "Swagger"],
+			[20, "Fury Swipes"],
+			[24, "Feint Attack"],
 			[27, "Iron Head"],
-			[31, "Fury Swipes"],
-			[36, "Screech"],
-			[42, "Slash"],
-			[48, "Metal Sound"],
-			[54, "Thrash"]
+			[31, "Taunt"],
+			[36, "Slash"],
+			[42, "Screech"],
+			[48, "Iron Tail"],
+			[54, "Swagger"],
+			[60, "Thrash"]
 		],
 		"eggMoves": [
 			"Spite",
@@ -44026,8 +44110,8 @@
 			[1, "Perish Song"],
 			[1, "Harden"],
 			[1, "Tackle"],
-			[5, "Astonish"],
-			[10, "Disable"],
+			[1, "Astonish"],
+			[1, "Disable"],
 			[15, "Spite"],
 			[20, "AncientPower"],
 			[25, "Hex"],
@@ -44062,8 +44146,8 @@
 			[1, "First Press"],
 			[1, "Peck"],
 			[1, "Sand Attack"],
-			[5, "Leer"],
-			[10, "Fury Cutter"],
+			[1, "Leer"],
+			[1, "Fury Cutter"],
 			[15, "Rock Smash"],
 			[20, "Brutal Swing"],
 			[25, "Detect"],
@@ -44102,36 +44186,43 @@
 		"hiddenAbility": "Ice Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
+			[0, "Ice Beam"],
 			[1, "After You"],
 			[1, "Block"],
 			[1, "Fake Tears"],
 			[1, "Slack Off"],
-			[1, "Ice Shard"],
+			[1, "Dazzle Gleam"],
 			[1, "Mist Terrain"],
 			[1, "Rapid Spin"],
-			[1, "Dazzle Gleam"],
-			[1, "Safeguard"],
-			[1, "Reflect"],
-			[1, "Light Screen"],
-			[1, "Mimic"],
+			[1, "Psywave"],
+			[1, "Ice Shard"],
+			[1, "Double Slap"],
+			[1, "Tickle"],
 			[1, "Recycle"],
-			[1, "Protect"],
-			[1, "Role Play"],
-			[1, "Copycat"],
+			[1, "Substitute"],
 			[1, "Pound"],
-			[4, "Baton Pass"],
-			[8, "Encore"],
-			[12, "Confusion"],
-			[16, "Skill Swap"],
-			[20, "Icy Wind"],
-			[24, "Double Kick"],
-			[28, "Psybeam"],
-			[32, "Hypnosis"],
-			[36, "Mirror Coat"],
-			[40, "Sucker Punch"],
-			[44, "Freeze-Dry"],
-			[48, "Psychic"],
-			[52, "Teeter Dance"]
+			[1, "Copycat"],
+			[1, "Baton Pass"],
+			[1, "Confusion"],
+			[11, "Double Kick"],
+			[14, "Meditate"],
+			[17, "Icy Wind"],
+			[20, "Encore"],
+			[23, "Psybeam"],
+			[26, "Role Play"],
+			[29, "Protect"],
+			[32, "Mimic"],
+			[35, "Freeze-Dry"],
+			[38, "Hypnosis"],
+			[41, "Psychic"],
+			[41, "Ice Beam"],
+			[44, "Trick"],
+			[49, "Mirror Coat"],
+			[52, "Reflect"],
+			[52, "Light Screen"],
+			[52, "Safeguard"],
+			[57, "Sucker Punch"],
+			[57, "Teeter Dance"]
 		],
 		"eggMoves": [
 			"Future Sight",
@@ -44163,8 +44254,8 @@
 			[1, "Scary Face"],
 			[1, "Astonish"],
 			[1, "Protect"],
-			[4, "Haze"],
-			[8, "Night Shade"],
+			[1, "Haze"],
+			[1, "Night Shade"],
 			[12, "Disable"],
 			[16, "Brutal Swing"],
 			[20, "Crafty Guard"],
@@ -44174,8 +44265,8 @@
 			[38, "Curse"],
 			[44, "Shadow Ball"],
 			[50, "Earthquake"],
-			[56, "Guard Split"],
 			[56, "Power Split"],
+			[56, "Guard Split"],
 			[62, "Destiny Bond"]
 		],
 		"eggMoves": [
@@ -44225,8 +44316,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -44258,14 +44349,15 @@
 			[10, "Focus Energy"],
 			[15, "Headbutt"],
 			[20, "Bulk Up"],
-			[25, "Endure"],
-			[30, "Reversal"],
-			[35, "First Press"],
-			[40, "No Retreat"],
-			[45, "Iron Defense"],
+			[25, "Counter"],
+			[30, "First Press"],
+			[35, "Brick Break"],
+			[40, "Iron Defense"],
+			[45, "Megahorn"],
 			[50, "Close Combat"],
-			[55, "Megahorn"],
-			[60, "Counter"]
+			[55, "No Retreat"],
+			[60, "Endure"],
+			[60, "Reversal"]
 		],
 		"eggMoves": []
 	},
@@ -44284,16 +44376,18 @@
 			[1, "ThunderShock"],
 			[5, "Water Gun"],
 			[10, "Charge"],
-			[15, "Fury Attack"],
-			[20, "Spark"],
-			[25, "Bubble Beam"],
-			[30, "Recover"],
-			[35, "Curse"],
-			[40, "Elec Terrain"],
-			[45, "Poison Jab"],
-			[50, "Zing Zap"],
-			[55, "Acupressure"],
-			[60, "Discharge"]
+			[14, "Fury Attack"],
+			[19, "Spark"],
+			[24, "Bubble Beam"],
+			[29, "Recover"],
+			[33, "Curse"],
+			[37, "Scald"],
+			[42, "Discharge"],
+			[47, "Elec Terrain"],
+			[51, ""],
+			[56, "Liquidation"],
+			[61, "Zing Zap"],
+			[65, "Acupressure"]
 		],
 		"eggMoves": [
 			"Memento",
@@ -44407,15 +44501,14 @@
 			[36, "Freeze-Dry"],
 			[42, "Hail"],
 			[48, "Aurora Veil"],
-			[54, "Surf"],
-			[60, "Blizzard"]
+			[54, "Liquidation"],
+			[60, "Icicle Crash"]
 		],
 		"eggMoves": [
 			"Soak",
 			"Aqua Ring",
 			"Belly Drum",
 			"Double-Edge",
-			"Icicle Crash",
 			"Head Smash"
 		]
 	},
@@ -44466,9 +44559,9 @@
 			[5, "Leer"],
 			[10, "Power Trip"],
 			[15, "Quick Attack"],
-			[20, "Flatter"],
-			[25, "Bite"],
-			[30, "Spark"],
+			[20, "Spark"],
+			[25, "Flatter"],
+			[30, "Bite"],
 			[35, "Torment"],
 			[40, "Agility"],
 			[45, "Bullet Seed"],
@@ -44537,8 +44630,8 @@
 			[0, "Heavy Slam"],
 			[1, "Growl"],
 			[1, "Tackle"],
-			[5, "Rollout"],
-			[10, "Rock Smash"],
+			[1, "Rollout"],
+			[1, "Rock Smash"],
 			[15, "Bulldoze"],
 			[20, "Stomp"],
 			[25, "Iron Defense"],
@@ -44748,13 +44841,13 @@
 			[24, "Agility"],
 			[30, "Double Hit"],
 			[36, "U-turn"],
-			[42, "Dragon Dance"],
+			[42, "Take Down"],
 			[48, "PhantomForce"],
 			[49, "Dragon Pulse"],
-			[54, "Take Down"],
+			[54, "Double-Edge"],
 			[61, "Dragon Rush"],
-			[66, "Double-Edge"],
-			[72, "Last Resort"]
+			[66, "Last Resort"],
+			[72, "Dragon Dance"]
 		],
 		"eggMoves": [
 			"Curse",
@@ -44790,14 +44883,14 @@
 			[24, "Agility"],
 			[30, "Double Hit"],
 			[36, "U-turn"],
-			[42, "Dragon Dance"],
+			[42, "Take Down"],
 			[48, "PhantomForce"],
 			[49, "Dragon Pulse"],
-			[54, "Take Down"],
+			[54, "Double-Edge"],
 			[59, "Dragon Darts"],
 			[63, "Dragon Rush"],
-			[70, "Double-Edge"],
-			[78, "Last Resort"]
+			[70, "Last Resort"],
+			[78, "Dragon Dance"]
 		],
 		"eggMoves": [
 			"Curse",
@@ -44820,20 +44913,20 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Sacred Sword"],
 			[1, "Quick Guard"],
 			[1, "Bite"],
 			[1, "Howl"],
-			[1, "Quick Attack"],
-			[1, "Metal Claw"],
-			[11, "Slash"],
-			[22, "Swords Dance"],
-			[33, "Iron Head"],
-			[44, "Laser Focus"],
-			[55, "Crunch"],
-			[66, "Moonblast"],
-			[77, "Close Combat"],
-			[88, "Giga Impact"]
+			[8, "Quick Attack"],
+			[16, "Metal Claw"],
+			[24, "Moonblast"],
+			[32, "Slash"],
+			[40, "Crunch"],
+			[48, "Sacred Sword"],
+			[56, "Laser Focus"],
+			[64, "Iron Head"],
+			[72, "Swords Dance"],
+			[80, "Close Combat"],
+			[88, "Play Rough"]
 		],
 		"eggMoves": []
 	},
@@ -44848,20 +44941,20 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Metal Burst"],
 			[1, "Wide Guard"],
 			[1, "Bite"],
 			[1, "Howl"],
-			[1, "Quick Attack"],
-			[1, "Metal Claw"],
-			[11, "Slash"],
-			[22, "Iron Defense"],
-			[33, "Iron Head"],
-			[44, "Laser Focus"],
-			[55, "Crunch"],
-			[66, "Moonblast"],
-			[77, "Close Combat"],
-			[88, "Giga Impact"]
+			[8, "Quick Attack"],
+			[16, "Metal Claw"],
+			[24, "Slash"],
+			[32, "Crunch"],
+			[40, "Focus Blast"],
+			[48, "Metal Burst"],
+			[56, "Laser Focus"],
+			[64, "Iron Head"],
+			[72, "Iron Defense"],
+			[80, "Close Combat"],
+			[88, "Moonblast"]
 		],
 		"eggMoves": []
 	},
@@ -45200,11 +45293,11 @@
 			[1, "Growl"],
 			[1, "Teary Look"],
 			[1, "Nuzzle"],
-			[1, "Acid Spray"],
 			[1, "EerieImpulse"],
-			[1, "Leer"],
 			[1, "Noble Roar"],
 			[1, "ThunderShock"],
+			[1, "Leer"],
+			[1, "Acid Spray"],
 			[4, "Charge"],
 			[8, "Shock Wave"],
 			[12, "Scary Face"],
@@ -45218,7 +45311,8 @@
 			[40, "Poison Jab"],
 			[44, "Overdrive"],
 			[48, "Boomburst"],
-			[52, "Magnet Flux"]
+			[52, "Magnet Flux"],
+			[56, "Sludge Bomb"]
 		],
 		"eggMoves": [
 			"Endeavor",
@@ -45263,12 +45357,11 @@
 		"hiddenAbility": "Cursed Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, "Teatime"],
 			[1, "Strength Sap"],
 			[1, "Astonish"],
 			[1, "Withdraw"],
-			[6, "Aroma Mist"],
-			[12, "Mega Drain"],
+			[1, "Aroma Mist"],
+			[1, "Mega Drain"],
 			[18, "Protect"],
 			[24, "Sucker Punch"],
 			[30, "Aromatherapy"],
@@ -45295,8 +45388,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -45325,8 +45418,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -45355,8 +45448,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -45385,8 +45478,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -45415,8 +45508,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -45445,8 +45538,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -45482,8 +45575,8 @@
 			[36, "Freeze-Dry"],
 			[42, "Hail"],
 			[48, "Aurora Veil"],
-			[54, "Surf"],
-			[60, "Blizzard"]
+			[54, "Liquidation"],
+			[60, "Icicle Crash"]
 		],
 		"eggMoves": []
 	},
@@ -45535,9 +45628,9 @@
 			[5, "Leer"],
 			[10, "Power Trip"],
 			[15, "Quick Attack"],
-			[20, "Flatter"],
-			[25, "Bite"],
-			[30, "Spark"],
+			[20, "Spark"],
+			[25, "Flatter"],
+			[30, "Bite"],
 			[35, "Torment"],
 			[40, "Agility"],
 			[45, "Bullet Seed"],
@@ -45558,20 +45651,20 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Sacred Sword"],
 			[1, "Quick Guard"],
 			[1, "Bite"],
 			[1, "Howl"],
-			[1, "Quick Attack"],
-			[1, "Metal Claw"],
-			[11, "Slash"],
-			[22, "Swords Dance"],
-			[33, "Iron Head"],
-			[44, "Laser Focus"],
-			[55, "Crunch"],
-			[66, "Moonblast"],
-			[77, "Close Combat"],
-			[88, "Giga Impact"]
+			[8, "Quick Attack"],
+			[16, "Metal Claw"],
+			[24, "Moonblast"],
+			[32, "Slash"],
+			[40, "Crunch"],
+			[48, "Sacred Sword"],
+			[56, "Laser Focus"],
+			[64, "Iron Head"],
+			[72, "Swords Dance"],
+			[80, "Close Combat"],
+			[88, "Play Rough"]
 		],
 		"eggMoves": []
 	},
@@ -45586,20 +45679,20 @@
 		"hiddenAbility": "-------",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Metal Burst"],
 			[1, "Wide Guard"],
 			[1, "Bite"],
 			[1, "Howl"],
-			[1, "Quick Attack"],
-			[1, "Metal Claw"],
-			[11, "Slash"],
-			[22, "Iron Defense"],
-			[33, "Iron Head"],
-			[44, "Laser Focus"],
-			[55, "Crunch"],
-			[66, "Moonblast"],
-			[77, "Close Combat"],
-			[88, "Giga Impact"]
+			[8, "Quick Attack"],
+			[16, "Metal Claw"],
+			[24, "Slash"],
+			[32, "Crunch"],
+			[40, "Focus Blast"],
+			[48, "Metal Burst"],
+			[56, "Laser Focus"],
+			[64, "Iron Head"],
+			[72, "Iron Defense"],
+			[80, "Close Combat"],
+			[88, "Moonblast"]
 		],
 		"eggMoves": []
 	},
@@ -45799,13 +45892,14 @@
 			[8, "Scratch"],
 			[12, "Pay Day"],
 			[16, "Metal Claw"],
-			[20, "Taunt"],
-			[24, "Swagger"],
-			[29, "Fury Swipes"],
-			[32, "Screech"],
-			[36, "Slash"],
-			[40, "Metal Sound"],
-			[44, "Thrash"]
+			[20, "Fury Swipes"],
+			[24, "Feint Attack"],
+			[29, "Taunt"],
+			[32, "Slash"],
+			[36, "Screech"],
+			[40, "Swagger"],
+			[44, "Metal Sound"],
+			[48, "Thrash"]
 		],
 		"eggMoves": [
 			"Spite",
@@ -45827,19 +45921,21 @@
 		"hiddenAbility": "Anticipation",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Growl"],
 			[1, "Tackle"],
+			[1, "Growl"],
 			[5, "Tail Whip"],
-			[10, "Confusion"],
-			[15, "Fairy Wind"],
+			[8, "Confusion"],
+			[12, "Quick Attack"],
+			[16, "Fairy Wind"],
 			[20, "Agility"],
-			[25, "Psybeam"],
-			[30, "Stomp"],
-			[35, "Heal Pulse"],
-			[41, "Take Down"],
-			[45, "Dazzle Gleam"],
-			[50, "Psychic"],
-			[55, "Healing Wish"]
+			[24, "Psybeam"],
+			[28, "Stomp"],
+			[32, "Heal Pulse"],
+			[37, "Take Down"],
+			[42, "Play Rough"],
+			[47, "Zen Headbutt"],
+			[52, "Bounce"],
+			[57, "Horsepower"]
 		],
 		"eggMoves": [
 			"Thrash",
@@ -45847,7 +45943,8 @@
 			"Hypnosis",
 			"Double-Edge",
 			"Horn Drill",
-			"Morning Sun"
+			"Morning Sun",
+			"Healing Wish"
 		]
 	},
 	{
@@ -45863,21 +45960,24 @@
 		"levelUpMoves": [
 			[0, "Psycho Cut"],
 			[1, "Megahorn"],
-			[1, "Quick Attack"],
-			[1, "Growl"],
+			[1, ""],
 			[1, "Tackle"],
-			[5, "Tail Whip"],
-			[10, "Confusion"],
-			[15, "Fairy Wind"],
+			[1, "Growl"],
+			[1, "Tail Whip"],
+			[1, "Confusion"],
+			[1, "Quick Attack"],
+			[16, "Fairy Wind"],
 			[20, "Agility"],
-			[25, "Psybeam"],
-			[30, "Stomp"],
-			[35, "Heal Pulse"],
+			[24, "Psybeam"],
+			[28, "Stomp"],
+			[32, "Heal Pulse"],
+			[37, "Take Down"],
 			[39, "Psycho Cut"],
-			[43, "Take Down"],
-			[49, "Dazzle Gleam"],
-			[56, "Psychic"],
-			[63, "Healing Wish"]
+			[39, "Smart Strike"],
+			[47, "Play Rough"],
+			[53, "Zen Headbutt"],
+			[59, "Bounce"],
+			[65, "Horsepower"]
 		],
 		"eggMoves": [
 			"Thrash",
@@ -45885,7 +45985,8 @@
 			"Hypnosis",
 			"Double-Edge",
 			"Horn Drill",
-			"Morning Sun"
+			"Morning Sun",
+			"Healing Wish"
 		]
 	},
 	{
@@ -45921,7 +46022,9 @@
 			"Belch",
 			"Belly Drum",
 			"Block",
-			"Stomp"
+			"Stomp",
+			"Future Sight",
+			"Teleport"
 		]
 	},
 	{
@@ -45959,7 +46062,9 @@
 			"Belch",
 			"Belly Drum",
 			"Block",
-			"Stomp"
+			"Stomp",
+			"Future Sight",
+			"Teleport"
 		]
 	},
 	{
@@ -46109,32 +46214,38 @@
 		"hiddenAbility": "Ice Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Ice Shard"],
+			[0, "Barrier"],
+			[1, "Dazzle Gleam"],
 			[1, "Mist Terrain"],
 			[1, "Rapid Spin"],
-			[1, "Dazzle Gleam"],
-			[1, "Safeguard"],
-			[1, "Reflect"],
-			[1, "Light Screen"],
-			[1, "Mimic"],
+			[1, "Psywave"],
+			[1, "Ice Shard"],
+			[1, "Double Slap"],
+			[1, "Tickle"],
 			[1, "Recycle"],
-			[1, "Protect"],
-			[1, "Role Play"],
-			[1, "Copycat"],
+			[1, "Substitute"],
 			[1, "Pound"],
-			[4, "Baton Pass"],
-			[8, "Encore"],
-			[12, "Confusion"],
-			[16, "Skill Swap"],
-			[20, "Icy Wind"],
-			[24, "Double Kick"],
-			[28, "Psybeam"],
-			[32, "Hypnosis"],
-			[36, "Mirror Coat"],
-			[40, "Sucker Punch"],
-			[44, "Freeze-Dry"],
-			[48, "Psychic"],
-			[52, "Teeter Dance"]
+			[1, "Copycat"],
+			[1, "Baton Pass"],
+			[1, "Confusion"],
+			[11, "Double Kick"],
+			[14, "Meditate"],
+			[17, "Icy Wind"],
+			[20, "Encore"],
+			[23, "Psybeam"],
+			[26, "Role Play"],
+			[29, "Protect"],
+			[32, "Mimic"],
+			[35, "Freeze-Dry"],
+			[38, "Hypnosis"],
+			[41, "Psychic"],
+			[44, "Trick"],
+			[47, "Mirror Coat"],
+			[50, "Reflect"],
+			[50, "Light Screen"],
+			[50, "Safeguard"],
+			[53, "Sucker Punch"],
+			[55, "Teeter Dance"]
 		],
 		"eggMoves": [
 			"Future Sight",
@@ -46213,7 +46324,7 @@
 	},
 	{
 		"name": "Moltres",
-		"baseStats": [90, 85, 90, 105, 125, 90],
+		"baseStats": [90, 85, 90, 100, 125, 90],
 		"type": ["Dark", "Flying"],
 		"evYield": [0, 0, 0, 0, 3, 0],
 		"item": ["-------", "-------"],
@@ -46278,7 +46389,9 @@
 			"Belch",
 			"Belly Drum",
 			"Block",
-			"Stomp"
+			"Stomp",
+			"Future Sight",
+			"Teleport"
 		]
 	},
 	{
@@ -46326,20 +46439,22 @@
 		"hiddenAbility": "Quick Feet",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, "Leer"],
 			[1, "Tackle"],
+			[1, "Leer"],
 			[3, "Sand Attack"],
 			[6, "Lick"],
 			[9, "Snarl"],
-			[12, "Headbutt"],
-			[15, "Doll Eyes"],
-			[18, "Pin Missile"],
-			[21, "Rest"],
-			[24, "Take Down"],
-			[27, "Scary Face"],
-			[30, "Counter"],
-			[33, "Taunt"],
-			[36, "Double-Edge"]
+			[12, "Odor Sleuth"],
+			[15, "Mud Sport"],
+			[18, "Headbutt"],
+			[21, "Doll Eyes"],
+			[24, "Pin Missile"],
+			[27, "Rest"],
+			[30, "Take Down"],
+			[33, "Scary Face"],
+			[36, "Counter"],
+			[39, "Taunt"],
+			[45, "Double-Edge"]
 		],
 		"eggMoves": [
 			"Parting Shot",
@@ -46362,21 +46477,23 @@
 			[1, "Doll Eyes"],
 			[1, "Pin Missile"],
 			[1, "Switcheroo"],
-			[1, "Leer"],
 			[1, "Tackle"],
-			[3, "Sand Attack"],
-			[6, "Lick"],
-			[9, "Snarl"],
-			[12, "Headbutt"],
-			[15, "Hone Claws"],
-			[18, "Fury Swipes"],
+			[1, "Leer"],
+			[1, "Sand Attack"],
+			[1, "Lick"],
+			[1, "Snarl"],
+			[12, "Odor Sleuth"],
+			[15, "Mud Sport"],
+			[18, "Headbutt"],
 			[19, "Night Slash"],
-			[23, "Rest"],
-			[28, "Take Down"],
-			[33, "Scary Face"],
-			[38, "Counter"],
-			[43, "Taunt"],
-			[48, "Double-Edge"]
+			[23, "Hone Claws"],
+			[27, "Fury Swipes"],
+			[32, "Rest"],
+			[36, "Take Down"],
+			[41, "Scary Face"],
+			[46, "Counter"],
+			[51, "Taunt"],
+			[55, "Double-Edge"]
 		],
 		"eggMoves": [
 			"Parting Shot",
@@ -46562,8 +46679,8 @@
 			[36, "Curse"],
 			[40, "Shadow Ball"],
 			[44, "Earthquake"],
-			[48, "Guard Split"],
 			[48, "Power Split"],
+			[48, "Guard Split"],
 			[52, "Destiny Bond"]
 		],
 		"eggMoves": [
@@ -46607,6 +46724,1118 @@
 			"Pain Split",
 			"Reflect Type"
 		]
+	},
+	{
+		"name": "Growlithe",
+		"baseStats": [60, 75, 45, 65, 50, 55],
+		"type": ["Fire", "Rock"],
+		"evYield": [0, 1, 0, 0, 0, 0],
+		"item": ["Rawst Berry", "Rawst Berry"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Intimidate", "Flash Fire"],
+		"hiddenAbility": "Justified",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Ember"],
+			[1, "Leer"],
+			[4, "Howl"],
+			[7, "Bite"],
+			[10, "Odor Sleuth"],
+			[12, "Flame Wheel"],
+			[16, "Helping Hand"],
+			[20, "Rock Tomb"],
+			[24, "Fire Fang"],
+			[28, "Retaliate"],
+			[32, "Crunch"],
+			[36, "Take Down"],
+			[40, "Flamethrower"],
+			[44, "Roar"],
+			[48, "Play Rough"],
+			[51, "Rock Slide"],
+			[54, "Reversal"],
+			[57, "Outrage"],
+			[60, "Flare Blitz"]
+		],
+		"eggMoves": [
+			"Body Slam",
+			"Thrash",
+			"Fire Spin",
+			"Double-Edge",
+			"Morning Sun",
+			"Covet",
+			"Double Kick",
+			"Close Combat",
+			"Burn Up",
+			"Flame Burst",
+			"Teleport"
+		]
+	},
+	{
+		"name": "Arcanine",
+		"baseStats": [95, 115, 80, 95, 80, 90],
+		"type": ["Fire", "Rock"],
+		"evYield": [0, 2, 0, 0, 0, 0],
+		"item": ["Rawst Berry", "Rawst Berry"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Intimidate", "Flash Fire"],
+		"hiddenAbility": "Justified",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Extremespeed"],
+			[1, "Thunder Fang"],
+			[1, "Burn Up"],
+			[1, "Ember"],
+			[1, "Leer"],
+			[1, "Howl"],
+			[1, "Bite"],
+			[1, "Odor Sleuth"],
+			[1, "Flame Wheel"],
+			[1, "Helping Hand"],
+			[1, "Rock Tomb"],
+			[1, "Retaliate"],
+			[1, "Take Down"],
+			[1, "Flamethrower"],
+			[1, "Roar"],
+			[1, "Play Rough"],
+			[1, "Reversal"],
+			[1, "Fire Fang"],
+			[1, "Extremespeed"],
+			[1, "Crunch"],
+			[1, "Rock Slide"],
+			[50, ""],
+			[57, "Outrage"],
+			[60, "Flare Blitz"]
+		],
+		"eggMoves": [
+			"Body Slam",
+			"Thrash",
+			"Fire Spin",
+			"Double-Edge",
+			"Morning Sun",
+			"Covet",
+			"Double Kick",
+			"Close Combat",
+			"Burn Up",
+			"Flame Burst",
+			"Teleport"
+		]
+	},
+	{
+		"name": "Voltorb",
+		"baseStats": [40, 30, 50, 55, 55, 100],
+		"type": ["Electric", "Grass"],
+		"evYield": [0, 0, 0, 0, 0, 1],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Mineral", "Mineral"],
+		"ability": ["Soundproof", "Static"],
+		"hiddenAbility": "Aftermath",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Charge"],
+			[1, "Tackle"],
+			[4, "EerieImpulse"],
+			[6, "Gyro Ball"],
+			[9, "Spark"],
+			[12, "Magical Leaf"],
+			[15, "Screech"],
+			[18, "Sonic Boom"],
+			[21, "Charge Beam"],
+			[25, "Swift"],
+			[28, "Selfdestruct"],
+			[32, "Light Screen"],
+			[35, "Discharge"],
+			[39, "Energy Ball"],
+			[42, "Explosion"],
+			[46, "Electro Ball"],
+			[50, "Mirror Coat"]
+		],
+		"eggMoves": []
+	},
+	{
+		"name": "Electrode",
+		"baseStats": [60, 50, 70, 80, 80, 150],
+		"type": ["Electric", "Grass"],
+		"evYield": [0, 0, 0, 0, 0, 2],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Mineral", "Mineral"],
+		"ability": ["Soundproof", "Static"],
+		"hiddenAbility": "Aftermath",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Magnet Flux"],
+			[1, "Charge"],
+			[1, "Tackle"],
+			[1, "EerieImpulse"],
+			[1, "Gyro Ball"],
+			[1, "Spark"],
+			[1, "Magical Leaf"],
+			[1, "Screech"],
+			[1, "Sonic Boom"],
+			[1, "Charge Beam"],
+			[1, "Swift"],
+			[1, "Selfdestruct"],
+			[1, "Light Screen"],
+			[1, "Discharge"],
+			[1, "Energy Ball"],
+			[1, "Explosion"],
+			[1, "Electro Ball"],
+			[1, "Mirror Coat"],
+			[50, ""]
+		],
+		"eggMoves": []
+	},
+	{
+		"name": "Typhlosion",
+		"baseStats": [73, 84, 78, 119, 85, 95],
+		"type": ["Fire", "Ghost"],
+		"evYield": [0, 0, 0, 3, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Blaze", "-------"],
+		"hiddenAbility": "Flash Fire",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Hex"],
+			[1, "Gyro Ball"],
+			[1, "Lava Plume"],
+			[1, "Double-Edge"],
+			[1, "Tackle"],
+			[1, "Leer"],
+			[1, "Ember"],
+			[1, "Smokescreen"],
+			[12, "Quick Attack"],
+			[15, "Defense Curl"],
+			[19, "Flame Charge"],
+			[23, "Rollout"],
+			[27, "Flame Wheel"],
+			[32, "Swift"],
+			[35, "Hex"],
+			[40, "Flamethrower"],
+			[47, ""],
+			[54, "Shadow Ball"],
+			[62, "Inferno"],
+			[70, "Burn Up"],
+			[78, "Eruption"]
+		],
+		"eggMoves": [
+			"Fury Swipes",
+			"Reversal",
+			"Thrash",
+			"Foresight",
+			"Covet",
+			"Howl",
+			"Crush Claw",
+			"Double Kick",
+			"Flare Blitz",
+			"Extrasensory",
+			"Nature Power",
+			"Flame Burst"
+		]
+	},
+	{
+		"name": "Qwilfish",
+		"baseStats": [65, 95, 85, 55, 55, 85],
+		"type": ["Dark", "Poison"],
+		"evYield": [0, 1, 0, 0, 0, 0],
+		"item": ["-------", "Poison Barb"],
+		"eggGroup": ["Water 2", "Water 2"],
+		"ability": ["Poison Point", "Swift Swim"],
+		"hiddenAbility": "Intimidate",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Bubble"],
+			[1, "Poison Sting"],
+			[1, "Tackle"],
+			[4, "Harden"],
+			[7, "Water Gun"],
+			[11, "Fell Stinger"],
+			[15, "Minimize"],
+			[18, "Spikes"],
+			[21, "Water Pulse"],
+			[25, "Dark Pulse"],
+			[29, "Pin Missile"],
+			[33, "Toxic Spikes"],
+			[37, ""],
+			[40, "Take Down"],
+			[44, "Stockpile"],
+			[44, "Spit Up"],
+			[47, "Poison Jab"],
+			[51, "Aqua Tail"],
+			[55, "Toxic"],
+			[58, "Acupressure"],
+			[61, "Destiny Bond"],
+			[64, "Selfdestruct"]
+		],
+		"eggMoves": [
+			"Flail",
+			"Haze",
+			"Bubble Beam",
+			"Supersonic",
+			"Astonish",
+			"Signal Beam",
+			"Aqua Jet",
+			"Acid Spray",
+			"Ice Ball"
+		]
+	},
+	{
+		"name": "Sneasel",
+		"baseStats": [55, 95, 55, 35, 75, 115],
+		"type": ["Poison", "Fighting"],
+		"evYield": [0, 0, 0, 0, 0, 1],
+		"item": ["Grip Claw", "Quick Claw"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Inner Focus", "Keen Eye"],
+		"hiddenAbility": "Poison Touch",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Scratch"],
+			[1, "Leer"],
+			[6, "Taunt"],
+			[10, "Quick Attack"],
+			[14, "Metal Claw"],
+			[18, "Rock Smash"],
+			[22, "Fury Swipes"],
+			[26, ""],
+			[30, "Feint Attack"],
+			[34, "Low Sweep"],
+			[38, "Agility"],
+			[42, "Slash"],
+			[48, "Screech"],
+			[52, "Toxic"],
+			[56, "Poison Jab"],
+			[60, "Swagger"],
+			[64, "Swords Dance"],
+			[68, "Close Combat"]
+		],
+		"eggMoves": [
+			"Counter",
+			"Spite",
+			"Focus Energy",
+			"Swift",
+			"Crush Claw",
+			"Fake Out",
+			"Double Hit",
+			"Pursuit",
+			"Assist",
+			"Feint",
+			"Throat Chop"
+		]
+	},
+	{
+		"name": "Samurott",
+		"baseStats": [90, 108, 80, 100, 65, 85],
+		"type": ["Water", "Dark"],
+		"evYield": [0, 3, 0, 0, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Torrent", "-------"],
+		"hiddenAbility": "Shell Armor",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Night Slash"],
+			[1, "Megahorn"],
+			[1, "Slash"],
+			[1, "Tackle"],
+			[1, "Tail Whip"],
+			[1, "Water Gun"],
+			[1, "Water Sport"],
+			[13, "Focus Energy"],
+			[18, "Razor Shell"],
+			[21, "Fury Cutter"],
+			[25, "Water Pulse"],
+			[29, "Revenge"],
+			[34, "Aqua Jet"],
+			[35, "Night Slash"],
+			[39, "Encore"],
+			[46, "Aqua Tail"],
+			[51, ""],
+			[58, "Swords Dance"],
+			[63, "Hydro Pump"]
+		],
+		"eggMoves": [
+			"Copycat",
+			"Detect",
+			"Air Slash",
+			"Assurance",
+			"Brine",
+			"Night Slash",
+			"Trump Card",
+			"Screech",
+			"Sacred Sword",
+			"Secret Sword"
+		]
+	},
+	{
+		"name": "Lilligant",
+		"baseStats": [70, 105, 75, 50, 75, 105],
+		"type": ["Grass", "Fighting"],
+		"evYield": [0, 2, 0, 0, 0, 0],
+		"item": ["-------", "Absorb Bulb"],
+		"eggGroup": ["Grass", "Grass"],
+		"ability": ["Chlorophyll", "Hustle"],
+		"hiddenAbility": "Leaf Guard",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Rock Smash"],
+			[1, "Petal Dance"],
+			[1, "Leaf Blade"],
+			[1, "Absorb"],
+			[1, "Growth"],
+			[1, "Helping Hand"],
+			[1, "Stun Spore"],
+			[1, "Mega Drain"],
+			[1, "Aromatherapy"],
+			[1, "Magical Leaf"],
+			[1, "Sleep Powder"],
+			[1, "Giga Drain"],
+			[1, "Leech Seed"],
+			[1, "After You"],
+			[1, "Energy Ball"],
+			[1, "Synthesis"],
+			[1, "Sunny Day"],
+			[1, "Entrainment"],
+			[1, "Leaf Storm"],
+			[1, "Drain Punch"],
+			[1, "Petal Storm"],
+			[1, ""],
+			[1, "Teeter Dance"],
+			[60, "Close Combat"]
+		],
+		"eggMoves": [
+			"Natural Gift",
+			"Charm",
+			"Endure",
+			"Ingrain",
+			"Worry Seed",
+			"Grasswhistle",
+			"Sweet Scent",
+			"Bide",
+			"Healing Wish",
+			"Encore",
+			"Recover"
+		]
+	},
+	{
+		"name": "Basculin",
+		"baseStats": [70, 92, 65, 80, 55, 98],
+		"type": ["Water", "Water"],
+		"evYield": [0, 0, 0, 0, 0, 2],
+		"item": ["-------", "Deep Sea Tooth"],
+		"eggGroup": ["Water 2", "Water 2"],
+		"ability": ["Rattled", "Adaptability"],
+		"hiddenAbility": "Mold Breaker",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Water Gun"],
+			[1, "Tail Whip"],
+			[4, "Tackle"],
+			[8, "Flail"],
+			[12, "Aqua Jet"],
+			[15, "Chip Away"],
+			[18, "Bite"],
+			[20, "Scary Face"],
+			[24, "Headbutt"],
+			[28, "Soak"],
+			[32, "Crunch"],
+			[36, "Take Down"],
+			[40, "Final Gambit"],
+			[44, ""],
+			[48, "Thrash"],
+			[52, "Double-Edge"],
+			[56, "Head Smash"],
+			[60, "Aqua Tail"]
+		],
+		"eggMoves": [
+			"Swift",
+			"Bubble Beam",
+			"Mud Shot",
+			"Muddy Water",
+			"Agility",
+			"Whirlpool",
+			"Rage",
+			"Revenge",
+			"Endeavor",
+			"Uproar"
+		]
+	},
+	{
+		"name": "Zorua",
+		"baseStats": [35, 60, 40, 85, 40, 70],
+		"type": ["Normal", "Ghost"],
+		"evYield": [0, 0, 0, 1, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Illusion", "-------"],
+		"hiddenAbility": "-------",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Scratch"],
+			[1, "Leer"],
+			[3, "Torment"],
+			[6, "Snarl"],
+			[9, "Hone Claws"],
+			[12, "Fury Swipes"],
+			[15, "Swift"],
+			[18, "Scary Face"],
+			[20, "Taunt"],
+			[24, ""],
+			[28, "Fake Tears"],
+			[32, "Agility"],
+			[36, "Imprison"],
+			[40, "Shadow Claw"],
+			[44, "Nasty Plot"],
+			[48, "Shadow Ball"]
+		],
+		"eggMoves": [
+			"Detect",
+			"Memento",
+			"Sucker Punch",
+			"Extrasensory",
+			"Counter",
+			"Copycat"
+		]
+	},
+	{
+		"name": "Zoroark",
+		"baseStats": [55, 100, 60, 125, 60, 110],
+		"type": ["Normal", "Ghost"],
+		"evYield": [0, 0, 0, 2, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Illusion", "-------"],
+		"hiddenAbility": "-------",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Slash"],
+			[1, "U-turn"],
+			[1, "Ominous Wind"],
+			[1, "Imprison"],
+			[1, "Scratch"],
+			[1, "Leer"],
+			[1, "Torment"],
+			[1, "Snarl"],
+			[1, "Hone Claws"],
+			[12, "Fury Swipes"],
+			[15, "Swift"],
+			[18, "Scary Face"],
+			[20, "Taunt"],
+			[24, ""],
+			[28, "Fake Tears"],
+			[29, "Slash"],
+			[34, "Agility"],
+			[40, "Extrasensory"],
+			[46, "Shadow Claw"],
+			[52, "Nasty Plot"],
+			[58, "Shadow Ball"]
+		],
+		"eggMoves": [
+			"Detect",
+			"Memento",
+			"Sucker Punch",
+			"Extrasensory",
+			"Counter",
+			"Copycat"
+		]
+	},
+	{
+		"name": "Braviary",
+		"baseStats": [110, 83, 70, 112, 70, 65],
+		"type": ["Psychic", "Flying"],
+		"evYield": [0, 0, 0, 2, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Flying", "Flying"],
+		"ability": ["Keen Eye", "Sheer Force"],
+		"hiddenAbility": "Competitive",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, ""],
+			[1, "Sky Attack"],
+			[1, "Brave Bird"],
+			[1, "Thrash"],
+			[1, "Twister"],
+			[1, "Peck"],
+			[1, "Leer"],
+			[6, "Hone Claws"],
+			[10, "Wing Attack"],
+			[15, "Fury Attack"],
+			[20, "Tailwind"],
+			[24, "Air Slash"],
+			[29, "Scary Face"],
+			[33, "Sky Drop"],
+			[38, "Slash"],
+			[43, "Whirlwind"],
+			[47, "DualWingbeat"],
+			[49, ""],
+			[54, "Crush Claw"],
+			[59, "Defog"],
+			[64, "Double-Edge"],
+			[70, "Hurricane"]
+		],
+		"eggMoves": []
+	},
+	{
+		"name": "Sliggoo",
+		"baseStats": [58, 75, 83, 83, 113, 40],
+		"type": ["Dragon", "Steel"],
+		"evYield": [0, 0, 0, 0, 2, 0],
+		"item": ["-------", "Shed Shell"],
+		"eggGroup": ["Dragon", "Dragon"],
+		"ability": ["Sap Sipper", "Overcoat"],
+		"hiddenAbility": "Gooey",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Body Slam"],
+			[1, "Bide"],
+			[1, "Absorb"],
+			[1, "Tackle"],
+			[1, "Bubble"],
+			[10, "Acid Spray"],
+			[15, "Protect"],
+			[19, "DragonBreath"],
+			[24, "Water Pulse"],
+			[29, "Rain Dance"],
+			[33, "Iron Head"],
+			[38, "Dragon Pulse"],
+			[43, "Muddy Water"],
+			[49, ""]
+		],
+		"eggMoves": [
+			"Acid Armor",
+			"Iron Tail",
+			"Poison Tail",
+			"Counter",
+			"Endure",
+			"Life Dew",
+			"Curse",
+			"Flail"
+		]
+	},
+	{
+		"name": "Goodra",
+		"baseStats": [80, 100, 100, 110, 150, 60],
+		"type": ["Dragon", "Steel"],
+		"evYield": [0, 0, 0, 0, 3, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Dragon", "Dragon"],
+		"ability": ["Sap Sipper", "Overcoat"],
+		"hiddenAbility": "Gooey",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Aqua Tail"],
+			[1, "Poison Tail"],
+			[1, "Teary Look"],
+			[1, "Feint"],
+			[1, "Body Slam"],
+			[1, "Bide"],
+			[1, "Absorb"],
+			[1, "Tackle"],
+			[1, "Bubble"],
+			[10, "Acid Spray"],
+			[15, "Protect"],
+			[19, "DragonBreath"],
+			[24, "Water Pulse"],
+			[29, "Rain Dance"],
+			[33, "Iron Head"],
+			[38, "Dragon Pulse"],
+			[45, "Muddy Water"],
+			[49, ""],
+			[49, "Aqua Tail"],
+			[54, "Outrage"],
+			[61, "Iron Tail"]
+		],
+		"eggMoves": [
+			"Acid Armor",
+			"Iron Tail",
+			"Poison Tail",
+			"Counter",
+			"Endure",
+			"Life Dew",
+			"Curse",
+			"Flail"
+		]
+	},
+	{
+		"name": "Avalugg",
+		"baseStats": [95, 127, 184, 34, 36, 38],
+		"type": ["Ice", "Rock"],
+		"evYield": [0, 0, 2, 0, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Monster", "Mineral"],
+		"ability": ["Strong Jaw", "Ice Body"],
+		"hiddenAbility": "Sturdy",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Rock Slide"],
+			[1, "Wide Guard"],
+			[1, "Skull Bash"],
+			[1, "Body Slam"],
+			[1, "Rapid Spin"],
+			[1, "Harden"],
+			[1, "Tackle"],
+			[1, "Powder Snow"],
+			[1, "Sharpen"],
+			[12, "Icy Wind"],
+			[16, "Protect"],
+			[19, "Ice Fang"],
+			[23, "Bite"],
+			[27, "Ice Ball"],
+			[31, "Take Down"],
+			[35, "Blizzard"],
+			[36, "Rock Slide"],
+			[41, "Crunch"],
+			[46, "Double-Edge"],
+			[51, "Avalanche"],
+			[56, "Curse"],
+			[60, "Iron Defense"],
+			[64, "Recover"],
+			[68, ""],
+			[72, "Stone Edge"]
+		],
+		"eggMoves": [
+			"Mist",
+			"Barrier",
+			"Mirror Coat",
+			"Aurora Veil",
+			"Ice Shard"
+		]
+	},
+	{
+		"name": "Decidueye",
+		"baseStats": [88, 112, 80, 95, 95, 60],
+		"type": ["Grass", "Fighting"],
+		"evYield": [0, 3, 0, 0, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Flying", "Flying"],
+		"ability": ["Overgrow", "-------"],
+		"hiddenAbility": "Long Reach",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, ""],
+			[1, "Leaf Storm"],
+			[1, "U-turn"],
+			[1, "Tackle"],
+			[1, "Growl"],
+			[1, "Leafage"],
+			[1, "Astonish"],
+			[9, "Peck"],
+			[12, "Rock Smash"],
+			[15, "Razor Leaf"],
+			[16, "Aura Sphere"],
+			[20, "Synthesis"],
+			[22, "Foresight"],
+			[25, "Pluck"],
+			[30, "Nasty Plot"],
+			[33, ""],
+			[35, "Fury Attack"],
+			[37, "Sucker Punch"],
+			[43, "Leaf Blade"],
+			[51, "FeatherDance"],
+			[58, "Brave Bird"]
+		],
+		"eggMoves": [
+			"Curse",
+			"Confuse Ray",
+			"Haze",
+			"Baton Pass",
+			"Defog",
+			"Knock Off"
+		]
+	},
+	{
+		"name": "Wyrdeer",
+		"baseStats": [103, 105, 72, 105, 75, 65],
+		"type": ["Normal", "Psychic"],
+		"evYield": [0, 1, 0, 1, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Intimidate", "Sap Sipper"],
+		"hiddenAbility": "Scrappy",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Extrasensory"],
+			[1, ""],
+			[1, "Tackle"],
+			[1, "Leer"],
+			[1, "Astonish"],
+			[1, "Sand Attack"],
+			[13, "Stomp"],
+			[17, "Hypnosis"],
+			[20, "Double Kick"],
+			[24, "Confuse Ray"],
+			[27, "Take Down"],
+			[32, "Zen Headbutt"],
+			[36, "Lunge"],
+			[42, "Role Play"],
+			[46, "Double-Edge"],
+			[51, "Jump Kick"],
+			[56, "Megahorn"],
+			[61, "No Retreat"]
+		],
+		"eggMoves": [
+			"Spite",
+			"Disable",
+			"Bite",
+			"Extrasensory",
+			"Me First",
+			"Mud Sport",
+			"Rage",
+			"Captivate",
+			"Thrash",
+			"Imprison",
+			"Entrainment",
+			""
+		]
+	},
+	{
+		"name": "Kleavor",
+		"baseStats": [70, 135, 95, 45, 70, 85],
+		"type": ["Bug", "Rock"],
+		"evYield": [0, 2, 0, 0, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Bug", "Bug"],
+		"ability": ["Swarm", "Sheer Force"],
+		"hiddenAbility": "Steadfast",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Rock Tomb"],
+			[1, "Stealth Rock"],
+			[1, "Laser Focus"],
+			[1, "Quick Attack"],
+			[1, "Leer"],
+			[1, "Fury Cutter"],
+			[1, "False Swipe"],
+			[12, "Air Slash"],
+			[16, "Slash"],
+			[20, "Agility"],
+			[24, "Double Hit"],
+			[28, "Rock Slide"],
+			[32, "Focus Energy"],
+			[36, "Feint"],
+			[40, "X-Scissor"],
+			[44, ""],
+			[48, "Night Slash"],
+			[52, "Swords Dance"],
+			[56, "Lunge"],
+			[60, "Stone Edge"]
+		],
+		"eggMoves": [
+			"Counter",
+			"Baton Pass",
+			"Reversal",
+			"Endure",
+			"Silver Wind",
+			"Bug Buzz",
+			"Defog",
+			"Steel Wing",
+			"Quick Guard",
+			"Pursuit",
+			"Razor Wind",
+			"Vacuum Wave",
+			"DualWingbeat"
+		]
+	},
+	{
+		"name": "Ursaluna",
+		"baseStats": [130, 140, 105, 45, 80, 50],
+		"type": ["Normal", "Ground"],
+		"evYield": [0, 3, 0, 0, 0, 0],
+		"item": ["Oran Berry", "Sitrus Berry"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Guts", "Bulletproof"],
+		"hiddenAbility": "Unnerve",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Fake Tears"],
+			[1, "Charm"],
+			[1, "Fling"],
+			[1, "Covet"],
+			[1, "Scratch"],
+			[1, "Lick"],
+			[1, "Doll Eyes"],
+			[1, "Leer"],
+			[1, "Play Nice"],
+			[1, "Fury Swipes"],
+			[16, "Feint Attack"],
+			[20, "Sweet Scent"],
+			[24, "Bulldoze"],
+			[28, "Scary Face"],
+			[34, "Slash"],
+			[40, "Snore"],
+			[40, "Rest"],
+			[46, "Horsepower"],
+			[52, "Play Rough"],
+			[58, "Hammer Arm"],
+			[64, "Thrash"],
+			[70, ""]
+		],
+		"eggMoves": [
+			"Crunch",
+			"Take Down",
+			"Seismic Toss",
+			"Counter",
+			"Metal Claw",
+			"Yawn",
+			"Sleep Talk",
+			"Cross Chop",
+			"Double-Edge",
+			"Close Combat",
+			"Night Slash",
+			"Belly Drum",
+			"Chip Away"
+		]
+	},
+	{
+		"name": "Basculegon",
+		"baseStats": [120, 112, 65, 80, 75, 78],
+		"type": ["Water", "Ghost"],
+		"evYield": [2, 1, 0, 0, 0, 0],
+		"item": ["-------", "Deep Sea Tooth"],
+		"eggGroup": ["Water 2", "Water 2"],
+		"ability": ["Rattled", "Adaptability"],
+		"hiddenAbility": "Mold Breaker",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Hex"],
+			[1, "Thrash"],
+			[1, "Water Gun"],
+			[1, "Tail Whip"],
+			[1, "Tackle"],
+			[1, "Flail"],
+			[12, "Aqua Jet"],
+			[15, "Chip Away"],
+			[18, "Bite"],
+			[20, "Scary Face"],
+			[24, "Headbutt"],
+			[28, "Soak"],
+			[32, "Crunch"],
+			[36, "Take Down"],
+			[40, "Final Gambit"],
+			[44, ""],
+			[48, "Shadow Ball"],
+			[52, "Double-Edge"],
+			[56, "Head Smash"],
+			[60, "Aqua Tail"]
+		],
+		"eggMoves": [
+			"Swift",
+			"Bubble Beam",
+			"Mud Shot",
+			"Muddy Water",
+			"Agility",
+			"Whirlpool",
+			"Rage",
+			"Revenge",
+			"Endeavor",
+			"Uproar"
+		]
+	},
+	{
+		"name": "Basculegon",
+		"baseStats": [120, 92, 65, 100, 75, 78],
+		"type": ["Water", "Ghost"],
+		"evYield": [2, 0, 0, 1, 0, 0],
+		"item": ["-------", "Deep Sea Tooth"],
+		"eggGroup": ["Water 2", "Water 2"],
+		"ability": ["Rattled", "Adaptability"],
+		"hiddenAbility": "Mold Breaker",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[0, "Hex"],
+			[1, "Thrash"],
+			[1, "Water Gun"],
+			[1, "Tail Whip"],
+			[1, "Tackle"],
+			[1, "Flail"],
+			[12, "Aqua Jet"],
+			[15, "Chip Away"],
+			[18, "Bite"],
+			[20, "Scary Face"],
+			[24, "Headbutt"],
+			[28, "Soak"],
+			[32, "Crunch"],
+			[36, "Take Down"],
+			[40, "Final Gambit"],
+			[44, ""],
+			[48, "Shadow Ball"],
+			[52, "Double-Edge"],
+			[56, "Head Smash"],
+			[60, "Aqua Tail"]
+		],
+		"eggMoves": [
+			"Swift",
+			"Bubble Beam",
+			"Mud Shot",
+			"Muddy Water",
+			"Agility",
+			"Whirlpool",
+			"Rage",
+			"Revenge",
+			"Endeavor",
+			"Uproar"
+		]
+	},
+	{
+		"name": "Sneasler",
+		"baseStats": [80, 130, 60, 40, 80, 120],
+		"type": ["Poison", "Fighting"],
+		"evYield": [0, 1, 0, 0, 0, 1],
+		"item": ["Grip Claw", "Quick Claw"],
+		"eggGroup": ["Field", "Field"],
+		"ability": ["Pressure", "Pressure"],
+		"hiddenAbility": "Poison Touch",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Scratch"],
+			[1, "Leer"],
+			[1, "Taunt"],
+			[1, "Quick Attack"],
+			[14, "Metal Claw"],
+			[18, "Rock Smash"],
+			[22, "Fury Swipes"],
+			[26, ""],
+			[30, "Feint Attack"],
+			[34, "Low Sweep"],
+			[38, "Agility"],
+			[42, "Slash"],
+			[48, "Screech"],
+			[52, "Toxic"],
+			[56, "Poison Jab"],
+			[60, "Swagger"],
+			[64, "Swords Dance"],
+			[68, "Close Combat"]
+		],
+		"eggMoves": [
+			"Counter",
+			"Spite",
+			"Focus Energy",
+			"Swift",
+			"Crush Claw",
+			"Fake Out",
+			"Double Hit",
+			"Pursuit",
+			"Assist",
+			"Feint",
+			"Throat Chop"
+		]
+	},
+	{
+		"name": "Overqwil",
+		"baseStats": [85, 115, 95, 65, 65, 85],
+		"type": ["Dark", "Poison"],
+		"evYield": [0, 1, 0, 0, 0, 0],
+		"item": ["-------", "Poison Barb"],
+		"eggGroup": ["Water 2", "Water 2"],
+		"ability": ["Poison Point", "Swift Swim"],
+		"hiddenAbility": "Intimidate",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Bubble"],
+			[1, "Poison Sting"],
+			[1, "Tackle"],
+			[4, "Harden"],
+			[7, "Water Gun"],
+			[11, "Fell Stinger"],
+			[15, "Minimize"],
+			[18, "Spikes"],
+			[21, "Water Pulse"],
+			[25, "Dark Pulse"],
+			[29, "Pin Missile"],
+			[33, "Toxic Spikes"],
+			[37, ""],
+			[40, "Take Down"],
+			[44, "Stockpile"],
+			[44, "Spit Up"],
+			[47, "Poison Jab"],
+			[51, "Aqua Tail"],
+			[55, "Toxic"],
+			[58, "Acupressure"],
+			[61, "Destiny Bond"],
+			[64, "Selfdestruct"]
+		],
+		"eggMoves": [
+			"Flail",
+			"Haze",
+			"Bubble Beam",
+			"Supersonic",
+			"Astonish",
+			"Signal Beam",
+			"Aqua Jet",
+			"Acid Spray",
+			"Ice Ball"
+		]
+	},
+	{
+		"name": "Enamorus",
+		"baseStats": [74, 115, 70, 135, 80, 106],
+		"type": ["Fairy", "Flying"],
+		"evYield": [0, 0, 0, 3, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Undiscovered", "Undiscovered"],
+		"ability": ["Healer", "-------"],
+		"hiddenAbility": "Contrary",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Nasty Plot"],
+			[1, "Heal Block"],
+			[1, "Twister"],
+			[1, "Astonish"],
+			[1, "Revenge"],
+			[1, "Tackle"],
+			[1, "Leer"],
+			[10, "Swagger"],
+			[15, "Bite"],
+			[20, "Drain Kiss"],
+			[25, "Agility"],
+			[30, "Calm Mind"],
+			[35, "Extrasensory"],
+			[40, "Crunch"],
+			[45, "Play Rough"],
+			[50, "Uproar"],
+			[55, ""],
+			[60, "Dark Pulse"],
+			[65, "Hammer Arm"],
+			[70, "Dazzle Gleam"],
+			[75, "Moonblast"],
+			[80, "Thrash"]
+		],
+		"eggMoves": []
+	},
+	{
+		"name": "Enamorus",
+		"baseStats": [74, 115, 110, 135, 100, 46],
+		"type": ["Fairy", "Flying"],
+		"evYield": [0, 0, 0, 3, 0, 0],
+		"item": ["-------", "-------"],
+		"eggGroup": ["Undiscovered", "Undiscovered"],
+		"ability": ["Overcoat", "-------"],
+		"hiddenAbility": "-------",
+		"evolutionType": 0,
+		"levelUpMoves": [
+			[1, "Nasty Plot"],
+			[1, "Heal Block"],
+			[1, "Twister"],
+			[1, "Astonish"],
+			[1, "Revenge"],
+			[1, "Tackle"],
+			[1, "Leer"],
+			[10, "Swagger"],
+			[15, "Bite"],
+			[20, "Drain Kiss"],
+			[25, "Agility"],
+			[30, "Calm Mind"],
+			[35, "Extrasensory"],
+			[40, "Crunch"],
+			[45, "Play Rough"],
+			[50, "Uproar"],
+			[55, ""],
+			[60, "Dark Pulse"],
+			[65, "Hammer Arm"],
+			[70, "Dazzle Gleam"],
+			[75, "Moonblast"],
+			[80, "Thrash"]
+		],
+		"eggMoves": []
 	},
 	{
 		"name": "Venusaur",
@@ -46851,26 +48080,26 @@
 		"hiddenAbility": "Cursed Body",
 		"evolutionType": 2,
 		"levelUpMoves": [
-			[1, "Shadow Punch"],
+			[0, "Reflect Type"],
+			[1, "Nightmare"],
 			[1, "Perish Song"],
-			[1, "Reflect Type"],
 			[1, "Lick"],
 			[1, "Smog"],
-			[1, "Confuse Ray"],
-			[1, "Hypnosis"],
-			[1, "Mean Look"],
-			[12, "Payback"],
-			[16, "Spite"],
+			[1, "Spite"],
+			[4, "Mean Look"],
+			[8, "Payback"],
+			[12, "Confuse Ray"],
+			[16, "Night Shade"],
 			[20, "Curse"],
-			[24, "Hex"],
 			[24, "Shadow Punch"],
-			[30, "Night Shade"],
-			[36, "Sucker Punch"],
+			[24, "Hex"],
+			[30, "Sucker Punch"],
+			[36, "Toxic"],
 			[42, "Dark Pulse"],
 			[48, "Shadow Ball"],
-			[54, "Destiny Bond"],
-			[60, "Dream Eater"],
-			[64, "Nightmare"]
+			[54, "Hypnosis"],
+			[60, "Destiny Bond"],
+			[66, "Dream Eater"]
 		],
 		"eggMoves": []
 	},
@@ -47090,18 +48319,18 @@
 		"evolutionType": 2,
 		"levelUpMoves": [
 			[0, "Drum Beating"],
-			[1, "Drum Beating"],
-			[1, "Double Hit"],
 			[1, "Gras Terrain"],
 			[1, "Noble Roar"],
 			[1, "Growl"],
 			[1, "Scratch"],
-			[6, "Branch Poke"],
-			[8, "Taunt"],
+			[1, "Branch Poke"],
+			[1, "Taunt"],
 			[12, "Razor Leaf"],
+			[15, "Double Hit"],
 			[19, "Screech"],
 			[24, "Knock Off"],
 			[30, "Slam"],
+			[34, "Drum Beating"],
 			[38, "Uproar"],
 			[46, "Wood Hammer"],
 			[54, "Endeavor"],
@@ -47124,8 +48353,8 @@
 			[1, "Feint"],
 			[1, "Growl"],
 			[1, "Tackle"],
-			[6, "Ember"],
-			[8, "Quick Attack"],
+			[1, "Ember"],
+			[1, "Quick Attack"],
 			[12, "Double Kick"],
 			[19, "Flame Charge"],
 			[24, "Agility"],
@@ -47154,8 +48383,8 @@
 			[1, "Acrobatics"],
 			[1, "Growl"],
 			[1, "Pound"],
-			[6, "Water Gun"],
-			[8, "Bind"],
+			[1, "Water Gun"],
+			[1, "Bind"],
 			[12, "Water Pulse"],
 			[19, "Teary Look"],
 			[24, "Sucker Punch"],
@@ -47184,8 +48413,8 @@
 			[1, "Metal Sound"],
 			[1, "Leer"],
 			[1, "Peck"],
-			[4, "Power Trip"],
-			[8, "Hone Claws"],
+			[1, "Power Trip"],
+			[1, "Hone Claws"],
 			[12, "Fury Attack"],
 			[16, "Pluck"],
 			[22, "Taunt"],
@@ -47208,6 +48437,7 @@
 		"hiddenAbility": "Telepathy",
 		"evolutionType": 2,
 		"levelUpMoves": [
+			[0, "Bug Buzz"],
 			[1, "Struggle Bug"],
 			[1, "Confusion"],
 			[1, "Reflect"],
@@ -47218,7 +48448,7 @@
 			[16, "Psybeam"],
 			[20, "Hypnosis"],
 			[24, "Skill Swap"],
-			[28, "Bug Buzz"],
+			[29, "Bug Buzz"],
 			[32, "Mirror Coat"],
 			[36, "Psychic"],
 			[40, "After You"],
@@ -47239,14 +48469,16 @@
 		"evolutionType": 2,
 		"levelUpMoves": [
 			[0, "Rock Tomb"],
+			[0, "Razor Shell"],
+			[1, "Ice Fang"],
 			[1, "Crunch"],
-			[1, "Razor Shell"],
 			[1, "Rock Polish"],
 			[1, "Tackle"],
 			[1, "Water Gun"],
-			[7, "Bite"],
-			[14, "Protect"],
+			[1, "Bite"],
+			[1, "Protect"],
 			[21, "Headbutt"],
+			[21, "Razor Shell"],
 			[21, "Rock Tomb"],
 			[30, "Counter"],
 			[39, "Jaw Lock"],
@@ -47270,11 +48502,11 @@
 			[0, "Tar Shot"],
 			[1, "Smokescreen"],
 			[1, "Tackle"],
-			[5, "Rapid Spin"],
-			[10, "Smack Down"],
+			[1, "Rapid Spin"],
+			[1, "Smack Down"],
 			[15, "Rock Polish"],
 			[17, "Flame Charge"],
-			[20, "AncientPower"],
+			[21, "AncientPower"],
 			[27, "Incinerate"],
 			[33, "Tar Shot"],
 			[37, "Stealth Rock"],
@@ -47360,16 +48592,17 @@
 			[1, "Skull Bash"],
 			[1, "Sand Attack"],
 			[1, "Wrap"],
-			[5, "Minimize"],
-			[10, "Brutal Swing"],
-			[15, "Bulldoze"],
+			[1, "Sandstorm"],
+			[1, "Sand Tomb"],
+			[15, "Brutal Swing"],
 			[20, "Headbutt"],
-			[25, "Glare"],
-			[30, "Dig"],
-			[35, "Sandstorm"],
-			[42, "Slam"],
-			[49, "Coil"],
-			[51, "Sand Tomb"]
+			[25, "Bulldoze"],
+			[30, "Glare"],
+			[35, "Slam"],
+			[42, "Coil"],
+			[48, "Dig"],
+			[54, "Minimize"],
+			[60, "Earthquake"]
 		],
 		"eggMoves": []
 	},
@@ -47391,11 +48624,11 @@
 			[1, "Growl"],
 			[1, "Teary Look"],
 			[1, "Nuzzle"],
-			[1, "Acid Spray"],
 			[1, "EerieImpulse"],
-			[1, "Leer"],
 			[1, "Noble Roar"],
 			[1, "ThunderShock"],
+			[1, "Leer"],
+			[1, "Acid Spray"],
 			[4, "Charge"],
 			[8, "Shock Wave"],
 			[12, "Scary Face"],
@@ -47409,7 +48642,8 @@
 			[40, "Poison Jab"],
 			[44, "Overdrive"],
 			[48, "Boomburst"],
-			[52, "Shift Gear"]
+			[52, "Shift Gear"],
+			[56, "Sludge Bomb"]
 		],
 		"eggMoves": []
 	},
@@ -47431,11 +48665,11 @@
 			[1, "Growl"],
 			[1, "Teary Look"],
 			[1, "Nuzzle"],
-			[1, "Acid Spray"],
 			[1, "EerieImpulse"],
-			[1, "Leer"],
 			[1, "Noble Roar"],
 			[1, "ThunderShock"],
+			[1, "Leer"],
+			[1, "Acid Spray"],
 			[4, "Charge"],
 			[8, "Shock Wave"],
 			[12, "Scary Face"],
@@ -47449,7 +48683,8 @@
 			[40, "Poison Jab"],
 			[44, "Overdrive"],
 			[48, "Boomburst"],
-			[52, "Magnet Flux"]
+			[52, "Magnet Flux"],
+			[56, "Sludge Bomb"]
 		],
 		"eggMoves": []
 	},
@@ -47467,17 +48702,17 @@
 			[1, "Inferno"],
 			[1, "Ember"],
 			[1, "Smokescreen"],
-			[5, "Wrap"],
-			[10, "Bite"],
-			[15, "Flame Wheel"],
-			[20, "Bug Bite"],
-			[25, "Coil"],
+			[1, "Wrap"],
+			[1, "Bug Bite"],
+			[15, "Fire Spin"],
+			[20, "Bite"],
+			[25, "Flame Wheel"],
 			[32, "Slam"],
-			[39, "Fire Spin"],
-			[46, "Crunch"],
-			[53, "Fire Lash"],
-			[60, "Lunge"],
-			[67, "Burn Up"]
+			[38, "Crunch"],
+			[44, "Lunge"],
+			[50, "Fire Lash"],
+			[56, "Coil"],
+			[62, ""]
 		],
 		"eggMoves": []
 	},
@@ -47493,20 +48728,18 @@
 		"evolutionType": 2,
 		"levelUpMoves": [
 			[0, "Psycho Cut"],
+			[1, "Magic Powder"],
 			[1, "Confusion"],
 			[1, "Play Nice"],
-			[5, "Life Dew"],
-			[10, "Disarm Cry"],
+			[1, "Life Dew"],
+			[1, "Disarm Cry"],
 			[15, "Aromatherapy"],
 			[20, "Psybeam"],
 			[25, "Heal Pulse"],
 			[30, "Dazzle Gleam"],
-			[31, "Brutal Swing"],
 			[37, "Calm Mind"],
-			[41, "Psycho Cut"],
 			[46, "Psychic"],
-			[55, "Healing Wish"],
-			[64, "Magic Powder"]
+			[55, "Healing Wish"]
 		],
 		"eggMoves": []
 	},
@@ -47526,8 +48759,8 @@
 			[1, "Power-Up Hit"],
 			[1, "Confide"],
 			[1, "Fake Out"],
-			[4, "Bite"],
-			[8, "Flatter"],
+			[1, "Bite"],
+			[1, "Flatter"],
 			[12, "Fake Tears"],
 			[16, "Assurance"],
 			[20, "Swagger"],
@@ -47557,8 +48790,8 @@
 			[0, "Decorate"],
 			[1, "Aroma Mist"],
 			[1, "Tackle"],
-			[5, "Sweet Kiss"],
-			[10, "Sweet Scent"],
+			[1, "Sweet Kiss"],
+			[1, "Sweet Scent"],
 			[15, "Drain Kiss"],
 			[20, "Aromatherapy"],
 			[25, "Attract"],
@@ -47584,8 +48817,8 @@
 			[0, "Heavy Slam"],
 			[1, "Growl"],
 			[1, "Tackle"],
-			[5, "Rollout"],
-			[10, "Rock Smash"],
+			[1, "Rollout"],
+			[1, "Rock Smash"],
 			[15, "Bulldoze"],
 			[20, "Stomp"],
 			[25, "Iron Defense"],
