@@ -303,7 +303,7 @@ int main(int argc, char **argv)
             string_egg[stats.eggGroup1], string_egg[stats.eggGroup2],
             fixed_abilities[0], fixed_abilities[1],
             fixed_abilities[2],
-            (i >= SPECIES_VENUSAUR_MEGA && i <= SPECIES_PALKIA_PRIMAL) ? 1 : (i >= SPECIES_VENUSAUR_GIGA && i <= SPECIES_URSHIFU_RAPID_GIGA) ? 2 : 0
+            (i >= SPECIES_VENUSAUR_MEGA && i <= SPECIES_PALKIA_ORIGIN) ? 1 : (i >= SPECIES_VENUSAUR_GIGA && i <= SPECIES_URSHIFU_RAPID_GIGA) ? 2 : 0
         );
         strncat(buffer_main, buffer_local, 1024);
 
