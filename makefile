@@ -23,4 +23,4 @@ sources/DPE:
 	git clone -b Unbound --single-branch https://github.com/Skeli789/Dynamic-Pokemon-Expansion.git sources/DPE/
 
 sources/CFRU:
-	git clone https://github.com/Skeli789/Complete-Fire-Red-Upgrade.git sources/CFRU/
+	git clone -b dev --single-branch https://github.com/Skeli789/Complete-Fire-Red-Upgrade.git sources/CFRU/

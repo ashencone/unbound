@@ -57,15 +57,15 @@ int main(int argc, char **argv)
     fclose(f_ability);
 
     // Outdated ability fixes
-    snprintf(string_ability[0x48], 32, "Transistor");
-    snprintf(string_ability[0x49], 32, "Dragon's Maw");
-    snprintf(string_ability[0x64], 32, "Unseen Fist");
-    snprintf(string_ability[0x7B], 32, "Grim Neigh");
-    snprintf(string_ability[0x99], 32, "As One");
-    snprintf(string_ability[0x9A], 32, "As One");
-    snprintf(string_ability[0xAF], 32, "Full Metal Body");
-    snprintf(string_ability[0xDB], 32, "Quick Draw");
-    snprintf(string_ability[0xEB], 32, "Curious Medicine");
+    // snprintf(string_ability[0x48], 32, "Transistor");
+    // snprintf(string_ability[0x49], 32, "Dragon's Maw");
+    // snprintf(string_ability[0x64], 32, "Unseen Fist");
+    // snprintf(string_ability[0x7B], 32, "Grim Neigh");
+    // snprintf(string_ability[0x99], 32, "As One");
+    // snprintf(string_ability[0x9A], 32, "As One");
+    // snprintf(string_ability[0xAF], 32, "Full Metal Body");
+    // snprintf(string_ability[0xDB], 32, "Quick Draw");
+    // snprintf(string_ability[0xEB], 32, "Curious Medicine");
 
     // Move names
     char string_move[NON_Z_MOVE_COUNT][32];
@@ -78,11 +78,11 @@ int main(int argc, char **argv)
     fclose(f_move);
     
     // Fix outdated attack names
-    snprintf(string_move[0x2E2], 32, "Eerie Spell");
-    snprintf(string_move[0x2E3], 32, "Thunder Cage");
-    snprintf(string_move[0x2E4], 32, "Dragon Energy");
-    snprintf(string_move[0x2E5], 32, "Astral Barrage");
-    snprintf(string_move[0x2E6], 32, "Glacial Lance");
+    // snprintf(string_move[0x2E2], 32, "Eerie Spell");
+    // snprintf(string_move[0x2E3], 32, "Thunder Cage");
+    // snprintf(string_move[0x2E4], 32, "Dragon Energy");
+    // snprintf(string_move[0x2E5], 32, "Astral Barrage");
+    // snprintf(string_move[0x2E6], 32, "Glacial Lance");
 
     // Item names [Hardcoded]
     char string_item[ITEMS_COUNT][32] = {
