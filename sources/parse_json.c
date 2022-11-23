@@ -68,13 +68,13 @@ int main(int argc, char **argv)
     // snprintf(string_ability[0xEB], 32, "Curious Medicine");
 
     // Move names
-    char string_move[NON_Z_MOVE_COUNT][32];
+    char string_move[MOVE_TAKEHEART + 1][32];
     int string_move_len = 0;
     FILE *f_move;
 
     f_move = fopen("CFRU/strings/attack_name_table.string", "r");
     if (f_move == NULL) exit(1);
-    load_strings(f_move, string_move, &string_move_len, NON_Z_MOVE_COUNT);
+    load_strings(f_move, string_move, &string_move_len, MOVE_TAKEHEART + 1);
     fclose(f_move);
     
     // Fix outdated attack names

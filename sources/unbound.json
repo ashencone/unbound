@@ -4261,7 +4261,7 @@
 			"Dragon Tail",
 			"Head Smash",
 			"Rage",
-			""
+			"Power Shift"
 		]
 	},
 	{
@@ -6027,7 +6027,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Ember"],
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Covet"],
 			[1, "Swift"],
 			[1, "Copycat"],
@@ -6254,7 +6254,7 @@
 		"hiddenAbility": "Weak Armor",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, ""],
+			[0, "Stone Axe"],
 			[1, "Night Slash"],
 			[1, "Feint"],
 			[1, "Protect"],
@@ -6267,7 +6267,7 @@
 			[25, "Mud Shot"],
 			[30, "AncientPower"],
 			[35, "Brine"],
-			[39, ""],
+			[39, "Stone Axe"],
 			[43, "Slash"],
 			[49, "Leech Fang"],
 			[56, "Liquidation"],
@@ -7271,7 +7271,7 @@
 			[29, "Bug Buzz"],
 			[32, "Double-Edge"],
 			[36, "Acrobatics"],
-			[40, ""],
+			[40, "VictoryDance"],
 			[43, "Baton Pass"]
 		],
 		"eggMoves": [
@@ -7315,7 +7315,7 @@
 			[32, "Bug Buzz"],
 			[36, "Double-Edge"],
 			[41, "Acrobatics"],
-			[46, ""],
+			[46, "VictoryDance"],
 			[51, "Baton Pass"],
 			[56, "Close Combat"]
 		],
@@ -8721,7 +8721,7 @@
 		"levelUpMoves": [
 			[0, "Pursuit"],
 			[1, "Dark Pulse"],
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Covet"],
 			[1, "Swift"],
 			[1, "Bite"],
@@ -9230,7 +9230,7 @@
 			"Dragon Tail",
 			"Head Smash",
 			"Rage",
-			""
+			"Power Shift"
 		]
 	},
 	{
@@ -9363,7 +9363,7 @@
 			"Water Pulse",
 			"Acid Spray",
 			"Anchor Shot",
-			""
+			"Barb Barrage"
 		]
 	},
 	{
@@ -10398,7 +10398,7 @@
 			"Thrash",
 			"Imprison",
 			"Entrainment",
-			""
+			"PsyshieldRam"
 		]
 	},
 	{
@@ -10687,7 +10687,7 @@
 		"hiddenAbility": "Healer",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Pound"],
 			[1, "Copycat"],
 			[1, "Sweet Kiss"],
@@ -12994,7 +12994,7 @@
 			"Stealth Rock",
 			"Endure",
 			"Wide Guard",
-			""
+			"Power Shift"
 		]
 	},
 	{
@@ -17316,7 +17316,7 @@
 			[54, "Crunch"],
 			[60, "Leaf Storm"],
 			[66, "Wood Hammer"],
-			[72, ""]
+			[72, "HeadlongRush"]
 		],
 		"eggMoves": [
 			"Worry Seed",
@@ -17462,7 +17462,7 @@
 			[29, "U-turn"],
 			[35, "Close Combat"],
 			[42, "Acrobatics"],
-			[52, ""],
+			[52, "Raging Fury"],
 			[58, "Calm Mind"],
 			[68, "Flare Blitz"]
 		],
@@ -17593,7 +17593,7 @@
 			[28, "Fury Attack"],
 			[33, "Brine"],
 			[35, "Mirror Shot"],
-			[39, ""],
+			[39, "Wave Crash"],
 			[46, "Mist"],
 			[52, "Drill Peck"],
 			[59, "Hydro Pump"]
@@ -18829,7 +18829,7 @@
 		"levelUpMoves": [
 			[0, "PhantomForce"],
 			[1, "Strength Sap"],
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Constrict"],
 			[1, "Minimize"],
 			[1, "Astonish"],
@@ -19222,7 +19222,7 @@
 			[25, "Slash"],
 			[27, "Toxic"],
 			[30, "Sucker Punch"],
-			[33, ""],
+			[33, "Dire Claw"],
 			[36, "Night Slash"],
 			[39, "Venom Drench"],
 			[42, "Sludge Bomb"],
@@ -19271,7 +19271,7 @@
 			[25, "Slash"],
 			[27, "Toxic"],
 			[30, "Sucker Punch"],
-			[33, ""],
+			[33, "Dire Claw"],
 			[33, "Flamethrower"],
 			[38, "Night Slash"],
 			[43, "Venom Drench"],
@@ -21169,7 +21169,7 @@
 			"Stealth Rock",
 			"Endure",
 			"Wide Guard",
-			""
+			"Power Shift"
 		]
 	},
 	{
@@ -21188,7 +21188,7 @@
 			[1, "Ice Punch"],
 			[1, "ThunderPunch"],
 			[1, "Gravity"],
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Bind"],
 			[1, "Astonish"],
 			[1, "Leer"],
@@ -21233,7 +21233,7 @@
 		"hiddenAbility": "Perish Body",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, ""],
+			[0, "BitterMalice"],
 			[1, "Hex"],
 			[1, "Destiny Bond"],
 			[1, "Bite"],
@@ -21313,7 +21313,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[1, "Hypnosis"],
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Natural Gift"],
 			[1, "Confusion"],
 			[1, "Rest"],
@@ -21324,7 +21324,7 @@
 			[35, "Extrasensory"],
 			[42, "Amnesia"],
 			[49, "Yawn"],
-			[56, ""],
+			[56, "Mystic Power"],
 			[63, "Future Sight"],
 			[70, "Flail"],
 			[77, "Psychic"],
@@ -21354,7 +21354,7 @@
 			[35, "Extrasensory"],
 			[42, "Charm"],
 			[49, "Flatter"],
-			[56, ""],
+			[56, "Mystic Power"],
 			[63, "Future Sight"],
 			[70, "Copycat"],
 			[77, "Psychic"],
@@ -21373,7 +21373,7 @@
 		"hiddenAbility": "Infiltrator",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Natural Gift"],
 			[1, "Confusion"],
 			[1, "Rest"],
@@ -21384,7 +21384,7 @@
 			[35, "Extrasensory"],
 			[42, "Nasty Plot"],
 			[49, "Uproar"],
-			[56, ""],
+			[56, "Mystic Power"],
 			[63, "Future Sight"],
 			[70, "Last Resort"],
 			[77, "Psychic"],
@@ -21494,7 +21494,7 @@
 			[1, "Ice Punch"],
 			[1, "ThunderPunch"],
 			[1, "Dizzy Punch"],
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Pound"],
 			[1, "Confuse Ray"],
 			[1, "Foresight"],
@@ -21555,7 +21555,7 @@
 		"hiddenAbility": "Magician",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[1, ""],
+			[1, "Power Shift"],
 			[1, "Confusion"],
 			[1, "Double Team"],
 			[6, "Mist"],
@@ -21595,7 +21595,7 @@
 			[39, "Bubble Beam"],
 			[45, "Life Dew"],
 			[50, "Rain Dance"],
-			[55, ""],
+			[55, "Take Heart"],
 			[60, "Dive"],
 			[66, "Moonblast"]
 		],
@@ -21623,7 +21623,7 @@
 			[39, "Bubble Beam"],
 			[45, "Life Dew"],
 			[50, "Rain Dance"],
-			[55, ""],
+			[55, "Take Heart"],
 			[60, "Surf"],
 			[66, "Moonblast"],
 			[71, "Heart Swap"],
@@ -23138,7 +23138,7 @@
 			[26, "Assurance"],
 			[30, "Amnesia"],
 			[34, "Air Slash"],
-			[38, ""],
+			[38, "Esper Wing"],
 			[42, "Calm Mind"],
 			[46, "Psychic"],
 			[50, "Simple Beam"],
@@ -23181,7 +23181,7 @@
 			[26, "Assurance"],
 			[30, "Amnesia"],
 			[34, "Air Slash"],
-			[38, ""],
+			[38, "Esper Wing"],
 			[42, "Calm Mind"],
 			[46, "Psychic"],
 			[50, "Simple Beam"],
@@ -24114,7 +24114,7 @@
 			"Revenge",
 			"Endeavor",
 			"Uproar",
-			""
+			"Wave Crash"
 		]
 	},
 	{
@@ -27825,7 +27825,7 @@
 			[40, "Crunch"],
 			[45, "Extrasensory"],
 			[50, "Uproar"],
-			[55, ""],
+			[55, "BleakiceWind"],
 			[60, "Dark Pulse"],
 			[65, "Hammer Arm"],
 			[70, "Rain Dance"],
@@ -27861,7 +27861,7 @@
 			[40, "Crunch"],
 			[45, "Discharge"],
 			[50, "Uproar"],
-			[55, ""],
+			[55, "WildboltWind"],
 			[60, "Dark Pulse"],
 			[65, "Hammer Arm"],
 			[70, "Rain Dance"],
@@ -27958,7 +27958,7 @@
 			[40, "Rock Slide"],
 			[45, "Extrasensory"],
 			[50, "Stone Edge"],
-			[55, ""],
+			[55, "SandsearWind"],
 			[60, "Crunch"],
 			[65, "Hammer Arm"],
 			[70, "Sandstorm"],
@@ -29136,7 +29136,7 @@
 			"Revenge",
 			"Endeavor",
 			"Uproar",
-			""
+			"Wave Crash"
 		]
 	},
 	{
@@ -29787,7 +29787,7 @@
 			[40, "Crunch"],
 			[45, "Extrasensory"],
 			[50, "Uproar"],
-			[55, ""],
+			[55, "BleakiceWind"],
 			[60, "Dark Pulse"],
 			[65, "Hammer Arm"],
 			[70, "Rain Dance"],
@@ -29823,7 +29823,7 @@
 			[40, "Crunch"],
 			[45, "Discharge"],
 			[50, "Uproar"],
-			[55, ""],
+			[55, "WildboltWind"],
 			[60, "Dark Pulse"],
 			[65, "Hammer Arm"],
 			[70, "Rain Dance"],
@@ -29858,7 +29858,7 @@
 			[40, "Rock Slide"],
 			[45, "Extrasensory"],
 			[50, "Stone Edge"],
-			[55, ""],
+			[55, "SandsearWind"],
 			[60, "Crunch"],
 			[65, "Hammer Arm"],
 			[70, "Sandstorm"],
@@ -32312,7 +32312,7 @@
 			[56, "Curse"],
 			[60, "Iron Defense"],
 			[64, "Recover"],
-			[68, ""]
+			[68, "MountainGale"]
 		],
 		"eggMoves": [
 			"Mist",
@@ -43664,7 +43664,7 @@
 			[40, "Lunge"],
 			[45, "Fire Lash"],
 			[50, "Coil"],
-			[55, ""]
+			[55, "Raging Fury"]
 		],
 		"eggMoves": [
 			"Knock Off",
@@ -43698,7 +43698,7 @@
 			[44, "Lunge"],
 			[50, "Fire Lash"],
 			[56, "Coil"],
-			[62, ""]
+			[62, "Raging Fury"]
 		],
 		"eggMoves": [
 			"Knock Off",
@@ -44384,7 +44384,7 @@
 			[37, "Scald"],
 			[42, "Discharge"],
 			[47, "Elec Terrain"],
-			[51, ""],
+			[51, "Barb Barrage"],
 			[56, "Liquidation"],
 			[61, "Zing Zap"],
 			[65, "Acupressure"]
@@ -45960,7 +45960,7 @@
 		"levelUpMoves": [
 			[0, "Psycho Cut"],
 			[1, "Megahorn"],
-			[1, ""],
+			[1, "PsyshieldRam"],
 			[1, "Tackle"],
 			[1, "Growl"],
 			[1, "Tail Whip"],
@@ -46802,7 +46802,7 @@
 			[1, "ExtremeSpeed"],
 			[1, "Crunch"],
 			[1, "Rock Slide"],
-			[50, ""],
+			[50, "Raging Fury"],
 			[57, "Outrage"],
 			[60, "Flare Blitz"]
 		],
@@ -46880,7 +46880,7 @@
 			[1, "Explosion"],
 			[1, "Electro Ball"],
 			[1, "Mirror Coat"],
-			[50, ""]
+			[50, "Chloroblast"]
 		],
 		"eggMoves": []
 	},
@@ -46911,7 +46911,7 @@
 			[32, "Swift"],
 			[35, "Hex"],
 			[40, "Flamethrower"],
-			[47, ""],
+			[47, "InfernalRage"],
 			[54, "Shadow Ball"],
 			[62, "Inferno"],
 			[70, "Burn Up"],
@@ -46955,7 +46955,7 @@
 			[25, "Dark Pulse"],
 			[29, "Pin Missile"],
 			[33, "Toxic Spikes"],
-			[37, ""],
+			[37, "Barb Barrage"],
 			[40, "Take Down"],
 			[44, "Stockpile"],
 			[44, "Spit Up"],
@@ -46996,7 +46996,7 @@
 			[14, "Metal Claw"],
 			[18, "Rock Smash"],
 			[22, "Fury Swipes"],
-			[26, ""],
+			[26, "Dire Claw"],
 			[30, "Feint Attack"],
 			[34, "Low Sweep"],
 			[38, "Agility"],
@@ -47049,7 +47049,7 @@
 			[35, "Night Slash"],
 			[39, "Encore"],
 			[46, "Aqua Tail"],
-			[51, ""],
+			[51, "Endless Edge"],
 			[58, "Swords Dance"],
 			[63, "Hydro Pump"]
 		],
@@ -47098,7 +47098,7 @@
 			[1, "Leaf Storm"],
 			[1, "Drain Punch"],
 			[1, "Petal Storm"],
-			[1, ""],
+			[1, "VictoryDance"],
 			[1, "Teeter Dance"],
 			[60, "Close Combat"]
 		],
@@ -47140,7 +47140,7 @@
 			[32, "Crunch"],
 			[36, "Take Down"],
 			[40, "Final Gambit"],
-			[44, ""],
+			[44, "Wave Crash"],
 			[48, "Thrash"],
 			[52, "Double-Edge"],
 			[56, "Head Smash"],
@@ -47179,7 +47179,7 @@
 			[15, "Swift"],
 			[18, "Scary Face"],
 			[20, "Taunt"],
-			[24, ""],
+			[24, "BitterMalice"],
 			[28, "Fake Tears"],
 			[32, "Agility"],
 			[36, "Imprison"],
@@ -47220,7 +47220,7 @@
 			[15, "Swift"],
 			[18, "Scary Face"],
 			[20, "Taunt"],
-			[24, ""],
+			[24, "BitterMalice"],
 			[28, "Fake Tears"],
 			[29, "Slash"],
 			[34, "Agility"],
@@ -47249,7 +47249,7 @@
 		"hiddenAbility": "Competitive",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, ""],
+			[0, "Esper Wing"],
 			[1, "Sky Attack"],
 			[1, "Brave Bird"],
 			[1, "Thrash"],
@@ -47266,7 +47266,7 @@
 			[38, "Slash"],
 			[43, "Whirlwind"],
 			[47, "DualWingbeat"],
-			[49, ""],
+			[49, "Esper Wing"],
 			[54, "Crush Claw"],
 			[59, "Defog"],
 			[64, "Double-Edge"],
@@ -47298,7 +47298,7 @@
 			[33, "Iron Head"],
 			[38, "Dragon Pulse"],
 			[43, "Muddy Water"],
-			[49, ""]
+			[49, "Shelter"]
 		],
 		"eggMoves": [
 			"Acid Armor",
@@ -47339,7 +47339,7 @@
 			[33, "Iron Head"],
 			[38, "Dragon Pulse"],
 			[45, "Muddy Water"],
-			[49, ""],
+			[49, "Shelter"],
 			[49, "Aqua Tail"],
 			[54, "Outrage"],
 			[61, "Iron Tail"]
@@ -47389,7 +47389,7 @@
 			[56, "Curse"],
 			[60, "Iron Defense"],
 			[64, "Recover"],
-			[68, ""],
+			[68, "MountainGale"],
 			[72, "Stone Edge"]
 		],
 		"eggMoves": [
@@ -47411,7 +47411,7 @@
 		"hiddenAbility": "Long Reach",
 		"evolutionType": 0,
 		"levelUpMoves": [
-			[0, ""],
+			[0, "TripleArrows"],
 			[1, "Leaf Storm"],
 			[1, "U-turn"],
 			[1, "Tackle"],
@@ -47426,7 +47426,7 @@
 			[22, "Foresight"],
 			[25, "Pluck"],
 			[30, "Nasty Plot"],
-			[33, ""],
+			[33, "TripleArrows"],
 			[35, "Fury Attack"],
 			[37, "Sucker Punch"],
 			[43, "Leaf Blade"],
@@ -47454,7 +47454,7 @@
 		"evolutionType": 0,
 		"levelUpMoves": [
 			[0, "Extrasensory"],
-			[1, ""],
+			[1, "PsyshieldRam"],
 			[1, "Tackle"],
 			[1, "Leer"],
 			[1, "Astonish"],
@@ -47484,7 +47484,7 @@
 			"Thrash",
 			"Imprison",
 			"Entrainment",
-			""
+			"PsyshieldRam"
 		]
 	},
 	{
@@ -47513,7 +47513,7 @@
 			[32, "Focus Energy"],
 			[36, "Feint"],
 			[40, "X-Scissor"],
-			[44, ""],
+			[44, "Stone Axe"],
 			[48, "Night Slash"],
 			[52, "Swords Dance"],
 			[56, "Lunge"],
@@ -47567,7 +47567,7 @@
 			[52, "Play Rough"],
 			[58, "Hammer Arm"],
 			[64, "Thrash"],
-			[70, ""]
+			[70, "HeadlongRush"]
 		],
 		"eggMoves": [
 			"Crunch",
@@ -47611,7 +47611,7 @@
 			[32, "Crunch"],
 			[36, "Take Down"],
 			[40, "Final Gambit"],
-			[44, ""],
+			[44, "Wave Crash"],
 			[48, "Shadow Ball"],
 			[52, "Double-Edge"],
 			[56, "Head Smash"],
@@ -47656,7 +47656,7 @@
 			[32, "Crunch"],
 			[36, "Take Down"],
 			[40, "Final Gambit"],
-			[44, ""],
+			[44, "Wave Crash"],
 			[48, "Shadow Ball"],
 			[52, "Double-Edge"],
 			[56, "Head Smash"],
@@ -47693,7 +47693,7 @@
 			[14, "Metal Claw"],
 			[18, "Rock Smash"],
 			[22, "Fury Swipes"],
-			[26, ""],
+			[26, "Dire Claw"],
 			[30, "Feint Attack"],
 			[34, "Low Sweep"],
 			[38, "Agility"],
@@ -47742,7 +47742,7 @@
 			[25, "Dark Pulse"],
 			[29, "Pin Missile"],
 			[33, "Toxic Spikes"],
-			[37, ""],
+			[37, "Barb Barrage"],
 			[40, "Take Down"],
 			[44, "Stockpile"],
 			[44, "Spit Up"],
@@ -47792,7 +47792,7 @@
 			[40, "Crunch"],
 			[45, "Play Rough"],
 			[50, "Uproar"],
-			[55, ""],
+			[55, "Spring Wind"],
 			[60, "Dark Pulse"],
 			[65, "Hammer Arm"],
 			[70, "Dazzle Gleam"],
@@ -47828,7 +47828,7 @@
 			[40, "Crunch"],
 			[45, "Play Rough"],
 			[50, "Uproar"],
-			[55, ""],
+			[55, "Spring Wind"],
 			[60, "Dark Pulse"],
 			[65, "Hammer Arm"],
 			[70, "Dazzle Gleam"],
@@ -48712,7 +48712,7 @@
 			[44, "Lunge"],
 			[50, "Fire Lash"],
 			[56, "Coil"],
-			[62, ""]
+			[62, "Raging Fury"]
 		],
 		"eggMoves": []
 	},
