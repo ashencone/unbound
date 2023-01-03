@@ -16,6 +16,8 @@ interface Pokemon {
   evolutionType: 0 | 1 | 2;
   levelUpMoves: [number, string][];
   eggMoves: string[];
+  tmMoves: string[];
+  tutorMoves: string[];
 }
 
 let statsName: string[] = ["HP", "Atk", "Def", "SpA", "SpD", "Spe"];
@@ -277,6 +279,55 @@ function makeCard(pokemon: Pokemon): HTMLElement {
       trMove.appendChild(document.createElement("td"));
     }
   }
+
+  let divLearnableMoves = document.createElement("div");
+  divLearnableMoves.className = "pokemon__learnable-moves";
+  divMovesAll.appendChild(divLearnableMoves);
+
+  let divTmMoves = document.createElement("div");
+  divTmMoves.className = "pokemon__learnable-moves-group";
+
+  let divTmHeader = document.createElement("span");
+  divTmHeader.textContent = "TM Moves";
+  divTmHeader.className = "pokemon__learnable-moves-group-header";
+  
+  let divTmContent = document.createElement("div");
+  divTmContent.className = "pokemon__learnable-moves-group-items";
+  for (let move of pokemon.tmMoves) {
+    let item = document.createElement("span");
+    item.className = "pokemon__learnable-moves-group-item";
+    item.textContent = move;
+
+    divTmContent.appendChild(item);
+  }
+
+  divTmMoves.appendChild(divTmHeader);
+  divTmMoves.appendChild(divTmContent);
+
+  divLearnableMoves.appendChild(divTmMoves);
+
+  let divTutorMoves = document.createElement("div");
+  divTutorMoves.className = "pokemon__learnable-moves-group";
+
+  let divTutorHeader = document.createElement("span");
+  divTutorHeader.textContent = "Tutor Moves";
+  divTutorHeader.className = "pokemon__learnable-moves-group-header";
+
+  let divTutorContent = document.createElement("div");
+  divTutorContent.className = "pokemon__learnable-moves-group-items";
+  for (let move of pokemon.tutorMoves) {
+    let item = document.createElement("span");
+    item.className = "pokemon__learnable-moves-group-item";
+    item.textContent = move;
+
+    divTutorContent.appendChild(item);
+  }
+
+  divTutorMoves.appendChild(divTutorHeader);
+  divTutorMoves.appendChild(divTutorContent);
+
+  divLearnableMoves.appendChild(divTutorMoves);
+
   return section;
 }
 
