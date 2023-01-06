@@ -678,6 +678,28 @@ main {
   text-align: right;
 }
 
+.pokemon__learnable-moves {
+  padding: 10px 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.pokemon__learnable-moves-group {
+  padding-bottom: 10px;
+}
+
+.pokemon__learnable-moves-group-header {
+  font-weight: bold;
+  display: block;
+}
+
+.pokemon__learnable-moves-group-item {
+  display: inline-block;
+  background: #eee;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 30px;
+}
+
 @media only screen and (min-width: 576px) {
   .title {
     height: 4rem;

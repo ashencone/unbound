@@ -15,6 +15,8 @@
 #include "DPE/src/Learnsets.c"
 #include "DPE/src/Egg_Moves.c"
 
+#include "parse_text_files.c"
+
 #define FALSE 0
 #define TRUE 1
 
@@ -23,6 +25,7 @@ void get_abilities(int id, char out[][32], char names[][32]);
 
 int main(int argc, char **argv)
 {
+    init_species_names();
     //
     // Load necessary strings into arrays
     //
@@ -76,7 +79,13 @@ int main(int argc, char **argv)
     if (f_move == NULL) exit(1);
     load_strings(f_move, string_move, &string_move_len, MOVE_TAKEHEART + 1);
     fclose(f_move);
-    
+
+    node_t *tm_moves[NUM_SPECIES] = {NULL};
+    parse_text_files_from_directory("DPE/src/tm_compatibility/", string_pokemon, &tm_moves);
+
+    node_t *tutor_moves[NUM_SPECIES] = {NULL};
+    parse_text_files_from_directory("DPE/src/tutor_compatibility/", string_pokemon, &tutor_moves);
+
     // Fix outdated attack names
     // snprintf(string_move[0x2E2], 32, "Eerie Spell");
     // snprintf(string_move[0x2E3], 32, "Thunder Cage");
@@ -256,8 +265,8 @@ int main(int argc, char **argv)
     //
     int i, j, k;
     FILE *json;
-    char buffer_main[4096];
-    char buffer_local[1024];
+    char buffer_main[8192];
+    char buffer_local[2048];
     struct BaseStats stats;
     struct LevelUpMove *lv_moves;
     char fixed_abilities[3][32];
@@ -340,9 +349,49 @@ int main(int argc, char **argv)
                 );
                 strncat(buffer_main, buffer_local, 1024);
             }
-            strncat(buffer_main, "\t\t]\n", 5);
+            strncat(buffer_main, "\t\t],\n", 5);
         } else {
+            strncat(buffer_main, "],\n", 4);
+        }
+        
+        // TM/HM Moves
+        strncat(buffer_main, "\t\t\"tmMoves\": [", 16);
+        node_t *currentMove = tm_moves[i];
+        if (currentMove == NULL)
+        {
+            strncat(buffer_main, "],\n", 4);
+        }
+        else
+        {
+            strncat(buffer_main, "\n", 2);
+            do
+            {
+                snprintf(buffer_local, 1024, "\t\t\t\"%s\"%s\n",
+                         currentMove->value, (currentMove->next == NULL) ? "" : ",");
+                strncat(buffer_main, buffer_local, 1024);
+                currentMove = currentMove->next;
+            } while (currentMove != NULL);
+            strncat(buffer_main, "\t\t],\n", 5);
+        }
+
+        // Tutor Moves
+        strncat(buffer_main, "\t\t\"tutorMoves\": [", 32);
+        node_t *currentTutorMove = tutor_moves[i];
+        if (currentTutorMove == NULL)
+        {
             strncat(buffer_main, "]\n", 4);
+        }
+        else
+        {
+            strncat(buffer_main, "\n", 2);
+            do
+            {
+                snprintf(buffer_local, 1024, "\t\t\t\"%s\"%s\n",
+                         currentTutorMove->value    , (currentTutorMove->next == NULL) ? "" : ",");
+                strncat(buffer_main, buffer_local, 1024);
+                currentTutorMove = currentTutorMove->next;
+            } while (currentTutorMove != NULL);
+            strncat(buffer_main, "\t\t]\n", 5);
         }
 
         fprintf(json, buffer_main);
@@ -377,7 +426,7 @@ int main(int argc, char **argv)
     fprintf(json, "{\n\t\"pokemon\": {\n");
 
     for (i = 1, name_search_index_len = 0; i < NUM_SPECIES; i++) {
-        snprintf(current_name, 32, string_pokemon[i]);
+        snprintf(current_name, 32, "%s", string_pokemon[i]);
         if (!strncmp(current_name, "?", 1)) continue;   // Skip pokemons with no name
 
         for (j = 0; j < name_search_index_len; j++) {
@@ -422,6 +471,7 @@ int main(int argc, char **argv)
 
     for (i = 1; i < NON_Z_MOVE_COUNT; i++) {
         snprintf(buffer_main, 4096, "%s\t\t\"%s\": [", (i != 1) ? ",\n":"", string_move[i]);
+        char* move_name = string_move[i];
         for (j = 1, found_moves = 0; j < NUM_SPECIES; j++) {
             if (!gBaseStats[j].baseHP) continue;    // Skip pokemon that do not have base stats
             lv_moves = gLevelUpLearnsets[j];    // Search through level up moves
@@ -443,8 +493,38 @@ int main(int argc, char **argv)
                 if (egg_moves[k] == i) {
                     snprintf(buffer_local, 1024, "%s%i", found_moves++ ? ", ":"", j);
                     strncat(buffer_main, buffer_local, 1024);
+                    found_already = TRUE;
                     break; 
                 }
+            }
+
+            if (found_already) continue;    // Skip tm moves if already found
+            
+            node_t *current = tm_moves[j];
+            while(current != NULL)
+            {
+                if(strcmp(move_name, current->value) == 0)
+                {
+                    snprintf(buffer_local, 1024, "%s%i", found_moves++ ? ", ":"", j);
+                    strncat(buffer_main, buffer_local, 1024);
+                    found_already = TRUE;
+                    break; 
+                }
+                current = current->next;
+            }
+
+            if (found_already) continue;    // Skip tutor moves if already found
+            
+            current = tutor_moves[j];
+            while(current != NULL)
+            {
+                if(strcmp(move_name, current->value) == 0)
+                {
+                    snprintf(buffer_local, 1024, "%s%i", found_moves++ ? ", ":"", j);
+                    strncat(buffer_main, buffer_local, 1024);
+                    break; 
+                }
+                current = current->next;
             }
         }
         strncat(buffer_main, "]", 2);
@@ -488,6 +568,9 @@ int main(int argc, char **argv)
     fprintf(json, "\n\t}\n}\n");
 
     fclose(json);
+
+    freeMemory(tm_moves);
+    freeMemory(tutor_moves);
     return 0;
 }
 
